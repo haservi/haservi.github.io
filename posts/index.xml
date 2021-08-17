@@ -19,23 +19,5 @@
       <description>Desc Text.</description>
     </item>
     
-    <item>
-      <title>테스트 페이지</title>
-      <link>https://haservi.github.io/posts/springs/2021-08-15_second-page/</link>
-      <pubDate>Sat, 14 Aug 2021 11:30:03 +0000</pubDate>
-      
-      <guid>https://haservi.github.io/posts/springs/2021-08-15_second-page/</guid>
-      <description>Desc Text.</description>
-    </item>
-    
-    <item>
-      <title>My 1st post</title>
-      <link>https://haservi.github.io/posts/test/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      
-      <guid>https://haservi.github.io/posts/test/</guid>
-      <description>Desc Text.</description>
-    </item>
-    
   </channel>
 </rss>

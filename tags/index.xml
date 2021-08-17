@@ -19,23 +19,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>second</title>
-      <link>https://haservi.github.io/tags/second/</link>
-      <pubDate>Sat, 14 Aug 2021 11:30:03 +0000</pubDate>
-      
-      <guid>https://haservi.github.io/tags/second/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>first</title>
-      <link>https://haservi.github.io/tags/first/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      
-      <guid>https://haservi.github.io/tags/first/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
