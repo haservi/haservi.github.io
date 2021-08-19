@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Devlog</title>
-    <link>https://haservi.github.io/</link>
-    <description>Recent content on Devlog</description>
+    <title>Algorithm on Devlog</title>
+    <link>https://haservi.github.io/categories/algorithm/</link>
+    <description>Recent content in Algorithm on Devlog</description>
     <image>
       <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Aug 2021 01:31:31 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 01:31:31 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Secret Map</title>
       <link>https://haservi.github.io/posts/2021/08/algorithms/secret-map/</link>
@@ -22,18 +22,6 @@
  지도는 한 변의 길이가 n인 정사각형 배열 형태로, 각 칸은 &amp;ldquo;공백&amp;rdquo;(&amp;quot; &amp;ldquo;) 또는 &amp;ldquo;벽&amp;rdquo;(&amp;quot;#&amp;quot;) 두 종류로 이루어져 있다. 전체 지도는 두 장의 지도를 겹쳐서 얻을 수 있다. 각각 &amp;ldquo;지도 1&amp;quot;과 &amp;ldquo;지도 2&amp;quot;라고 하자.
 지도 1 또는 지도 2 중 어느 하나라도 벽인 부분은 전체 지도에서도 벽이다.</description>
     </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://haservi.github.io/posts/2021/08/hello-world/hello-world/</link>
-      <pubDate>Thu, 19 Aug 2021 00:07:43 +0900</pubDate>
-      
-      <guid>https://haservi.github.io/posts/2021/08/hello-world/hello-world/</guid>
-      <description>TEST 페이지  테스트 페이지 입니다.
- 1 2 3 4 5  class Solution { public static void main(String[] args) { System.out.println(&amp;#34;Test&amp;#34;); } }   </description>
-    </item>
-    
-    
     
   </channel>
 </rss>
