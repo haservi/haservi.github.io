@@ -9,7 +9,18 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Aug 2021 01:31:31 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Aug 2021 20:53:37 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Newjob</title>
+      <link>https://haservi.github.io/posts/2021/08/algorithms/newjob/newjob/</link>
+      <pubDate>Thu, 26 Aug 2021 20:53:37 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/2021/08/algorithms/newjob/newjob/</guid>
+      <description>직업군 추천하기 문제 설명 개발자가 사용하는 언어와 언어 선호도를 입력하면 그에 맞는 직업군을 추천해주는 알고리즘을 개발하려고 합니다.
+아래 표는 5개 직업군 별로 많이 사용하는 5개 언어에 직업군 언어 점수를 부여한 표입니다.
+   점수 SI CONTENTS HARDWARE PORTAL GAME     5 JAVA JAVASCRIPT C JAVA C++   4 JAVASCRIPT JAVA C++ JAVASCRIPT C#   3 SQL PYTHON PYTHON PYTHON JAVASCRIPT   2 PYTHON SQL JAVA KOTLIN C   1 C# C++ JAVASCRIPT PHP JAVA    예를 들면, SQL의 SI 직업군 언어 점수는 3점이지만 CONTENTS 직업군 언어 점수는 2점입니다.</description>
+    </item>
+    
     <item>
       <title>Secret Map</title>
       <link>https://haservi.github.io/posts/2021/08/algorithms/secret-map/</link>
