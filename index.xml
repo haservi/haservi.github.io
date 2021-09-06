@@ -9,11 +9,11 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Sep 2021 21:01:13 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Sep 2021 12:01:13 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Colatz</title>
       <link>https://haservi.github.io/posts/algorithms/programmers/colatz/</link>
-      <pubDate>Mon, 06 Sep 2021 21:01:13 +0900</pubDate>
+      <pubDate>Mon, 06 Sep 2021 12:01:13 +0900</pubDate>
       
       <guid>https://haservi.github.io/posts/algorithms/programmers/colatz/</guid>
       <description>콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.
