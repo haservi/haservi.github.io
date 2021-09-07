@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>blog on Devlog</title>
+    <link>https://haservi.github.io/tags/blog/</link>
+    <description>Recent content in blog on Devlog</description>
+    <image>
+      <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 17 Aug 2021 21:00:00 +0900</lastBuildDate><atom:link href="https://haservi.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>블로그 시작하기</title>
+      <link>https://haservi.github.io/posts/2021/08/01-blog-start-blog/</link>
+      <pubDate>Tue, 17 Aug 2021 21:00:00 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/2021/08/01-blog-start-blog/</guid>
+      <description>개인 공부 목적으로 블로그를 시작하려 한다.
+강의 또는 서적, 알고리즘을 통해 공부한 내용 및 개발 도중 삽질 관련 경험을 기억하고 공유하기 위한 블로그이다.</description>
+    </item>
+    
+  </channel>
+</rss>

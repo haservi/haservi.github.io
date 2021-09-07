@@ -2,34 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://haservi.github.io/posts/algorithms/programmers/colatz/</loc>
-    <lastmod>2021-09-06T12:01:13+09:00</lastmod>
+    <loc>https://haservi.github.io/posts/2021/09/02-algo-hasshadsu/</loc>
+    <lastmod>2021-09-07T11:55:29+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/algorithms/programmers/newjob/</loc>
+    <loc>https://haservi.github.io/posts/2021/09/01-algo-colatz-guess/</loc>
+    <lastmod>2021-09-06T21:01:13+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/2021/08/03-algo-recommend-job/</loc>
     <lastmod>2021-08-26T20:53:37+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/2021/08/algorithms/secret-map/</loc>
+    <loc>https://haservi.github.io/posts/2021/08/02-algo-secret-map/</loc>
     <lastmod>2021-08-20T01:31:31+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/2021/08/hello-world/hello-world/</loc>
-    <lastmod>2021-08-19T00:07:43+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/</loc>
-    <lastmod>2021-09-06T12:01:13+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2021-09-06T12:01:13+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/categories/algorithm/</loc>
-    <lastmod>2021-08-20T01:31:31+09:00</lastmod>
+    <loc>https://haservi.github.io/posts/2021/08/01-blog-start-blog/</loc>
+    <lastmod>2021-08-17T21:00:00+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2021-08-20T01:31:31+09:00</lastmod>
+    <lastmod>2021-09-07T11:55:29+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/</loc>
+    <lastmod>2021-09-07T11:55:29+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2021-09-07T11:55:29+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/programmers/</loc>
+    <lastmod>2021-09-07T11:55:29+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/blog/</loc>
+    <lastmod>2021-08-17T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/</loc>
+    <lastmod>2021-08-17T21:00:00+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/archives/</loc>
   </url><url>
     <loc>https://haservi.github.io/search/</loc>
-  </url><url>
-    <loc>https://haservi.github.io/tags/</loc>
   </url>
 </urlset>
