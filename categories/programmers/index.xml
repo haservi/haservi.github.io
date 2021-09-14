@@ -9,13 +9,24 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 07 Sep 2021 11:55:29 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/programmers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Sep 2021 00:28:00 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/programmers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[프로그래머스_⭐⭐] 위장</title>
+      <link>https://haservi.github.io/posts/algorithms/level2/01-camouflage/</link>
+      <pubDate>Wed, 15 Sep 2021 00:28:00 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/algorithms/level2/01-camouflage/</guid>
+      <description>위장 문제 설명 스파이들은 매일 다른 옷을 조합하여 입어 자신을 위장합니다.
+예를 들어 스파이가 가진 옷이 아래와 같고 오늘 스파이가 동그란 안경, 긴 코트, 파란색 티셔츠를 입었다면 다음날은 청바지를 추가로 입거나 동그란 안경 대신 검정 선글라스를 착용하거나 해야 합니다.
+   종류 이름     얼굴 동그란 안경, 검정 선글라스   상의 파란색 티셔츠   하의 청바지   겉옷 긴 코트    스파이가 가진 의상들이 담긴 2차원 배열 clothes가 주어질 때 서로 다른 옷의 조합의 수를 return 하도록 solution 함수를 작성해주세요.</description>
+    </item>
+    
     <item>
       <title>[프로그래머스_⭐] 하샤드 수</title>
-      <link>https://haservi.github.io/posts/2021/09/02-algo-hasshadsu/</link>
+      <link>https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/</link>
       <pubDate>Tue, 07 Sep 2021 11:55:29 +0900</pubDate>
       
-      <guid>https://haservi.github.io/posts/2021/09/02-algo-hasshadsu/</guid>
+      <guid>https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/</guid>
       <description>하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.
 예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.
 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
@@ -24,10 +35,10 @@
     
     <item>
       <title>[프로그래머스_⭐] 콜라츠 추측</title>
-      <link>https://haservi.github.io/posts/2021/09/01-algo-colatz-guess/</link>
+      <link>https://haservi.github.io/posts/algorithms/level1/03-algo-colatz-guess/</link>
       <pubDate>Mon, 06 Sep 2021 21:01:13 +0900</pubDate>
       
-      <guid>https://haservi.github.io/posts/2021/09/01-algo-colatz-guess/</guid>
+      <guid>https://haservi.github.io/posts/algorithms/level1/03-algo-colatz-guess/</guid>
       <description>콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.
 1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다. 예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다.
 위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요.</description>
@@ -35,10 +46,10 @@
     
     <item>
       <title>[프로그래머스_⭐] 직업군 추천하기</title>
-      <link>https://haservi.github.io/posts/2021/08/03-algo-recommend-job/</link>
+      <link>https://haservi.github.io/posts/algorithms/level1/02-algo-recommend-job/</link>
       <pubDate>Thu, 26 Aug 2021 20:53:37 +0900</pubDate>
       
-      <guid>https://haservi.github.io/posts/2021/08/03-algo-recommend-job/</guid>
+      <guid>https://haservi.github.io/posts/algorithms/level1/02-algo-recommend-job/</guid>
       <description>직업군 추천하기 문제 설명 개발자가 사용하는 언어와 언어 선호도를 입력하면 그에 맞는 직업군을 추천해주는 알고리즘을 개발하려고 합니다.
 아래 표는 5개 직업군 별로 많이 사용하는 5개 언어에 직업군 언어 점수를 부여한 표입니다.
    점수 SI CONTENTS HARDWARE PORTAL GAME     5 JAVA JAVASCRIPT C JAVA C++   4 JAVASCRIPT JAVA C++ JAVASCRIPT C#   3 SQL PYTHON PYTHON PYTHON JAVASCRIPT   2 PYTHON SQL JAVA KOTLIN C   1 C# C++ JAVASCRIPT PHP JAVA    예를 들면, SQL의 SI 직업군 언어 점수는 3점이지만 CONTENTS 직업군 언어 점수는 2점입니다.</description>
@@ -46,10 +57,10 @@
     
     <item>
       <title>[프로그래머스_⭐] 비밀지도</title>
-      <link>https://haservi.github.io/posts/2021/08/02-algo-secret-map/</link>
+      <link>https://haservi.github.io/posts/algorithms/level1/01-algo-secret-map/</link>
       <pubDate>Fri, 20 Aug 2021 01:31:31 +0900</pubDate>
       
-      <guid>https://haservi.github.io/posts/2021/08/02-algo-secret-map/</guid>
+      <guid>https://haservi.github.io/posts/algorithms/level1/01-algo-secret-map/</guid>
       <description>비밀지도 문제 설명 네오는 평소 프로도가 비상금을 숨겨놓는 장소를 알려줄 비밀지도를 손에 넣었다.
 그런데 이 비밀지도는 숫자로 암호화되어 있어 위치를 확인하기 위해서는 암호를 해독해야 한다.
 다행히 지도 암호를 해독할 방법을 적어놓은 메모도 함께 발견했다.

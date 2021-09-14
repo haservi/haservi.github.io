@@ -10,7 +10,7 @@
 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
 제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1">
 <meta name=author content="Me">
-<link rel=canonical href=https://haservi.github.io/posts/2021/09/02-algo-hasshadsu/>
+<link rel=canonical href=https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/>
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
@@ -30,7 +30,7 @@
 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
 제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://haservi.github.io/posts/2021/09/02-algo-hasshadsu/">
+<meta property="og:url" content="https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/">
 <meta property="og:image" content="https://haservi.github.io/%3Cimage%20path/url%3E"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-09-07T11:55:29+09:00">
 <meta property="article:modified_time" content="2021-09-07T11:55:29+09:00"><meta property="og:site_name" content="Devlog">
@@ -41,8 +41,8 @@
 예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.
 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
 제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"[프로그래머스_⭐] 하샤드 수","item":"https://haservi.github.io/posts/2021/09/02-algo-hasshadsu/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[프로그래머스_⭐] 하샤드 수","name":"[프로그래머스_⭐] 하샤드 수","description":"하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.\n예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.\n자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.\n제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1","keywords":["",""],"articleBody":"하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.\n예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.\n자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.\n제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1\n10의 모든 자릿수의 합은 1입니다. 10은 1로 나누어 떨어지므로 10은 하샤드 수입니다.\n입출력 예 #2\n12의 모든 자릿수의 합은 3입니다. 12는 3으로 나누어 떨어지므로 12는 하샤드 수입니다.\n입출력 예 #3\n11의 모든 자릿수의 합은 2입니다. 11은 2로 나누어 떨어지지 않으므로 11는 하샤드 수가 아닙니다.\n입출력 예 #4\n13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.\n문제 풀이 리뷰  Java   각 자리수의 합을 구한 뒤 나머지가 0인 경우 true를 반환한다.  나의 풀이(Source code) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  public boolean solution(int x) { int sum = 0; int num = x; // 자릿수의 합  while (num != 0) { sum += num % 10; num /= 10; } // 나머지가 0이면 하샤드 수라고 판단  if (x % sum == 0) return true; else return false; }   ","wordCount":"207","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-09-07T11:55:29+09:00","dateModified":"2021-09-07T11:55:29+09:00","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/2021/09/02-algo-hasshadsu/"},"publisher":{"@type":"Organization","name":"Devlog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"[프로그래머스_⭐] 하샤드 수","item":"https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[프로그래머스_⭐] 하샤드 수","name":"[프로그래머스_⭐] 하샤드 수","description":"하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.\n예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.\n자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.\n제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1","keywords":["",""],"articleBody":"하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.\n예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.\n자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.\n제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1\n10의 모든 자릿수의 합은 1입니다. 10은 1로 나누어 떨어지므로 10은 하샤드 수입니다.\n입출력 예 #2\n12의 모든 자릿수의 합은 3입니다. 12는 3으로 나누어 떨어지므로 12는 하샤드 수입니다.\n입출력 예 #3\n11의 모든 자릿수의 합은 2입니다. 11은 2로 나누어 떨어지지 않으므로 11는 하샤드 수가 아닙니다.\n입출력 예 #4\n13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.\n문제 풀이 리뷰  [Java](https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java   각 자리수의 합을 구한 뒤 나머지가 0인 경우 true를 반환한다.  나의 풀이(Source code) public boolean solution(int x) { int sum = 0; int num = x; // 자릿수의 합  while (num != 0) { sum += num % 10; num /= 10; } // 나머지가 0이면 하샤드 수라고 판단  if (x % sum == 0) return true; else return false; } ","wordCount":"191","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-09-07T11:55:29+09:00","dateModified":"2021-09-07T11:55:29+09:00","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/"},"publisher":{"@type":"Organization","name":"Devlog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/%3Clink%20/%20abs%20url%3E"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -90,7 +90,7 @@
 <h1 class=post-title>
 [프로그래머스_⭐] 하샤드 수
 </h1>
-<div class=post-meta>September 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/2021/09/02-algo-hasshadsu/index.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+<div class=post-meta>September 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/algorithms/level1/04-algo-hasshadsu/index.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
 </div>
 </header> <div class=toc>
 <details>
@@ -167,33 +167,13 @@
 13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.</p>
 <h2 id=문제-풀이-리뷰>문제 풀이 리뷰<a hidden class=anchor aria-hidden=true href=#문제-풀이-리뷰>#</a></h2>
 <ul>
-<li><a href=./Solution.java>Java</a></li>
+<li>[Java](<a href=https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java>https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java</a></li>
 </ul>
 <ol>
 <li>각 자리수의 합을 구한 뒤 나머지가 0인 경우 true를 반환한다.</li>
 </ol>
 <h2 id=나의-풀이source-codehttpsgithubcomhaservistudy-algorithmblobmainprogrammerslevel1lv1_47_ed9598ec83a4eb939c_ec8898solutionjava>나의 풀이(<a href=https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java>Source code</a>)<a hidden class=anchor aria-hidden=true href=#나의-풀이source-codehttpsgithubcomhaservistudy-algorithmblobmainprogrammerslevel1lv1_47_ed9598ec83a4eb939c_ec8898solutionjava>#</a></h2>
-<div class=highlight><div class=chroma>
-<table class=lntable><tr><td class=lntd>
-<pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span></code></pre></td>
-<td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=kd>public</span> <span class=kt>boolean</span> <span class=nf>solution</span><span class=o>(</span><span class=kt>int</span> <span class=n>x</span><span class=o>)</span> <span class=o>{</span>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=kd>public</span> <span class=kt>boolean</span> <span class=nf>solution</span><span class=o>(</span><span class=kt>int</span> <span class=n>x</span><span class=o>)</span> <span class=o>{</span>
   <span class=kt>int</span> <span class=n>sum</span> <span class=o>=</span> <span class=n>0</span><span class=o>;</span>
   <span class=kt>int</span> <span class=n>num</span> <span class=o>=</span> <span class=n>x</span><span class=o>;</span>
 
@@ -209,20 +189,11 @@
   <span class=k>else</span>
     <span class=k>return</span> <span class=kc>false</span><span class=o>;</span>
 <span class=o>}</span>
-</code></pre></td></tr></table>
-</div>
-</div>
+</code></pre></div>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
 </ul>
-<nav class=paginav>
-<a class=next href=https://haservi.github.io/posts/2021/09/01-algo-colatz-guess/>
-<span class=title>Next Page »</span>
-<br>
-<span>[프로그래머스_⭐] 콜라츠 추측</span>
-</a>
-</nav>
 </footer>
 </article>
 </main>
