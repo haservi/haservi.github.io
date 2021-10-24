@@ -9,7 +9,20 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Sep 2021 15:17:54 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/programmers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Oct 2021 22:41:45 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/programmers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[프로그래머스_⭐⭐] 조이스틱</title>
+      <link>https://haservi.github.io/posts/algorithms/level2/03-joystick/</link>
+      <pubDate>Sun, 24 Oct 2021 22:41:45 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/algorithms/level2/03-joystick/</guid>
+      <description>조이스틱 문제 설명 조이스틱으로 알파벳 이름을 완성하세요. 맨 처음엔 A로만 이루어져 있습니다.
+ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
+조이스틱을 각 방향으로 움직이면 아래와 같습니다.
+▲ - 다음 알파벳 ▼ - 이전 알파벳 (A에서 아래쪽으로 이동하면 Z로) ◀ - 커서를 왼쪽으로 이동 (첫 번째 위치에서 왼쪽으로 이동하면 마지막 문자에 커서) ▶ - 커서를 오른쪽으로 이동 예를 들어 아래의 방법으로 &amp;ldquo;JAZ&amp;quot;를 만들 수 있습니다.
+- 첫 번째 위치에서 조이스틱을 위로 9번 조작하여 J를 완성합니다.</description>
+    </item>
+    
     <item>
       <title>[프로그래머스_⭐⭐] 다리를 지나는 트럭</title>
       <link>https://haservi.github.io/posts/algorithms/level2/02-truck-crossing-the-bridge/</link>
