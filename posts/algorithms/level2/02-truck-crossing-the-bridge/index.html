@@ -15,17 +15,19 @@
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
-<link crossorigin=anonymous href=/assets/css/stylesheet.min.d65a04146ee3b627e01a637af2aaae9726d86f48e50e954d8104a1787c02a067.css integrity="sha256-1loEFG7jtifgGmN68qqulybYb0jlDpVNgQSheHwCoGc=" rel="preload stylesheet" as=style>
-<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=apple-touch-icon href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=mask-icon href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.css rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.js onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://haservi.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://haservi.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.87.0">
-<meta property="og:title" content="[프로그래머스_⭐⭐] 다리를 지나는 트럭">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+</noscript><meta property="og:title" content="[프로그래머스_⭐⭐] 다리를 지나는 트럭">
 <meta property="og:description" content="다리를 지나는 트럭 문제 설명 트럭 여러 대가 강을 가로지르는 일차선 다리를 정해진 순으로 건너려 합니다.
 모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 알아내야 합니다.
 다리에는 트럭이 최대 bridge_length대 올라갈 수 있으며, 다리는 weight 이하까지의 무게를 견딜 수 있습니다.
@@ -45,14 +47,10 @@
 단, 다리에 완전히 오르지 않은 트럭의 무게는 무시합니다.
 예를 들어, 트럭 2대가 올라갈 수 있고 무게를 10kg까지 견디는 다리가 있습니다. 무게가 [7, 4, 5, 6]kg인 트럭이 순서대로 최단 시간 안에 다리를 건너려면 다음과 같이 건너야 합니다.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"[프로그래머스_⭐⭐] 다리를 지나는 트럭","item":"https://haservi.github.io/posts/algorithms/level2/02-truck-crossing-the-bridge/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[프로그래머스_⭐⭐] 다리를 지나는 트럭","name":"[프로그래머스_⭐⭐] 다리를 지나는 트럭","description":"다리를 지나는 트럭 문제 설명 트럭 여러 대가 강을 가로지르는 일차선 다리를 정해진 순으로 건너려 합니다.\n모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 알아내야 합니다.\n다리에는 트럭이 최대 bridge_length대 올라갈 수 있으며, 다리는 weight 이하까지의 무게를 견딜 수 있습니다.\n단, 다리에 완전히 오르지 않은 트럭의 무게는 무시합니다.\n예를 들어, 트럭 2대가 올라갈 수 있고 무게를 10kg까지 견디는 다리가 있습니다. 무게가 [7, 4, 5, 6]kg인 트럭이 순서대로 최단 시간 안에 다리를 건너려면 다음과 같이 건너야 합니다.","keywords":["",""],"articleBody":"다리를 지나는 트럭 문제 설명 트럭 여러 대가 강을 가로지르는 일차선 다리를 정해진 순으로 건너려 합니다.\n모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 알아내야 합니다.\n다리에는 트럭이 최대 bridge_length대 올라갈 수 있으며, 다리는 weight 이하까지의 무게를 견딜 수 있습니다.\n단, 다리에 완전히 오르지 않은 트럭의 무게는 무시합니다.\n예를 들어, 트럭 2대가 올라갈 수 있고 무게를 10kg까지 견디는 다리가 있습니다. 무게가 [7, 4, 5, 6]kg인 트럭이 순서대로 최단 시간 안에 다리를 건너려면 다음과 같이 건너야 합니다.\n   경과 시간 다리를 지난 트럭 다리를 건너는 트럭 대기 트럭     0 [] [] [7,4,5,6]   1~2 [] [7] [4,5,6]   3 [7] [4] [5,6]   4 [7] [4,5] [6]   5 [7,4] [5] [6]   6~7 [7,4,5] [6] []   8 [7,4,5,6] [] []    따라서, 모든 트럭이 다리를 지나려면 최소 8초가 걸립니다.\nsolution 함수의 매개변수로 다리에 올라갈 수 있는 트럭 수 bridge_length, 다리가 견딜 수 있는 무게 weight, 트럭 별 무게 truck_weights가 주어집니다.\n이때 모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 return 하도록 solution 함수를 완성하세요.\n제한 조건  bridge_length는 1 이상 10,000 이하입니다. weight는 1 이상 10,000 이하입니다. truck_weights의 길이는 1 이상 10,000 이하입니다. 모든 트럭의 무게는 1 이상 weight 이하입니다.  입출력 예    bridge_length weight truck_weights return     2 10 [7,4,5,6] 8   100 100 [10] 101   100 100 [10,10,10,10,10,10,10,10,10,10] 110    ","wordCount":"200","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-09-27T15:17:54+09:00","dateModified":"2021-09-27T15:17:54+09:00","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/algorithms/level2/02-truck-crossing-the-bridge/"},"publisher":{"@type":"Organization","name":"Devlog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[프로그래머스_⭐⭐] 다리를 지나는 트럭","name":"[프로그래머스_⭐⭐] 다리를 지나는 트럭","description":"다리를 지나는 트럭 문제 설명 트럭 여러 대가 강을 가로지르는 일차선 다리를 정해진 순으로 건너려 합니다.\n모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 알아내야 합니다.\n다리에는 트럭이 최대 bridge_length대 올라갈 수 있으며, 다리는 weight 이하까지의 무게를 견딜 수 있습니다.\n단, 다리에 완전히 오르지 않은 트럭의 무게는 무시합니다.\n예를 들어, 트럭 2대가 올라갈 수 있고 무게를 10kg까지 견디는 다리가 있습니다. 무게가 [7, 4, 5, 6]kg인 트럭이 순서대로 최단 시간 안에 다리를 건너려면 다음과 같이 건너야 합니다.","keywords":["",""],"articleBody":"다리를 지나는 트럭 문제 설명 트럭 여러 대가 강을 가로지르는 일차선 다리를 정해진 순으로 건너려 합니다.\n모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 알아내야 합니다.\n다리에는 트럭이 최대 bridge_length대 올라갈 수 있으며, 다리는 weight 이하까지의 무게를 견딜 수 있습니다.\n단, 다리에 완전히 오르지 않은 트럭의 무게는 무시합니다.\n예를 들어, 트럭 2대가 올라갈 수 있고 무게를 10kg까지 견디는 다리가 있습니다. 무게가 [7, 4, 5, 6]kg인 트럭이 순서대로 최단 시간 안에 다리를 건너려면 다음과 같이 건너야 합니다.\n   경과 시간 다리를 지난 트럭 다리를 건너는 트럭 대기 트럭     0 [] [] [7,4,5,6]   1~2 [] [7] [4,5,6]   3 [7] [4] [5,6]   4 [7] [4,5] [6]   5 [7,4] [5] [6]   6~7 [7,4,5] [6] []   8 [7,4,5,6] [] []    따라서, 모든 트럭이 다리를 지나려면 최소 8초가 걸립니다.\nsolution 함수의 매개변수로 다리에 올라갈 수 있는 트럭 수 bridge_length, 다리가 견딜 수 있는 무게 weight, 트럭 별 무게 truck_weights가 주어집니다.\n이때 모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 return 하도록 solution 함수를 완성하세요.\n제한 조건  bridge_length는 1 이상 10,000 이하입니다. weight는 1 이상 10,000 이하입니다. truck_weights의 길이는 1 이상 10,000 이하입니다. 모든 트럭의 무게는 1 이상 weight 이하입니다.  입출력 예    bridge_length weight truck_weights return     2 10 [7,4,5,6] 8   100 100 [10] 101   100 100 [10,10,10,10,10,10,10,10,10,10] 110    ","wordCount":"200","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-09-27T15:17:54+09:00","dateModified":"2021-09-27T15:17:54+09:00","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/algorithms/level2/02-truck-crossing-the-bridge/"},"publisher":{"@type":"Organization","name":"Devlog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
 </head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-<noscript>
-<style type=text/css>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
@@ -98,7 +96,7 @@
 </header> <div class=toc>
 <details>
 <summary accesskey=c title="(Alt + C)">
-<div class=details>Table of Contents</div>
+<span class=details>Table of Contents</span>
 </summary>
 <div class=inner><ul>
 <li>
@@ -225,6 +223,7 @@
 <ul class=post-tags>
 </ul>
 </footer><script src=https://utteranc.es/client.js repo=haservi/haservi.github.io issue-term=pathname theme=photon-dark crossorigin=anonymous async></script>
+<script>localStorage.getItem("pref-theme")==="dark"?console.log("dark"):localStorage.getItem("pref-theme")==="light"&&console.log("light")</script>
 </article>
 </main>
 <footer class=footer>
@@ -235,9 +234,7 @@ Powered by
         <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
 </span>
 </footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
-<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</button>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a>
 <script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>

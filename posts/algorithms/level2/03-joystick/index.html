@@ -15,17 +15,19 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
-<link crossorigin=anonymous href=/assets/css/stylesheet.min.d65a04146ee3b627e01a637af2aaae9726d86f48e50e954d8104a1787c02a067.css integrity="sha256-1loEFG7jtifgGmN68qqulybYb0jlDpVNgQSheHwCoGc=" rel="preload stylesheet" as=style>
-<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=apple-touch-icon href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=mask-icon href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.css rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.js onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://haservi.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://haservi.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.87.0">
-<meta property="og:title" content="[프로그래머스_⭐⭐] 조이스틱">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+</noscript><meta property="og:title" content="[프로그래머스_⭐⭐] 조이스틱">
 <meta property="og:description" content="조이스틱 문제 설명 조이스틱으로 알파벳 이름을 완성하세요. 맨 처음엔 A로만 이루어져 있습니다.
 ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 조이스틱을 각 방향으로 움직이면 아래와 같습니다.
@@ -45,14 +47,10 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 ▲ - 다음 알파벳 ▼ - 이전 알파벳 (A에서 아래쪽으로 이동하면 Z로) ◀ - 커서를 왼쪽으로 이동 (첫 번째 위치에서 왼쪽으로 이동하면 마지막 문자에 커서) ▶ - 커서를 오른쪽으로 이동 예를 들어 아래의 방법으로 &ldquo;JAZ&#34;를 만들 수 있습니다.
 - 첫 번째 위치에서 조이스틱을 위로 9번 조작하여 J를 완성합니다.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"[프로그래머스_⭐⭐] 조이스틱","item":"https://haservi.github.io/posts/algorithms/level2/03-joystick/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[프로그래머스_⭐⭐] 조이스틱","name":"[프로그래머스_⭐⭐] 조이스틱","description":"조이스틱 문제 설명 조이스틱으로 알파벳 이름을 완성하세요. 맨 처음엔 A로만 이루어져 있습니다.\nex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA\n조이스틱을 각 방향으로 움직이면 아래와 같습니다.\n▲ - 다음 알파벳 ▼ - 이전 알파벳 (A에서 아래쪽으로 이동하면 Z로) ◀ - 커서를 왼쪽으로 이동 (첫 번째 위치에서 왼쪽으로 이동하면 마지막 문자에 커서) ▶ - 커서를 오른쪽으로 이동 예를 들어 아래의 방법으로 \u0026ldquo;JAZ\u0026quot;를 만들 수 있습니다.\n- 첫 번째 위치에서 조이스틱을 위로 9번 조작하여 J를 완성합니다.","keywords":["",""],"articleBody":"조이스틱 문제 설명 조이스틱으로 알파벳 이름을 완성하세요. 맨 처음엔 A로만 이루어져 있습니다.\nex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA\n조이스틱을 각 방향으로 움직이면 아래와 같습니다.\n▲ - 다음 알파벳 ▼ - 이전 알파벳 (A에서 아래쪽으로 이동하면 Z로) ◀ - 커서를 왼쪽으로 이동 (첫 번째 위치에서 왼쪽으로 이동하면 마지막 문자에 커서) ▶ - 커서를 오른쪽으로 이동 예를 들어 아래의 방법으로 “JAZ\"를 만들 수 있습니다.\n- 첫 번째 위치에서 조이스틱을 위로 9번 조작하여 J를 완성합니다. - 조이스틱을 왼쪽으로 1번 조작하여 커서를 마지막 문자 위치로 이동시킵니다. - 마지막 위치에서 조이스틱을 아래로 1번 조작하여 Z를 완성합니다. 따라서 11번 이동시켜 \"JAZ\"를 만들 수 있고, 이때가 최소 이동입니다. 만들고자 하는 이름 name이 매개변수로 주어질 때, 이름에 대해 조이스틱 조작 횟수의 최솟값을 return 하도록 solution 함수를 만드세요.\n제한 사항  name은 알파벳 대문자로만 이루어져 있습니다. name의 길이는 1 이상 20 이하입니다.  입출력 예    name return     “JEROEN” 56   “JAN” 23    출처 ※ 공지 - 2019년 2월 28일 테스트케이스가 추가되었습니다.\n문제 풀이 리뷰 몇일을 고민한 문제이다. 알파벳 위아래의 최소값은 간단히 구하였지만, 좌우의 최소거리를 찾는 부분에서 생각을 많이하였다.\n기본적으로 모든 알파벳 위치에서의 최소거리를 구하고, 바로앞의 A가 있다면 해당 값을 제외한 뒤에 거리를 정의해야한다.\n또한, 해당 인덱스의 위치에서 정방향과 역방향에서 둘 중의 거리가 짧은 곳을 구한 뒤 바로앞의 A를 제외한 총이동거리를 더하는 부분이 중요하다.\n그렇게 모든 알파벳의 좌우 이동 최소거리 중 가장작은 값을 상하 알파벳 이동값과 더하여 주면된다.\nSource code public int solution(String name) { int answer = 0; int nameLength = name.length(); int changeAlpabatCount = 0; for (int i = 0; i  nameLength; i++) { // 알파벳 변경 시 최소값 선정 후 화살표 위아래 변경 횟수 추가  changeAlpabatCount += Math.min(name.charAt(i) - 'A', 'Z' - name.charAt(i) + 1); } // 알파벳의 정방향 최대 이동거리를 최소거리로 지정  int minMove = nameLength - 1; for (int i = 0; i  nameLength; i++) { int next = i + 1; int nextCountA = 0; while (next  nameLength \u0026\u0026 name.charAt(next) == 'A') { next++; nextCountA++; } // 0번쨰 인덱스에서 앞의 A를 제외하고 이동한 거리  int moveWithoutA = name.length() - nextCountA - 1; // System.out.println(\"movewithA:\" + moveWithoutA);  // 처음부터 i번째 까지 왔다가 돌아가는 방식과 뒤에서 출발하여 i번째 까지 오는 방식중 작은 값 선택  int min = Math.min(i, name.length() - next); // 알파벳을 순회하며 작은 값을 선택  minMove = Math.min(minMove, moveWithoutA + min); // System.out.println(i + \"번째값의 평균 이동 거리는 \" + (moveWithoutA + min) + \"이다.\");  } // System.out.println(\"총 알파벳 변경 회수는 \" + changeAlpabatCount + \"이며, 최소이동 거리는 \" + minMove + \"이다.\");  answer = (changeAlpabatCount + minMove); return answer; } ","wordCount":"411","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-10-24T22:41:45+09:00","dateModified":"2021-10-24T22:41:45+09:00","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/algorithms/level2/03-joystick/"},"publisher":{"@type":"Organization","name":"Devlog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[프로그래머스_⭐⭐] 조이스틱","name":"[프로그래머스_⭐⭐] 조이스틱","description":"조이스틱 문제 설명 조이스틱으로 알파벳 이름을 완성하세요. 맨 처음엔 A로만 이루어져 있습니다.\nex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA\n조이스틱을 각 방향으로 움직이면 아래와 같습니다.\n▲ - 다음 알파벳 ▼ - 이전 알파벳 (A에서 아래쪽으로 이동하면 Z로) ◀ - 커서를 왼쪽으로 이동 (첫 번째 위치에서 왼쪽으로 이동하면 마지막 문자에 커서) ▶ - 커서를 오른쪽으로 이동 예를 들어 아래의 방법으로 \u0026ldquo;JAZ\u0026quot;를 만들 수 있습니다.\n- 첫 번째 위치에서 조이스틱을 위로 9번 조작하여 J를 완성합니다.","keywords":["",""],"articleBody":"조이스틱 문제 설명 조이스틱으로 알파벳 이름을 완성하세요. 맨 처음엔 A로만 이루어져 있습니다.\nex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA\n조이스틱을 각 방향으로 움직이면 아래와 같습니다.\n▲ - 다음 알파벳 ▼ - 이전 알파벳 (A에서 아래쪽으로 이동하면 Z로) ◀ - 커서를 왼쪽으로 이동 (첫 번째 위치에서 왼쪽으로 이동하면 마지막 문자에 커서) ▶ - 커서를 오른쪽으로 이동 예를 들어 아래의 방법으로 “JAZ\"를 만들 수 있습니다.\n- 첫 번째 위치에서 조이스틱을 위로 9번 조작하여 J를 완성합니다. - 조이스틱을 왼쪽으로 1번 조작하여 커서를 마지막 문자 위치로 이동시킵니다. - 마지막 위치에서 조이스틱을 아래로 1번 조작하여 Z를 완성합니다. 따라서 11번 이동시켜 \"JAZ\"를 만들 수 있고, 이때가 최소 이동입니다. 만들고자 하는 이름 name이 매개변수로 주어질 때, 이름에 대해 조이스틱 조작 횟수의 최솟값을 return 하도록 solution 함수를 만드세요.\n제한 사항  name은 알파벳 대문자로만 이루어져 있습니다. name의 길이는 1 이상 20 이하입니다.  입출력 예    name return     “JEROEN” 56   “JAN” 23    출처 ※ 공지 - 2019년 2월 28일 테스트케이스가 추가되었습니다.\n문제 풀이 리뷰 몇일을 고민한 문제이다. 알파벳 위아래의 최소값은 간단히 구하였지만, 좌우의 최소거리를 찾는 부분에서 생각을 많이하였다.\n기본적으로 모든 알파벳 위치에서의 최소거리를 구하고, 바로앞의 A가 있다면 해당 값을 제외한 뒤에 거리를 정의해야한다.\n또한, 해당 인덱스의 위치에서 정방향과 역방향에서 둘 중의 거리가 짧은 곳을 구한 뒤 바로앞의 A를 제외한 총이동거리를 더하는 부분이 중요하다.\n그렇게 모든 알파벳의 좌우 이동 최소거리 중 가장작은 값을 상하 알파벳 이동값과 더하여 주면된다.\nSource code public int solution(String name) { int answer = 0; int nameLength = name.length(); int changeAlpabatCount = 0; for (int i = 0; i  nameLength; i++) { // 알파벳 변경 시 최소값 선정 후 화살표 위아래 변경 횟수 추가  changeAlpabatCount += Math.min(name.charAt(i) - 'A', 'Z' - name.charAt(i) + 1); } // 알파벳의 정방향 최대 이동거리를 최소거리로 지정  int minMove = nameLength - 1; for (int i = 0; i  nameLength; i++) { int next = i + 1; int nextCountA = 0; while (next  nameLength \u0026\u0026 name.charAt(next) == 'A') { next++; nextCountA++; } // 0번쨰 인덱스에서 앞의 A를 제외하고 이동한 거리  int moveWithoutA = name.length() - nextCountA - 1; // System.out.println(\"movewithA:\" + moveWithoutA);  // 처음부터 i번째 까지 왔다가 돌아가는 방식과 뒤에서 출발하여 i번째 까지 오는 방식중 작은 값 선택  int min = Math.min(i, name.length() - next); // 알파벳을 순회하며 작은 값을 선택  minMove = Math.min(minMove, moveWithoutA + min); // System.out.println(i + \"번째값의 평균 이동 거리는 \" + (moveWithoutA + min) + \"이다.\");  } // System.out.println(\"총 알파벳 변경 회수는 \" + changeAlpabatCount + \"이며, 최소이동 거리는 \" + minMove + \"이다.\");  answer = (changeAlpabatCount + minMove); return answer; } ","wordCount":"411","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-10-24T22:41:45+09:00","dateModified":"2021-10-24T22:41:45+09:00","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/algorithms/level2/03-joystick/"},"publisher":{"@type":"Organization","name":"Devlog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
 </head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-<noscript>
-<style type=text/css>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
@@ -98,7 +96,7 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 </header> <div class=toc>
 <details>
 <summary accesskey=c title="(Alt + C)">
-<div class=details>Table of Contents</div>
+<span class=details>Table of Contents</span>
 </summary>
 <div class=inner><ul>
 <li>
@@ -215,6 +213,7 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA</p>
 <ul class=post-tags>
 </ul>
 </footer><script src=https://utteranc.es/client.js repo=haservi/haservi.github.io issue-term=pathname theme=photon-dark crossorigin=anonymous async></script>
+<script>localStorage.getItem("pref-theme")==="dark"?console.log("dark"):localStorage.getItem("pref-theme")==="light"&&console.log("light")</script>
 </article>
 </main>
 <footer class=footer>
@@ -225,9 +224,7 @@ Powered by
         <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
 </span>
 </footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
-<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</button>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a>
 <script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>

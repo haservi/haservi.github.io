@@ -14,17 +14,19 @@
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
-<link crossorigin=anonymous href=/assets/css/stylesheet.min.d65a04146ee3b627e01a637af2aaae9726d86f48e50e954d8104a1787c02a067.css integrity="sha256-1loEFG7jtifgGmN68qqulybYb0jlDpVNgQSheHwCoGc=" rel="preload stylesheet" as=style>
-<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=apple-touch-icon href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
-<link rel=mask-icon href=https://haservi.github.io/%3Clink%20/%20abs%20url%3E>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.css rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.js onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://haservi.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://haservi.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.87.0">
-<meta property="og:title" content="[프로그래머스_⭐] 하샤드 수">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+</noscript><meta property="og:title" content="[프로그래머스_⭐] 하샤드 수">
 <meta property="og:description" content="하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.
 예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.
 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
@@ -42,14 +44,10 @@
 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
 제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"[프로그래머스_⭐] 하샤드 수","item":"https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[프로그래머스_⭐] 하샤드 수","name":"[프로그래머스_⭐] 하샤드 수","description":"하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.\n예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.\n자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.\n제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1","keywords":["",""],"articleBody":"하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.\n예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.\n자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.\n제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1\n10의 모든 자릿수의 합은 1입니다. 10은 1로 나누어 떨어지므로 10은 하샤드 수입니다.\n입출력 예 #2\n12의 모든 자릿수의 합은 3입니다. 12는 3으로 나누어 떨어지므로 12는 하샤드 수입니다.\n입출력 예 #3\n11의 모든 자릿수의 합은 2입니다. 11은 2로 나누어 떨어지지 않으므로 11는 하샤드 수가 아닙니다.\n입출력 예 #4\n13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.\n문제 풀이 리뷰  [Java](https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java   각 자리수의 합을 구한 뒤 나머지가 0인 경우 true를 반환한다.  나의 풀이(Source code) public boolean solution(int x) { int sum = 0; int num = x; // 자릿수의 합  while (num != 0) { sum += num % 10; num /= 10; } // 나머지가 0이면 하샤드 수라고 판단  if (x % sum == 0) return true; else return false; } ","wordCount":"191","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-09-07T11:55:29+09:00","dateModified":"2021-09-07T11:55:29+09:00","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/"},"publisher":{"@type":"Organization","name":"Devlog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[프로그래머스_⭐] 하샤드 수","name":"[프로그래머스_⭐] 하샤드 수","description":"하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.\n예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.\n자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.\n제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1","keywords":["",""],"articleBody":"하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.\n예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.\n자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.\n제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1\n10의 모든 자릿수의 합은 1입니다. 10은 1로 나누어 떨어지므로 10은 하샤드 수입니다.\n입출력 예 #2\n12의 모든 자릿수의 합은 3입니다. 12는 3으로 나누어 떨어지므로 12는 하샤드 수입니다.\n입출력 예 #3\n11의 모든 자릿수의 합은 2입니다. 11은 2로 나누어 떨어지지 않으므로 11는 하샤드 수가 아닙니다.\n입출력 예 #4\n13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.\n문제 풀이 리뷰  [Java](https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java   각 자리수의 합을 구한 뒤 나머지가 0인 경우 true를 반환한다.  나의 풀이(Source code) public boolean solution(int x) { int sum = 0; int num = x; // 자릿수의 합  while (num != 0) { sum += num % 10; num /= 10; } // 나머지가 0이면 하샤드 수라고 판단  if (x % sum == 0) return true; else return false; } ","wordCount":"191","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-09-07T11:55:29+09:00","dateModified":"2021-09-07T11:55:29+09:00","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/"},"publisher":{"@type":"Organization","name":"Devlog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
 </head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-<noscript>
-<style type=text/css>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
@@ -95,7 +93,7 @@
 </header> <div class=toc>
 <details>
 <summary accesskey=c title="(Alt + C)">
-<div class=details>Table of Contents</div>
+<span class=details>Table of Contents</span>
 </summary>
 <div class=inner><ul>
 <li>
@@ -195,6 +193,7 @@
 <ul class=post-tags>
 </ul>
 </footer><script src=https://utteranc.es/client.js repo=haservi/haservi.github.io issue-term=pathname theme=photon-dark crossorigin=anonymous async></script>
+<script>localStorage.getItem("pref-theme")==="dark"?console.log("dark"):localStorage.getItem("pref-theme")==="light"&&console.log("light")</script>
 </article>
 </main>
 <footer class=footer>
@@ -205,9 +204,7 @@ Powered by
         <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
 </span>
 </footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
-<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</button>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a>
 <script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
