@@ -260,8 +260,10 @@
 <footer class=post-footer>
 <ul class=post-tags>
 </ul>
-</footer><script src=https://utteranc.es/client.js repo=haservi/haservi.github.io issue-term=pathname theme=photon-dark crossorigin=anonymous async></script>
-<script>localStorage.getItem("pref-theme")==="dark"?console.log("dark"):localStorage.getItem("pref-theme")==="light"&&console.log("light")</script>
+</footer>
+<section class=comments>
+<script>loadComment();function loadComment(){document.body.className.includes("dark")?theme='photon-dark':theme='boxy-light';let a=document.createElement('script');a.src='https://utteranc.es/client.js',a.setAttribute('repo','haservi/haservi.github.io'),a.setAttribute('issue-term','pathname'),a.setAttribute('theme',theme),a.setAttribute('crossorigin','anonymous'),a.setAttribute('async',''),document.querySelector('section.comments').innerHTML='',document.querySelector('section.comments').appendChild(a)}</script>
+</section>
 </article>
 </main>
 <footer class=footer>
@@ -276,7 +278,7 @@ Powered by
 </a>
 <script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark')),loadComment()})</script>
 <script>document.querySelectorAll('pre > code').forEach(b=>{const c=b.parentNode.parentNode,a=document.createElement('button');a.classList.add('copy-code'),a.innerText='copy';function d(){a.innerText='copied!',setTimeout(()=>{a.innerText='copy'},2e3)}a.addEventListener('click',e=>{if('clipboard'in navigator){navigator.clipboard.writeText(b.textContent),d();return}const a=document.createRange();a.selectNodeContents(b);const c=window.getSelection();c.removeAllRanges(),c.addRange(a);try{document.execCommand('copy'),d()}catch(a){}c.removeRange(a)}),c.classList.contains("highlight")?c.appendChild(a):c.parentNode.firstChild==c||(b.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?b.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(a):b.parentNode.appendChild(a))})</script>
 </body>
 </html>
