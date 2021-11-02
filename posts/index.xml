@@ -11,7 +11,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 24 Oct 2021 22:41:45 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[프로그래머스_⭐⭐] 조이스틱</title>
+      <title>조이스틱</title>
       <link>https://haservi.github.io/posts/algorithms/level2/03-joystick/</link>
       <pubDate>Sun, 24 Oct 2021 22:41:45 +0900</pubDate>
       
@@ -96,7 +96,7 @@ Level1을 마무리하고 이제 Level2의 문제를 풀고 있다.
     </item>
     
     <item>
-      <title>[프로그래머스_⭐] 비밀지도</title>
+      <title>비밀지도</title>
       <link>https://haservi.github.io/posts/algorithms/level1/01-algo-secret-map/</link>
       <pubDate>Fri, 20 Aug 2021 01:31:31 +0900</pubDate>
       
