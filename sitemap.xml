@@ -2,47 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://haservi.github.io/posts/algorithms/level2/03-joystick/</loc>
+    <loc>https://haservi.github.io/posts/spring/jpa/hibernate-ddl-auto/</loc>
+    <lastmod>2021-11-12T15:47:31+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/linux/used-zsh-powerline10/</loc>
+    <lastmod>2021-11-08T20:49:25+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/spring/service-and-serviceimp/</loc>
+    <lastmod>2021-11-05T20:11:56+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/algorithms/programmers/level2/03-joystick/</loc>
     <lastmod>2021-10-24T22:41:45+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/algorithms/level2/02-truck-crossing-the-bridge/</loc>
+    <loc>https://haservi.github.io/posts/algorithms/programmers/level2/02-truck-crossing-the-bridge/</loc>
     <lastmod>2021-09-27T15:17:54+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/2021/09/15/</loc>
+    <loc>https://haservi.github.io/posts/algorithms/programmers/review/clear-level1/</loc>
     <lastmod>2021-09-15T00:41:29+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/algorithms/level2/01-camouflage/</loc>
+    <loc>https://haservi.github.io/posts/algorithms/programmers/level2/01-camouflage/</loc>
     <lastmod>2021-09-15T00:28:00+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/</loc>
+    <loc>https://haservi.github.io/posts/algorithms/programmers/level1/04-algo-hasshadsu/</loc>
     <lastmod>2021-09-07T11:55:29+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/algorithms/level1/03-algo-colatz-guess/</loc>
+    <loc>https://haservi.github.io/posts/algorithms/programmers/level1/03-algo-colatz-guess/</loc>
     <lastmod>2021-09-06T21:01:13+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/algorithms/level1/02-algo-recommend-job/</loc>
+    <loc>https://haservi.github.io/posts/algorithms/programmers/level1/02-algo-recommend-job/</loc>
     <lastmod>2021-08-26T20:53:37+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/algorithms/level1/01-algo-secret-map/</loc>
+    <loc>https://haservi.github.io/posts/algorithms/programmers/level1/01-algo-secret-map/</loc>
     <lastmod>2021-08-20T01:31:31+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/2021/08/17/</loc>
+    <loc>https://haservi.github.io/posts/etc/start-blog/</loc>
     <lastmod>2021-08-17T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2021-10-24T22:41:45+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2021-10-24T22:41:45+09:00</lastmod>
+    <lastmod>2021-11-12T15:47:31+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2021-10-24T22:41:45+09:00</lastmod>
+    <lastmod>2021-11-12T15:47:31+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/</loc>
+    <lastmod>2021-11-05T20:11:56+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/spring/</loc>
+    <lastmod>2021-11-05T20:11:56+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/programmers/</loc>
     <lastmod>2021-10-24T22:41:45+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/categories/algorithms/</loc>
-    <lastmod>2021-09-27T15:17:54+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/archives/</loc>
   </url><url>

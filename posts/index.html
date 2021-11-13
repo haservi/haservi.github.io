@@ -72,6 +72,46 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>JPA ddl-auto 설정과 더미데이터 생성 방법
+</h2>
+</header>
+<section class=entry-content>
+<p>ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
+설정 옵션으로
+jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
+create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다....</p>
+</section>
+<footer class=entry-footer>November 12, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to JPA ddl-auto 설정과 더미데이터 생성 방법" href=https://haservi.github.io/posts/spring/jpa/hibernate-ddl-auto/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>윈도우 Store Ubuntu에 Zsh Powerline10 적용하기
+</h2>
+</header>
+<section class=entry-content>
+<p>zsh 설치 Meslo Nerd Font 설치 powerlevel10k 설치 기본 업데이트 기본적으로 ubuntu를 업데이트 한다.
+sudo apt-get install sudo apt-get update zsh 설치 먼저 zsh를 설치합니다.
+sudo apt install zsh 기본 셸로 설정
+sudo chsh -s $(which zsh) 실행 시 zsh를 실행되도록 지정한다.
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" Meslo Nerd Font 설치 해당 폰트를 사용하지 않으면 아이콘 표시가 되지 않는다....</p>
+</section>
+<footer class=entry-footer>November 8, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to 윈도우 Store Ubuntu에 Zsh Powerline10 적용하기" href=https://haservi.github.io/posts/linux/used-zsh-powerline10/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Service and Serviceimp
+</h2>
+</header>
+<section class=entry-content>
+<p>Reference https://www.manty.co.kr/bbs/detail/develop?id=13 https://itzjamie96.github.io/2021/01/24/spring-service-and-serviceimpl/ https://cheese10yun.github.io/spring-oop-04/ https://blog.jiniworld.me/55 </p>
+</section>
+<footer class=entry-footer>November 5, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me</footer>
+<a class=entry-link aria-label="post link to Service and Serviceimp" href=https://haservi.github.io/posts/spring/service-and-serviceimp/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>조이스틱
 </h2>
 </header>
@@ -83,7 +123,7 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 - 첫 번째 위치에서 조이스틱을 위로 9번 조작하여 J를 완성합니다....</p>
 </section>
 <footer class=entry-footer>October 24, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to 조이스틱" href=https://haservi.github.io/posts/algorithms/level2/03-joystick/></a>
+<a class=entry-link aria-label="post link to 조이스틱" href=https://haservi.github.io/posts/algorithms/programmers/level2/03-joystick/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
@@ -98,7 +138,7 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 예를 들어, 트럭 2대가 올라갈 수 있고 무게를 10kg까지 견디는 다리가 있습니다. 무게가 [7, 4, 5, 6]kg인 트럭이 순서대로 최단 시간 안에 다리를 건너려면 다음과 같이 건너야 합니다....</p>
 </section>
 <footer class=entry-footer>September 27, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to 다리를 지나는 트럭" href=https://haservi.github.io/posts/algorithms/level2/02-truck-crossing-the-bridge/></a>
+<a class=entry-link aria-label="post link to 다리를 지나는 트럭" href=https://haservi.github.io/posts/algorithms/programmers/level2/02-truck-crossing-the-bridge/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
@@ -114,7 +154,7 @@ Level1을 마무리하고 이제 Level2의 문제를 풀고 있다.
 알고리즘 문제를 풀며, 꾸준히 기본적인 자료구조와 서적을 통해 기초를 더 쌓아야 할 것 같다....</p>
 </section>
 <footer class=entry-footer>September 15, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to 프로그래머스 Level1 문제풀이 후기" href=https://haservi.github.io/posts/2021/09/15/></a>
+<a class=entry-link aria-label="post link to 프로그래머스 Level1 문제풀이 후기" href=https://haservi.github.io/posts/algorithms/programmers/review/clear-level1/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
@@ -127,47 +167,7 @@ Level1을 마무리하고 이제 Level2의 문제를 풀고 있다.
 종류 이름 얼굴 동그란 안경, 검정 선글라스 상의 파란색 티셔츠 하의 청바지 겉옷 긴 코트 스파이가 가진 의상들이 담긴 2차원 배열 clothes가 주어질 때 서로 다른 옷의 조합의 수를 return 하도록 solution 함수를 작성해주세요....</p>
 </section>
 <footer class=entry-footer>September 15, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to 위장" href=https://haservi.github.io/posts/algorithms/level2/01-camouflage/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>하샤드 수
-</h2>
-</header>
-<section class=entry-content>
-<p>하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.
-예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.
-자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
-제한 조건 x는 1 이상, 10000 이하인 정수입니다. 입출력 예 arr return 10 true 12 true 11 false 13 false 입출력 예 설명 입출력 예 #1...</p>
-</section>
-<footer class=entry-footer>September 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to 하샤드 수" href=https://haservi.github.io/posts/algorithms/level1/04-algo-hasshadsu/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>콜라츠 추측
-</h2>
-</header>
-<section class=entry-content>
-<p>콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.
-1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다. 예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다.
-위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요....</p>
-</section>
-<footer class=entry-footer>September 6, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to 콜라츠 추측" href=https://haservi.github.io/posts/algorithms/level1/03-algo-colatz-guess/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>직업군 추천하기
-</h2>
-</header>
-<section class=entry-content>
-<p>직업군 추천하기 문제 설명 개발자가 사용하는 언어와 언어 선호도를 입력하면 그에 맞는 직업군을 추천해주는 알고리즘을 개발하려고 합니다.
-아래 표는 5개 직업군 별로 많이 사용하는 5개 언어에 직업군 언어 점수를 부여한 표입니다.
-점수 SI CONTENTS HARDWARE PORTAL GAME 5 JAVA JAVASCRIPT C JAVA C++ 4 JAVASCRIPT JAVA C++ JAVASCRIPT C# 3 SQL PYTHON PYTHON PYTHON JAVASCRIPT 2 PYTHON SQL JAVA KOTLIN C 1 C# C++ JAVASCRIPT PHP JAVA 예를 들면, SQL의 SI 직업군 언어 점수는 3점이지만 CONTENTS 직업군 언어 점수는 2점입니다....</p>
-</section>
-<footer class=entry-footer>August 26, 2021&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Me</footer>
-<a class=entry-link aria-label="post link to 직업군 추천하기" href=https://haservi.github.io/posts/algorithms/level1/02-algo-recommend-job/></a>
+<a class=entry-link aria-label="post link to 위장" href=https://haservi.github.io/posts/algorithms/programmers/level2/01-camouflage/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

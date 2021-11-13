@@ -1,0 +1,214 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>하샤드 수 </title>
+<meta name=keywords content=",">
+<meta name=description content="하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.
+예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.
+자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
+제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1">
+<meta name=author content="Me">
+<link rel=canonical href=https://haservi.github.io/posts/algorithms/programmers/level1/04-algo-hasshadsu/>
+<meta name=google-site-verification content="G-MXZP81P04W">
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.css rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.js onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://haservi.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://haservi.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.87.0">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+</noscript><meta property="og:title" content="하샤드 수">
+<meta property="og:description" content="하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.
+예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.
+자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
+제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://haservi.github.io/posts/algorithms/programmers/level1/04-algo-hasshadsu/">
+<meta property="og:image" content="https://haservi.github.io/%3Cimage%20path/url%3E"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-09-07T11:55:29+09:00">
+<meta property="article:modified_time" content="2021-09-07T11:55:29+09:00"><meta property="og:site_name" content="Devlog">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://haservi.github.io/%3Cimage%20path/url%3E">
+<meta name=twitter:title content="하샤드 수">
+<meta name=twitter:description content="하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.
+예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.
+자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
+제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"하샤드 수","item":"https://haservi.github.io/posts/algorithms/programmers/level1/04-algo-hasshadsu/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"하샤드 수","name":"하샤드 수","description":"하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.\n예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.\n자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.\n제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1","keywords":["",""],"articleBody":"하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.\n예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.\n자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.\n제한 조건  x는 1 이상, 10000 이하인 정수입니다.  입출력 예    arr return     10 true   12 true   11 false   13 false    입출력 예 설명 입출력 예 #1\n10의 모든 자릿수의 합은 1입니다. 10은 1로 나누어 떨어지므로 10은 하샤드 수입니다.\n입출력 예 #2\n12의 모든 자릿수의 합은 3입니다. 12는 3으로 나누어 떨어지므로 12는 하샤드 수입니다.\n입출력 예 #3\n11의 모든 자릿수의 합은 2입니다. 11은 2로 나누어 떨어지지 않으므로 11는 하샤드 수가 아닙니다.\n입출력 예 #4\n13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.\n문제 풀이 리뷰  [Java](https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java   각 자리수의 합을 구한 뒤 나머지가 0인 경우 true를 반환한다.  나의 풀이(Source code) public boolean solution(int x) { int sum = 0; int num = x; // 자릿수의 합  while (num != 0) { sum += num % 10; num /= 10; } // 나머지가 0이면 하샤드 수라고 판단  if (x % sum == 0) return true; else return false; } ","wordCount":"191","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-09-07T11:55:29+09:00","dateModified":"2021-09-07T11:55:29+09:00","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/algorithms/programmers/level1/04-algo-hasshadsu/"},"publisher":{"@type":"Organization","name":"Devlog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
+</head>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://haservi.github.io/ accesskey=h title="Devlog (Alt + H)">Devlog</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=https://haservi.github.io/archives/ title=Archive>
+<span>Archive</span>
+</a>
+</li>
+<li>
+<a href=https://haservi.github.io/categories/ title=Categories>
+<span>Categories</span>
+</a>
+</li>
+<li>
+<a href=https://haservi.github.io/tags/ title=Tags>
+<span>Tags</span>
+</a>
+</li>
+<li>
+<a href=https://haservi.github.io/search/ title="Search (Alt + /)" accesskey=/>
+<span>Search</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://haservi.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/posts/>Posts</a></div>
+<h1 class=post-title>
+하샤드 수
+</h1>
+<div class=post-meta>September 7, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/algorithms/programmers/level1/04-algo-hasshadsu/index.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+</div>
+</header> <div class=toc>
+<details>
+<summary accesskey=c title="(Alt + C)">
+<span class=details>Table of Contents</span>
+</summary>
+<div class=inner><ul>
+<li>
+<a href=#%ed%95%98%ec%83%a4%eb%93%9c-%ec%88%98httpsprogrammerscokrlearncourses30lessons12947 aria-label="하샤드 수"><a href=https://programmers.co.kr/learn/courses/30/lessons/12947>하샤드 수</a></a><ul>
+<li>
+<a href=#%eb%ac%b8%ec%a0%9c-%ec%84%a4%eb%aa%85 aria-label="문제 설명">문제 설명</a><ul>
+<li>
+<a href=#%ec%a0%9c%ed%95%9c-%ec%a1%b0%ea%b1%b4 aria-label="제한 조건">제한 조건</a></li>
+<li>
+<a href=#%ec%9e%85%ec%b6%9c%eb%a0%a5-%ec%98%88 aria-label="입출력 예">입출력 예</a></li>
+<li>
+<a href=#%ec%9e%85%ec%b6%9c%eb%a0%a5-%ec%98%88-%ec%84%a4%eb%aa%85 aria-label="입출력 예 설명">입출력 예 설명</a></li></ul>
+</li>
+<li>
+<a href=#%eb%ac%b8%ec%a0%9c-%ed%92%80%ec%9d%b4-%eb%a6%ac%eb%b7%b0 aria-label="문제 풀이 리뷰">문제 풀이 리뷰</a></li>
+<li>
+<a href=#%eb%82%98%ec%9d%98-%ed%92%80%ec%9d%b4source-codehttpsgithubcomhaservistudy-algorithmblobmainprogrammerslevel1lv1_47_ed9598ec83a4eb939c_ec8898solutionjava aria-label="나의 풀이(Source code)">나의 풀이(<a href=https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java>Source code</a>)</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+</div>
+<div class=post-content><h1 id=하샤드-수httpsprogrammerscokrlearncourses30lessons12947><a href=https://programmers.co.kr/learn/courses/30/lessons/12947>하샤드 수</a><a hidden class=anchor aria-hidden=true href=#하샤드-수httpsprogrammerscokrlearncourses30lessons12947>#</a></h1>
+<h2 id=문제-설명>문제 설명<a hidden class=anchor aria-hidden=true href=#문제-설명>#</a></h2>
+<p>양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.<br>
+예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.<br>
+자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.</p>
+<h3 id=제한-조건>제한 조건<a hidden class=anchor aria-hidden=true href=#제한-조건>#</a></h3>
+<ul>
+<li><code>x</code>는 1 이상, 10000 이하인 정수입니다.</li>
+</ul>
+<h3 id=입출력-예>입출력 예<a hidden class=anchor aria-hidden=true href=#입출력-예>#</a></h3>
+<table>
+<thead>
+<tr>
+<th>arr</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>true</td>
+</tr>
+<tr>
+<td>12</td>
+<td>true</td>
+</tr>
+<tr>
+<td>11</td>
+<td>false</td>
+</tr>
+<tr>
+<td>13</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<h3 id=입출력-예-설명>입출력 예 설명<a hidden class=anchor aria-hidden=true href=#입출력-예-설명>#</a></h3>
+<p>입출력 예 #1<br>
+10의 모든 자릿수의 합은 1입니다. 10은 1로 나누어 떨어지므로 10은 하샤드 수입니다.</p>
+<p>입출력 예 #2<br>
+12의 모든 자릿수의 합은 3입니다. 12는 3으로 나누어 떨어지므로 12는 하샤드 수입니다.</p>
+<p>입출력 예 #3<br>
+11의 모든 자릿수의 합은 2입니다. 11은 2로 나누어 떨어지지 않으므로 11는 하샤드 수가 아닙니다.</p>
+<p>입출력 예 #4<br>
+13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.</p>
+<h2 id=문제-풀이-리뷰>문제 풀이 리뷰<a hidden class=anchor aria-hidden=true href=#문제-풀이-리뷰>#</a></h2>
+<ul>
+<li>[Java](<a href=https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java>https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java</a></li>
+</ul>
+<ol>
+<li>각 자리수의 합을 구한 뒤 나머지가 0인 경우 true를 반환한다.</li>
+</ol>
+<h2 id=나의-풀이source-codehttpsgithubcomhaservistudy-algorithmblobmainprogrammerslevel1lv1_47_ed9598ec83a4eb939c_ec8898solutionjava>나의 풀이(<a href=https://github.com/haservi/study-algorithm/blob/main/programmers/Level1/lv1_47_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/Solution.java>Source code</a>)<a hidden class=anchor aria-hidden=true href=#나의-풀이source-codehttpsgithubcomhaservistudy-algorithmblobmainprogrammerslevel1lv1_47_ed9598ec83a4eb939c_ec8898solutionjava>#</a></h2>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=kd>public</span> <span class=kt>boolean</span> <span class=nf>solution</span><span class=o>(</span><span class=kt>int</span> <span class=n>x</span><span class=o>)</span> <span class=o>{</span>
+  <span class=kt>int</span> <span class=n>sum</span> <span class=o>=</span> <span class=n>0</span><span class=o>;</span>
+  <span class=kt>int</span> <span class=n>num</span> <span class=o>=</span> <span class=n>x</span><span class=o>;</span>
+
+  <span class=c1>// 자릿수의 합
+</span><span class=c1></span>  <span class=k>while</span> <span class=o>(</span><span class=n>num</span> <span class=o>!=</span> <span class=n>0</span><span class=o>)</span> <span class=o>{</span>
+    <span class=n>sum</span> <span class=o>+=</span> <span class=n>num</span> <span class=o>%</span> <span class=n>10</span><span class=o>;</span>
+    <span class=n>num</span> <span class=o>/=</span> <span class=n>10</span><span class=o>;</span>
+  <span class=o>}</span>
+
+  <span class=c1>// 나머지가 0이면 하샤드 수라고 판단
+</span><span class=c1></span>  <span class=k>if</span> <span class=o>(</span><span class=n>x</span> <span class=o>%</span> <span class=n>sum</span> <span class=o>==</span> <span class=n>0</span><span class=o>)</span>
+    <span class=k>return</span> <span class=kc>true</span><span class=o>;</span>
+  <span class=k>else</span>
+    <span class=k>return</span> <span class=kc>false</span><span class=o>;</span>
+<span class=o>}</span>
+</code></pre></div>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+</ul>
+</footer>
+<section class=comments>
+<script>loadComment();function loadComment(){document.body.className.includes("dark")?theme='photon-dark':theme='boxy-light';let a=document.createElement('script');a.src='https://utteranc.es/client.js',a.setAttribute('repo','haservi/haservi.github.io'),a.setAttribute('issue-term','pathname'),a.setAttribute('theme',theme),a.setAttribute('crossorigin','anonymous'),a.setAttribute('async',''),document.querySelector('section.comments').innerHTML='',document.querySelector('section.comments').appendChild(a)}</script>
+</section>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2021 <a href=https://haservi.github.io/>Devlog</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark')),loadComment()})</script>
+<script>document.querySelectorAll('pre > code').forEach(b=>{const c=b.parentNode.parentNode,a=document.createElement('button');a.classList.add('copy-code'),a.innerText='copy';function d(){a.innerText='copied!',setTimeout(()=>{a.innerText='copy'},2e3)}a.addEventListener('click',e=>{if('clipboard'in navigator){navigator.clipboard.writeText(b.textContent),d();return}const a=document.createRange();a.selectNodeContents(b);const c=window.getSelection();c.removeAllRanges(),c.addRange(a);try{document.execCommand('copy'),d()}catch(a){}c.removeRange(a)}),c.classList.contains("highlight")?c.appendChild(a):c.parentNode.firstChild==c||(b.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?b.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(a):b.parentNode.appendChild(a))})</script>
+</body>
+</html>
