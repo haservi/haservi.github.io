@@ -23,28 +23,6 @@ jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 
     </item>
     
     <item>
-      <title>윈도우 Store Ubuntu에 Zsh Powerline10 적용하기</title>
-      <link>https://haservi.github.io/posts/linux/used-zsh-powerline10/</link>
-      <pubDate>Mon, 08 Nov 2021 20:49:25 +0900</pubDate>
-      
-      <guid>https://haservi.github.io/posts/linux/used-zsh-powerline10/</guid>
-      <description>zsh 설치 Meslo Nerd Font 설치 powerlevel10k 설치  기본 업데이트   기본적으로 ubuntu를 업데이트 한다.
-sudo apt-get install sudo apt-get update   zsh 설치   먼저 zsh를 설치합니다.
-sudo apt install zsh   기본 셸로 설정
-sudo chsh -s $(which zsh)   실행 시 zsh를 실행되도록 지정한다.
-sh -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;   Meslo Nerd Font 설치   해당 폰트를 사용하지 않으면 아이콘 표시가 되지 않는다.</description>
-    </item>
-    
-    <item>
-      <title>Service and Serviceimp</title>
-      <link>https://haservi.github.io/posts/spring/service-and-serviceimp/</link>
-      <pubDate>Fri, 05 Nov 2021 20:11:56 +0900</pubDate>
-      
-      <guid>https://haservi.github.io/posts/spring/service-and-serviceimp/</guid>
-      <description>Reference  https://www.manty.co.kr/bbs/detail/develop?id=13 https://itzjamie96.github.io/2021/01/24/spring-service-and-serviceimpl/ https://cheese10yun.github.io/spring-oop-04/ https://blog.jiniworld.me/55  </description>
-    </item>
-    
-    <item>
       <title>조이스틱</title>
       <link>https://haservi.github.io/posts/algorithms/programmers/level2/03-joystick/</link>
       <pubDate>Sun, 24 Oct 2021 22:41:45 +0900</pubDate>
