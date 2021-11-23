@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dev Tools on Halog</title>
+    <link>https://haservi.github.io/categories/dev-tools/</link>
+    <description>Recent content in Dev Tools on Halog</description>
+    <image>
+      <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 07 Nov 2021 23:57:42 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/dev-tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gif로 영상 만들기</title>
+      <link>https://haservi.github.io/posts/tools/how-to-create-gif/</link>
+      <pubDate>Sun, 07 Nov 2021 23:57:42 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tools/how-to-create-gif/</guid>
+      <description>들어가며 어떠한 물건에 대해 설명할 때 말보다 해당 물건을 보여주면 훨씬 빠른 이해가 될 수 있으며, 어느 정도 큰 흥미도 생기게 됩니다.
+종종 어떤 블로그분들을 보면 gif로 구현 방법을 설명해주는데 처음에는 영상을 찍고, 해당 영상을 웹에서 변환하는 작업을 거치는 줄(물론 이렇게도 가능합니다.) 알았는데 훨씬 간편한 방법이 있어 공유 차원에 글을 적습니다.
+저의 경우 Window 환경에서 작업하기 때문에 Window로 설치하는 방법에 대해 알아보겠습니다.
+맥의 경우 아래 참조 블로그 링크를 이용하시면 해결할 수 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

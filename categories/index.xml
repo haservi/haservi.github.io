@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Categories on Devlog</title>
+    <title>Categories on Halog</title>
     <link>https://haservi.github.io/categories/</link>
-    <description>Recent content in Categories on Devlog</description>
+    <description>Recent content in Categories on Halog</description>
     <image>
       <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 24 Oct 2021 22:41:45 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Nov 2021 15:47:31 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring JPA</title>
+      <link>https://haservi.github.io/categories/spring-jpa/</link>
+      <pubDate>Fri, 12 Nov 2021 15:47:31 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/categories/spring-jpa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev Tools</title>
+      <link>https://haservi.github.io/categories/dev-tools/</link>
+      <pubDate>Sun, 07 Nov 2021 23:57:42 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/categories/dev-tools/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>programmers</title>
       <link>https://haservi.github.io/categories/programmers/</link>

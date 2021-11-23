@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Devlog</title>
+    <title>Posts on Halog</title>
     <link>https://haservi.github.io/posts/</link>
-    <description>Recent content in Posts on Devlog</description>
+    <description>Recent content in Posts on Halog</description>
     <image>
       <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
@@ -20,6 +20,18 @@
 설정 옵션으로
 jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
  create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함  실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>Gif로 영상 만들기</title>
+      <link>https://haservi.github.io/posts/tools/how-to-create-gif/</link>
+      <pubDate>Sun, 07 Nov 2021 23:57:42 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tools/how-to-create-gif/</guid>
+      <description>들어가며 어떠한 물건에 대해 설명할 때 말보다 해당 물건을 보여주면 훨씬 빠른 이해가 될 수 있으며, 어느 정도 큰 흥미도 생기게 됩니다.
+종종 어떤 블로그분들을 보면 gif로 구현 방법을 설명해주는데 처음에는 영상을 찍고, 해당 영상을 웹에서 변환하는 작업을 거치는 줄(물론 이렇게도 가능합니다.) 알았는데 훨씬 간편한 방법이 있어 공유 차원에 글을 적습니다.
+저의 경우 Window 환경에서 작업하기 때문에 Window로 설치하는 방법에 대해 알아보겠습니다.
+맥의 경우 아래 참조 블로그 링크를 이용하시면 해결할 수 있습니다.</description>
     </item>
     
     <item>
@@ -54,12 +66,10 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
       <pubDate>Wed, 15 Sep 2021 00:41:29 +0900</pubDate>
       
       <guid>https://haservi.github.io/posts/algorithms/programmers/review/clear-level1/</guid>
-      <description>목적  하루에 하나씩 알고리즘을 풀어 개인 공부 및 실력 향상을 도모하고자 문제풀이를 하였다.
- Level1 문제 난이도 기초적인 반복문을 이해하고 있으며, 간단한 자료구조를 알고 있으면 문제를 푸는데 큰 지장이 없는 것 같다.
-Level1의 경우 하루에 하나씩 문제를 풀어도 큰 부담이 안됐던 것 같다.
-Level1을 마무리하고 이제 Level2의 문제를 풀고 있다.
-아무래도 Level1 보다는 조금 더 시간이 걸리고 뭔가 기초가 부족하다는 것을 느끼게 됐다.
-알고리즘 문제를 풀며, 꾸준히 기본적인 자료구조와 서적을 통해 기초를 더 쌓아야 할 것 같다.</description>
+      <description>목표  하루에 하나씩 알고리즘을 풀며 개인 공부를 하면 뭐라도 도움이 되겠지.
+ 후기 전체적인 난이도는 기초적인 반복문을 이해하고 있으며, 간단한 자료구조를 알고 있으면 문제를 푸는데 큰 어려움은 없는 것 같습니다. 가끔씩 카카오 관련 코딩테스트가 아무래도 기존 문제보다 난이도가 조금은 더 있었던 것 같았으며, 그 외의 경우 하루에 하나씩 문제를 풀어도 큰 부담이 안됐던 것 같습니다.
+Level1을 마무리하고 이제 Level2의 문제를 풀고 있는데 조금 난이도가 올라간 느낌입니다.
+아무래도 Level1 보다는 조금 더 시간이 걸리고 뭔가 제 기초가 부족하다는 것을 느끼게 됐습니다.</description>
     </item>
     
     <item>
@@ -126,8 +136,11 @@ Level1을 마무리하고 이제 Level2의 문제를 풀고 있다.
       <pubDate>Tue, 17 Aug 2021 21:00:00 +0900</pubDate>
       
       <guid>https://haservi.github.io/posts/etc/start-blog/</guid>
-      <description>개인 공부 목적으로 블로그를 시작하려 한다.
-강의 또는 서적, 알고리즘을 통해 공부한 내용 및 개발 도중 삽질 관련 경험을 기억하고 공유하기 위한 블로그이다.</description>
+      <description>블로그 시작하기 최근 기억하는 것보다 잊혀져가는 것이 많아져 공부한 내용을 기록하기 위해 블로그를 다시 써보려 합니다.
+이전에 티스토리에서 블로그를 했었는데 뭐랄까.. github에서 하는게 좀 더 관리하기가 편할 것 같아 이사하게 됐습니다. :D
+주로 공부한 내용 또는 삽질 그리고 개발하면서 도움되는 팁에 대한 내용이 주를 이룰 것이라 생각합니다.
+테마 선정 gihtub.io 안에서도 Gatsby, Jekyll, Hexo, Hugo와 같은 여러 테마가 있으며 이 중 Hugo를 사용하고 있습니다.
+해당 블로그 테마는 PaperMod를 기본으로 하였으며, 조금 커스텀하여 사용중입니다.</description>
     </item>
     
   </channel>
