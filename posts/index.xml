@@ -9,7 +9,19 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 12 Nov 2021 15:47:31 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2021 20:49:25 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>윈도우 WSL2 Ubuntu 터미널 꾸미기</title>
+      <link>https://haservi.github.io/posts/linux/used-zsh-powerline10/</link>
+      <pubDate>Mon, 22 Nov 2021 20:49:25 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/linux/used-zsh-powerline10/</guid>
+      <description>Windows WSL Ubuntu 커스텀 하기 Window에서는 WSL(Windows Subsystem for Linux)를 제공합니다.
+예전엔 가상환경(VM)에 리눅스를 올렸다면 지금은 손쉽게 리눅스 커널을 WSL로 접근할 수 있게 됐습니다.
+그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.
+해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다.</description>
+    </item>
+    
     <item>
       <title>JPA ddl-auto 설정과 더미데이터 생성 방법</title>
       <link>https://haservi.github.io/posts/spring/jpa/hibernate-ddl-auto/</link>
@@ -35,7 +47,7 @@ jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 
     </item>
     
     <item>
-      <title>조이스틱</title>
+      <title>[프로그래머스]조이스틱</title>
       <link>https://haservi.github.io/posts/algorithms/programmers/level2/03-joystick/</link>
       <pubDate>Sun, 24 Oct 2021 22:41:45 +0900</pubDate>
       
@@ -48,7 +60,7 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
     </item>
     
     <item>
-      <title>다리를 지나는 트럭</title>
+      <title>[프로그래머스]다리를 지나는 트럭</title>
       <link>https://haservi.github.io/posts/algorithms/programmers/level2/02-truck-crossing-the-bridge/</link>
       <pubDate>Mon, 27 Sep 2021 15:17:54 +0900</pubDate>
       
@@ -73,7 +85,7 @@ Level1을 마무리하고 이제 Level2의 문제를 풀고 있는데 조금 난
     </item>
     
     <item>
-      <title>위장</title>
+      <title>[프로그래머스]위장</title>
       <link>https://haservi.github.io/posts/algorithms/programmers/level2/01-camouflage/</link>
       <pubDate>Wed, 15 Sep 2021 00:28:00 +0900</pubDate>
       
@@ -84,7 +96,7 @@ Level1을 마무리하고 이제 Level2의 문제를 풀고 있는데 조금 난
     </item>
     
     <item>
-      <title>하샤드 수</title>
+      <title>[프로그래머스]하샤드 수</title>
       <link>https://haservi.github.io/posts/algorithms/programmers/level1/04-algo-hasshadsu/</link>
       <pubDate>Tue, 07 Sep 2021 11:55:29 +0900</pubDate>
       
@@ -96,7 +108,7 @@ Level1을 마무리하고 이제 Level2의 문제를 풀고 있는데 조금 난
     </item>
     
     <item>
-      <title>콜라츠 추측</title>
+      <title>[프로그래머스]콜라츠 추측</title>
       <link>https://haservi.github.io/posts/algorithms/programmers/level1/03-algo-colatz-guess/</link>
       <pubDate>Mon, 06 Sep 2021 21:01:13 +0900</pubDate>
       
@@ -107,7 +119,7 @@ Level1을 마무리하고 이제 Level2의 문제를 풀고 있는데 조금 난
     </item>
     
     <item>
-      <title>직업군 추천하기</title>
+      <title>[프로그래머스]직업군 추천하기</title>
       <link>https://haservi.github.io/posts/algorithms/programmers/level1/02-algo-recommend-job/</link>
       <pubDate>Thu, 26 Aug 2021 20:53:37 +0900</pubDate>
       
@@ -118,7 +130,7 @@ Level1을 마무리하고 이제 Level2의 문제를 풀고 있는데 조금 난
     </item>
     
     <item>
-      <title>비밀지도</title>
+      <title>[프로그래머스]비밀지도</title>
       <link>https://haservi.github.io/posts/algorithms/programmers/level1/01-algo-secret-map/</link>
       <pubDate>Fri, 20 Aug 2021 01:31:31 +0900</pubDate>
       

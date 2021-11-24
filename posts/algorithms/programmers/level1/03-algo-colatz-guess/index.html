@@ -3,7 +3,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>콜라츠 추측 </title>
+<title>[프로그래머스]콜라츠 추측 </title>
 <meta name=keywords content=",">
 <meta name=description content="콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.
 1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다. 예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다.
@@ -26,7 +26,7 @@
 </noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RP5NDCM8J9"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-RP5NDCM8J9',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="콜라츠 추측">
+<meta property="og:title" content="[프로그래머스]콜라츠 추측">
 <meta property="og:description" content="콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.
 1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다. 예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다.
 위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요.">
@@ -37,12 +37,12 @@
 <meta property="article:modified_time" content="2021-09-06T21:01:13+09:00"><meta property="og:site_name" content="Halog">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://haservi.github.io/%3Cimage%20path/url%3E">
-<meta name=twitter:title content="콜라츠 추측">
+<meta name=twitter:title content="[프로그래머스]콜라츠 추측">
 <meta name=twitter:description content="콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.
 1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다. 예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다.
 위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"콜라츠 추측","item":"https://haservi.github.io/posts/algorithms/programmers/level1/03-algo-colatz-guess/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"콜라츠 추측","name":"콜라츠 추측","description":"콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.\n1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다. 예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다.\n위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요.","keywords":["",""],"articleBody":"콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.\n1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다. 예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다.\n위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요.\n단, 작업을 500번을 반복해도 1이 되지 않는다면 –1을 반환해 주세요.\n제한 사항  입력된 수, num은 1 이상 8000000 미만인 정수입니다.  입출력 예    n result     6 8   16 4   626331 -1    입출력 예 설명 입출력 예 #1\n문제의 설명과 같습니다.\n입출력 예 #2\n16 - 8 - 4 - 2 - 1 이되어 총 4번만에 1이 됩니다.\n입출력 예 #3\n626331은 500번을 시도해도 1이 되지 못하므로 -1을 리턴해야합니다.\n문제 풀이 문제 풀이 리뷰  반복적으로 돌면서 짝수이면 2로 나누고 홀수이면 해당값에 3을 곱한 후 1을 더해준다. 해당 반복이 500회가 되면 -1을 리턴한다.  Java (Source code) public int solution(long num) { int answer = 0; while (num != 1) { if (num % 2 == 0) { num = num / 2; } else { num = (num * 3) + 1; } answer++; if (answer == 500) { return -1; } } return answer; } ","wordCount":"218","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-09-06T21:01:13+09:00","dateModified":"2021-09-06T21:01:13+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/algorithms/programmers/level1/03-algo-colatz-guess/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"[프로그래머스]콜라츠 추측","item":"https://haservi.github.io/posts/algorithms/programmers/level1/03-algo-colatz-guess/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"[프로그래머스]콜라츠 추측","name":"[프로그래머스]콜라츠 추측","description":"콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.\n1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다. 예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다.\n위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요.","keywords":["",""],"articleBody":"콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.\n1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다. 예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다.\n위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요.\n단, 작업을 500번을 반복해도 1이 되지 않는다면 –1을 반환해 주세요.\n제한 사항  입력된 수, num은 1 이상 8000000 미만인 정수입니다.  입출력 예    n result     6 8   16 4   626331 -1    입출력 예 설명 입출력 예 #1\n문제의 설명과 같습니다.\n입출력 예 #2\n16 - 8 - 4 - 2 - 1 이되어 총 4번만에 1이 됩니다.\n입출력 예 #3\n626331은 500번을 시도해도 1이 되지 못하므로 -1을 리턴해야합니다.\n문제 풀이 문제 풀이 리뷰  반복적으로 돌면서 짝수이면 2로 나누고 홀수이면 해당값에 3을 곱한 후 1을 더해준다. 해당 반복이 500회가 되면 -1을 리턴한다.  Java (Source code) public int solution(long num) { int answer = 0; while (num != 1) { if (num % 2 == 0) { num = num / 2; } else { num = (num * 3) + 1; } answer++; if (answer == 500) { return -1; } } return answer; } ","wordCount":"218","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-09-06T21:01:13+09:00","dateModified":"2021-09-06T21:01:13+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/algorithms/programmers/level1/03-algo-colatz-guess/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -84,7 +84,7 @@
 <header class=post-header>
 <div class=breadcrumbs><a href=https://haservi.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/posts/>Posts</a></div>
 <h1 class=post-title>
-콜라츠 추측
+[프로그래머스]콜라츠 추측
 </h1>
 <div class=post-meta>September 6, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop
 </div>
