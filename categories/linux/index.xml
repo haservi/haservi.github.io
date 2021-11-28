@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>linux on Halog</title>
+    <link>https://haservi.github.io/categories/linux/</link>
+    <description>Recent content in linux on Halog</description>
+    <image>
+      <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 22 Nov 2021 20:49:25 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>윈도우 WSL2 Ubuntu 터미널 꾸미기</title>
+      <link>https://haservi.github.io/posts/linux/used-zsh-powerline10/</link>
+      <pubDate>Mon, 22 Nov 2021 20:49:25 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/linux/used-zsh-powerline10/</guid>
+      <description>Windows WSL Ubuntu 커스텀 하기 Window에서는 WSL(Windows Subsystem for Linux)를 제공합니다.
+예전엔 가상환경(VM)에 리눅스를 올렸다면 지금은 손쉽게 리눅스 커널을 WSL로 접근할 수 있게 됐습니다.
+그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.
+해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다.</description>
+    </item>
+    
+  </channel>
+</rss>
