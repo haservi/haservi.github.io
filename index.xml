@@ -9,7 +9,20 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Nov 2021 21:38:17 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Nov 2021 21:30:06 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github 저장소 안의 폴더 다운로드 받는 방법</title>
+      <link>https://haservi.github.io/posts/tools/how-to-git-inner-folder-download/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:06 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tools/how-to-git-inner-folder-download/</guid>
+      <description>기본적으로 웹상에서는 Git 저장소 안의 폴더를 다운받으려면 해당 저장소 전부를 다운 받은 후에 특정 폴더의 정보를 봐야 합니다.
+간단한 방법은 아래의 링크에서 다운로드 받는게 제일 쉬운방법이지만 터미널에서 다운로드 방법도 한번 다루어보겠습니다. 터미널로 다운 받은 경우 이후 해당 소스가 변경이 있다면 당겨올 수 있는 이점도 있습니다.
+해결방법 웹 다운로드 https://downgit.github.io/#/home 해당 사이트에 github 저장소 특정 폴더의 링크를 복사 한 후 붙여넣고 Download 버튼 클릭
+터미널 다운로드 기본적으로 git이 설치돼 있어야합니다.
+예제로 https://github.</description>
+    </item>
+    
     <item>
       <title>화면 캡쳐 프로그램 추천</title>
       <link>https://haservi.github.io/posts/tools/how-to-capture/</link>
