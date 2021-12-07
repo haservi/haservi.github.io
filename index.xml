@@ -9,7 +9,19 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Nov 2021 21:30:06 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Dec 2021 16:40:29 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>springtoolsuite4에서 dependency 추가 방법</title>
+      <link>https://haservi.github.io/posts/spring/springboot-add-dependency/</link>
+      <pubDate>Thu, 02 Dec 2021 16:40:29 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/spring/springboot-add-dependency/</guid>
+      <description>SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.
+
+별 거 아니지만 maver repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
+아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.</description>
+    </item>
+    
     <item>
       <title>Github 저장소 안의 폴더 다운로드 받는 방법</title>
       <link>https://haservi.github.io/posts/tools/how-to-git-inner-folder-download/</link>
@@ -33,7 +45,7 @@
 캡쳐프로그램은 정말 다양하게 존재하는데요. 예를 들어 알캡쳐, picpic, 윈도우 기본 내장 캡쳐, pureRef, snipaste 등 많이 있습니다.
 저 같은 경우 포스팅 할 때 화면캡쳐 용도로는 picpick을 자주 이용하며, 업무 중 필요한 정보를 캡쳐 할 때는 snipaste를 사용합니다.
 (picpick)[https://picpick.app/ko/]의 경우는 워낙 잘 알려져 있기 때문에 snipaste에 대해 알아보겠습니다.
-Snipaste(download link)[https://www.snipaste.com/] Snipaste는 특정 화면을 지정하여 캡쳐하여 화면에 띄워놓을 수 있습니다.</description>
+Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 화면에 띄워놓을 수 있습니다.</description>
     </item>
     
     <item>

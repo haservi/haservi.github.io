@@ -1,0 +1,128 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>springtoolsuite4에서 dependency 추가 방법 </title>
+<meta name=keywords content=",">
+<meta name=description content="SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.
+
+별 거 아니지만 maver repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
+아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.">
+<meta name=author content="Haseop">
+<link rel=canonical href=https://haservi.github.io/posts/spring/springboot-add-dependency/>
+<meta name=google-site-verification content="G-MXZP81P04W">
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.css rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.js onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://haservi.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://haservi.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.87.0">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RP5NDCM8J9"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-RP5NDCM8J9',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="springtoolsuite4에서 dependency 추가 방법">
+<meta property="og:description" content="SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.
+
+별 거 아니지만 maver repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
+아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://haservi.github.io/posts/spring/springboot-add-dependency/">
+<meta property="og:image" content="https://haservi.github.io/%3Cimage%20path/url%3E"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-12-02T16:40:29+09:00">
+<meta property="article:modified_time" content="2021-12-02T16:40:29+09:00"><meta property="og:site_name" content="Halog">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://haservi.github.io/%3Cimage%20path/url%3E">
+<meta name=twitter:title content="springtoolsuite4에서 dependency 추가 방법">
+<meta name=twitter:description content="SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.
+
+별 거 아니지만 maver repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
+아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"springtoolsuite4에서 dependency 추가 방법","item":"https://haservi.github.io/posts/spring/springboot-add-dependency/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"springtoolsuite4에서 dependency 추가 방법","name":"springtoolsuite4에서 dependency 추가 방법","description":"SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.\n\n별 거 아니지만 maver repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.\n아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.","keywords":["",""],"articleBody":"SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.\n\n별 거 아니지만 maver repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.\n아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.\n","wordCount":"53","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-12-02T16:40:29+09:00","dateModified":"2021-12-02T16:40:29+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/spring/springboot-add-dependency/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
+</head>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://haservi.github.io/ accesskey=h title="Halog (Alt + H)">Halog</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=https://haservi.github.io/archives/ title=Archive>
+<span>Archive</span>
+</a>
+</li>
+<li>
+<a href=https://haservi.github.io/categories/ title=Categories>
+<span>Categories</span>
+</a>
+</li>
+<li>
+<a href=https://haservi.github.io/tags/ title=Tags>
+<span>Tags</span>
+</a>
+</li>
+<li>
+<a href=https://haservi.github.io/search/ title="Search (Alt + /)" accesskey=/>
+<span>Search</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://haservi.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/posts/>Posts</a></div>
+<h1 class=post-title>
+springtoolsuite4에서 dependency 추가 방법
+</h1>
+<div class=post-meta>December 2, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop
+</div>
+</header>
+<div class=post-content><p>SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우
+해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository<a href=https://mvnrepository.com/>링크</a>에서
+추가해 줘야 합니다.</p>
+<p><div style=display:flex;justify-content:center>
+<img loading=lazy src=./assets/image01.png alt=image01>
+</div></p>
+<p>별 거 아니지만 maver repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.<br>
+아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.</p>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+</ul>
+</footer>
+<section class=comments>
+<script>loadComment();function loadComment(){document.body.className.includes("dark")?theme='photon-dark':theme='boxy-light';let a=document.createElement('script');a.src='https://utteranc.es/client.js',a.setAttribute('repo','haservi/haservi.github.io'),a.setAttribute('issue-term','pathname'),a.setAttribute('theme',theme),a.setAttribute('crossorigin','anonymous'),a.setAttribute('async',''),document.querySelector('section.comments').innerHTML='',document.querySelector('section.comments').appendChild(a)}</script>
+</section>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2021 <a href=https://haservi.github.io/>Halog</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark')),loadComment()})</script>
+<script>document.querySelectorAll('pre > code').forEach(b=>{const c=b.parentNode.parentNode,a=document.createElement('button');a.classList.add('copy-code'),a.innerText='copy';function d(){a.innerText='copied!',setTimeout(()=>{a.innerText='copy'},2e3)}a.addEventListener('click',e=>{if('clipboard'in navigator){navigator.clipboard.writeText(b.textContent),d();return}const a=document.createRange();a.selectNodeContents(b);const c=window.getSelection();c.removeAllRanges(),c.addRange(a);try{document.execCommand('copy'),d()}catch(a){}c.removeRange(a)}),c.classList.contains("highlight")?c.appendChild(a):c.parentNode.firstChild==c||(b.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?b.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(a):b.parentNode.appendChild(a))})</script>
+</body>
+</html>
