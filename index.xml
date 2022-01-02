@@ -9,7 +9,35 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 02 Dec 2021 16:40:29 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Dec 2021 22:18:20 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Command 사용법 정리</title>
+      <link>https://haservi.github.io/posts/tips/git-frequently-used-commands/</link>
+      <pubDate>Wed, 29 Dec 2021 22:18:20 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/git-frequently-used-commands/</guid>
+      <description>Git Command를 사용하면서 자주 사용하는 명령어를 정리했습니다.
+이외에도 수많은 명령어가 존재하지만 작업과 관련된 명령어는 아래의 경우로 충분하다고 생각합니다.
+해당 명령어 이외에 더 참고하고 싶다면 https://git-scm.com/book/ko/v2 해당 사이트에서 무료로 책을 다운로드 받아서 볼 수 있습니다.
+또한, 요즘은 소스트리(https://www.sourcetreeapp.com/)에서 GUI로 편하게 작업할 수 도 있습니다.
+기본적인 명령어는 숙지하는 것이 좋지만 history나 간단한 업무용으로는 충분하다고 생각합니다.
+기본 명령어   git 설정 보기
+git config --list   사용자 이름 입력
+git config --global user.</description>
+    </item>
+    
+    <item>
+      <title>[Spring] Service와 ServiceImpl에 대해</title>
+      <link>https://haservi.github.io/posts/spring/service-and-serviceimp/</link>
+      <pubDate>Wed, 22 Dec 2021 20:11:56 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/spring/service-and-serviceimp/</guid>
+      <description>Service, ServiceImpl Spring 프로젝트를 하면 종종 관례적으로 Service를 interface로 기능 명세를 한 뒤 ServiceImpl에 기능을 구현하게 되는 Factory Pattern을 사용하게 됩니다.
+interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주고, 협업 시 업무분담도 용이합니다.
+게임으로 예를 들면 스타크래프트에서 모든 유닛의 기본적인 특성 HP, 이동하기를 interface로 기능만 명시하고 각각 분업하여 유닛에 대한 HP나 이동속도를 구현할 수 있습니다.
+하지만 일반적인 Spring 웹프로젝트에서는 Service interface는 1:1 구조인 경우가 많습니다. 만약 확장성을 고려한 1:N의 경우에는 interface로 가는 것이 좋지만 너무 막연한 경우에는 그냥 class로 생성 후 추후 시나리오 변경 또는 로직상 확장성이 필요한 경우 interface로 변경하는 것이 좋다고 생각합니다.</description>
+    </item>
+    
     <item>
       <title>springtoolsuite4에서 dependency 추가 방법</title>
       <link>https://haservi.github.io/posts/spring/springboot-add-dependency/</link>
@@ -18,16 +46,16 @@
       <guid>https://haservi.github.io/posts/spring/springboot-add-dependency/</guid>
       <description>SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.
 
-maver repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
+maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
 아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.</description>
     </item>
     
     <item>
       <title>Github 저장소 안의 폴더 다운로드 받는 방법</title>
-      <link>https://haservi.github.io/posts/tools/how-to-git-inner-folder-download/</link>
+      <link>https://haservi.github.io/posts/tips/git-inner-folder-download/</link>
       <pubDate>Sun, 28 Nov 2021 21:30:06 +0900</pubDate>
       
-      <guid>https://haservi.github.io/posts/tools/how-to-git-inner-folder-download/</guid>
+      <guid>https://haservi.github.io/posts/tips/git-inner-folder-download/</guid>
       <description>기본적으로 웹상에서는 Git 저장소 안의 폴더를 다운받으려면 해당 저장소 전부를 다운 받은 후에 특정 폴더의 정보를 봐야 합니다.
 간단한 방법은 아래의 링크에서 다운로드 받는게 제일 쉬운방법이지만 터미널에서 다운로드 방법도 한번 다루어보겠습니다. 터미널로 다운 받은 경우 이후 해당 소스가 변경이 있다면 당겨올 수 있는 이점도 있습니다.
 해결방법 웹 다운로드 https://downgit.github.io/#/home 해당 사이트에 github 저장소 특정 폴더의 링크를 복사 한 후 붙여넣고 Download 버튼 클릭
