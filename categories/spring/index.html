@@ -83,7 +83,7 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 게임으로 예를 들면 스타크래프트에서 모든 유닛의 기본적인 특성 HP, 이동하기를 interface로 기능만 명시하고 각각 분업하여 유닛에 대한 HP나 이동속도를 구현할 수 있습니다.
 하지만 일반적인 Spring 웹프로젝트에서는 Service interface는 1:1 구조인 경우가 많습니다. 만약 확장성을 고려한 1:N의 경우에는 interface로 가는 것이 좋지만 너무 막연한 경우에는 그냥 class로 생성 후 추후 시나리오 변경 또는 로직상 확장성이 필요한 경우 interface로 변경하는 것이 좋다고 생각합니다....</p>
 </section>
-<footer class=entry-footer>December 22, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-12-22 20:11:56 +0900 +0900">December 22, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to [Spring] Service와 ServiceImpl에 대해" href=https://haservi.github.io/posts/spring/service-and-serviceimp/></a>
 </article>
 <article class="post-entry tag-entry">
@@ -96,7 +96,7 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
 아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.</p>
 </section>
-<footer class=entry-footer>December 2, 2021&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-12-02 16:40:29 +0900 +0900">December 2, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to springtoolsuite4에서 dependency 추가 방법" href=https://haservi.github.io/posts/spring/springboot-add-dependency/></a>
 </article>
 </main>
@@ -110,7 +110,7 @@ Powered by
 </footer>
 <a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a>
-<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
 <script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark')),loadComment()})</script>
 </body>

@@ -83,7 +83,7 @@
 jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
 create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다....</p>
 </section>
-<footer class=entry-footer>November 12, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-11-12 15:47:31 +0900 +0900">November 12, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to JPA ddl-auto 설정과 더미데이터 생성 방법" href=https://haservi.github.io/posts/spring/jpa/hibernate-ddl-auto/></a>
 </article>
 </main>
@@ -97,7 +97,7 @@ Powered by
 </footer>
 <a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a>
-<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
 <script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark')),loadComment()})</script>
 </body>
