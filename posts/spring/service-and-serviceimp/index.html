@@ -126,7 +126,7 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 공통적으로 쓰이는 기능을하나의 기능에서 충분히 확장될 수 있는 경우 interface를 사용하는 것이 좋습니다.</p>
 <p>로그인의 기능을 만들 때 Spring Security의 <a href=https://www.baeldung.com/spring-security-5-oauth2-login>OAuth2</a>를 이용하여 보통
 기능 구현을 합니다.</p>
-<p>그렇지만 oauth2를 사용하지 않고 기능을 구현하는 경우를 <a href=https://github.com/haservi/blog-sample-code/tree/main/01_service-impl>샘플 코드</a>를 이용하여 설명해보겠습니다.</p>
+<p>그렇지만 oauth2를 사용하지 않고 기능을 구현하는 경우를 <a href=https://github.com/haservi/blog-code/tree/main/01_service-impl>샘플 코드</a>를 이용하여 설명해보겠습니다.</p>
 <p>먼저 로그인 유형에 대한 정의를 합니다.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=kd>public</span> <span class=kd>enum</span> <span class=n>AuthProvider</span> <span class=o>{</span>
   <span class=n>local</span><span class=o>,</span>
