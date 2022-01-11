@@ -144,12 +144,12 @@
 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.</p>
 <p>해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다.</p>
 <p>먼저 이 글대로 설정을 마칠 경우 아래와 같은 터미널을 얻을 수 있습니다. 😮</p>
-<p><img loading=lazy src=./assets/Animation.gif alt=터미널작업영상>
+<p><img loading=lazy src=./images/Animation.gif alt=터미널작업영상>
 </p>
 <h2 id=설치-방법>설치 방법<a hidden class=anchor aria-hidden=true href=#설치-방법>#</a></h2>
 <h3 id=1-ubuntu-설치>1. Ubuntu 설치<a hidden class=anchor aria-hidden=true href=#1-ubuntu-설치>#</a></h3>
 <p>Window Store에서 Ubuntu를 설치합니다.
-<img loading=lazy src=./assets/image001.png alt=image>
+<img loading=lazy src=./images/image001.png alt=image>
 </p>
 <h3 id=2-zsh-설치>2. zsh 설치<a hidden class=anchor aria-hidden=true href=#2-zsh-설치>#</a></h3>
 <ol>
@@ -171,12 +171,12 @@ sudo apt-get update
 <p>해당 폰트를 사용하지 않으면 powerlevel10k 테마의 <strong>아이콘이 표시되지 않습니다</strong>.<br>
 아래 링크를 통해 MesloLGS NF 폰트를 다운로드 받아주세요.<br>
 <strong><a href=https://github.com/romkatv/powerlevel10k/#user-content-fonts>romkatv/powerlevel10k</a></strong>
-<img loading=lazy src=./assets/image002.png alt=image>
+<img loading=lazy src=./images/image002.png alt=image>
 </p>
 </li>
 <li>
 <p>다운받은 폰트를 Ubuntu에서 폰트를 변경합니다. 상단에서 마우스 우클릭 후 속성을 누른 뒤 폰트를 변경 할 수 있습니다.
-<img loading=lazy src=./assets/image003.png alt=image>
+<img loading=lazy src=./images/image003.png alt=image>
 </p>
 </li>
 </ol>
@@ -193,13 +193,13 @@ sudo apt-get update
 <li>기존 테마인 ZSH_THEME=&ldquo;robbyrussell"를 ZSH_THEME=&ldquo;powerlevel10k/powerlevel10k&rdquo; 로 변경합니다.(i를 누르면 편집이 가능하며, 수정이 완료된 뒤 ESC를 누르고 :wq 입력)</li>
 </ol>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nv>ZSH_THEME</span><span class=o>=</span><span class=s2>&#34;powerlevel10k/powerlevel10k&#34;</span>
-</code></pre></div><p><img loading=lazy src=./assets/image004.png alt=image>
+</code></pre></div><p><img loading=lazy src=./images/image004.png alt=image>
 </p>
 <ol start=4>
 <li>
 <p>적용을 하셨다면 해당 창을 종료 후 다시 시작하면 아래와 같이 나오게 됩니다.<br>
 (만약 나오지 않은 경우 명령어 <code>source ~/.zshrc</code> 입력)
-<img loading=lazy src=./assets/image005.png alt=image>
+<img loading=lazy src=./images/image005.png alt=image>
 </p>
 </li>
 <li>
@@ -221,7 +221,7 @@ sudo apt-get update
 </ol>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>source</span> <span class=k>$(</span>dirname <span class=k>$(</span>gem which colorls<span class=k>))</span>/tab_complete.sh
 <span class=nb>alias</span> <span class=nv>ls</span><span class=o>=</span>colorls
-</code></pre></div><p><img loading=lazy src=./assets/image006.png alt=image>
+</code></pre></div><p><img loading=lazy src=./images/image006.png alt=image>
 </p>
 <h3 id=6-fzf-설치>6. fzf 설치<a hidden class=anchor aria-hidden=true href=#6-fzf-설치>#</a></h3>
 <p>fzf는 zsh의 확장팩? 같은 느낌입니다. 일단 속도가 매우 빠릅니다.(golang??)<br>
@@ -240,7 +240,7 @@ sudo apt-get update
 <p>WSL를 설치하면 store에 있는 윈도우 터미널도 WSL을 선택할 수 있습니다. 이와 관련하여 테마를 설정할 수 있습니다.</p>
 <h3 id=1-터미널-색상-변경>1. 터미널 색상 변경<a hidden class=anchor aria-hidden=true href=#1-터미널-색상-변경>#</a></h3>
 <p>기본적으로 터미널의 색을 바꾸고 싶다면
-<img loading=lazy src=./assets/image007.png alt=image>
+<img loading=lazy src=./images/image007.png alt=image>
 위와 같이 설정에 들어가서 <code>json 파일</code> 선택 후 defaults 제이슨 값에</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=s2>&#34;defaults&#34;</span><span class=err>:</span> <span class=p>{</span>
   <span class=err>//</span> <span class=err>color</span> <span class=err>theme</span>
@@ -296,7 +296,7 @@ sudo apt-get update
 </code></pre><ol start=2>
 <li>Unbutu 폴더에서 우측마우스 클릭 후 <code>네트워크 드라이브 연결</code>을 선택한다.</li>
 <li>연결 후 원하는 이름으로 변경하면 탐색기에서 WSL에 접근이 가능합니다.
-<img loading=lazy src=./assets/image008.png alt=image>
+<img loading=lazy src=./images/image008.png alt=image>
 </li>
 </ol>
 <h2 id=에러-관련>에러 관련<a hidden class=anchor aria-hidden=true href=#에러-관련>#</a></h2>
