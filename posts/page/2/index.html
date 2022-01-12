@@ -75,6 +75,20 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>JPA ddl-auto 설정과 더미데이터 생성 방법
+</h2>
+</header>
+<section class=entry-content>
+<p>ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
+설정 옵션으로
+jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
+create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다....</p>
+</section>
+<footer class=entry-footer><span title="2021-11-12 15:47:31 +0900 +0900">November 12, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to JPA ddl-auto 설정과 더미데이터 생성 방법" href=https://haservi.github.io/posts/spring/jpa/hibernate-ddl-auto/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Gif로 영상 만드는 방법
 </h2>
 </header>
@@ -157,19 +171,6 @@ Level1을 마무리하고 이제 Level2의 문제를 풀고 있는데 조금 난
 </section>
 <footer class=entry-footer><span title="2021-09-07 11:55:29 +0900 +0900">September 7, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to [프로그래머스]하샤드 수" href=https://haservi.github.io/posts/algorithms/programmers/level1/04-algo-hasshadsu/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>[프로그래머스]콜라츠 추측
-</h2>
-</header>
-<section class=entry-content>
-<p>콜라츠 추측 문제 설명 1937년 Collatz란 사람에 의해 제기된 이 추측은, 주어진 수가 1이 될때까지 다음 작업을 반복하면, 모든 수를 1로 만들 수 있다는 추측입니다. 작업은 다음과 같습니다.
-1-1. 입력된 수가 짝수라면 2로 나눕니다. 1-2. 입력된 수가 홀수라면 3을 곱하고 1을 더합니다. 2. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복합니다. 예를 들어, 입력된 수가 6이라면 6→3→10→5→16→8→4→2→1 이 되어 총 8번 만에 1이 됩니다.
-위 작업을 몇 번이나 반복해야하는지 반환하는 함수, solution을 완성해 주세요....</p>
-</section>
-<footer class=entry-footer><span title="2021-09-06 21:01:13 +0900 +0900">September 6, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to [프로그래머스]콜라츠 추측" href=https://haservi.github.io/posts/algorithms/programmers/level1/03-algo-colatz-guess/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

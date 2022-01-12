@@ -9,7 +9,22 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 29 Dec 2021 22:18:20 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 19:40:22 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>로지텍 마우스 Options을 이용한 마우스 커스텀하기</title>
+      <link>https://haservi.github.io/posts/tools/how-to-logitech-option/</link>
+      <pubDate>Sat, 08 Jan 2022 19:40:22 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tools/how-to-logitech-option/</guid>
+      <description>logitech options 란? 일부 로지텍 마우스 중에는 특정 소프트웨어를 지원하는 기능이 있습니다.
+그 중 logitech options는 Flow기능으로 기기간 파일전송이나 하나의 마우스로 여러대의 기기를 제어할 수 있습니다.
+이번에 소개해드릴 기능은 Flow기능이 아닌 마우스 제스처 모드에 따른 설정입니다.
+설치 해당 사이트에서 OS에 맞는 프로그램을 설치하면 됩니다.
+설치 후 정상적으로 마우스가 연결되면 아래와 비슷한 사진이 보입니다.
+커스텀 설정하기 프로그램 실행 후 흰색 동그라미가 있는 모든 버튼이 커스텀 가능합니다.
+저의 경우 뒤로가기와 앞으로가기 버튼만 커스텀하여 사용하고 있습니다.</description>
+    </item>
+    
     <item>
       <title>자주 사용하는 Git Command 정리</title>
       <link>https://haservi.github.io/posts/tips/git-frequently-used-commands/</link>
