@@ -9,7 +9,19 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 12 Jan 2022 13:39:01 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2022 17:24:58 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mybatis와 JPA 장단점</title>
+      <link>https://haservi.github.io/posts/spring/mybatis-and-jpa/</link>
+      <pubDate>Sat, 15 Jan 2022 17:24:58 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/spring/mybatis-and-jpa/</guid>
+      <description>Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.
+JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.
+또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.
+MyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져오게 됩니다.</description>
+    </item>
+    
     <item>
       <title>@Autowired와 @RequiredArgsConstructor 차이점 </title>
       <link>https://haservi.github.io/posts/spring/diff-requiredargsconstructor-autowired/</link>
@@ -118,10 +130,10 @@ Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 
     
     <item>
       <title>JPA ddl-auto 설정과 더미데이터 생성 방법</title>
-      <link>https://haservi.github.io/posts/spring/jpa/hibernate-ddl-auto/</link>
+      <link>https://haservi.github.io/posts/spring/hibernate-ddl-auto/</link>
       <pubDate>Fri, 12 Nov 2021 15:47:31 +0900</pubDate>
       
-      <guid>https://haservi.github.io/posts/spring/jpa/hibernate-ddl-auto/</guid>
+      <guid>https://haservi.github.io/posts/spring/hibernate-ddl-auto/</guid>
       <description>ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
 설정 옵션으로
 jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.

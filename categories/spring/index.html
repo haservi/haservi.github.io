@@ -74,6 +74,20 @@
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>Mybatis와 JPA 장단점
+</h2>
+</header>
+<section class=entry-content>
+<p>Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.
+JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.
+또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.
+MyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져오게 됩니다....</p>
+</section>
+<footer class=entry-footer><span title="2022-01-15 17:24:58 +0900 +0900">January 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to Mybatis와 JPA 장단점" href=https://haservi.github.io/posts/spring/mybatis-and-jpa/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>@Autowired와 @RequiredArgsConstructor 차이점
 </h2>
 </header>
@@ -114,6 +128,20 @@ maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경�
 </section>
 <footer class=entry-footer><span title="2021-12-02 16:40:29 +0900 +0900">December 2, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to springtoolsuite4에서 dependency 추가 방법" href=https://haservi.github.io/posts/spring/springboot-add-dependency/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>JPA ddl-auto 설정과 더미데이터 생성 방법
+</h2>
+</header>
+<section class=entry-content>
+<p>ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
+설정 옵션으로
+jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
+create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다....</p>
+</section>
+<footer class=entry-footer><span title="2021-11-12 15:47:31 +0900 +0900">November 12, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to JPA ddl-auto 설정과 더미데이터 생성 방법" href=https://haservi.github.io/posts/spring/hibernate-ddl-auto/></a>
 </article>
 </main>
 <footer class=footer>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Git on Halog</title>
+    <link>https://haservi.github.io/categories/git/</link>
+    <description>Recent content in Git on Halog</description>
+    <image>
+      <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 29 Dec 2021 22:18:20 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>자주 사용하는 Git Command 정리</title>
+      <link>https://haservi.github.io/posts/tips/git-frequently-used-commands/</link>
+      <pubDate>Wed, 29 Dec 2021 22:18:20 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/git-frequently-used-commands/</guid>
+      <description>Git Command를 사용하면서 자주 사용하는 명령어를 정리했습니다.
+이외에도 수많은 명령어가 존재하지만 작업과 관련된 명령어는 아래의 경우로 충분하다고 생각합니다.
+해당 명령어 이외에 더 참고하고 싶다면 https://git-scm.com/book/ko/v2 해당 사이트에서 무료로 책을 다운로드 받아서 볼 수 있습니다.
+또한, 요즘은 소스트리(https://www.sourcetreeapp.com/)에서 GUI로 편하게 작업할 수 도 있습니다.
+기본적인 명령어는 숙지하는 것이 좋지만 history나 간단한 업무용으로는 충분하다고 생각합니다.
+기본 명령어   git 설정 보기
+git config --list   사용자 이름 입력
+git config --global user.</description>
+    </item>
+    
+    <item>
+      <title>Github 저장소 안의 폴더 다운로드 받는 방법</title>
+      <link>https://haservi.github.io/posts/tips/git-inner-folder-download/</link>
+      <pubDate>Sun, 28 Nov 2021 21:30:06 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/git-inner-folder-download/</guid>
+      <description>기본적으로 웹상에서는 Git 저장소 안의 폴더를 다운받으려면 해당 저장소 전부를 다운 받은 후에 특정 폴더의 정보를 봐야 합니다.
+간단한 방법은 아래의 링크에서 다운로드 받는게 제일 쉬운방법이지만 터미널에서 다운로드 방법도 한번 다루어보겠습니다. 터미널로 다운 받은 경우 이후 해당 소스가 변경이 있다면 당겨올 수 있는 이점도 있습니다.
+해결방법 웹 다운로드 https://downgit.github.io/#/home 해당 사이트에 github 저장소 특정 폴더의 링크를 복사 한 후 붙여넣고 Download 버튼 클릭
+터미널 다운로드 기본적으로 git이 설치돼 있어야합니다.
+예제로 https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
