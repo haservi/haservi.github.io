@@ -3,12 +3,13 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Mybatis와 JPA 장단점 </title>
+<title>Mybatis와 JPA에 대하여 </title>
 <meta name=keywords content=",">
 <meta name=description content="Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.
 JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.
 또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.
-MyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져오게 됩니다.">
+MyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.
+JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다.">
 <meta name=author content="Haseop">
 <link rel=canonical href=https://haservi.github.io/posts/spring/mybatis-and-jpa/>
 <meta name=google-site-verification content="G-MXZP81P04W">
@@ -27,11 +28,12 @@ MyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 �
 </noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RP5NDCM8J9"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-RP5NDCM8J9',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="Mybatis와 JPA 장단점">
+<meta property="og:title" content="Mybatis와 JPA에 대하여">
 <meta property="og:description" content="Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.
 JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.
 또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.
-MyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져오게 됩니다.">
+MyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.
+JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://haservi.github.io/posts/spring/mybatis-and-jpa/">
 <meta property="og:image" content="https://haservi.github.io/%3Cimage%20path/url%3E"><meta property="article:section" content="posts">
@@ -39,13 +41,14 @@ MyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 �
 <meta property="article:modified_time" content="2022-01-15T17:24:58+09:00"><meta property="og:site_name" content="Halog">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://haservi.github.io/%3Cimage%20path/url%3E">
-<meta name=twitter:title content="Mybatis와 JPA 장단점">
+<meta name=twitter:title content="Mybatis와 JPA에 대하여">
 <meta name=twitter:description content="Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.
 JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.
 또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.
-MyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져오게 됩니다.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Mybatis와 JPA 장단점","item":"https://haservi.github.io/posts/spring/mybatis-and-jpa/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Mybatis와 JPA 장단점","name":"Mybatis와 JPA 장단점","description":"Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.\nJDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.\n또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.\nMyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져오게 됩니다.","keywords":["",""],"articleBody":"Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.\nJDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.\n또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.\nMyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져오게 됩니다.\nJPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다.\nJPA는 반복적인 CRUD 작업을 이미 인터페이스에서 제공하고 있습니다. JPA를 제대로 사용하기 위해서는 약간의 러닝커브가 존재하지만 익숙해지면 빠른 개발과 유지보수 측면에서 효율적입니다.\nJPA는 Entity와 DTO(Data Transper Object)를 구분지어서 정의하는 것이 좋습니다. 컨트롤러에서는 DTO를 통해 유효성검사 및 FrontEnd와의 연결을 책임지며, DB와 관련된 것은 Entity로 제어 하는거죠. 이러한 Object Mapping은 직접 함수를 만들거나 라이브러리를 이용해도 됩니다.\n자주 사용하는 라이브러리는 Model Mapper와 Map Struct가 대표적이며, 성능 이슈가 적은 Map Struct 사용을 추천합니다.\n일반적으로 JPA는 Spring Data JPA와 Querydsl 조합을 많이 사용합니다.\nMabatis or JPA JPA와 MyBatis와의 DB를 바라보는 관점이 다른 느낌입니다.\n서로의 장단점이 있기 때문에 프로젝트의 성격과 적합도에 맞게 선택하는 것이 좋을 것 같습니다.\n게시판의 경우는 JPA로 구현하게 되면 귀찮고 반복적인 작업을 많이 줄일 수 있을거라 생각됩니다.\n","wordCount":"202","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2022-01-15T17:24:58+09:00","dateModified":"2022-01-15T17:24:58+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/spring/mybatis-and-jpa/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
+MyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.
+JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Mybatis와 JPA에 대하여","item":"https://haservi.github.io/posts/spring/mybatis-and-jpa/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Mybatis와 JPA에 대하여","name":"Mybatis와 JPA에 대하여","description":"Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.\nJDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.\n또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.\nMyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.\nJPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다.","keywords":["",""],"articleBody":"Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.\nJDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.\n또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.\nMyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.\nJPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다.\nJPA는 반복적인 CRUD 작업을 이미 인터페이스에서 제공하고 있습니다. JPA를 제대로 사용하기 위해서는 약간의 러닝커브가 존재하지만 익숙해지면 빠른 개발과 유지보수 측면에서 효율적입니다.\nJPA는 Entity와 DTO(Data Transper Object)를 구분지어서 정의하는 것이 좋습니다. 컨트롤러에서는 DTO를 통해 유효성검사 및 FrontEnd와의 연결을 책임지며, DB와 관련된 것은 Entity로 제어 하는거죠. 이러한 Object Mapping은 직접 함수를 만들거나 라이브러리를 이용해도 됩니다.\n자주 사용하는 라이브러리는 Model Mapper와 Map Struct가 대표적이며, 성능 이슈가 적은 Map Struct 사용을 추천합니다.\n일반적으로 JPA는 Spring Data JPA와 Querydsl 조합을 많이 사용합니다.\nMabatis or JPA 그렇지만 현재의 구글 트렌드를 검색해보면 전세계적으로는 압도적으로 JPA가 우위에 있으며 우리나라의 경우는 비슷한 정도로 나타납니다.\nJPA와 MyBatis와의 차이점이라면 DB를 바라보는 관점이 다른 것 같습니다.\n서로의 장단점이 있기 때문에 프로젝트의 성격과 적합도에 맞게 선택하는 것이 좋을 것 같습니다.\nJPA가 조금 더 공부해야 할 것이 많긴 하지만 잘 이해하고 사용하면 유지보수하기 좋을 것 같다 생각합니다.😓\n","wordCount":"220","inLanguage":"en","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2022-01-15T17:24:58+09:00","dateModified":"2022-01-15T17:24:58+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/spring/mybatis-and-jpa/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -87,16 +90,16 @@ MyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 �
 <header class=post-header>
 <div class=breadcrumbs><a href=https://haservi.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/posts/>Posts</a></div>
 <h1 class=post-title>
-Mybatis와 JPA 장단점
+Mybatis와 JPA에 대하여
 </h1>
-<div class=post-meta><span title="2022-01-15 17:24:58 +0900 +0900">January 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop
+<div class=post-meta><span title="2022-01-15 17:24:58 +0900 +0900">January 15, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop
 </div>
 </header>
 <div class=post-content><h2 id=mybatis란>Mybatis란?<a hidden class=anchor aria-hidden=true href=#mybatis란>#</a></h2>
 <p>자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.<br>
 JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.<br>
 또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.</p>
-<p>MyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져오게 됩니다.</p>
+<p>MyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.</p>
 <h2 id=jpa란>JPA란?<a hidden class=anchor aria-hidden=true href=#jpa란>#</a></h2>
 <p>JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면
 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다.</p>
@@ -106,9 +109,13 @@ FrontEnd와의 연결을 책임지며, DB와 관련된 것은 Entity로 제어 �
 <p>자주 사용하는 라이브러리는 <a href=http://modelmapper.org/>Model Mapper</a>와 <a href=https://mapstruct.org/>Map Struct</a>가 대표적이며, <a href=https://better-dev.netlify.app/java/2020/10/26/compare_objectmapper/>성능 이슈</a>가 적은 Map Struct 사용을 추천합니다.</p>
 <p>일반적으로 JPA는 Spring Data JPA와 Querydsl 조합을 많이 사용합니다.</p>
 <h2 id=mabatis-or-jpa>Mabatis or JPA<a hidden class=anchor aria-hidden=true href=#mabatis-or-jpa>#</a></h2>
-<p>JPA와 MyBatis와의 DB를 바라보는 관점이 다른 느낌입니다.<br>
+<p>그렇지만 현재의 구글 트렌드를 검색해보면 전세계적으로는 압도적으로 JPA가 우위에 있으며 우리나라의 경우는 비슷한 정도로 나타납니다.</p>
+<p><img loading=lazy src=./images/image01.png#center, alt=전세계 title=전세계>
+<img loading=lazy src=./images/image02.png#center, alt=우리나라 title=우리나라>
+</p>
+<p>JPA와 MyBatis와의 차이점이라면 DB를 바라보는 관점이 다른 것 같습니다.<br>
 서로의 장단점이 있기 때문에 프로젝트의 성격과 적합도에 맞게 선택하는 것이 좋을 것 같습니다.</p>
-<p>게시판의 경우는 JPA로 구현하게 되면 귀찮고 반복적인 작업을 많이 줄일 수 있을거라 생각됩니다.</p>
+<p>JPA가 조금 더 공부해야 할 것이 많긴 하지만 잘 이해하고 사용하면 유지보수하기 좋을 것 같다 생각합니다.😓</p>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>

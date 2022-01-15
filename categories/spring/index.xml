@@ -11,7 +11,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 15 Jan 2022 17:24:58 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/spring/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mybatis와 JPA 장단점</title>
+      <title>Mybatis와 JPA에 대하여</title>
       <link>https://haservi.github.io/posts/spring/mybatis-and-jpa/</link>
       <pubDate>Sat, 15 Jan 2022 17:24:58 +0900</pubDate>
       
@@ -19,7 +19,8 @@
       <description>Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.
 JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.
 또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.
-MyBatis는 DAO(Data Access Object) SQL과 연결할 인터페이스를 만든 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져오게 됩니다.</description>
+MyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.
+JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다.</description>
     </item>
     
     <item>
