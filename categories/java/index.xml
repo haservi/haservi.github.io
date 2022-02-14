@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Java on Halog</title>
+    <link>https://haservi.github.io/categories/java/</link>
+    <description>Recent content in Java on Halog</description>
+    <image>
+      <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 14 Feb 2022 20:20:41 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Priority Queue(우선순위 큐) 원리 및 사용 방법</title>
+      <link>https://haservi.github.io/posts/java/priority-queue/</link>
+      <pubDate>Mon, 14 Feb 2022 20:20:41 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/java/priority-queue/</guid>
+      <description>우선순위 큐(Priority Queue) 란? 우선순위 큐(Priority Queue)는 일반적인 큐의 구조와 달리 들어가는 순서와 상관없이 정의한대로 우선순위를 먼저 결정하고 그 우선순위가 높은 데이터가 먼저 나가는 자료구조 입니다. 그렇기 때문에 dequeue를 하면 이미 정의한 순서에 맞게 가장 위의 값이 나타납니다.
+우선순위 큐는 힙을 기반으로 하는 완전이진트리로 우선순위를 정하게 됩니다.
+사용 방법 우선순위 큐는 우선순위가 꼭 필요한 경우에 사용합니다. 람다식으로 정의해도 되고 Comparable을 이용해서 정의해도 됩니다.
+// 낮은 숫자가 우선순위가 높은 방식 PriorityQueue&amp;lt;Integer&amp;gt; pq = new PriorityQueue&amp;lt;&amp;gt;(); // 높은 숫자가 우선순위가 높은 방식 PriorityQueue&amp;lt;Integer&amp;gt; pq = new PriorityQueue&amp;lt;&amp;gt;(Collections.</description>
+    </item>
+    
+  </channel>
+</rss>
