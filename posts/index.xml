@@ -9,7 +9,20 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 Feb 2022 20:20:41 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Feb 2022 21:50:28 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git CRLF 개행 문자 차이 해결 방법</title>
+      <link>https://haservi.github.io/posts/tips/git-crlf/</link>
+      <pubDate>Mon, 21 Feb 2022 21:50:28 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/git-crlf/</guid>
+      <description>Windows는 line ending으로 CR(Carriage-Return, \r)과 LF(Line Feed \n)을 사용합니다. CRLF는 커서를 다음 라인의 맨앞으로 옮기는 표시이며, ↲ 이러한 표현입니다.
+Mac, Linux(Unix 계열)의 경우 LF(Line Feed \n)를 사용합니다. LF는 현재 위치에서 바로 아래로 이동하는 것을 의미하며, ↓ 와 같은 표현입니다.
+문제는 같은 작업 영역에서 같은 코드를 수정할 경우 windows와 mac의 코드가 일치하더라도 커서의 표현값이 다르기 때문에 충돌이 일어나는 경우가 발생합니다.
+해결 방법으로는 각 운영체제별로 git을 기준으로 LF로 맞춰주는 것입니다.
+Windows는 CRLF를 LF로 변경되도록 git config 설정 중 core.</description>
+    </item>
+    
     <item>
       <title>Java Priority Queue(우선순위 큐) 원리 및 사용 방법</title>
       <link>https://haservi.github.io/posts/java/priority-queue/</link>
