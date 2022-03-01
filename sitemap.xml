@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tips/git-commit-message-rule/</loc>
+    <lastmod>2022-03-01T22:54:30+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/tips/git-crlf/</loc>
     <lastmod>2022-02-21T21:50:28+09:00</lastmod>
   </url><url>
@@ -75,16 +78,16 @@
     <lastmod>2021-08-17T21:00:00+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2022-02-21T21:50:28+09:00</lastmod>
+    <lastmod>2022-03-01T22:54:30+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2022-02-21T21:50:28+09:00</lastmod>
+    <lastmod>2022-03-01T22:54:30+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2022-02-21T21:50:28+09:00</lastmod>
+    <lastmod>2022-03-01T22:54:30+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/tips/</loc>
-    <lastmod>2022-02-21T21:50:28+09:00</lastmod>
+    <lastmod>2022-03-01T22:54:30+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/algorithm/</loc>
     <lastmod>2022-02-14T20:20:41+09:00</lastmod>

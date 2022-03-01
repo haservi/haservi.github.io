@@ -9,7 +9,21 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Feb 2022 21:50:28 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Mar 2022 22:54:30 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Commit 메시지 규칙</title>
+      <link>https://haservi.github.io/posts/tips/git-commit-message-rule/</link>
+      <pubDate>Tue, 01 Mar 2022 22:54:30 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/git-commit-message-rule/</guid>
+      <description>Git Commit git commit message convetion은 회사 또는 프로젝트 마다 다를 수 있습니다.
+message의 형태는 다를 수 있지만 기본적인 목적은 같습니다.
+잘 만들어진 git 커밋 메시지는 해당 프로젝트에서 작업하는 팀원과 미래의 자신에게 변경 사항에 대한 의미를 전달하기 위한 좋은 방법입니다.
+일반적으로 커밋 메시지는 다음과 같은 구조를 권장합니다.
+type: Subject body footer 보통 위와 같은 형태입니다.
+제목은 새로운 기능 추가인 경우 feat: Subject, Feat: Subject, Feat Subject 등 조금씩 type의 형태가 다르지만 그건 프로젝트에 따라 일관되게 맞추면 됩니다.</description>
+    </item>
+    
     <item>
       <title>git CRLF 개행 문자 차이 해결 방법</title>
       <link>https://haservi.github.io/posts/tips/git-crlf/</link>
