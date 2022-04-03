@@ -92,6 +92,21 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>비쥬얼 스튜디오 코드에서 자동완성 해제하기
+</h2>
+</header>
+<section class=entry-content>
+<p>Visual Studio Code의 자동완성 기능 해제 방법 프로그램 실행 후 설정(Ctrl + , 또는 Command + ,)으로 들어간 후 검색항목에 intelliSense를 검색하면 여러 체크박스 리스트를 볼 수 있다.
+위(Show Classes)에서부터 아래(Show Words)까지 전부 체크 해제를 하면 자동완성 기능이 비활성화 된다.
+그렇지만 너무 많은 옵션이 있기 때문에 전부 클릭 해제하기가 귀찮은 경우 아래의 JSON으로 추가할 수 있다.
+오른쪽 위의 설정으로 들어가서 아래의 값들을 복사 후 붙여 넣어주면 된다.
+"explorer.compactFolders": false, "explorer.confirmDragAndDrop": false, "editor....</p>
+</section>
+<footer class=entry-footer><span title="2022-04-03 14:30:00 +0900 +0900">April 3, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to 비쥬얼 스튜디오 코드에서 자동완성 해제하기" href=https://haservi.github.io/posts/tips/visual-studio-code-auto-complete/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Git Commit 메시지 규칙
 </h2>
 </header>
@@ -180,22 +195,6 @@ JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표�
 </section>
 <footer class=entry-footer><span title="2022-01-15 17:24:58 +0900 +0900">January 15, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to Mybatis와 JPA에 대하여" href=https://haservi.github.io/posts/spring/mybatis-and-jpa/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>@Autowired와 @RequiredArgsConstructor 차이점
-</h2>
-</header>
-<section class=entry-content>
-<p>@Autowired는 필드 주입이고, @RequiredArgsConstructor는 생성자 주입(Constructor Injection) 입니다.
-@RequiredArgsConstructor는 Lombok에서 제공하는 어노테이션 입니다.
-결론적으로 생성자 주입을 권장합니다. 인텔리제이에서 코드를 작성하다보면 @Autowired를 사용하면 아래와 같은 경고를 알려줍니다.
-.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Warning
-Field injection is not recommended Inspection info: Spring Team recommends: “Always use constructor based dependency injection in your beans. Always use assertions for mandatory dependencies”.
-뭐.. 추천하지 않고 생성자 주입방식을 쓰라고 하는거 같네요....</p>
-</section>
-<footer class=entry-footer><span title="2022-01-12 13:39:01 +0900 +0900">January 12, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to @Autowired와 @RequiredArgsConstructor 차이점 " href=https://haservi.github.io/posts/spring/diff-requiredargsconstructor-autowired/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

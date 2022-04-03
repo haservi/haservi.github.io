@@ -78,6 +78,22 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>@Autowired와 @RequiredArgsConstructor 차이점
+</h2>
+</header>
+<section class=entry-content>
+<p>@Autowired는 필드 주입이고, @RequiredArgsConstructor는 생성자 주입(Constructor Injection) 입니다.
+@RequiredArgsConstructor는 Lombok에서 제공하는 어노테이션 입니다.
+결론적으로 생성자 주입을 권장합니다. 인텔리제이에서 코드를 작성하다보면 @Autowired를 사용하면 아래와 같은 경고를 알려줍니다.
+.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Warning
+Field injection is not recommended Inspection info: Spring Team recommends: “Always use constructor based dependency injection in your beans. Always use assertions for mandatory dependencies”.
+뭐.. 추천하지 않고 생성자 주입방식을 쓰라고 하는거 같네요....</p>
+</section>
+<footer class=entry-footer><span title="2022-01-12 13:39:01 +0900 +0900">January 12, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to @Autowired와 @RequiredArgsConstructor 차이점 " href=https://haservi.github.io/posts/spring/diff-requiredargsconstructor-autowired/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Logitech Options를 이용한 마우스 커스텀하기
 </h2>
 </header>
@@ -167,20 +183,6 @@ Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 
 </section>
 <footer class=entry-footer><span title="2021-11-25 21:38:17 +0900 +0900">November 25, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to 화면 캡쳐 프로그램 추천" href=https://haservi.github.io/posts/tools/how-to-capture/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>윈도우 WSL2 Ubuntu 터미널 꾸미기
-</h2>
-</header>
-<section class=entry-content>
-<p>Windows WSL Ubuntu 커스텀 하기 Window에서는 WSL(Windows Subsystem for Linux)를 제공합니다.
-예전엔 가상환경(VM)에 리눅스를 올렸다면 지금은 손쉽게 리눅스 커널을 WSL로 접근할 수 있게 됐습니다.
-그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.
-해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다....</p>
-</section>
-<footer class=entry-footer><span title="2021-11-22 20:49:25 +0900 +0900">November 22, 2021</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to 윈도우 WSL2 Ubuntu 터미널 꾸미기" href=https://haservi.github.io/posts/linux/used-zsh-powerline10/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
