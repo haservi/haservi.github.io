@@ -11,7 +11,6 @@ jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 
  create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함  실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.">
 <meta name=author content="Haseop">
 <link rel=canonical href=https://haservi.github.io/posts/spring/hibernate-ddl-auto/>
-<meta name=google-site-verification content="G-MXZP81P04W">
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.css rel="preload stylesheet" as=style>
 <script defer crossorigin=anonymous src=/assets/js/highlight.min.js onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://haservi.github.io/favicon.ico>
@@ -21,7 +20,6 @@ jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 
 <link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.87.0">
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 </noscript>
