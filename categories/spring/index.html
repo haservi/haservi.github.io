@@ -68,19 +68,21 @@
 </header>
 <main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://haservi.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/categories/>Categories</a></div>
-<h1>Spring</h1>
+<h1>
+Spring
+</h1>
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
 <h2>H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법
 </h2>
 </header>
-<section class=entry-content>
+<div class=entry-content>
 <p>H2를 최신 버전(2.1.210)으로 업데이트하니 아래와 같은 에러가 발생했습니다.
 Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set ... java.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ... 일단 임시방편으로 H2 url을 연결하는 곳에 추가적으로 옵션(;MODE=LEGACY)을 넣으면 해결됩니다.
 url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용하면 H2 1.X용으로 작성된 응용 프로그램에 대한 일부 호환성 기능이 활성화됩니다. Hibernate ORM에서 H2에 대해서 유효하지 않은 SQL을 생성하기 때문이라고 합니다.
 그렇다면.. hibernate ORM에서 H2 방언에 대한 문제를 해결해야 합니다....</p>
-</section>
+</div>
 <footer class=entry-footer><span title="2022-01-29 19:16:48 +0900 +0900">January 29, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법" href=https://haservi.github.io/posts/spring/spadework/h2-version-upgrade-error/></a>
 </article>
@@ -89,7 +91,7 @@ url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용�
 <h2>Spring Data JPA와 JPQL 함께 사용하기
 </h2>
 </header>
-<section class=entry-content>
+<div class=entry-content>
 <p>JPQL 이란? 예전에는 JPQL은 Java Persistence Query Language로 불렸지만 현재의 JPQL은(Jakarta Persistence Query Language) 라고 합니다.(나무위키 링크)
 2019년부터 JPA(Java Persistence API)또한 Jakarta Persistence로 변경됐습니다.
 이름은 달라졌지만 역할은 달라지지 않았습니다. JPQL을 이용하여 관계형 데이터베이스의 엔티티를 정의하고 이를 활용한 쿼리 언어를 자바를 이용하여 구현합니다.
@@ -97,7 +99,7 @@ url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용�
 간단한 예시로 회원 조회를 하는 경우 JPQL과 Querydsl의 차이는 아래와 같습니다.
 JPQL
 public List&lt;Member> findAll() { EntityManager entityManager; return entityManager....</p>
-</section>
+</div>
 <footer class=entry-footer><span title="2022-01-17 23:09:03 +0900 +0900">January 17, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to Spring Data JPA와 JPQL 함께 사용하기" href=https://haservi.github.io/posts/spring/springdatajpa-and-customquery/></a>
 </article>
@@ -106,13 +108,13 @@ public List&lt;Member> findAll() { EntityManager entityManager; return entityMan
 <h2>Mybatis와 JPA에 대하여
 </h2>
 </header>
-<section class=entry-content>
+<div class=entry-content>
 <p>Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.
 JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.
 또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.
 MyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.
 JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다....</p>
-</section>
+</div>
 <footer class=entry-footer><span title="2022-01-15 17:24:58 +0900 +0900">January 15, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to Mybatis와 JPA에 대하여" href=https://haservi.github.io/posts/spring/mybatis-and-jpa/></a>
 </article>
@@ -121,14 +123,14 @@ JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표�
 <h2>@Autowired와 @RequiredArgsConstructor 차이점
 </h2>
 </header>
-<section class=entry-content>
+<div class=entry-content>
 <p>@Autowired는 필드 주입이고, @RequiredArgsConstructor는 생성자 주입(Constructor Injection) 입니다.
 @RequiredArgsConstructor는 Lombok에서 제공하는 어노테이션 입니다.
 결론적으로 생성자 주입을 권장합니다. 인텔리제이에서 코드를 작성하다보면 @Autowired를 사용하면 아래와 같은 경고를 알려줍니다.
 .notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Warning
 Field injection is not recommended Inspection info: Spring Team recommends: “Always use constructor based dependency injection in your beans. Always use assertions for mandatory dependencies”.
 뭐.. 추천하지 않고 생성자 주입방식을 쓰라고 하는거 같네요....</p>
-</section>
+</div>
 <footer class=entry-footer><span title="2022-01-12 13:39:01 +0900 +0900">January 12, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to @Autowired와 @RequiredArgsConstructor 차이점 " href=https://haservi.github.io/posts/spring/diff-requiredargsconstructor-autowired/></a>
 </article>
@@ -137,12 +139,12 @@ Field injection is not recommended Inspection info: Spring Team recommends: “A
 <h2>[Spring] Service와 ServiceImpl에 대해
 </h2>
 </header>
-<section class=entry-content>
+<div class=entry-content>
 <p>Service, ServiceImpl Spring 프로젝트를 하면 종종 관례적으로 Service를 interface로 기능 명세를 한 뒤 ServiceImpl에 기능을 구현하게 되는 Factory Pattern을 사용하게 됩니다.
 interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주고, 협업 시 업무분담도 용이합니다.
 게임으로 예를 들면 스타크래프트에서 모든 유닛의 기본적인 특성 HP, 이동하기를 interface로 기능만 명시하고 각각 분업하여 유닛에 대한 HP나 이동속도를 구현할 수 있습니다.
 하지만 일반적인 Spring 웹프로젝트에서는 Service interface는 1:1 구조인 경우가 많습니다. 만약 확장성을 고려한 1:N의 경우에는 interface로 가는 것이 좋지만 너무 막연한 경우에는 그냥 class로 생성 후 추후 시나리오 변경 또는 로직상 확장성이 필요한 경우 interface로 변경하는 것이 좋다고 생각합니다....</p>
-</section>
+</div>
 <footer class=entry-footer><span title="2021-12-22 20:11:56 +0900 +0900">December 22, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to [Spring] Service와 ServiceImpl에 대해" href=https://haservi.github.io/posts/spring/service-and-serviceimp/></a>
 </article>
@@ -151,11 +153,11 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 <h2>springtoolsuite4에서 dependency 추가 방법
 </h2>
 </header>
-<section class=entry-content>
+<div class=entry-content>
 <p>SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.
 maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
 아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.</p>
-</section>
+</div>
 <footer class=entry-footer><span title="2021-12-02 16:40:29 +0900 +0900">December 2, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to springtoolsuite4에서 dependency 추가 방법" href=https://haservi.github.io/posts/spring/springboot-add-dependency/></a>
 </article>
@@ -164,12 +166,12 @@ maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경�
 <h2>JPA ddl-auto 설정과 더미데이터 생성 방법
 </h2>
 </header>
-<section class=entry-content>
+<div class=entry-content>
 <p>ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
 설정 옵션으로
 jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
 create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다....</p>
-</section>
+</div>
 <footer class=entry-footer><span title="2021-11-12 15:47:31 +0900 +0900">November 12, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to JPA ddl-auto 설정과 더미데이터 생성 방법" href=https://haservi.github.io/posts/spring/hibernate-ddl-auto/></a>
 </article>
