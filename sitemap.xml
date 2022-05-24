@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tips/window-port-taskkill/</loc>
+    <lastmod>2022-05-23T21:49:41+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/tips/visual-studio-code-auto-complete/</loc>
     <lastmod>2022-04-03T14:30:00+09:00</lastmod>
   </url><url>
@@ -59,9 +62,6 @@
     <loc>https://haservi.github.io/posts/algorithms/programmers/level2/02-truck-crossing-the-bridge/</loc>
     <lastmod>2021-09-27T15:17:54+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/algorithms/programmers/review/clear-level1/</loc>
-    <lastmod>2021-09-15T00:41:29+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/posts/algorithms/programmers/level2/01-camouflage/</loc>
     <lastmod>2021-09-15T00:28:00+09:00</lastmod>
   </url><url>
@@ -81,16 +81,16 @@
     <lastmod>2021-08-17T21:00:00+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2022-04-03T14:30:00+09:00</lastmod>
+    <lastmod>2022-05-23T21:49:41+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2022-04-03T14:30:00+09:00</lastmod>
+    <lastmod>2022-05-23T21:49:41+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2022-04-03T14:30:00+09:00</lastmod>
+    <lastmod>2022-05-23T21:49:41+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/tips/</loc>
-    <lastmod>2022-04-03T14:30:00+09:00</lastmod>
+    <lastmod>2022-05-23T21:49:41+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/algorithm/</loc>
     <lastmod>2022-02-14T20:20:41+09:00</lastmod>
