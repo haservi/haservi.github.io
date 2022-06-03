@@ -9,7 +9,20 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 23 May 2022 21:49:41 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jun 2022 20:20:49 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DBeaver 커스텀 셋팅하기</title>
+      <link>https://haservi.github.io/posts/tools/how-to-dbeaver/</link>
+      <pubDate>Thu, 02 Jun 2022 20:20:49 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tools/how-to-dbeaver/</guid>
+      <description>주로 DB를 관리하는 툴로 HeidiSQL를 많이 사용했습니다.
+Spring Data JPA와 QueryDSL 조합을 이용한 뒤로 어느 정도 익숙해지고 나서는 쿼리를 짜는 일이 많이 없지만, 조금 복잡한 쿼리의 경우는 쿼리를 작성해보고 성능 체크 후 QueryDSL로 변환하여 작업합니다.
+하지만 Mac환경에서는 HeidiSQL이 Mac을 지원하지 않기 때문에 다른 DB 툴을 사용해야 합니다.
+Mac을 지원하는 다양한 DB툴 중에 평가가 꽤 괜찮은 DBeaver링크에 대해 알아보겠습니다.
+Dbeaver 란?  DBeaver는 Windows와 Mac 모두 지원 거의 모든 Database를 지원(MySQL, PostgreSQL, MariaDB, SQLite, Oracle, DB2, SQL Server&amp;hellip;) 오픈 소스 기반으로 다양한 확장 플러그인 지원 Entity Diagarm 지원 DB 내보내기 불러오기 지원  Community 버전을 이용해도 위와 같은 기능을 모두 사용할 수 있습니다.</description>
+    </item>
+    
     <item>
       <title>윈도우 Port 강제 종료 방법</title>
       <link>https://haservi.github.io/posts/tips/window-port-taskkill/</link>
@@ -122,9 +135,7 @@ JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표�
       <description>@Autowired는 필드 주입이고, @RequiredArgsConstructor는 생성자 주입(Constructor Injection) 입니다.
 @RequiredArgsConstructor는 Lombok에서 제공하는 어노테이션 입니다.
 결론적으로 생성자 주입을 권장합니다. 인텔리제이에서 코드를 작성하다보면 @Autowired를 사용하면 아래와 같은 경고를 알려줍니다.
-.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Warning
-Field injection is not recommended Inspection info: Spring Team recommends: &amp;ldquo;Always use constructor based dependency injection in your beans. Always use assertions for mandatory dependencies&amp;rdquo;.
- 뭐.. 추천하지 않고 생성자 주입방식을 쓰라고 하는거 같네요.</description>
+.notice{--root-color: #000; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(217, 83, 79, 0.9); --warning-content: #fae2e2; --info-title: #f0b37e; --info-content: #fff2db; --note-title: #6ab0de; --note-content: #e7f2fa; --tip-title: rgba(92, 184, 92, 0.8); --tip-content: #e6f9e6;}body.dark .notice{--root-color: #fff; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(130, 49, 47, 0.9); --warning-content: #341312; --info-title: #906B4B; --info-content: #392A1E; --note-title: #3f6985; --note-content: #192A35; --tip-title: rgba(46, 92, 46, 0.</description>
     </item>
     
     <item>
@@ -203,7 +214,7 @@ maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경�
       <description>작업의 효율을 높이기 위해 기존 화면에서 필요한 정보를 잠시 동안 캡쳐하는 방법이 있습니다.
 캡쳐프로그램은 정말 다양하게 존재하는데요. 예를 들어 알캡쳐, picpic, 윈도우 기본 내장 캡쳐, pureRef, snipaste 등 많이 있습니다.
 저 같은 경우 포스팅 할 때 화면캡쳐 용도로는 picpick을 자주 이용하며, 업무 중 필요한 정보를 캡쳐 할 때는 snipaste를 사용합니다.
-(picpick)[https://picpick.app/ko/]의 경우는 워낙 잘 알려져 있기 때문에 snipaste에 대해 알아보겠습니다.
+picpick의 경우는 워낙 잘 알려져 있기 때문에 snipaste에 대해 알아보겠습니다.
 Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 화면에 띄워놓을 수 있습니다.</description>
     </item>
     

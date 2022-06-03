@@ -1,4 +1,4 @@
-<!doctype html><html lang=en dir=auto>
+<!doctype html><html lang=ko dir=auto>
 <head><meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -68,11 +68,28 @@
 </nav>
 </header>
 <main class=main>
-<header class=page-header><div class=breadcrumbs><a href=https://haservi.github.io/>Home</a></div>
+<header class=page-header><div class=breadcrumbs><a href=https://haservi.github.io/>홈</a></div>
 <h1>
 Posts
 </h1>
 </header>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Spring Data JPA와 JPQL 함께 사용하기
+</h2>
+</header>
+<div class=entry-content>
+<p>JPQL 이란? 예전에는 JPQL은 Java Persistence Query Language로 불렸지만 현재의 JPQL은(Jakarta Persistence Query Language) 라고 합니다.(나무위키 링크)
+2019년부터 JPA(Java Persistence API)또한 Jakarta Persistence로 변경됐습니다.
+이름은 달라졌지만 역할은 달라지지 않았습니다. JPQL을 이용하여 관계형 데이터베이스의 엔티티를 정의하고 이를 활용한 쿼리 언어를 자바를 이용하여 구현합니다.
+더 나아가 Querydsl을 이용하면 좀 더 직관적이고 오류 없이 자바를 이용하여 작성할 수 있습니다.
+간단한 예시로 회원 조회를 하는 경우 JPQL과 Querydsl의 차이는 아래와 같습니다.
+JPQL
+public List&lt;Member> findAll() { EntityManager entityManager; return entityManager....</p>
+</div>
+<footer class=entry-footer><span title="2022-01-17 23:09:03 +0900 +0900">1월 17, 2022</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to Spring Data JPA와 JPQL 함께 사용하기" href=https://haservi.github.io/posts/spring/springdatajpa-and-customquery/></a>
+</article>
 <article class=post-entry>
 <header class=entry-header>
 <h2>Mybatis와 JPA에 대하여
@@ -85,7 +102,7 @@ JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 �
 MyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.
 JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다....</p>
 </div>
-<footer class=entry-footer><span title="2022-01-15 17:24:58 +0900 +0900">January 15, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2022-01-15 17:24:58 +0900 +0900">1월 15, 2022</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to Mybatis와 JPA에 대하여" href=https://haservi.github.io/posts/spring/mybatis-and-jpa/></a>
 </article>
 <article class=post-entry>
@@ -97,11 +114,9 @@ JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표�
 <p>@Autowired는 필드 주입이고, @RequiredArgsConstructor는 생성자 주입(Constructor Injection) 입니다.
 @RequiredArgsConstructor는 Lombok에서 제공하는 어노테이션 입니다.
 결론적으로 생성자 주입을 권장합니다. 인텔리제이에서 코드를 작성하다보면 @Autowired를 사용하면 아래와 같은 경고를 알려줍니다.
-.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Warning
-Field injection is not recommended Inspection info: Spring Team recommends: “Always use constructor based dependency injection in your beans. Always use assertions for mandatory dependencies”.
-뭐.. 추천하지 않고 생성자 주입방식을 쓰라고 하는거 같네요....</p>
+.notice{--root-color: #000; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(217, 83, 79, 0.9); --warning-content: #fae2e2; --info-title: #f0b37e; --info-content: #fff2db; --note-title: #6ab0de; --note-content: #e7f2fa; --tip-title: rgba(92, 184, 92, 0.8); --tip-content: #e6f9e6;}body.dark .notice{--root-color: #fff; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(130, 49, 47, 0.9); --warning-content: #341312; --info-title: #906B4B; --info-content: #392A1E; --note-title: #3f6985; --note-content: #192A35; --tip-title: rgba(46, 92, 46, 0....</p>
 </div>
-<footer class=entry-footer><span title="2022-01-12 13:39:01 +0900 +0900">January 12, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2022-01-12 13:39:01 +0900 +0900">1월 12, 2022</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to @Autowired와 @RequiredArgsConstructor 차이점 " href=https://haservi.github.io/posts/spring/diff-requiredargsconstructor-autowired/></a>
 </article>
 <article class=post-entry>
@@ -118,7 +133,7 @@ Field injection is not recommended Inspection info: Spring Team recommends: “A
 커스텀 설정하기 프로그램 실행 후 흰색 동그라미가 있는 모든 버튼이 커스텀 가능합니다.
 저의 경우 뒤로가기와 앞으로가기 버튼만 커스텀하여 사용하고 있습니다....</p>
 </div>
-<footer class=entry-footer><span title="2022-01-08 19:40:22 +0900 +0900">January 8, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2022-01-08 19:40:22 +0900 +0900">1월 8, 2022</span>&nbsp;·&nbsp;3 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to Logitech Options를 이용한 마우스 커스텀하기" href=https://haservi.github.io/posts/tools/how-to-logitech-option/></a>
 </article>
 <article class=post-entry>
@@ -136,7 +151,7 @@ Field injection is not recommended Inspection info: Spring Team recommends: “A
 git config --list 사용자 이름 입력
 git config --global user....</p>
 </div>
-<footer class=entry-footer><span title="2021-12-29 22:18:20 +0900 +0900">December 29, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-12-29 22:18:20 +0900 +0900">12월 29, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to 자주 사용하는 Git Command 정리" href=https://haservi.github.io/posts/tips/git-frequently-used-commands/></a>
 </article>
 <article class=post-entry>
@@ -150,7 +165,7 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 게임으로 예를 들면 스타크래프트에서 모든 유닛의 기본적인 특성 HP, 이동하기를 interface로 기능만 명시하고 각각 분업하여 유닛에 대한 HP나 이동속도를 구현할 수 있습니다.
 하지만 일반적인 Spring 웹프로젝트에서는 Service interface는 1:1 구조인 경우가 많습니다. 만약 확장성을 고려한 1:N의 경우에는 interface로 가는 것이 좋지만 너무 막연한 경우에는 그냥 class로 생성 후 추후 시나리오 변경 또는 로직상 확장성이 필요한 경우 interface로 변경하는 것이 좋다고 생각합니다....</p>
 </div>
-<footer class=entry-footer><span title="2021-12-22 20:11:56 +0900 +0900">December 22, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-12-22 20:11:56 +0900 +0900">12월 22, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to [Spring] Service와 ServiceImpl에 대해" href=https://haservi.github.io/posts/spring/service-and-serviceimp/></a>
 </article>
 <article class=post-entry>
@@ -163,28 +178,13 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
 아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.</p>
 </div>
-<footer class=entry-footer><span title="2021-12-02 16:40:29 +0900 +0900">December 2, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-12-02 16:40:29 +0900 +0900">12월 2, 2021</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to springtoolsuite4에서 dependency 추가 방법" href=https://haservi.github.io/posts/spring/springboot-add-dependency/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Github 저장소 안의 폴더 다운로드 받는 방법
-</h2>
-</header>
-<div class=entry-content>
-<p>기본적으로 웹상에서는 Git 저장소 안의 폴더를 다운받으려면 해당 저장소 전부를 다운 받은 후에 특정 폴더의 정보를 봐야 합니다.
-간단한 방법은 아래의 링크에서 다운로드 받는게 제일 쉬운방법이지만 터미널에서 다운로드 방법도 한번 다루어보겠습니다. 터미널로 다운 받은 경우 이후 해당 소스가 변경이 있다면 당겨올 수 있는 이점도 있습니다.
-해결방법 웹 다운로드 https://downgit.github.io/#/home 해당 사이트에 github 저장소 특정 폴더의 링크를 복사 한 후 붙여넣고 Download 버튼 클릭
-터미널 다운로드 기본적으로 git이 설치돼 있어야합니다.
-예제로 https://github....</p>
-</div>
-<footer class=entry-footer><span title="2021-11-28 21:30:06 +0900 +0900">November 28, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to Github 저장소 안의 폴더 다운로드 받는 방법" href=https://haservi.github.io/posts/tips/git-inner-folder-download/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
-<a class=prev href=https://haservi.github.io/posts/>« Prev</a>
-<a class=next href=https://haservi.github.io/posts/page/3/>Next »</a>
+<a class=prev href=https://haservi.github.io/posts/>« 이전 페이지</a>
+<a class=next href=https://haservi.github.io/posts/page/3/>다음 페이지 »</a>
 </nav>
 </footer>
 </main>
