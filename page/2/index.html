@@ -72,6 +72,20 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법
+</h2>
+</header>
+<div class=entry-content>
+<p>H2를 최신 버전(2.1.210)으로 업데이트하니 아래와 같은 에러가 발생했습니다.
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set ... java.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ... 일단 임시방편으로 H2 url을 연결하는 곳에 추가적으로 옵션(;MODE=LEGACY)을 넣으면 해결됩니다.
+url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용하면 H2 1.X용으로 작성된 응용 프로그램에 대한 일부 호환성 기능이 활성화됩니다. Hibernate ORM에서 H2에 대해서 유효하지 않은 SQL을 생성하기 때문이라고 합니다.
+그렇다면.. hibernate ORM에서 H2 방언에 대한 문제를 해결해야 합니다....</p>
+</div>
+<footer class=entry-footer><span title="2022-01-29 19:16:48 +0900 +0900">1월 29, 2022</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법" href=https://haservi.github.io/posts/spring/spadework/h2-version-upgrade-error/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Spring Data JPA와 JPQL 함께 사용하기
 </h2>
 </header>
@@ -164,19 +178,6 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 </div>
 <footer class=entry-footer><span title="2021-12-22 20:11:56 +0900 +0900">12월 22, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to [Spring] Service와 ServiceImpl에 대해" href=https://haservi.github.io/posts/spring/service-and-serviceimp/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>springtoolsuite4에서 dependency 추가 방법
-</h2>
-</header>
-<div class=entry-content>
-<p>SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.
-maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
-아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.</p>
-</div>
-<footer class=entry-footer><span title="2021-12-02 16:40:29 +0900 +0900">12월 2, 2021</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to springtoolsuite4에서 dependency 추가 방법" href=https://haservi.github.io/posts/spring/springboot-add-dependency/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

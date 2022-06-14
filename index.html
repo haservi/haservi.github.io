@@ -92,6 +92,21 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Docker 메모리 제한 설정 및 강제 종료
+</h2>
+</header>
+<div class=entry-content>
+<p>Docker 메모리 프로세서 제어 Docker를 사용하다 보면 아래처럼 치솟는 메모리 사용량을 볼 때가 있습니다.
+아래의 방법은 Docker를 테스트 중 메모리 사용량을 Windows에서 제어 하는 방법입니다.
+탐색기의 사용자 위치(C:\Users\&lt;사용자>)에 .wslconfig 파일을 생성합니다.
+아래와 같이 해당 파일의 설정을 지정합니다.
+# 설정은 WSL 2에서 실행되는 모든 Linux 배포판에 적용 [wsl2] # VM 메모리를 4GB 이하로 제한. # GB 또는 MB를 사용하여 정수로 설정할 수 있음 memory=4GB # 2개의 가상 프로세서를 사용하도록 VM을 설정 processors=2 # 스왑 저장 공간의 양을 8GB로 설정합니다....</p>
+</div>
+<footer class=entry-footer><span title="2022-06-12 18:22:10 +0900 +0900">6월 12, 2022</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to Docker 메모리 제한 설정 및 강제 종료" href=https://haservi.github.io/posts/devops/docker/docker-smemory-controll-and-exit/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>DBeaver 커스텀 셋팅하기
 </h2>
 </header>
@@ -177,20 +192,6 @@ Windows는 CRLF를 LF로 변경되도록 git config 설정 중 core....</p>
 </div>
 <footer class=entry-footer><span title="2022-02-14 20:20:41 +0900 +0900">2월 14, 2022</span>&nbsp;·&nbsp;4 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to Java Priority Queue(우선순위 큐) 원리 및 사용 방법" href=https://haservi.github.io/posts/java/priority-queue/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법
-</h2>
-</header>
-<div class=entry-content>
-<p>H2를 최신 버전(2.1.210)으로 업데이트하니 아래와 같은 에러가 발생했습니다.
-Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set ... java.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ... 일단 임시방편으로 H2 url을 연결하는 곳에 추가적으로 옵션(;MODE=LEGACY)을 넣으면 해결됩니다.
-url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용하면 H2 1.X용으로 작성된 응용 프로그램에 대한 일부 호환성 기능이 활성화됩니다. Hibernate ORM에서 H2에 대해서 유효하지 않은 SQL을 생성하기 때문이라고 합니다.
-그렇다면.. hibernate ORM에서 H2 방언에 대한 문제를 해결해야 합니다....</p>
-</div>
-<footer class=entry-footer><span title="2022-01-29 19:16:48 +0900 +0900">1월 29, 2022</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법" href=https://haservi.github.io/posts/spring/spadework/h2-version-upgrade-error/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
