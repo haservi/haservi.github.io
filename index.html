@@ -92,6 +92,22 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>IntelliJ에서 스프링 프로젝트 관련 설정
+</h2>
+</header>
+<div class=entry-content>
+<p>인텔리J에서 스프링 프로젝트를 생성하면 아래 셋팅은 미리 설정하면 좋습니다.
+1. 어노테이션 프로세싱 활성화 롬복과 같은 외부 라이브러리를 의존성 주입하게 될 경우 해당 사항을 체크해줘야 컴파일 시 문제 없이 동작합니다.
+설정에서 검색창에 annotation을 입력하면 아래와 같은 화면이 나옵니다.
+2. Build and run IntelliJ IDEA로 변경 IntelliJ IDEA 인텔리제이 자체에서 제공하는 빌드 자동화 도구입니다.
+기본은 Gradle로 설정 돼 있습니다. 이걸 IntelliJ IDEA로 변경하면 더 빠른 테스트를 할 수 있습니다.
+Gradle빌드와 IntelliJ IDEA 빌드의 차이는 증분 빌드 여부입니다....</p>
+</div>
+<footer class=entry-footer><span title="2022-07-07 00:19:23 +0900 +0900">7월 7, 2022</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to IntelliJ에서 스프링 프로젝트 관련 설정" href=https://haservi.github.io/posts/spring/spring-intellij-start-setting/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Docker 메모리 제한 설정 및 강제 종료
 </h2>
 </header>
@@ -178,20 +194,6 @@ Windows는 CRLF를 LF로 변경되도록 git config 설정 중 core....</p>
 </div>
 <footer class=entry-footer><span title="2022-02-21 21:50:28 +0900 +0900">2월 21, 2022</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to git CRLF 개행 문자 차이 해결 방법" href=https://haservi.github.io/posts/tips/git-crlf/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Java Priority Queue(우선순위 큐) 원리 및 사용 방법
-</h2>
-</header>
-<div class=entry-content>
-<p>우선순위 큐(Priority Queue) 란? 우선순위 큐(Priority Queue)는 일반적인 큐의 구조와 달리 들어가는 순서와 상관없이 정의한대로 우선순위를 먼저 결정하고 그 우선순위가 높은 데이터가 먼저 나가는 자료구조 입니다. 그렇기 때문에 dequeue를 하면 이미 정의한 순서에 맞게 가장 위의 값이 나타납니다.
-우선순위 큐는 힙을 기반으로 하는 완전이진트리로 우선순위를 정하게 됩니다.
-사용 방법 우선순위 큐는 우선순위가 꼭 필요한 경우에 사용합니다. 람다식으로 정의해도 되고 Comparable을 이용해서 정의해도 됩니다.
-// 낮은 숫자가 우선순위가 높은 방식 PriorityQueue&lt;Integer> pq = new PriorityQueue&lt;>(); // 높은 숫자가 우선순위가 높은 방식 PriorityQueue&lt;Integer> pq = new PriorityQueue&lt;>(Collections....</p>
-</div>
-<footer class=entry-footer><span title="2022-02-14 20:20:41 +0900 +0900">2월 14, 2022</span>&nbsp;·&nbsp;4 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to Java Priority Queue(우선순위 큐) 원리 및 사용 방법" href=https://haservi.github.io/posts/java/priority-queue/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

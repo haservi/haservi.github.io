@@ -9,7 +9,21 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 29 Jan 2022 19:16:48 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/spring/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 00:19:23 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/spring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IntelliJ에서 스프링 프로젝트 관련 설정</title>
+      <link>https://haservi.github.io/posts/spring/spring-intellij-start-setting/</link>
+      <pubDate>Thu, 07 Jul 2022 00:19:23 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/spring/spring-intellij-start-setting/</guid>
+      <description>인텔리J에서 스프링 프로젝트를 생성하면 아래 셋팅은 미리 설정하면 좋습니다.
+1. 어노테이션 프로세싱 활성화 롬복과 같은 외부 라이브러리를 의존성 주입하게 될 경우 해당 사항을 체크해줘야 컴파일 시 문제 없이 동작합니다.
+설정에서 검색창에 annotation을 입력하면 아래와 같은 화면이 나옵니다.
+2. Build and run IntelliJ IDEA로 변경 IntelliJ IDEA 인텔리제이 자체에서 제공하는 빌드 자동화 도구입니다.
+기본은 Gradle로 설정 돼 있습니다. 이걸 IntelliJ IDEA로 변경하면 더 빠른 테스트를 할 수 있습니다.
+Gradle빌드와 IntelliJ IDEA 빌드의 차이는 증분 빌드 여부입니다.</description>
+    </item>
+    
     <item>
       <title>H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법</title>
       <link>https://haservi.github.io/posts/spring/spadework/h2-version-upgrade-error/</link>

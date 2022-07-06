@@ -9,7 +9,21 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Jun 2022 18:22:10 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jul 2022 00:19:23 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IntelliJ에서 스프링 프로젝트 관련 설정</title>
+      <link>https://haservi.github.io/posts/spring/spring-intellij-start-setting/</link>
+      <pubDate>Thu, 07 Jul 2022 00:19:23 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/spring/spring-intellij-start-setting/</guid>
+      <description>인텔리J에서 스프링 프로젝트를 생성하면 아래 셋팅은 미리 설정하면 좋습니다.
+1. 어노테이션 프로세싱 활성화 롬복과 같은 외부 라이브러리를 의존성 주입하게 될 경우 해당 사항을 체크해줘야 컴파일 시 문제 없이 동작합니다.
+설정에서 검색창에 annotation을 입력하면 아래와 같은 화면이 나옵니다.
+2. Build and run IntelliJ IDEA로 변경 IntelliJ IDEA 인텔리제이 자체에서 제공하는 빌드 자동화 도구입니다.
+기본은 Gradle로 설정 돼 있습니다. 이걸 IntelliJ IDEA로 변경하면 더 빠른 테스트를 할 수 있습니다.
+Gradle빌드와 IntelliJ IDEA 빌드의 차이는 증분 빌드 여부입니다.</description>
+    </item>
+    
     <item>
       <title>Docker 메모리 제한 설정 및 강제 종료</title>
       <link>https://haservi.github.io/posts/devops/docker/docker-smemory-controll-and-exit/</link>
@@ -351,19 +365,6 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 다행히 지도 암호를 해독할 방법을 적어놓은 메모도 함께 발견했다.
  지도는 한 변의 길이가 n인 정사각형 배열 형태로, 각 칸은 &amp;ldquo;공백&amp;rdquo;(&amp;quot; &amp;ldquo;) 또는 &amp;ldquo;벽&amp;rdquo;(&amp;quot;#&amp;quot;) 두 종류로 이루어져 있다. 전체 지도는 두 장의 지도를 겹쳐서 얻을 수 있다. 각각 &amp;ldquo;지도 1&amp;quot;과 &amp;ldquo;지도 2&amp;quot;라고 하자.
 지도 1 또는 지도 2 중 어느 하나라도 벽인 부분은 전체 지도에서도 벽이다.</description>
-    </item>
-    
-    <item>
-      <title>블로그 시작하기</title>
-      <link>https://haservi.github.io/posts/etc/start-blog/</link>
-      <pubDate>Tue, 17 Aug 2021 21:00:00 +0900</pubDate>
-      
-      <guid>https://haservi.github.io/posts/etc/start-blog/</guid>
-      <description>블로그 시작하기 최근 기억하는 것보다 잊혀져가는 것이 많아져 공부한 내용을 기록하기 위해 블로그를 다시 써보려 합니다.
-이전에 티스토리에서 블로그를 했었는데 뭐랄까.. github에서 하는게 좀 더 관리하기가 편할 것 같아 이사하게 됐습니다. :D
-주로 공부한 내용 또는 삽질 그리고 개발하면서 도움되는 팁에 대한 내용이 주를 이룰 것이라 생각합니다.
-테마 선정 gihtub.io 안에서도 Gatsby, Jekyll, Hexo, Hugo와 같은 여러 테마가 있으며 이 중 Hugo를 사용하고 있습니다.
-해당 블로그 테마는 PaperMod를 기본으로 하였으며, 조금 커스텀하여 사용중입니다.</description>
     </item>
     
   </channel>

@@ -74,6 +74,22 @@ Spring
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>IntelliJ에서 스프링 프로젝트 관련 설정
+</h2>
+</header>
+<div class=entry-content>
+<p>인텔리J에서 스프링 프로젝트를 생성하면 아래 셋팅은 미리 설정하면 좋습니다.
+1. 어노테이션 프로세싱 활성화 롬복과 같은 외부 라이브러리를 의존성 주입하게 될 경우 해당 사항을 체크해줘야 컴파일 시 문제 없이 동작합니다.
+설정에서 검색창에 annotation을 입력하면 아래와 같은 화면이 나옵니다.
+2. Build and run IntelliJ IDEA로 변경 IntelliJ IDEA 인텔리제이 자체에서 제공하는 빌드 자동화 도구입니다.
+기본은 Gradle로 설정 돼 있습니다. 이걸 IntelliJ IDEA로 변경하면 더 빠른 테스트를 할 수 있습니다.
+Gradle빌드와 IntelliJ IDEA 빌드의 차이는 증분 빌드 여부입니다....</p>
+</div>
+<footer class=entry-footer><span title="2022-07-07 00:19:23 +0900 +0900">7월 7, 2022</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to IntelliJ에서 스프링 프로젝트 관련 설정" href=https://haservi.github.io/posts/spring/spring-intellij-start-setting/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법
 </h2>
 </header>
@@ -159,20 +175,11 @@ maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경�
 <footer class=entry-footer><span title="2021-12-02 16:40:29 +0900 +0900">12월 2, 2021</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to springtoolsuite4에서 dependency 추가 방법" href=https://haservi.github.io/posts/spring/springboot-add-dependency/></a>
 </article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>JPA ddl-auto 설정과 더미데이터 생성 방법
-</h2>
-</header>
-<div class=entry-content>
-<p>ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
-설정 옵션으로
-jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
-create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다....</p>
-</div>
-<footer class=entry-footer><span title="2021-11-12 15:47:31 +0900 +0900">11월 12, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to JPA ddl-auto 설정과 더미데이터 생성 방법" href=https://haservi.github.io/posts/spring/hibernate-ddl-auto/></a>
-</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=next href=https://haservi.github.io/categories/spring/page/2/>다음 페이지 »</a>
+</nav>
+</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2022 <a href=https://haservi.github.io/>Halog</a></span>

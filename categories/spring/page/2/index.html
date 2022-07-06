@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Categories | Halog</title>
+<title>Spring | Halog</title>
 <meta name=keywords content>
 <meta name=description content="development record">
 <meta name=author content="Haseop">
-<link rel=canonical href=https://haservi.github.io/categories/>
+<link rel=canonical href=https://haservi.github.io/categories/spring/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style>
 <link rel=icon href=https://haservi.github.io/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png>
@@ -16,19 +16,19 @@
 <link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<link rel=alternate type=application/rss+xml href=https://haservi.github.io/categories/index.xml>
+<link rel=alternate type=application/rss+xml href=https://haservi.github.io/categories/spring/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 </noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RP5NDCM8J9"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-RP5NDCM8J9',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="Categories">
+<meta property="og:title" content="Spring">
 <meta property="og:description" content="development record">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://haservi.github.io/categories/"><meta property="og:image" content="https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="Halog">
+<meta property="og:url" content="https://haservi.github.io/categories/spring/"><meta property="og:image" content="https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="Halog">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
-<meta name=twitter:title content="Categories">
+<meta name=twitter:title content="Spring">
 <meta name=twitter:description content="development record">
 </head>
 <body class="list dark" id=top>
@@ -50,7 +50,7 @@
 </li>
 <li>
 <a href=https://haservi.github.io/categories/ title=Categories>
-<span class=active>Categories</span>
+<span>Categories</span>
 </a>
 </li>
 <li>
@@ -67,41 +67,30 @@
 </nav>
 </header>
 <main class=main>
-<header class=page-header>
-<h1>Categories</h1>
+<header class=page-header><div class=breadcrumbs><a href=https://haservi.github.io/>홈</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/categories/>Categories</a></div>
+<h1>
+Spring
+</h1>
 </header>
-<ul class=terms-tags>
-<li>
-<a href=https://haservi.github.io/categories/algorithm/>Algorithm <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://haservi.github.io/categories/docker/>Docker <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://haservi.github.io/categories/git/>Git <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://haservi.github.io/categories/java/>Java <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://haservi.github.io/categories/jpa/>JPA <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://haservi.github.io/categories/linux/>linux <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://haservi.github.io/categories/programmers/>programmers <sup><strong><sup>7</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://haservi.github.io/categories/spring/>Spring <sup><strong><sup>8</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://haservi.github.io/categories/tips/>Tips <sup><strong><sup>5</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://haservi.github.io/categories/tools/>Tools <sup><strong><sup>4</sup></strong></sup> </a>
-</li>
-</ul>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>JPA ddl-auto 설정과 더미데이터 생성 방법
+</h2>
+</header>
+<div class=entry-content>
+<p>ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
+설정 옵션으로
+jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
+create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다....</p>
+</div>
+<footer class=entry-footer><span title="2021-11-12 15:47:31 +0900 +0900">11월 12, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to JPA ddl-auto 설정과 더미데이터 생성 방법" href=https://haservi.github.io/posts/spring/hibernate-ddl-auto/></a>
+</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=prev href=https://haservi.github.io/categories/spring/>« 이전 페이지</a>
+</nav>
+</footer>
 </main>
 <footer class=footer>
 <span>&copy; 2022 <a href=https://haservi.github.io/>Halog</a></span>
