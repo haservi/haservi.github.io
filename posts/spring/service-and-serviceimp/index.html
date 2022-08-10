@@ -11,6 +11,7 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 하지만 일반적인 Spring 웹프로젝트에서는 Service interface는 1:1 구조인 경우가 많습니다. 만약 확장성을 고려한 1:N의 경우에는 interface로 가는 것이 좋지만 너무 막연한 경우에는 그냥 class로 생성 후 추후 시나리오 변경 또는 로직상 확장성이 필요한 경우 interface로 변경하는 것이 좋다고 생각합니다.">
 <meta name=author content="Haseop">
 <link rel=canonical href=https://haservi.github.io/posts/spring/service-and-serviceimp/>
+<meta name=google-site-verification content="G-MXZP81P04W">
 <link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style>
 <script defer crossorigin=anonymous src=/assets/js/highlight.js onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://haservi.github.io/favicon.ico>
@@ -52,7 +53,7 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 <div class=logo>
 <a href=https://haservi.github.io/ accesskey=h title="Halog (Alt + H)">Halog</a>
 <div class=logo-switches>
-<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
 </div>
 </div>

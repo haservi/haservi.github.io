@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tips/window-java-version-change/</loc>
+    <lastmod>2022-08-09T22:32:07+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/</loc>
     <lastmod>2022-08-02T23:22:38+09:00</lastmod>
   </url><url>
@@ -26,7 +29,7 @@
     <loc>https://haservi.github.io/posts/tips/git-crlf/</loc>
     <lastmod>2022-02-21T21:50:28+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/java/priority-queue/</loc>
+    <loc>https://haservi.github.io/posts/algorithms/priority-queue/</loc>
     <lastmod>2022-02-14T20:20:41+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/spring/spadework/h2-version-upgrade-error/</loc>
@@ -90,18 +93,24 @@
     <lastmod>2021-08-20T01:31:31+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2022-08-02T23:22:38+09:00</lastmod>
+    <lastmod>2022-08-09T22:32:07+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/</loc>
+    <lastmod>2022-08-09T22:32:07+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/java/</loc>
+    <lastmod>2022-08-09T22:32:07+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2022-08-09T22:32:07+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/tips/</loc>
+    <lastmod>2022-08-09T22:32:07+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/docker/</loc>
     <lastmod>2022-08-02T23:22:38+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/</loc>
-    <lastmod>2022-08-02T23:22:38+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/categories/nas/</loc>
-    <lastmod>2022-08-02T23:22:38+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/posts/</loc>
     <lastmod>2022-08-02T23:22:38+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/spring/</loc>
@@ -110,13 +119,7 @@
     <loc>https://haservi.github.io/categories/tools/</loc>
     <lastmod>2022-06-02T20:20:49+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/tips/</loc>
-    <lastmod>2022-05-23T21:49:41+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/categories/algorithm/</loc>
-    <lastmod>2022-02-14T20:20:41+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/categories/java/</loc>
     <lastmod>2022-02-14T20:20:41+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/jpa/</loc>
