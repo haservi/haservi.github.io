@@ -8,6 +8,25 @@
       <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://haservi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 26 Oct 2022 22:35:53 +0900</lastBuildDate><atom:link href="https://haservi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>node version change</title>
+      <link>https://haservi.github.io/tags/node-version-change/</link>
+      <pubDate>Wed, 26 Oct 2022 22:35:53 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/tags/node-version-change/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nodejs change</title>
+      <link>https://haservi.github.io/tags/nodejs-change/</link>
+      <pubDate>Wed, 26 Oct 2022 22:35:53 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/tags/nodejs-change/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

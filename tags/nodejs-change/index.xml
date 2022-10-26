@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nodejs change on Halog</title>
+    <link>https://haservi.github.io/tags/nodejs-change/</link>
+    <description>Recent content in Nodejs change on Halog</description>
+    <image>
+      <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 26 Oct 2022 22:35:53 +0900</lastBuildDate><atom:link href="https://haservi.github.io/tags/nodejs-change/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Node.js 버전 변경하기</title>
+      <link>https://haservi.github.io/posts/tips/window-nodejs-version-change/</link>
+      <pubDate>Wed, 26 Oct 2022 22:35:53 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/window-nodejs-version-change/</guid>
+      <description>종종 프로젝트 중에는 특정 Node.js 버전에서만 동작하는 프로젝트가 있습니다. 이럴 경우 Docker를 이용하여 컨테이너를 만들거나 로컬인 경우 해당 버전에 맞는 Node.js를 설치해야 합니다.
+이번 내용은 전에 작성한 jdk 버전을 변경하듯이 Node.js 버전을 변경하는 방법에 대해 알아볼께요. .notice{--root-color: #000; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(217, 83, 79, 0.9); --warning-content: #fae2e2; --info-title: #f0b37e; --info-content: #fff2db; --note-title: #6ab0de; --note-content: #e7f2fa; --tip-title: rgba(92, 184, 92, 0.8); --tip-content: #e6f9e6;}body.dark .notice{--root-color: #fff; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(130, 49, 47, 0.</description>
+    </item>
+    
+  </channel>
+</rss>
