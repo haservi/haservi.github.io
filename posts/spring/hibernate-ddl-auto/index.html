@@ -12,8 +12,8 @@ jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 
 <meta name=author content="Haseop">
 <link rel=canonical href=https://haservi.github.io/posts/spring/hibernate-ddl-auto/>
 <meta name=google-site-verification content="G-MXZP81P04W">
+<link rel=stylesheet as=style crossorigin href=https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css>
 <link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style>
-<script defer crossorigin=anonymous src=/assets/js/highlight.js onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://haservi.github.io/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png>
 <link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/favicon-32x32.png>
@@ -32,19 +32,18 @@ jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 
 jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
  create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함  실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://haservi.github.io/posts/spring/hibernate-ddl-auto/">
-<meta property="og:image" content="https://haservi.github.io/%3Cimage%20path/url%3E"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://haservi.github.io/posts/spring/hibernate-ddl-auto/"><meta property="og:image" content="https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-11-12T15:47:31+09:00">
 <meta property="article:modified_time" content="2021-11-12T15:47:31+09:00"><meta property="og:site_name" content="Halog">
 <meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://haservi.github.io/%3Cimage%20path/url%3E">
+<meta name=twitter:image content="https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
 <meta name=twitter:title content="JPA ddl-auto 설정과 더미데이터 생성 방법">
 <meta name=twitter:description content="ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
 설정 옵션으로
 jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
  create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함  실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"JPA ddl-auto 설정과 더미데이터 생성 방법","item":"https://haservi.github.io/posts/spring/hibernate-ddl-auto/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"JPA ddl-auto 설정과 더미데이터 생성 방법","name":"JPA ddl-auto 설정과 더미데이터 생성 방법","description":"ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.\n설정 옵션으로\njpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.\n create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함  실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.","keywords":["",""],"articleBody":"ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.\n설정 옵션으로\njpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.\n create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함  실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.\n샘플데이터 추가 방법 그렇지만 데이터 테이블만 생기고 데이터가 없으니 오히려 테스트하기 불편한 점이 있습니다.\n그렇기에 찾아보니 역시 당연하게도.. resources 폴더에 import.sql 파일을 추가하면 hibernate에서 알아서 해당 더미데이터 쿼리를 찾아 실해시켜줍니다.\n만약 특정 파일을 지정하고 싶다면 아래와 같이\njpa: properties: hibernate: hbm2ddl: import_files: classpath:db/data.sql # DB 파일 명시적으로 선택 import_files_sql_extractor: org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor # 멀티 라인 입력 가능하도록 connection: charSet: UTF-8 # 인코딩 설정 파일명을 명시주면 create에 자동으로 해당 데이터를 insert 할 수 있습니다.\n예제 만약 아래와 같이 user 테이블이 있다면..\nimport java.time.LocalDateTime; import javax.persistence.Column; import javax.persistence.Entity; import javax.persistence.GeneratedValue; import javax.persistence.GenerationType; import javax.persistence.Id; import javax.persistence.Table; import lombok.AccessLevel; import lombok.Builder; import lombok.Getter; import lombok.NoArgsConstructor; import org.hibernate.annotations.ColumnDefault; import org.hibernate.annotations.DynamicUpdate; @NoArgsConstructor(access = AccessLevel.PROTECTED) @Getter @Entity @DynamicUpdate @Table(name = \"user\") public class UserEntity { @Id @GeneratedValue(strategy= GenerationType.IDENTITY) @Column(nullable = false, updatable = false) private Long userSno; @Column(length = 20, nullable = false, unique = true) private String userId; @Column(length = 20) private String userName; @Column(length = 20, nullable = false) private String password; @Column(length = 30) private String email; @Column(nullable = false, updatable = false, insertable = false, columnDefinition = \"TIMESTAMP DEFAULT CURRENT_TIMESTAMP\") private LocalDateTime createDt; @Column(nullable = false, updatable = false, insertable = false) @ColumnDefault(\"0\") private int useYn; @Builder public UserEntity(Long userSno, String userId, String userName, String password, String email) { this.userSno = userSno; this.userId = userId; this.userName = userName; this.password = password; this.email = email; } } import.sql파일 또는 지정한 sql파일에 아래와 같이 코드를 추가해주면 빌드 시 자동적으로 데이터를 넣을 수 있습니다.\ninsertinto`user`(`email`,`password`,`user_id`,`user_name`)values('admin@admin.com','$2a$10$dyiw3YfbmBkHlUdbgWhsYesqniOsXo71KBzF75le5.YtS/rsrsM22','admin','관리자');insertinto`user`(`email`,`password`,`user_id`,`user_name`)values('test@test.com','$2a$10$PMc5QFOUViVsGmsNMQqUzOuQG2rZ2wUJjSTRGFkBo9jZR/CSnQ03K','test','테스트');주의할 점은 실제 배포시에는 꼭 ddl-auto를 none으로 해야 합니다.\nddl-auto의 경우 초기 DB 설정 및 간단한 테스트에서만 쓰는게 좋습니다.\n","wordCount":"343","inLanguage":"ko","image":"https://haservi.github.io/%3Cimage%20path/url%3E","datePublished":"2021-11-12T15:47:31+09:00","dateModified":"2021-11-12T15:47:31+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/spring/hibernate-ddl-auto/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"JPA ddl-auto 설정과 더미데이터 생성 방법","name":"JPA ddl-auto 설정과 더미데이터 생성 방법","description":"ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.\n설정 옵션으로\njpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.\n create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함  실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.","keywords":["",""],"articleBody":" ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.\n설정 옵션으로\njpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.\n create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함  실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.\n샘플데이터 추가 방법 그렇지만 데이터 테이블만 생기고 데이터가 없으니 오히려 테스트하기 불편한 점이 있습니다.\n그렇기에 찾아보니 역시 당연하게도.. resources 폴더에 import.sql 파일을 추가하면 hibernate에서 알아서 해당 더미데이터 쿼리를 찾아 실해시켜줍니다.\n만약 특정 파일을 지정하고 싶다면 아래와 같이\njpa: properties: hibernate: hbm2ddl: import_files: classpath:db/data.sql # DB 파일 명시적으로 선택 import_files_sql_extractor: org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor # 멀티 라인 입력 가능하도록 connection: charSet: UTF-8 # 인코딩 설정 파일명을 명시주면 create에 자동으로 해당 데이터를 insert 할 수 있습니다.\n예제 만약 아래와 같이 user 테이블이 있다면..\nimport java.time.LocalDateTime; import javax.persistence.Column; import javax.persistence.Entity; import javax.persistence.GeneratedValue; import javax.persistence.GenerationType; import javax.persistence.Id; import javax.persistence.Table; import lombok.AccessLevel; import lombok.Builder; import lombok.Getter; import lombok.NoArgsConstructor; import org.hibernate.annotations.ColumnDefault; import org.hibernate.annotations.DynamicUpdate; @NoArgsConstructor(access = AccessLevel.PROTECTED) @Getter @Entity @DynamicUpdate @Table(name = \"user\") public class UserEntity { @Id @GeneratedValue(strategy= GenerationType.IDENTITY) @Column(nullable = false, updatable = false) private Long userSno; @Column(length = 20, nullable = false, unique = true) private String userId; @Column(length = 20) private String userName; @Column(length = 20, nullable = false) private String password; @Column(length = 30) private String email; @Column(nullable = false, updatable = false, insertable = false, columnDefinition = \"TIMESTAMP DEFAULT CURRENT_TIMESTAMP\") private LocalDateTime createDt; @Column(nullable = false, updatable = false, insertable = false) @ColumnDefault(\"0\") private int useYn; @Builder public UserEntity(Long userSno, String userId, String userName, String password, String email) { this.userSno = userSno; this.userId = userId; this.userName = userName; this.password = password; this.email = email; } } import.sql파일 또는 지정한 sql파일에 아래와 같이 코드를 추가해주면 빌드 시 자동적으로 데이터를 넣을 수 있습니다.\ninsertinto`user`(`email`,`password`,`user_id`,`user_name`)values('admin@admin.com','$2a$10$dyiw3YfbmBkHlUdbgWhsYesqniOsXo71KBzF75le5.YtS/rsrsM22','admin','관리자');insertinto`user`(`email`,`password`,`user_id`,`user_name`)values('test@test.com','$2a$10$PMc5QFOUViVsGmsNMQqUzOuQG2rZ2wUJjSTRGFkBo9jZR/CSnQ03K','test','테스트'); 주의할 점은 실제 배포시에는 꼭 ddl-auto를 none으로 해야 합니다.\nddl-auto의 경우 초기 DB 설정 및 간단한 테스트에서만 쓰는게 좋습니다.\n","wordCount":"344","inLanguage":"ko","datePublished":"2021-11-12T15:47:31+09:00","dateModified":"2021-11-12T15:47:31+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/spring/hibernate-ddl-auto/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -88,7 +87,7 @@ jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 
 <h1 class=post-title>
 JPA ddl-auto 설정과 더미데이터 생성 방법
 </h1>
-<div class=post-meta><span title="2021-11-12 15:47:31 +0900 +0900">11월 12, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop
+<div class=post-meta><span title="2021-11-12 15:47:31 +0900 +0900">11월 12, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/spring/hibernate-ddl-auto/index.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
 </div>
 </header> <div class=toc>
 <details>
@@ -109,13 +108,14 @@ JPA ddl-auto 설정과 더미데이터 생성 방법
 </div>
 </details>
 </div>
-<div class=post-content><h2 id=ddl-auto-란>ddl-auto 란<a hidden class=anchor aria-hidden=true href=#ddl-auto-란>#</a></h2>
+<div class=post-content>
+<h2 id=ddl-auto-란>ddl-auto 란<a hidden class=anchor aria-hidden=true href=#ddl-auto-란>#</a></h2>
 <p>JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.<br>
 설정 옵션으로</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>jpa:
   hibernate:
-    ddl-auto: create <span class=c1>#create-drop, update, validate, none</span>
-</code></pre></div><p>각각의 옵션을 봐보면 아래와 같습니다.</p>
+    ddl-auto: create <span class=c1>#create-drop, update, validate, none</span></code></pre></div>
+<p>각각의 옵션을 봐보면 아래와 같습니다.</p>
 <ul>
 <li>create : SessionFactory 시작시 스키마를 삭제하고 다시 생성</li>
 <li>create-drop : SessionFactory 종료 시 스키마를 삭제</li>
@@ -136,8 +136,8 @@ JPA ddl-auto 설정과 더미데이터 생성 방법
         import_files: classpath:db/data.sql <span class=c1># DB 파일 명시적으로 선택</span>
         import_files_sql_extractor: org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor <span class=c1># 멀티 라인 입력 가능하도록</span>
       connection: 
-        charSet: UTF-8 <span class=c1># 인코딩 설정</span>
-</code></pre></div><p>파일명을 명시주면 <code>create</code>에 자동으로 해당 데이터를 insert 할 수 있습니다.</p>
+        charSet: UTF-8 <span class=c1># 인코딩 설정</span></code></pre></div>
+<p>파일명을 명시주면 <code>create</code>에 자동으로 해당 데이터를 insert 할 수 있습니다.</p>
 <h3 id=예제>예제<a hidden class=anchor aria-hidden=true href=#예제>#</a></h3>
 <p>만약 아래와 같이 <code>user 테이블</code>이 있다면..</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=kn>import</span> <span class=nn>java.time.LocalDateTime</span><span class=o>;</span>
@@ -192,11 +192,11 @@ JPA ddl-auto 설정과 더미데이터 생성 방법
         <span class=k>this</span><span class=o>.</span><span class=na>password</span> <span class=o>=</span> <span class=n>password</span><span class=o>;</span>
         <span class=k>this</span><span class=o>.</span><span class=na>email</span> <span class=o>=</span> <span class=n>email</span><span class=o>;</span>
     <span class=o>}</span>
-<span class=o>}</span>
-</code></pre></div><p><code>import.sql</code>파일 또는 지정한 <code>sql파일</code>에 아래와 같이 코드를 추가해주면 빌드 시 자동적으로 데이터를 넣을 수 있습니다.</p>
+<span class=o>}</span></code></pre></div>
+<p><code>import.sql</code>파일 또는 지정한 <code>sql파일</code>에 아래와 같이 코드를 추가해주면 빌드 시 자동적으로 데이터를 넣을 수 있습니다.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=k>insert</span><span class=w> </span><span class=k>into</span><span class=w> </span><span class=o>`</span><span class=k>user</span><span class=o>`</span><span class=w> </span><span class=p>(</span><span class=o>`</span><span class=n>email</span><span class=o>`</span><span class=p>,</span><span class=w> </span><span class=o>`</span><span class=n>password</span><span class=o>`</span><span class=p>,</span><span class=w> </span><span class=o>`</span><span class=n>user_id</span><span class=o>`</span><span class=p>,</span><span class=w> </span><span class=o>`</span><span class=n>user_name</span><span class=o>`</span><span class=p>)</span><span class=w> </span><span class=k>values</span><span class=w> </span><span class=p>(</span><span class=s1>&#39;admin@admin.com&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;$2a$10$dyiw3YfbmBkHlUdbgWhsYesqniOsXo71KBzF75le5.YtS/rsrsM22&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;admin&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;관리자&#39;</span><span class=p>);</span><span class=w>
-</span><span class=w></span><span class=k>insert</span><span class=w> </span><span class=k>into</span><span class=w> </span><span class=o>`</span><span class=k>user</span><span class=o>`</span><span class=w> </span><span class=p>(</span><span class=o>`</span><span class=n>email</span><span class=o>`</span><span class=p>,</span><span class=w> </span><span class=o>`</span><span class=n>password</span><span class=o>`</span><span class=p>,</span><span class=w> </span><span class=o>`</span><span class=n>user_id</span><span class=o>`</span><span class=p>,</span><span class=w> </span><span class=o>`</span><span class=n>user_name</span><span class=o>`</span><span class=p>)</span><span class=w> </span><span class=k>values</span><span class=w> </span><span class=p>(</span><span class=s1>&#39;test@test.com&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;$2a$10$PMc5QFOUViVsGmsNMQqUzOuQG2rZ2wUJjSTRGFkBo9jZR/CSnQ03K&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;test&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;테스트&#39;</span><span class=p>);</span><span class=w>
-</span></code></pre></div><p>주의할 점은 실제 배포시에는 꼭 <code>ddl-auto</code>를 <code>none</code>으로 해야 합니다.<br>
+</span><span class=w></span><span class=k>insert</span><span class=w> </span><span class=k>into</span><span class=w> </span><span class=o>`</span><span class=k>user</span><span class=o>`</span><span class=w> </span><span class=p>(</span><span class=o>`</span><span class=n>email</span><span class=o>`</span><span class=p>,</span><span class=w> </span><span class=o>`</span><span class=n>password</span><span class=o>`</span><span class=p>,</span><span class=w> </span><span class=o>`</span><span class=n>user_id</span><span class=o>`</span><span class=p>,</span><span class=w> </span><span class=o>`</span><span class=n>user_name</span><span class=o>`</span><span class=p>)</span><span class=w> </span><span class=k>values</span><span class=w> </span><span class=p>(</span><span class=s1>&#39;test@test.com&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;$2a$10$PMc5QFOUViVsGmsNMQqUzOuQG2rZ2wUJjSTRGFkBo9jZR/CSnQ03K&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;test&#39;</span><span class=p>,</span><span class=w> </span><span class=s1>&#39;테스트&#39;</span><span class=p>);</span></code></pre></div>
+<p>주의할 점은 실제 배포시에는 꼭 <code>ddl-auto</code>를 <code>none</code>으로 해야 합니다.<br>
 <code>ddl-auto</code>의 경우 초기 DB 설정 및 간단한 테스트에서만 쓰는게 좋습니다.</p>
 </div>
 <footer class=post-footer>
@@ -209,7 +209,7 @@ JPA ddl-auto 설정과 더미데이터 생성 방법
 </article>
 </main>
 <footer class=footer>
-<span>&copy; 2022 <a href=https://haservi.github.io/>Halog</a></span>
+<span>&copy; 2023 <a href=https://haservi.github.io/>Halog</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

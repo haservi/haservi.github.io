@@ -32,8 +32,7 @@ Gradle빌드와 IntelliJ IDEA 빌드의 차이는 증분 빌드 여부입니다.
       <guid>https://haservi.github.io/posts/spring/spadework/h2-version-upgrade-error/</guid>
       <description>H2를 최신 버전(2.1.210)으로 업데이트하니 아래와 같은 에러가 발생했습니다.
 Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when &amp;#39;hibernate.dialect&amp;#39; not set ... java.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ... 일단 임시방편으로 H2 url을 연결하는 곳에 추가적으로 옵션(;MODE=LEGACY)을 넣으면 해결됩니다.
-url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용하면 H2 1.X용으로 작성된 응용 프로그램에 대한 일부 호환성 기능이 활성화됩니다. Hibernate ORM에서 H2에 대해서 유효하지 않은 SQL을 생성하기 때문이라고 합니다.
-그렇다면.. hibernate ORM에서 H2 방언에 대한 문제를 해결해야 합니다.</description>
+url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용하면 H2 1.X용으로 작성된 응용 프로그램에 대한 일부 호환성 기능이 활성화됩니다. Hibernate ORM에서 H2에 대해서 유효하지 않은 SQL을 생성하기 때문이라고 합니다.</description>
     </item>
     
     <item>
@@ -86,17 +85,6 @@ JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표�
 interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주고, 협업 시 업무분담도 용이합니다.
 게임으로 예를 들면 스타크래프트에서 모든 유닛의 기본적인 특성 HP, 이동하기를 interface로 기능만 명시하고 각각 분업하여 유닛에 대한 HP나 이동속도를 구현할 수 있습니다.
 하지만 일반적인 Spring 웹프로젝트에서는 Service interface는 1:1 구조인 경우가 많습니다. 만약 확장성을 고려한 1:N의 경우에는 interface로 가는 것이 좋지만 너무 막연한 경우에는 그냥 class로 생성 후 추후 시나리오 변경 또는 로직상 확장성이 필요한 경우 interface로 변경하는 것이 좋다고 생각합니다.</description>
-    </item>
-    
-    <item>
-      <title>springtoolsuite4에서 dependency 추가 방법</title>
-      <link>https://haservi.github.io/posts/spring/springboot-add-dependency/</link>
-      <pubDate>Thu, 02 Dec 2021 16:40:29 +0900</pubDate>
-      
-      <guid>https://haservi.github.io/posts/spring/springboot-add-dependency/</guid>
-      <description>SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.
-maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
-아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.</description>
     </item>
     
     <item>

@@ -9,6 +9,7 @@
 <meta name=author content="Haseop">
 <link rel=canonical href=https://haservi.github.io/posts/>
 <meta name=google-site-verification content="G-MXZP81P04W">
+<link rel=stylesheet as=style crossorigin href=https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css>
 <link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style>
 <link rel=icon href=https://haservi.github.io/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png>
@@ -118,7 +119,7 @@ Posts
 기본적인 명령어는 숙지하는 것이 좋지만 history나 간단한 업무용으로는 충분하다고 생각합니다.
 기본 명령어 git 설정 보기
 git config --list 사용자 이름 입력
-git config --global user....</p>
+git config --global user.name "이름" 사용자 이메일 입력...</p>
 </div>
 <footer class=entry-footer><span title="2021-12-29 22:18:20 +0900 +0900">12월 29, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to 자주 사용하는 Git Command 정리" href=https://haservi.github.io/posts/tips/git-frequently-used-commands/></a>
@@ -139,19 +140,6 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 </article>
 <article class=post-entry>
 <header class=entry-header>
-<h2>springtoolsuite4에서 dependency 추가 방법
-</h2>
-</header>
-<div class=entry-content>
-<p>SpringBoot에서 Spring Starter Project로 프로젝트를 처음 만든 후 dependency를 추가하고 싶은 경우 해당 프로젝트 우클릭 후 Spring목록의 Add Starters에서 추가하거나 maven repository링크에서 추가해 줘야 합니다.
-maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경우 쉽게 추가할 수 있습니다.
-아마도 인텔리j의 ultimate의 경우에도 위와 비슷한 방법으로 dependency를 추가할 수 있을 것이라 생각되네요.</p>
-</div>
-<footer class=entry-footer><span title="2021-12-02 16:40:29 +0900 +0900">12월 2, 2021</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to springtoolsuite4에서 dependency 추가 방법" href=https://haservi.github.io/posts/spring/springboot-add-dependency/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
 <h2>Github 저장소 안의 폴더 다운로드 받는 방법
 </h2>
 </header>
@@ -159,8 +147,7 @@ maven repository 사이트에서 하나하나 찾아서 넣기 번거로운 경�
 <p>기본적으로 웹상에서는 Git 저장소 안의 폴더를 다운받으려면 해당 저장소 전부를 다운 받은 후에 특정 폴더의 정보를 봐야 합니다.
 간단한 방법은 아래의 링크에서 다운로드 받는게 제일 쉬운방법이지만 터미널에서 다운로드 방법도 한번 다루어보겠습니다. 터미널로 다운 받은 경우 이후 해당 소스가 변경이 있다면 당겨올 수 있는 이점도 있습니다.
 해결방법 웹 다운로드 https://downgit.github.io/#/home 해당 사이트에 github 저장소 특정 폴더의 링크를 복사 한 후 붙여넣고 Download 버튼 클릭
-터미널 다운로드 기본적으로 git이 설치돼 있어야합니다.
-예제로 https://github....</p>
+터미널 다운로드 기본적으로 git이 설치돼 있어야합니다....</p>
 </div>
 <footer class=entry-footer><span title="2021-11-28 21:30:06 +0900 +0900">11월 28, 2021</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to Github 저장소 안의 폴더 다운로드 받는 방법" href=https://haservi.github.io/posts/tips/git-inner-folder-download/></a>
@@ -180,6 +167,20 @@ Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 
 <footer class=entry-footer><span title="2021-11-25 21:38:17 +0900 +0900">11월 25, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to 화면 캡쳐 프로그램 추천" href=https://haservi.github.io/posts/tools/how-to-capture/></a>
 </article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>윈도우 WSL2 Ubuntu 터미널 꾸미기
+</h2>
+</header>
+<div class=entry-content>
+<p>Windows WSL Ubuntu 커스텀 하기 Window에서는 WSL(Windows Subsystem for Linux)를 제공합니다.
+예전엔 가상환경(VM)에 리눅스를 올렸다면 지금은 손쉽게 리눅스 커널을 WSL로 접근할 수 있게 됐습니다.
+그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.
+해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다....</p>
+</div>
+<footer class=entry-footer><span title="2021-11-22 20:49:25 +0900 +0900">11월 22, 2021</span>&nbsp;·&nbsp;4 분&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to 윈도우 WSL2 Ubuntu 터미널 꾸미기" href=https://haservi.github.io/posts/linux/used-zsh-powerline10/></a>
+</article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://haservi.github.io/posts/page/2/>
@@ -191,7 +192,7 @@ Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 
 </footer>
 </main>
 <footer class=footer>
-<span>&copy; 2022 <a href=https://haservi.github.io/>Halog</a></span>
+<span>&copy; 2023 <a href=https://haservi.github.io/>Halog</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
