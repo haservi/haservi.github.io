@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/devops/aws/infra-tips/</loc>
+    <lastmod>2023-01-12T21:34:04+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/tips/window-nodejs-version-change/</loc>
     <lastmod>2022-10-26T22:35:53+09:00</lastmod>
   </url><url>
@@ -93,10 +96,16 @@
     <lastmod>2021-08-20T01:31:31+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2022-10-26T22:35:53+09:00</lastmod>
+    <lastmod>2023-01-12T21:34:04+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2022-10-26T22:35:53+09:00</lastmod>
+    <lastmod>2023-01-12T21:34:04+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2023-01-12T21:34:04+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/tips/</loc>
+    <lastmod>2023-01-12T21:34:04+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/node-version-change/</loc>
     <lastmod>2022-10-26T22:35:53+09:00</lastmod>
@@ -104,13 +113,7 @@
     <loc>https://haservi.github.io/tags/nodejs-change/</loc>
     <lastmod>2022-10-26T22:35:53+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2022-10-26T22:35:53+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/tags/</loc>
-    <lastmod>2022-10-26T22:35:53+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/categories/tips/</loc>
     <lastmod>2022-10-26T22:35:53+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/java/</loc>

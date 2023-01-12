@@ -1,0 +1,236 @@
+<!doctype html><html lang=ko dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Infra 설정 관련 정리 | Halog</title>
+<meta name=keywords content=",">
+<meta name=description content="인프라 관련 내용 정리가 필요할 것 같아 중요한 키워드 정도로 정리한 내용입니다.
+AWS EC2 접속 명령어 기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.
+chmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기
+history bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.
+내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.
+bastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.">
+<meta name=author content="Haseop">
+<link rel=canonical href=https://haservi.github.io/posts/devops/aws/infra-tips/>
+<meta name=google-site-verification content="G-MXZP81P04W">
+<link rel=stylesheet as=style crossorigin href=https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css>
+<link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style>
+<link rel=icon href=https://haservi.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://haservi.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RP5NDCM8J9"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-RP5NDCM8J9',{anonymize_ip:!1})}</script>
+<meta property="og:title" content="Infra 설정 관련 정리">
+<meta property="og:description" content="인프라 관련 내용 정리가 필요할 것 같아 중요한 키워드 정도로 정리한 내용입니다.
+AWS EC2 접속 명령어 기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.
+chmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기
+history bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.
+내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.
+bastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://haservi.github.io/posts/devops/aws/infra-tips/"><meta property="og:image" content="https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-01-12T21:34:04+09:00">
+<meta property="article:modified_time" content="2023-01-12T21:34:04+09:00"><meta property="og:site_name" content="Halog">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name=twitter:title content="Infra 설정 관련 정리">
+<meta name=twitter:description content="인프라 관련 내용 정리가 필요할 것 같아 중요한 키워드 정도로 정리한 내용입니다.
+AWS EC2 접속 명령어 기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.
+chmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기
+history bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.
+내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.
+bastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Infra 설정 관련 정리","item":"https://haservi.github.io/posts/devops/aws/infra-tips/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Infra 설정 관련 정리","name":"Infra 설정 관련 정리","description":"인프라 관련 내용 정리가 필요할 것 같아 중요한 키워드 정도로 정리한 내용입니다.\nAWS EC2 접속 명령어 기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.\nchmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기\nhistory bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.\n내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.\nbastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.","keywords":["",""],"articleBody":" 인프라 관련 내용 정리가 필요할 것 같아 중요한 키워드 정도로 정리한 내용입니다.\nAWS EC2 접속 명령어 기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.\nchmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기\nhistory bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.\n내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.\nbastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.\n서비스용 서버에 22번 포트로의 접근은 bastion host만 가능하도록 security group을 설정해야합니다.\n# Bastion Server에서 공개키를 생성 bastion $ ssh-keygen -t rsa bastion $ cat ~/.ssh/id_rsa.pub # 접속하려는 서비스용 서버에 키 추가 $ vi ~/.ssh/authorized_keys 위와 같이 설정한 후 해당 서비스용 ip를 별칭으로 입력합니다.\nvim /etc/hosts 해당 파일에서 아래와 같이 입력하면 됩니다.\n[ip주소] [별칭] 사용할 때는 아래와 같이 쓰면 됩니다.\nssh [별칭] latency 인증 관련 도메인 생성 사이트에서 도메인을 발급받은 뒤 docker의 certbot을 통해 SSL 인증서를 무료로 발급받을 수 있습니다.\ndocker run -it --rm --name certbot \\  -v '/etc/letsencrypt:/etc/letsencrypt' \\  -v '/var/lib/letsencrypt:/var/lib/letsencrypt' \\  certbot/certbot certonly -d '[도메인 주소]' --manual --preferred-challenges dns --server https://acme-v02.api.letsencrypt.org/directory 발급받은 뒤 도메인 사이트에 아래와 같이 TXT(SPF)를 추가 해줘야합니다.\n# 인증서 경로 /etc/letsencrypt/live/[도메인주소]/fullchain.pem ./ /etc/letsencrypt/live/[도메인주소]/privkey.pem ./ 이후 nginx나 tomcat에 해당 인증서 키를 추가해야합니다.\ngit submodule 관련 키, 계정 정보, DB IP주소 패스워드 등 공개하고 싶지 않은 정보는 git private 저장소에 저장하고 해당 레포지토리를 submodule로 이용할 수 있습니다.\ngit submodule add [자신의 private 저장소] ./src/main/resources/config 이후 source code 받을때\ngit clone --recurse-submodules [자신의 프로젝트 저장소] # 설정 파일이 변경된 경우 git submodule foreach git pull origin main # 위의 설정이 안되면 아래로..! git submodule update --init --recursive k6 부하테스트 관련 k6는 부하테스트를 위한 라이브러리입니다. apache의 ab나 naver의 nGrinder처럼 부하테스트를 할 수 있는 도구입니다.\n설치 후 실행은 아래처럼 사용하면 됩니다.\nk6 run [파일명.js]  k6를 gui로 보기 좋게 해주는 grafana도 있습니다.\njar 스크립트 배포 관련 스크립트를 이용해서 배포를 할 수 있습니다. 아래의 코드는 Spring 프로젝트를 정지, 빌드, 배포하는 스크립트 입니다.\nPROJECT_PATH='프로젝트 경로' JAR_PATH=${PROJECT_PATH}/build/libs JAR=$(cd ${JAR_PATH} \u0026\u0026 find ./* -name \"*jar\" | cut -c 3-) JAR_PID=$(ps -ef | grep $JAR | grep -v grep | awk '{print $2}') function stop_process() { if [ -z \"$JAR_PID\" ]; then echo \"프로세스가 실행중이지 않습니다.\" else echo \"$JAR의프로세스를 종료합니다. (PID = $JAR_PID)\" kill $JAR_PID fi } function build() { cd ${PROJECT_PATH} \u0026\u0026 ./gradlew clean build } function start_process() { java -jar -Dspring.profiles.active=prod $JAR_PATH/$JAR } echo -e \"${txtylw}=======================================${txtrst}\" echo -e \"${txtgrn}Deploy Start ${txtrst}\" echo -e \"${txtylw}=======================================${txtrst}\" stop_process build start_process 위의 파일은 [파일명].sh로 확장자를 구성해야 하며, 처음에 권한을 추가해준뒤 아래 명령어로 실행하면 됩니다.\n# 권한 추가 chmod +x [파일명.sh] # 실행 ./[파일명.sh] 이외에도 AWS 모니터링, 스케일 아웃, AWS Launch Template 등 인프라 설정을 한다면 조금 더 안정적으로 웹 서비스를 운용할 수 있습니다.\n","wordCount":"444","inLanguage":"ko","datePublished":"2023-01-12T21:34:04+09:00","dateModified":"2023-01-12T21:34:04+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/devops/aws/infra-tips/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
+</head>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://haservi.github.io/ accesskey=h title="Halog (Alt + H)">Halog</a>
+<div class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</div>
+</div>
+<ul id=menu>
+<li>
+<a href=https://haservi.github.io/archives/ title=Archive>
+<span>Archive</span>
+</a>
+</li>
+<li>
+<a href=https://haservi.github.io/categories/ title=Categories>
+<span>Categories</span>
+</a>
+</li>
+<li>
+<a href=https://haservi.github.io/search/ title="Search (Alt + /)" accesskey=/>
+<span>Search</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://haservi.github.io/>홈</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/posts/>Posts</a></div>
+<h1 class=post-title>
+Infra 설정 관련 정리
+</h1>
+<div class=post-meta><span title="2023-01-12 21:34:04 +0900 +0900">1월 12, 2023</span>&nbsp;·&nbsp;3 분&nbsp;·&nbsp;Haseop&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/devops/aws/infra-tips/index.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+</div>
+</header> <div class=toc>
+<details>
+<summary accesskey=c title="(Alt + C)">
+<span class=details>목차</span>
+</summary>
+<div class=inner><ul>
+<li>
+<a href=#aws-ec2-%ec%a0%91%ec%86%8d-%eb%aa%85%eb%a0%b9%ec%96%b4 aria-label="AWS EC2 접속 명령어">AWS EC2 접속 명령어</a></li>
+<li>
+<a href=#bastion-host-%ec%84%a4%ec%a0%95 aria-label="bastion host 설정">bastion host 설정</a></li>
+<li>
+<a href=#latency-%ec%9d%b8%ec%a6%9d-%ea%b4%80%eb%a0%a8 aria-label="latency 인증 관련">latency 인증 관련</a></li>
+<li>
+<a href=#git-submodule-%ea%b4%80%eb%a0%a8 aria-label="git submodule 관련">git submodule 관련</a></li>
+<li>
+<a href=#k6-%eb%b6%80%ed%95%98%ed%85%8c%ec%8a%a4%ed%8a%b8-%ea%b4%80%eb%a0%a8 aria-label="k6 부하테스트 관련">k6 부하테스트 관련</a></li>
+<li>
+<a href=#jar-%ec%8a%a4%ed%81%ac%eb%a6%bd%ed%8a%b8-%eb%b0%b0%ed%8f%ac-%ea%b4%80%eb%a0%a8 aria-label="jar 스크립트 배포 관련">jar 스크립트 배포 관련</a>
+</li>
+</ul>
+</div>
+</details>
+</div>
+<div class=post-content>
+<p>인프라 관련 내용 정리가 필요할 것 같아 <code>중요한 키워드 정도</code>로 정리한 내용입니다.</p>
+<h3 id=aws-ec2-접속-명령어>AWS EC2 접속 명령어<a hidden class=anchor aria-hidden=true href=#aws-ec2-접속-명령어>#</a></h3>
+<p>기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>chmod <span class=m>400</span> <span class=o>[</span>pem파일명<span class=o>]</span>
+ssh -i <span class=o>[</span>pem키 파일명<span class=o>]</span> ubuntu@<span class=o>[</span>퍼블릭 IP 주소<span class=o>]</span></code></pre></div>
+<p>입력했던 콘솔 보기</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>history</code></pre></div>
+<h3 id=bastion-host-설정>bastion host 설정<a hidden class=anchor aria-hidden=true href=#bastion-host-설정>#</a></h3>
+<p>bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.<br>
+내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.</p>
+<p>bastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.</p>
+<p>서비스용 서버에 22번 포트로의 접근은 bastion host만 가능하도록 security group을 설정해야합니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1># Bastion Server에서 공개키를 생성</span>
+bastion $ ssh-keygen -t rsa
+bastion $ cat ~/.ssh/id_rsa.pub
+
+<span class=c1># 접속하려는 서비스용 서버에 키 추가</span>
+$ vi ~/.ssh/authorized_keys</code></pre></div>
+<p>위와 같이 설정한 후 해당 서비스용 ip를 별칭으로 입력합니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>vim /etc/hosts</code></pre></div>
+<p>해당 파일에서 아래와 같이 입력하면 됩니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=o>[</span>ip주소<span class=o>]</span> <span class=o>[</span>별칭<span class=o>]</span></code></pre></div>
+<p>사용할 때는 아래와 같이 쓰면 됩니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>ssh <span class=o>[</span>별칭<span class=o>]</span></code></pre></div>
+<h3 id=latency-인증-관련>latency 인증 관련<a hidden class=anchor aria-hidden=true href=#latency-인증-관련>#</a></h3>
+<p><a href=https://xn--220b31d95hq8o.xn--3e0b707e/ target=_blank>도메인 생성 사이트</a>에서 도메인을 발급받은 뒤
+docker의 certbot을 통해 SSL 인증서를 무료로 발급받을 수 있습니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>docker run -it --rm --name certbot <span class=se>\
+</span><span class=se></span>  -v <span class=s1>&#39;/etc/letsencrypt:/etc/letsencrypt&#39;</span> <span class=se>\
+</span><span class=se></span>  -v <span class=s1>&#39;/var/lib/letsencrypt:/var/lib/letsencrypt&#39;</span> <span class=se>\
+</span><span class=se></span>  certbot/certbot certonly -d <span class=s1>&#39;[도메인 주소]&#39;</span> --manual --preferred-challenges dns --server https://acme-v02.api.letsencrypt.org/directory</code></pre></div>
+<p>발급받은 뒤 도메인 사이트에 아래와 같이 TXT(SPF)를 추가 해줘야합니다.</p>
+<p><img src=./images/image01.png#center alt=images></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1># 인증서 경로</span>
+/etc/letsencrypt/live/<span class=o>[</span>도메인주소<span class=o>]</span>/fullchain.pem ./
+/etc/letsencrypt/live/<span class=o>[</span>도메인주소<span class=o>]</span>/privkey.pem ./</code></pre></div>
+<p>이후 nginx나 tomcat에 해당 인증서 키를 추가해야합니다.</p>
+<h3 id=git-submodule-관련>git submodule 관련<a hidden class=anchor aria-hidden=true href=#git-submodule-관련>#</a></h3>
+<p>키, 계정 정보, DB IP주소 패스워드 등 공개하고 싶지 않은 정보는 git private 저장소에 저장하고 해당 레포지토리를 submodule로 이용할 수 있습니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>git submodule add <span class=o>[</span>자신의 private 저장소<span class=o>]</span> ./src/main/resources/config</code></pre></div>
+<p>이후 source code 받을때</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>git clone --recurse-submodules <span class=o>[</span>자신의 프로젝트 저장소<span class=o>]</span>
+
+<span class=c1># 설정 파일이 변경된 경우</span>
+git submodule foreach git pull origin main
+<span class=c1># 위의 설정이 안되면 아래로..!</span>
+git submodule update --init --recursive</code></pre></div>
+<h3 id=k6-부하테스트-관련>k6 부하테스트 관련<a hidden class=anchor aria-hidden=true href=#k6-부하테스트-관련>#</a></h3>
+<p>k6는 부하테스트를 위한 라이브러리입니다.
+apache의 <a href=https://httpd.apache.org/docs/2.4/ko/programs/ab.html target=_blank>ab</a>나 naver의 <a href=https://github.com/naver/ngrinder target=_blank>nGrinder</a>처럼 부하테스트를 할 수 있는 도구입니다.<br>
+설치 후 실행은 아래처럼 사용하면 됩니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>k6 run <span class=o>[</span>파일명.js<span class=o>]</span> </code></pre></div>
+<p>k6를 gui로 보기 좋게 해주는 <a href=khttps://k6.io/ target=_blank>grafana</a>도 있습니다.</p>
+<h3 id=jar-스크립트-배포-관련>jar 스크립트 배포 관련<a hidden class=anchor aria-hidden=true href=#jar-스크립트-배포-관련>#</a></h3>
+<p>스크립트를 이용해서 배포를 할 수 있습니다. 아래의 코드는 Spring 프로젝트를 정지, 빌드, 배포하는
+스크립트 입니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nv>PROJECT_PATH</span><span class=o>=</span><span class=s1>&#39;프로젝트 경로&#39;</span>
+<span class=nv>JAR_PATH</span><span class=o>=</span><span class=si>${</span><span class=nv>PROJECT_PATH</span><span class=si>}</span>/build/libs
+<span class=nv>JAR</span><span class=o>=</span><span class=k>$(</span><span class=nb>cd</span> <span class=si>${</span><span class=nv>JAR_PATH</span><span class=si>}</span> <span class=o>&amp;&amp;</span> find ./* -name <span class=s2>&#34;*jar&#34;</span> <span class=p>|</span> cut -c 3-<span class=k>)</span>
+<span class=nv>JAR_PID</span><span class=o>=</span><span class=k>$(</span>ps -ef <span class=p>|</span> grep <span class=nv>$JAR</span> <span class=p>|</span> grep -v grep <span class=p>|</span> awk <span class=s1>&#39;{print $2}&#39;</span><span class=k>)</span>
+
+<span class=k>function</span> stop_process<span class=o>()</span> <span class=o>{</span>
+  <span class=k>if</span> <span class=o>[</span> -z <span class=s2>&#34;</span><span class=nv>$JAR_PID</span><span class=s2>&#34;</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
+    <span class=nb>echo</span> <span class=s2>&#34;프로세스가 실행중이지 않습니다.&#34;</span>
+  <span class=k>else</span>
+    <span class=nb>echo</span> <span class=s2>&#34;</span><span class=nv>$JAR의</span><span class=s2> 프로세스를 종료합니다. (PID = </span><span class=nv>$JAR_PID</span><span class=s2>)&#34;</span>
+    <span class=nb>kill</span> <span class=nv>$JAR_PID</span>
+  <span class=k>fi</span>
+<span class=o>}</span>
+
+<span class=k>function</span> build<span class=o>()</span> <span class=o>{</span>
+  <span class=nb>cd</span> <span class=si>${</span><span class=nv>PROJECT_PATH</span><span class=si>}</span> <span class=o>&amp;&amp;</span> ./gradlew clean build
+<span class=o>}</span>
+
+<span class=k>function</span> start_process<span class=o>()</span> <span class=o>{</span>
+  java -jar -Dspring.profiles.active<span class=o>=</span>prod <span class=nv>$JAR_PATH</span>/<span class=nv>$JAR</span>
+<span class=o>}</span>
+
+<span class=nb>echo</span> -e <span class=s2>&#34;</span><span class=si>${</span><span class=nv>txtylw</span><span class=si>}</span><span class=s2>=======================================</span><span class=si>${</span><span class=nv>txtrst</span><span class=si>}</span><span class=s2>&#34;</span>
+<span class=nb>echo</span> -e <span class=s2>&#34;</span><span class=si>${</span><span class=nv>txtgrn</span><span class=si>}</span><span class=s2>  Deploy Start                         </span><span class=si>${</span><span class=nv>txtrst</span><span class=si>}</span><span class=s2>&#34;</span>
+<span class=nb>echo</span> -e <span class=s2>&#34;</span><span class=si>${</span><span class=nv>txtylw</span><span class=si>}</span><span class=s2>=======================================</span><span class=si>${</span><span class=nv>txtrst</span><span class=si>}</span><span class=s2>&#34;</span>
+
+stop_process
+build
+start_process</code></pre></div>
+<p>위의 파일은 <code>[파일명].sh</code>로 확장자를 구성해야 하며, 처음에 권한을 추가해준뒤 아래 명령어로
+실행하면 됩니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1># 권한 추가</span>
+chmod +x <span class=o>[</span>파일명.sh<span class=o>]</span>
+<span class=c1># 실행</span>
+./<span class=o>[</span>파일명.sh<span class=o>]</span></code></pre></div>
+<p>이외에도 AWS 모니터링, 스케일 아웃, AWS Launch Template 등 인프라 설정을 한다면 조금 더 안정적으로
+웹 서비스를 운용할 수 있습니다.</p>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+</ul>
+</footer>
+<section class=comments>
+<script>loadComment();function loadComment(){document.body.className.includes("dark")?theme='photon-dark':theme='boxy-light';let a=document.createElement('script');a.src='https://utteranc.es/client.js',a.setAttribute('repo','haservi/haservi.github.io'),a.setAttribute('issue-term','pathname'),a.setAttribute('theme',theme),a.setAttribute('crossorigin','anonymous'),a.setAttribute('async',''),document.querySelector('section.comments').innerHTML='',document.querySelector('section.comments').appendChild(a)}</script>
+</section>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2023 <a href=https://haservi.github.io/>Halog</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script src=https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<script>const images=Array.from(document.querySelectorAll(".post-content img"));images.forEach(a=>{mediumZoom(a,{margin:0,background:'#1d1e20',scrollOffset:40,container:null,template:null})})</script>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark')),loadComment()})</script>
+<script>document.querySelectorAll('pre > code').forEach(b=>{const c=b.parentNode.parentNode,a=document.createElement('button');a.classList.add('copy-code'),a.innerHTML='복사';function d(){a.innerHTML='복사 완료!',setTimeout(()=>{a.innerHTML='복사'},2e3)}a.addEventListener('click',e=>{if('clipboard'in navigator){navigator.clipboard.writeText(b.textContent),d();return}const a=document.createRange();a.selectNodeContents(b);const c=window.getSelection();c.removeAllRanges(),c.addRange(a);try{document.execCommand('copy'),d()}catch(a){}c.removeRange(a)}),c.classList.contains("highlight")?c.appendChild(a):c.parentNode.firstChild==c||(b.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?b.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(a):b.parentNode.appendChild(a))})</script>
+</body>
+</html>
