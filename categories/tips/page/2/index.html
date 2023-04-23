@@ -1,4 +1,4 @@
-<!doctype html><html lang=ko dir=auto>
+<!doctype html><html lang=en dir=auto>
 <head><meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -64,11 +64,57 @@
 </nav>
 </header>
 <main class=main>
-<header class=page-header><div class=breadcrumbs><a href=https://haservi.github.io/>홈</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/categories/>Categories</a></div>
+<header class=page-header><div class=breadcrumbs><a href=https://haservi.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/categories/>Categories</a></div>
 <h1>
 Tips
 </h1>
 </header>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>비쥬얼 스튜디오 코드에서 자동완성 해제하기
+</h2>
+</header>
+<div class=entry-content>
+<p>Visual Studio Code의 자동완성 기능 해제 방법 프로그램 실행 후 설정(Ctrl + , 또는 Command + ,)으로 들어간 후 검색항목에 intelliSense를 검색하면 여러 체크박스 리스트를 볼 수 있습니다.
+위(Show Classes)에서부터 아래(Show Words)까지 전부 체크 해제를 하면 자동완성 기능이 비활성화 됩니다.
+그렇지만 너무 많은 옵션이 있기 때문에 전부 클릭 해제하기가 귀찮은 경우 아래의 JSON으로 추가할 수 있습니다.
+오른쪽 위의 설정으로 들어가서 아래의 값들을 복사 후 붙여 넣어주면 됩니다.
+"explorer.compactFolders": false, "explorer....</p>
+</div>
+<footer class=entry-footer><span title="2022-04-03 14:30:00 +0900 +0900">April 3, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to 비쥬얼 스튜디오 코드에서 자동완성 해제하기" href=https://haservi.github.io/posts/tips/visual-studio-code-auto-complete/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>Git Commit 메시지 규칙
+</h2>
+</header>
+<div class=entry-content>
+<p>Git Commit git commit message convetion은 회사 또는 프로젝트 마다 다를 수 있습니다.
+message의 형태는 다를 수 있지만 기본적인 목적은 같습니다.
+잘 만들어진 git 커밋 메시지는 해당 프로젝트에서 작업하는 팀원과 미래의 자신에게 변경 사항에 대한 의미를 전달하기 위한 좋은 방법입니다.
+일반적으로 커밋 메시지는 다음과 같은 구조를 권장합니다.
+type: Subject body footer 보통 위와 같은 형태입니다.
+제목은 새로운 기능 추가인 경우 feat: Subject, Feat: Subject, Feat Subject, Feature Subject 등 조금씩 type의 형태가 다르지만 그건 프로젝트에 따라 일관되게 맞추면 됩니다....</p>
+</div>
+<footer class=entry-footer><span title="2022-03-01 22:54:30 +0900 +0900">March 1, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to Git Commit 메시지 규칙" href=https://haservi.github.io/posts/tips/git-commit-message-rule/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>git CRLF 개행 문자 차이 해결 방법
+</h2>
+</header>
+<div class=entry-content>
+<p>Windows는 line ending으로 CR(Carriage-Return, \r)과 LF(Line Feed \n)을 사용합니다. CRLF는 커서를 다음 라인의 맨앞으로 옮기는 표시이며, ↲ 이러한 표현입니다.
+Mac, Linux(Unix 계열)의 경우 LF(Line Feed \n)를 사용합니다. LF는 현재 위치에서 바로 아래로 이동하는 것을 의미하며, ↓ 와 같은 표현입니다.
+문제는 같은 작업 영역에서 같은 코드를 수정할 경우 windows와 mac의 코드가 일치하더라도 커서의 표현값이 다르기 때문에 충돌이 일어나는 경우가 발생합니다.
+해결 방법으로는 각 운영체제별로 git을 기준으로 LF로 맞춰주는 것입니다.
+Windows는 CRLF를 LF로 변경되도록 git config 설정 중 core....</p>
+</div>
+<footer class=entry-footer><span title="2022-02-21 21:50:28 +0900 +0900">February 21, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to git CRLF 개행 문자 차이 해결 방법" href=https://haservi.github.io/posts/tips/git-crlf/></a>
+</article>
 <article class="post-entry tag-entry">
 <header class=entry-header>
 <h2>Github 저장소 안의 폴더 다운로드 받는 방법
@@ -80,13 +126,13 @@ Tips
 해결방법 웹 다운로드 https://downgit.github.io/#/home 해당 사이트에 github 저장소 특정 폴더의 링크를 복사 한 후 붙여넣고 Download 버튼 클릭
 터미널 다운로드 기본적으로 git이 설치돼 있어야합니다....</p>
 </div>
-<footer class=entry-footer><span title="2021-11-28 21:30:06 +0900 +0900">11월 28, 2021</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-11-28 21:30:06 +0900 +0900">November 28, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to Github 저장소 안의 폴더 다운로드 받는 방법" href=https://haservi.github.io/posts/tips/git-inner-folder-download/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://haservi.github.io/categories/tips/>
-«&nbsp;이전 페이지&nbsp;
+«&nbsp;Prev&nbsp;
 </a>
 </nav>
 </footer>

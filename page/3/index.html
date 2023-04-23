@@ -1,4 +1,4 @@
-<!doctype html><html lang=ko dir=auto>
+<!doctype html><html lang=en dir=auto>
 <head>
 <meta name=generator content="Hugo 0.87.0"><meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
@@ -69,6 +69,50 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>Java Priority Queue(우선순위 큐) 원리 및 사용 방법
+</h2>
+</header>
+<div class=entry-content>
+<p>우선순위 큐(Priority Queue) 란? 우선순위 큐(Priority Queue)는 일반적인 큐의 구조와 달리 들어가는 순서와 상관없이 정의한대로 우선순위를 먼저 결정하고 그 우선순위가 높은 데이터가 먼저 나가는 자료구조 입니다. 그렇기 때문에 dequeue를 하면 이미 정의한 순서에 맞게 가장 위의 값이 나타납니다.
+우선순위 큐는 힙을 기반으로 하는 완전이진트리로 우선순위를 정하게 됩니다.
+사용 방법 우선순위 큐는 우선순위가 꼭 필요한 경우에 사용합니다. 람다식으로 정의해도 되고 Comparable을 이용해서 정의해도 됩니다.
+// 낮은 숫자가 우선순위가 높은 방식 PriorityQueue&lt;Integer> pq = new PriorityQueue&lt;>(); // 높은 숫자가 우선순위가 높은 방식 PriorityQueue&lt;Integer> pq = new PriorityQueue&lt;>(Collections....</p>
+</div>
+<footer class=entry-footer><span title="2022-02-14 20:20:41 +0900 +0900">February 14, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to Java Priority Queue(우선순위 큐) 원리 및 사용 방법" href=https://haservi.github.io/posts/algorithms/priority-queue/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법
+</h2>
+</header>
+<div class=entry-content>
+<p>H2를 최신 버전(2.1.210)으로 업데이트하니 아래와 같은 에러가 발생했습니다.
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set ... java.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ... 일단 임시방편으로 H2 url을 연결하는 곳에 추가적으로 옵션(;MODE=LEGACY)을 넣으면 해결됩니다.
+url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용하면 H2 1.X용으로 작성된 응용 프로그램에 대한 일부 호환성 기능이 활성화됩니다. Hibernate ORM에서 H2에 대해서 유효하지 않은 SQL을 생성하기 때문이라고 합니다....</p>
+</div>
+<footer class=entry-footer><span title="2022-01-29 19:16:48 +0900 +0900">January 29, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법" href=https://haservi.github.io/posts/spring/spadework/h2-version-upgrade-error/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Spring Data JPA와 JPQL 함께 사용하기
+</h2>
+</header>
+<div class=entry-content>
+<p>JPQL 이란? 예전에는 JPQL은 Java Persistence Query Language로 불렸지만 현재의 JPQL은(Jakarta Persistence Query Language) 라고 합니다.(나무위키 링크)
+2019년부터 JPA(Java Persistence API)또한 Jakarta Persistence로 변경됐습니다.
+이름은 달라졌지만 역할은 달라지지 않았습니다. JPQL을 이용하여 관계형 데이터베이스의 엔티티를 정의하고 이를 활용한 쿼리 언어를 자바를 이용하여 구현합니다.
+더 나아가 Querydsl을 이용하면 좀 더 직관적이고 오류 없이 자바를 이용하여 작성할 수 있습니다.
+간단한 예시로 회원 조회를 하는 경우 JPQL과 Querydsl의 차이는 아래와 같습니다.
+JPQL
+public List&lt;Member> findAll() { EntityManager entityManager; return entityManager....</p>
+</div>
+<footer class=entry-footer><span title="2022-01-17 23:09:03 +0900 +0900">January 17, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to Spring Data JPA와 JPQL 함께 사용하기" href=https://haservi.github.io/posts/spring/springdatajpa-and-customquery/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Mybatis와 JPA에 대하여
 </h2>
 </header>
@@ -79,7 +123,7 @@ JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 �
 MyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.
 JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다....</p>
 </div>
-<footer class=entry-footer><span title="2022-01-15 17:24:58 +0900 +0900">1월 15, 2022</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2022-01-15 17:24:58 +0900 +0900">January 15, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to Mybatis와 JPA에 대하여" href=https://haservi.github.io/posts/spring/mybatis-and-jpa/></a>
 </article>
 <article class=post-entry>
@@ -93,7 +137,7 @@ JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표�
 결론적으로 생성자 주입을 권장합니다. 인텔리제이에서 코드를 작성하다보면 @Autowired를 사용하면 아래와 같은 경고를 알려줍니다.
 .notice{--root-color: #000; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(217, 83, 79, 0.9); --warning-content: #fae2e2; --info-title: #f0b37e; --info-content: #fff2db; --note-title: #6ab0de; --note-content: #e7f2fa; --tip-title: rgba(92, 184, 92, 0.8); --tip-content: #e6f9e6;}body.dark .notice{--root-color: #fff; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(130, 49, 47, 0.9); --warning-content: #341312; --info-title: #906B4B; --info-content: #392A1E; --note-title: #3f6985; --note-content: #192A35; --tip-title: rgba(46, 92, 46, 0....</p>
 </div>
-<footer class=entry-footer><span title="2022-01-12 13:39:01 +0900 +0900">1월 12, 2022</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2022-01-12 13:39:01 +0900 +0900">January 12, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to @Autowired와 @RequiredArgsConstructor 차이점 " href=https://haservi.github.io/posts/spring/diff-requiredargsconstructor-autowired/></a>
 </article>
 <article class=post-entry>
@@ -110,7 +154,7 @@ JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표�
 커스텀 설정하기 프로그램 실행 후 흰색 동그라미가 있는 모든 버튼이 커스텀 가능합니다.
 저의 경우 뒤로가기와 앞으로가기 버튼만 커스텀하여 사용하고 있습니다....</p>
 </div>
-<footer class=entry-footer><span title="2022-01-08 19:40:22 +0900 +0900">1월 8, 2022</span>&nbsp;·&nbsp;3 분&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2022-01-08 19:40:22 +0900 +0900">January 8, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to Logitech Options를 이용한 마우스 커스텀하기" href=https://haservi.github.io/posts/tools/how-to-logitech-option/></a>
 </article>
 <article class=post-entry>
@@ -128,58 +172,15 @@ JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표�
 git config --list 사용자 이름 입력
 git config --global user.name "이름" 사용자 이메일 입력...</p>
 </div>
-<footer class=entry-footer><span title="2021-12-29 22:18:20 +0900 +0900">12월 29, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-12-29 22:18:20 +0900 +0900">December 29, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to 자주 사용하는 Git Command 정리" href=https://haservi.github.io/posts/tips/git-frequently-used-commands/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>[Spring] Service와 ServiceImpl에 대해
-</h2>
-</header>
-<div class=entry-content>
-<p>Service, ServiceImpl Spring 프로젝트를 하면 종종 관례적으로 Service를 interface로 기능 명세를 한 뒤 ServiceImpl에 기능을 구현하게 되는 Factory Pattern을 사용하게 됩니다.
-interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주고, 협업 시 업무분담도 용이합니다.
-게임으로 예를 들면 스타크래프트에서 모든 유닛의 기본적인 특성 HP, 이동하기를 interface로 기능만 명시하고 각각 분업하여 유닛에 대한 HP나 이동속도를 구현할 수 있습니다.
-하지만 일반적인 Spring 웹프로젝트에서는 Service interface는 1:1 구조인 경우가 많습니다. 만약 확장성을 고려한 1:N의 경우에는 interface로 가는 것이 좋지만 너무 막연한 경우에는 그냥 class로 생성 후 추후 시나리오 변경 또는 로직상 확장성이 필요한 경우 interface로 변경하는 것이 좋다고 생각합니다....</p>
-</div>
-<footer class=entry-footer><span title="2021-12-22 20:11:56 +0900 +0900">12월 22, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to [Spring] Service와 ServiceImpl에 대해" href=https://haservi.github.io/posts/spring/service-and-serviceimp/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Github 저장소 안의 폴더 다운로드 받는 방법
-</h2>
-</header>
-<div class=entry-content>
-<p>기본적으로 웹상에서는 Git 저장소 안의 폴더를 다운받으려면 해당 저장소 전부를 다운 받은 후에 특정 폴더의 정보를 봐야 합니다.
-간단한 방법은 아래의 링크에서 다운로드 받는게 제일 쉬운방법이지만 터미널에서 다운로드 방법도 한번 다루어보겠습니다. 터미널로 다운 받은 경우 이후 해당 소스가 변경이 있다면 당겨올 수 있는 이점도 있습니다.
-해결방법 웹 다운로드 https://downgit.github.io/#/home 해당 사이트에 github 저장소 특정 폴더의 링크를 복사 한 후 붙여넣고 Download 버튼 클릭
-터미널 다운로드 기본적으로 git이 설치돼 있어야합니다....</p>
-</div>
-<footer class=entry-footer><span title="2021-11-28 21:30:06 +0900 +0900">11월 28, 2021</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to Github 저장소 안의 폴더 다운로드 받는 방법" href=https://haservi.github.io/posts/tips/git-inner-folder-download/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>화면 캡쳐 프로그램 추천
-</h2>
-</header>
-<div class=entry-content>
-<p>작업의 효율을 높이기 위해 기존 화면에서 필요한 정보를 잠시 동안 캡쳐하는 방법이 있습니다.
-캡쳐프로그램은 정말 다양하게 존재하는데요. 예를 들어 알캡쳐, picpic, 윈도우 기본 내장 캡쳐, pureRef, snipaste 등 많이 있습니다.
-저 같은 경우 포스팅 할 때 화면캡쳐 용도로는 picpick을 자주 이용하며, 업무 중 필요한 정보를 캡쳐 할 때는 snipaste를 사용합니다.
-picpick의 경우는 워낙 잘 알려져 있기 때문에 snipaste에 대해 알아보겠습니다.
-Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 화면에 띄워놓을 수 있습니다....</p>
-</div>
-<footer class=entry-footer><span title="2021-11-25 21:38:17 +0900 +0900">11월 25, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to 화면 캡쳐 프로그램 추천" href=https://haservi.github.io/posts/tools/how-to-capture/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://haservi.github.io/page/2/>
-«&nbsp;이전 페이지&nbsp;
+«&nbsp;Prev&nbsp;
 </a>
-<a class=next href=https://haservi.github.io/page/4/>다음 페이지&nbsp;&nbsp;»
+<a class=next href=https://haservi.github.io/page/4/>Next&nbsp;&nbsp;»
 </a>
 </nav>
 </footer>

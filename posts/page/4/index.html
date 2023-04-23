@@ -1,4 +1,4 @@
-<!doctype html><html lang=ko dir=auto>
+<!doctype html><html lang=en dir=auto>
 <head><meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -65,11 +65,54 @@
 </nav>
 </header>
 <main class=main>
-<header class=page-header><div class=breadcrumbs><a href=https://haservi.github.io/>홈</a></div>
+<header class=page-header><div class=breadcrumbs><a href=https://haservi.github.io/>Home</a></div>
 <h1>
 Posts
 </h1>
 </header>
+<article class=post-entry>
+<header class=entry-header>
+<h2>[Spring] Service와 ServiceImpl에 대해
+</h2>
+</header>
+<div class=entry-content>
+<p>Service, ServiceImpl Spring 프로젝트를 하면 종종 관례적으로 Service를 interface로 기능 명세를 한 뒤 ServiceImpl에 기능을 구현하게 되는 Factory Pattern을 사용하게 됩니다.
+interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주고, 협업 시 업무분담도 용이합니다.
+게임으로 예를 들면 스타크래프트에서 모든 유닛의 기본적인 특성 HP, 이동하기를 interface로 기능만 명시하고 각각 분업하여 유닛에 대한 HP나 이동속도를 구현할 수 있습니다.
+하지만 일반적인 Spring 웹프로젝트에서는 Service interface는 1:1 구조인 경우가 많습니다. 만약 확장성을 고려한 1:N의 경우에는 interface로 가는 것이 좋지만 너무 막연한 경우에는 그냥 class로 생성 후 추후 시나리오 변경 또는 로직상 확장성이 필요한 경우 interface로 변경하는 것이 좋다고 생각합니다....</p>
+</div>
+<footer class=entry-footer><span title="2021-12-22 20:11:56 +0900 +0900">December 22, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to [Spring] Service와 ServiceImpl에 대해" href=https://haservi.github.io/posts/spring/service-and-serviceimp/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Github 저장소 안의 폴더 다운로드 받는 방법
+</h2>
+</header>
+<div class=entry-content>
+<p>기본적으로 웹상에서는 Git 저장소 안의 폴더를 다운받으려면 해당 저장소 전부를 다운 받은 후에 특정 폴더의 정보를 봐야 합니다.
+간단한 방법은 아래의 링크에서 다운로드 받는게 제일 쉬운방법이지만 터미널에서 다운로드 방법도 한번 다루어보겠습니다. 터미널로 다운 받은 경우 이후 해당 소스가 변경이 있다면 당겨올 수 있는 이점도 있습니다.
+해결방법 웹 다운로드 https://downgit.github.io/#/home 해당 사이트에 github 저장소 특정 폴더의 링크를 복사 한 후 붙여넣고 Download 버튼 클릭
+터미널 다운로드 기본적으로 git이 설치돼 있어야합니다....</p>
+</div>
+<footer class=entry-footer><span title="2021-11-28 21:30:06 +0900 +0900">November 28, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to Github 저장소 안의 폴더 다운로드 받는 방법" href=https://haservi.github.io/posts/tips/git-inner-folder-download/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>화면 캡쳐 프로그램 추천
+</h2>
+</header>
+<div class=entry-content>
+<p>작업의 효율을 높이기 위해 기존 화면에서 필요한 정보를 잠시 동안 캡쳐하는 방법이 있습니다.
+캡쳐프로그램은 정말 다양하게 존재하는데요. 예를 들어 알캡쳐, picpic, 윈도우 기본 내장 캡쳐, pureRef, snipaste 등 많이 있습니다.
+저 같은 경우 포스팅 할 때 화면캡쳐 용도로는 picpick을 자주 이용하며, 업무 중 필요한 정보를 캡쳐 할 때는 snipaste를 사용합니다.
+picpick의 경우는 워낙 잘 알려져 있기 때문에 snipaste에 대해 알아보겠습니다.
+Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 화면에 띄워놓을 수 있습니다....</p>
+</div>
+<footer class=entry-footer><span title="2021-11-25 21:38:17 +0900 +0900">November 25, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to 화면 캡쳐 프로그램 추천" href=https://haservi.github.io/posts/tools/how-to-capture/></a>
+</article>
 <article class=post-entry>
 <header class=entry-header>
 <h2>윈도우 WSL2 Ubuntu 터미널 꾸미기
@@ -81,7 +124,7 @@ Posts
 그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.
 해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다....</p>
 </div>
-<footer class=entry-footer><span title="2021-11-22 20:49:25 +0900 +0900">11월 22, 2021</span>&nbsp;·&nbsp;4 분&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-11-22 20:49:25 +0900 +0900">November 22, 2021</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to 윈도우 WSL2 Ubuntu 터미널 꾸미기" href=https://haservi.github.io/posts/linux/used-zsh-powerline10/></a>
 </article>
 <article class=post-entry>
@@ -95,7 +138,7 @@ Posts
 jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
 create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다....</p>
 </div>
-<footer class=entry-footer><span title="2021-11-12 15:47:31 +0900 +0900">11월 12, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-11-12 15:47:31 +0900 +0900">November 12, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to JPA ddl-auto 설정과 더미데이터 생성 방법" href=https://haservi.github.io/posts/spring/hibernate-ddl-auto/></a>
 </article>
 <article class=post-entry>
@@ -111,7 +154,7 @@ create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create
 여기서 그냥 녹화를 누른뒤 진행하면 됩니다. 녹화를 마치고 정지를 누르시면 아래와 같은 화면이 나타납니다.
 저 같은 경우 초당 30프레임으로 설정하여서 5초짜리 영상에 대략 150프레임의 스크린샷이 찍혔습니다....</p>
 </div>
-<footer class=entry-footer><span title="2021-11-07 23:57:42 +0900 +0900">11월 7, 2021</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-11-07 23:57:42 +0900 +0900">November 7, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to 영상을 gif로 만드는 방법" href=https://haservi.github.io/posts/tools/how-to-create-gif/></a>
 </article>
 <article class=post-entry>
@@ -126,57 +169,15 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 ▲ - 다음 알파벳 ▼ - 이전 알파벳 (A에서 아래쪽으로 이동하면 Z로) ◀ - 커서를 왼쪽으로 이동 (첫 번째 위치에서 왼쪽으로 이동하면 마지막 문자에 커서) ▶ - 커서를 오른쪽으로 이동 예를 들어 아래의 방법으로 “JAZ”를 만들 수 있습니다.
 - 첫 번째 위치에서 조이스틱을 위로 9번 조작하여 J를 완성합니다....</p>
 </div>
-<footer class=entry-footer><span title="2021-10-24 22:41:45 +0900 +0900">10월 24, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
+<footer class=entry-footer><span title="2021-10-24 22:41:45 +0900 +0900">October 24, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to [프로그래머스]조이스틱" href=https://haservi.github.io/posts/algorithms/programmers/level2/03-joystick/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>[프로그래머스]다리를 지나는 트럭
-</h2>
-</header>
-<div class=entry-content>
-<p>다리를 지나는 트럭 문제 설명 트럭 여러 대가 강을 가로지르는 일차선 다리를 정해진 순으로 건너려 합니다.
-모든 트럭이 다리를 건너려면 최소 몇 초가 걸리는지 알아내야 합니다.
-다리에는 트럭이 최대 bridge_length대 올라갈 수 있으며, 다리는 weight 이하까지의 무게를 견딜 수 있습니다.
-단, 다리에 완전히 오르지 않은 트럭의 무게는 무시합니다.
-예를 들어, 트럭 2대가 올라갈 수 있고 무게를 10kg까지 견디는 다리가 있습니다. 무게가 [7, 4, 5, 6]kg인 트럭이 순서대로 최단 시간 안에 다리를 건너려면 다음과 같이 건너야 합니다....</p>
-</div>
-<footer class=entry-footer><span title="2021-09-27 15:17:54 +0900 +0900">9월 27, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to [프로그래머스]다리를 지나는 트럭" href=https://haservi.github.io/posts/algorithms/programmers/level2/02-truck-crossing-the-bridge/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>[프로그래머스]위장
-</h2>
-</header>
-<div class=entry-content>
-<p>위장 문제 설명 스파이들은 매일 다른 옷을 조합하여 입어 자신을 위장합니다.
-예를 들어 스파이가 가진 옷이 아래와 같고 오늘 스파이가 동그란 안경, 긴 코트, 파란색 티셔츠를 입었다면 다음날은 청바지를 추가로 입거나 동그란 안경 대신 검정 선글라스를 착용하거나 해야 합니다.
-종류 이름 얼굴 동그란 안경, 검정 선글라스 상의 파란색 티셔츠 하의 청바지 겉옷 긴 코트 스파이가 가진 의상들이 담긴 2차원 배열 clothes가 주어질 때 서로 다른 옷의 조합의 수를 return 하도록 solution 함수를 작성해주세요....</p>
-</div>
-<footer class=entry-footer><span title="2021-09-15 00:28:00 +0900 +0900">9월 15, 2021</span>&nbsp;·&nbsp;2 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to [프로그래머스]위장" href=https://haservi.github.io/posts/algorithms/programmers/level2/01-camouflage/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>[프로그래머스]하샤드 수
-</h2>
-</header>
-<div class=entry-content>
-<p>하샤드 수 문제 설명 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.
-예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다.
-자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
-제한 조건 x는 1 이상, 10000 이하인 정수입니다. 입출력 예 arr return 10 true 12 true 11 false 13 false 입출력 예 설명 입출력 예 #1...</p>
-</div>
-<footer class=entry-footer><span title="2021-09-07 11:55:29 +0900 +0900">9월 7, 2021</span>&nbsp;·&nbsp;1 분&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to [프로그래머스]하샤드 수" href=https://haservi.github.io/posts/algorithms/programmers/level1/04-algo-hasshadsu/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://haservi.github.io/posts/page/3/>
-«&nbsp;이전 페이지&nbsp;
+«&nbsp;Prev&nbsp;
 </a>
-<a class=next href=https://haservi.github.io/posts/page/5/>다음 페이지&nbsp;&nbsp;»
+<a class=next href=https://haservi.github.io/posts/page/5/>Next&nbsp;&nbsp;»
 </a>
 </nav>
 </footer>

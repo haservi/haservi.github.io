@@ -9,7 +9,48 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 12 Jan 2023 21:34:04 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Apr 2023 16:22:31 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WSL 환경에서 내부 MariaDB 설치하기</title>
+      <link>https://haservi.github.io/posts/devops/wsl/mariadb-setting/</link>
+      <pubDate>Sat, 15 Apr 2023 16:22:31 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/devops/wsl/mariadb-setting/</guid>
+      <description>WSL 환경에서 DB 설정 방법에 대해 정리했습니다.
+우선 기본적으로 윈도우 환경이며, WSL을 이용해 우분투 18.04 버전을 설치합니다.
+mariadb-server 설치 및 실행 패키지를 최신으로 업데이트 합니다.
+sudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.
+sudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.
+우선 db의 경로를 /home/data/mysql으로 가정하겠습니다.
+ db 접속 후 현재 db의 경로를 확인합니다.</description>
+    </item>
+    
+    <item>
+      <title>Gerrit 코드 리뷰에 대해</title>
+      <link>https://haservi.github.io/posts/tips/git-gerrit/</link>
+      <pubDate>Mon, 20 Mar 2023 13:42:30 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/git-gerrit/</guid>
+      <description>Gerrit은 오픈 소스 웹 기반 코드 리뷰 도구로, Git 버전 관리 시스템을 사용하는 프로젝트에서 코드 검토 및 협업을 용이하게 해줍니다. Gerrit은 구글에서 개발되었으며, 안드로이드 오픈 소스 프로젝트(AOSP) 등 여러 대규모 프로젝트에서 사용되고 있습니다.
+Gerrit을 사용하려면 Gerrit 서버를 설치하고 구성해야 합니다.
+설치 방법은 공식 문서에서 확인할 수 있습니다.
+Gerrit은 웹 기반 코드 커밋 및 버전 관리 도구로, 코드 리뷰를 위한 기능을 제공합니다.
+개발자들은 Gerrit을 이용하여 Git 저장소에서 작업한 코드 변경 사항을 리뷰하고, 변경을 승인하거나 거부하고, 수정 요청을 할 수 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>Linux에서 배포 스크립트($&#39;/r&#39;) 발생 시 처리 방법</title>
+      <link>https://haservi.github.io/posts/tips/error-script-to-linux/</link>
+      <pubDate>Fri, 10 Mar 2023 20:57:33 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/error-script-to-linux/</guid>
+      <description>node.js backend 에서 작업 중 테스트 서버에 배포 스크립트를 작성했습니다.
+위와 같이 $&#39;\r&#39;: coomand not found가 발생하면 해결 방법은 아래와 같습니다.
+sed -i &amp;#39;s/\r$//&amp;#39; [스크립트파일.sh] 문제의 원인은 유닉스 기반의 운영체제에서는 줄 바꿈 문자로 줄 바꿈(Line Feed, LF)을 사용하지만, 윈도우 운영체제에서는 줄 바꿈 문자로 CR과 LF를 함께 사용합니다.
+그렇기 때문에 유닉스 기반의 운영체제에서는 Windows에서 생성된 텍스트 파일을 처리할 때 이러한 CR 문자가 문제가 될 수 있습니다.
+sed 유틸리티를 사용하여 스크립트 파일에서 Windows에서 생성된 줄 바꿈 문자(Carriage Return, CR)를 제거할 수 있습니다.</description>
+    </item>
+    
     <item>
       <title>Infra 설정 관련 정리</title>
       <link>https://haservi.github.io/posts/devops/aws/infra-tips/</link>
