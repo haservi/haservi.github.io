@@ -71,6 +71,20 @@ Tips
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
+<h2>리눅스에서 활성화된 process 종료 방법
+</h2>
+</header>
+<div class=entry-content>
+<p>netstat을 사용하기 위해서 우선 net-tools를 설치해야합니다.
+sudo apt install net-tools 설치 후 netstat -tulpn 를 입력하면 현재 열린 네트워크 포트와 해당 포트를 열어놓은 프로세스를 보여주는 도구입니다.
+여기서 각 옵션의 의미는 다음과 같습니다.
+-t: TCP 프로토콜 사용 포트 -u: UDP 프로토콜 사용 포트 -l: 포트를 열어놓은 프로세스 출력 -p: 프로세스 ID 출력 -n: 포트와 프로세스를 숫자로 출력 따라서 netstat -tulpn 명령어를 실행하면, 현재 열린 TCP/UDP 포트와 해당 포트를 열어놓은 프로세스의 정보를 확인할 수 있습니다....</p>
+</div>
+<footer class=entry-footer><span title="2023-05-11 19:14:09 +0900 +0900">May 11, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to 리눅스에서 활성화된 process 종료 방법" href=https://haservi.github.io/posts/tips/ubuntu-port-kill/></a>
+</article>
+<article class="post-entry tag-entry">
+<header class=entry-header>
 <h2>WSL 환경에서 내부 MariaDB 설치하기
 </h2>
 </header>
@@ -165,19 +179,6 @@ JDK 설치 및 폴더명 변경 우선 JDK를 다운로드 아무래도 라이�
 </div>
 <footer class=entry-footer><span title="2022-08-09 22:32:07 +0900 +0900">August 9, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to OpenJDK 버전 간편하게 변경하기" href=https://haservi.github.io/posts/tips/window-java-version-change/></a>
-</article>
-<article class="post-entry tag-entry">
-<header class=entry-header>
-<h2>윈도우 Port 강제 종료 방법
-</h2>
-</header>
-<div class=entry-content>
-<p>종종 테스트 중 이전에 실행한 Port가 남아서 충돌나는 경우가 있습니다.
-기존에 존재하는 Port의 PID를 제거하면 삭제할 수 있습니다.
-Port 강제 종료 방법 먼저 windows + R 을 눌러 실행 스크립트를 열어주고 cmd를 입력하여 커맨드 창을 열어줍니다. 명령어로 netstat -a -o를 입력하면 현재 연결된 네트워크 상태를 볼 수 있습니다. 위와 같이 8080포트가 존재하면 우측에 있는 PID의 번호를 기억합니다. 여기서는 49480의 값입니다. taskkill /f /pid 49480을 입력하면 해당 8080포트를 제거할 수 있습니다....</p>
-</div>
-<footer class=entry-footer><span title="2022-05-23 21:49:41 +0900 +0900">May 23, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to 윈도우 Port 강제 종료 방법" href=https://haservi.github.io/posts/tips/window-port-taskkill/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

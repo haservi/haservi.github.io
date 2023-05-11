@@ -85,6 +85,20 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>리눅스에서 활성화된 process 종료 방법
+</h2>
+</header>
+<div class=entry-content>
+<p>netstat을 사용하기 위해서 우선 net-tools를 설치해야합니다.
+sudo apt install net-tools 설치 후 netstat -tulpn 를 입력하면 현재 열린 네트워크 포트와 해당 포트를 열어놓은 프로세스를 보여주는 도구입니다.
+여기서 각 옵션의 의미는 다음과 같습니다.
+-t: TCP 프로토콜 사용 포트 -u: UDP 프로토콜 사용 포트 -l: 포트를 열어놓은 프로세스 출력 -p: 프로세스 ID 출력 -n: 포트와 프로세스를 숫자로 출력 따라서 netstat -tulpn 명령어를 실행하면, 현재 열린 TCP/UDP 포트와 해당 포트를 열어놓은 프로세스의 정보를 확인할 수 있습니다....</p>
+</div>
+<footer class=entry-footer><span title="2023-05-11 19:14:09 +0900 +0900">May 11, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to 리눅스에서 활성화된 process 종료 방법" href=https://haservi.github.io/posts/tips/ubuntu-port-kill/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>WSL 환경에서 내부 MariaDB 설치하기
 </h2>
 </header>
@@ -179,25 +193,6 @@ JDK 설치 및 폴더명 변경 우선 JDK를 다운로드 아무래도 라이�
 </div>
 <footer class=entry-footer><span title="2022-08-09 22:32:07 +0900 +0900">August 9, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to OpenJDK 버전 간편하게 변경하기" href=https://haservi.github.io/posts/tips/window-java-version-change/></a>
-</article>
-<article class=post-entry>
-<figure class=entry-cover>
-<img loading=lazy srcset="https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/images/nas-docker-gitlab-setting_hu01257301aa780ea9dfb51771f3b4f0ef_28228_360x0_resize_box_3.png 360w ,https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/images/nas-docker-gitlab-setting_hu01257301aa780ea9dfb51771f3b4f0ef_28228_480x0_resize_box_3.png 480w ,https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/images/nas-docker-gitlab-setting_hu01257301aa780ea9dfb51771f3b4f0ef_28228_720x0_resize_box_3.png 720w ,https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/images/nas-docker-gitlab-setting_hu01257301aa780ea9dfb51771f3b4f0ef_28228_1080x0_resize_box_3.png 1080w ,https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/images/nas-docker-gitlab-setting.png 1280w" sizes="(min-width: 768px) 720px, 100vw" src=https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/images/nas-docker-gitlab-setting.png alt width=1280 height=720>
-</figure>
-<header class=entry-header>
-<h2>Synology NAS로 Docker GitLab 설치하기
-</h2>
-</header>
-<div class=entry-content>
-<p>시작하며 DSM 7버전에서는 SVN과 GitLab을 패키지로 지원하지 않습니다.
-그렇기 때문에 Docker를 이용하여 설치해야 합니다.
-제 경우는 KT 공유기와 Synology NAS(220+)에 램 8기가를 추가한 상태입니다.
-공유기 포트포워딩만 조금 다를 뿐 전체적인 방법은 동일할 것이라 생각됩니다.
-GitLab을 쾌적하게 쓰시려면 최소 램 4기가 이상으로 설정하시는게 좋습니다. 해당 설정은 컨테이너 생성 후에도 편집이 가능하니 필요에 따라 조정하시면 됩니다.
-.notice{--root-color: #000; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(217, 83, 79, 0.9); --warning-content: #fae2e2; --info-title: #f0b37e; --info-content: #fff2db; --note-title: #6ab0de; --note-content: #e7f2fa; --tip-title: rgba(92, 184, 92, 0....</p>
-</div>
-<footer class=entry-footer><span title="2022-08-02 23:22:38 +0900 +0900">August 2, 2022</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to Synology NAS로 Docker GitLab 설치하기" href=https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
