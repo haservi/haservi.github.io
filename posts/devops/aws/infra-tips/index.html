@@ -49,7 +49,7 @@ history bastion host 설정 bastion host란 내부와 외부 네트워크 사이
 내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.
 bastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Infra 설정 관련 정리","item":"https://haservi.github.io/posts/devops/aws/infra-tips/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Infra 설정 관련 정리","name":"Infra 설정 관련 정리","description":"인프라 관련 내용 정리가 필요할 것 같아 중요한 키워드 정도로 정리한 내용입니다.\nAWS EC2 접속 명령어 기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.\nchmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기\nhistory bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.\n내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.\nbastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.","keywords":["",""],"articleBody":" 인프라 관련 내용 정리가 필요할 것 같아 중요한 키워드 정도로 정리한 내용입니다.\nAWS EC2 접속 명령어 기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.\nchmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기\nhistory bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.\n내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.\nbastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.\n서비스용 서버에 22번 포트로의 접근은 bastion host만 가능하도록 security group을 설정해야합니다.\n# Bastion Server에서 공개키를 생성 bastion $ ssh-keygen -t rsa bastion $ cat ~/.ssh/id_rsa.pub # 접속하려는 서비스용 서버에 키 추가 $ vi ~/.ssh/authorized_keys 위와 같이 설정한 후 해당 서비스용 ip를 별칭으로 입력합니다.\nvim /etc/hosts 해당 파일에서 아래와 같이 입력하면 됩니다.\n[ip주소] [별칭] 사용할 때는 아래와 같이 쓰면 됩니다.\nssh [별칭] latency 인증 관련 도메인 생성 사이트에서 도메인을 발급받은 뒤 docker의 certbot을 통해 SSL 인증서를 무료로 발급받을 수 있습니다.\ndocker run -it --rm --name certbot \\  -v '/etc/letsencrypt:/etc/letsencrypt' \\  -v '/var/lib/letsencrypt:/var/lib/letsencrypt' \\  certbot/certbot certonly -d '[도메인 주소]' --manual --preferred-challenges dns --server https://acme-v02.api.letsencrypt.org/directory 발급받은 뒤 도메인 사이트에 아래와 같이 TXT(SPF)를 추가 해줘야합니다.\n# 인증서 경로 /etc/letsencrypt/live/[도메인주소]/fullchain.pem ./ /etc/letsencrypt/live/[도메인주소]/privkey.pem ./ 이후 nginx나 tomcat에 해당 인증서 키를 추가해야합니다.\ngit submodule 관련 키, 계정 정보, DB IP주소 패스워드 등 공개하고 싶지 않은 정보는 git private 저장소에 저장하고 해당 레포지토리를 submodule로 이용할 수 있습니다.\ngit submodule add [자신의 private 저장소] ./src/main/resources/config 이후 source code 받을때\ngit clone --recurse-submodules [자신의 프로젝트 저장소] # 설정 파일이 변경된 경우 git submodule foreach git pull origin main # 위의 설정이 안되면 아래로..! git submodule update --init --recursive k6 부하테스트 관련 k6는 부하테스트를 위한 라이브러리입니다. apache의 ab나 naver의 nGrinder처럼 부하테스트를 할 수 있는 도구입니다.\n설치 후 실행은 아래처럼 사용하면 됩니다.\nk6 run [파일명.js]  k6를 gui로 보기 좋게 해주는 grafana도 있습니다.\njar 스크립트 배포 관련 스크립트를 이용해서 배포를 할 수 있습니다. 아래의 코드는 Spring 프로젝트를 정지, 빌드, 배포하는 스크립트 입니다.\nPROJECT_PATH='프로젝트 경로' JAR_PATH=${PROJECT_PATH}/build/libs JAR=$(cd ${JAR_PATH} \u0026\u0026 find ./* -name \"*jar\" | cut -c 3-) JAR_PID=$(ps -ef | grep $JAR | grep -v grep | awk '{print $2}') function stop_process() { if [ -z \"$JAR_PID\" ]; then echo \"프로세스가 실행중이지 않습니다.\" else echo \"$JAR의프로세스를 종료합니다. (PID = $JAR_PID)\" kill $JAR_PID fi } function build() { cd ${PROJECT_PATH} \u0026\u0026 ./gradlew clean build } function start_process() { java -jar -Dspring.profiles.active=prod $JAR_PATH/$JAR } echo -e \"${txtylw}=======================================${txtrst}\" echo -e \"${txtgrn}Deploy Start ${txtrst}\" echo -e \"${txtylw}=======================================${txtrst}\" stop_process build start_process 위의 파일은 [파일명].sh로 확장자를 구성해야 하며, 처음에 권한을 추가해준뒤 아래 명령어로 실행하면 됩니다.\n# 권한 추가 chmod +x [파일명.sh] # 실행 ./[파일명.sh] 이외에도 AWS 모니터링, 스케일 아웃, AWS Launch Template 등 인프라 설정을 한다면 조금 더 안정적으로 웹 서비스를 운용할 수 있습니다.\n","wordCount":"444","inLanguage":"en","datePublished":"2023-01-12T21:34:04+09:00","dateModified":"2023-01-12T21:34:04+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/devops/aws/infra-tips/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Infra 설정 관련 정리","name":"Infra 설정 관련 정리","description":"인프라 관련 내용 정리가 필요할 것 같아 중요한 키워드 정도로 정리한 내용입니다.\nAWS EC2 접속 명령어 기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.\nchmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기\nhistory bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.\n내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.\nbastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.","keywords":["",""],"articleBody":"인프라 관련 내용 정리가 필요할 것 같아 중요한 키워드 정도로 정리한 내용입니다.\nAWS EC2 접속 명령어 기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.\nchmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기\nhistory bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.\n내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.\nbastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.\n서비스용 서버에 22번 포트로의 접근은 bastion host만 가능하도록 security group을 설정해야합니다.\n# Bastion Server에서 공개키를 생성 bastion $ ssh-keygen -t rsa bastion $ cat ~/.ssh/id_rsa.pub # 접속하려는 서비스용 서버에 키 추가 $ vi ~/.ssh/authorized_keys 위와 같이 설정한 후 해당 서비스용 ip를 별칭으로 입력합니다.\nvim /etc/hosts 해당 파일에서 아래와 같이 입력하면 됩니다.\n[ip주소] [별칭] 사용할 때는 아래와 같이 쓰면 됩니다.\nssh [별칭] latency 인증 관련 도메인 생성 사이트에서 도메인을 발급받은 뒤 docker의 certbot을 통해 SSL 인증서를 무료로 발급받을 수 있습니다.\ndocker run -it --rm --name certbot \\  -v '/etc/letsencrypt:/etc/letsencrypt' \\  -v '/var/lib/letsencrypt:/var/lib/letsencrypt' \\  certbot/certbot certonly -d '[도메인 주소]' --manual --preferred-challenges dns --server https://acme-v02.api.letsencrypt.org/directory 발급받은 뒤 도메인 사이트에 아래와 같이 TXT(SPF)를 추가 해줘야합니다.\n# 인증서 경로 /etc/letsencrypt/live/[도메인주소]/fullchain.pem ./ /etc/letsencrypt/live/[도메인주소]/privkey.pem ./ 이후 nginx나 tomcat에 해당 인증서 키를 추가해야합니다.\ngit submodule 관련 키, 계정 정보, DB IP주소 패스워드 등 공개하고 싶지 않은 정보는 git private 저장소에 저장하고 해당 레포지토리를 submodule로 이용할 수 있습니다.\ngit submodule add [자신의 private 저장소] ./src/main/resources/config 이후 source code 받을때\ngit clone --recurse-submodules [자신의 프로젝트 저장소] # 설정 파일이 변경된 경우 git submodule foreach git pull origin main # 위의 설정이 안되면 아래로..! git submodule update --init --recursive k6 부하테스트 관련 k6는 부하테스트를 위한 라이브러리입니다. apache의 ab나 naver의 nGrinder처럼 부하테스트를 할 수 있는 도구입니다.\n설치 후 실행은 아래처럼 사용하면 됩니다.\nk6 run [파일명.js] k6를 gui로 보기 좋게 해주는 grafana도 있습니다.\njar 스크립트 배포 관련 스크립트를 이용해서 배포를 할 수 있습니다. 아래의 코드는 Spring 프로젝트를 정지, 빌드, 배포하는 스크립트 입니다.\nPROJECT_PATH='프로젝트 경로' JAR_PATH=${PROJECT_PATH}/build/libs JAR=$(cd ${JAR_PATH} \u0026\u0026 find ./* -name \"*jar\" | cut -c 3-) JAR_PID=$(ps -ef | grep $JAR | grep -v grep | awk '{print $2}') function stop_process() { if [ -z \"$JAR_PID\" ]; then echo \"프로세스가 실행중이지 않습니다.\" else echo \"$JAR의프로세스를 종료합니다. (PID = $JAR_PID)\" kill $JAR_PID fi } function build() { cd ${PROJECT_PATH} \u0026\u0026 ./gradlew clean build } function start_process() { java -jar -Dspring.profiles.active=prod $JAR_PATH/$JAR } echo -e \"${txtylw}=======================================${txtrst}\" echo -e \"${txtgrn}Deploy Start ${txtrst}\" echo -e \"${txtylw}=======================================${txtrst}\" stop_process build start_process 위의 파일은 [파일명].sh로 확장자를 구성해야 하며, 처음에 권한을 추가해준뒤 아래 명령어로 실행하면 됩니다.\n# 권한 추가 chmod +x [파일명.sh] # 실행 ./[파일명.sh] 이외에도 AWS 모니터링, 스케일 아웃, AWS Launch Template 등 인프라 설정을 한다면 조금 더 안정적으로 웹 서비스를 운용할 수 있습니다.\n","wordCount":"444","inLanguage":"en","datePublished":"2023-01-12T21:34:04+09:00","dateModified":"2023-01-12T21:34:04+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/devops/aws/infra-tips/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -113,15 +113,14 @@ Infra 설정 관련 정리
 </div>
 </details>
 </div>
-<div class=post-content>
-<p>인프라 관련 내용 정리가 필요할 것 같아 <code>중요한 키워드 정도</code>로 정리한 내용입니다.</p>
+<div class=post-content><p>인프라 관련 내용 정리가 필요할 것 같아 <code>중요한 키워드 정도</code>로 정리한 내용입니다.</p>
 <h3 id=aws-ec2-접속-명령어>AWS EC2 접속 명령어<a hidden class=anchor aria-hidden=true href=#aws-ec2-접속-명령어>#</a></h3>
 <p>기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>chmod <span class=m>400</span> <span class=o>[</span>pem파일명<span class=o>]</span>
-ssh -i <span class=o>[</span>pem키 파일명<span class=o>]</span> ubuntu@<span class=o>[</span>퍼블릭 IP 주소<span class=o>]</span></code></pre></div>
-<p>입력했던 콘솔 보기</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>history</code></pre></div>
-<h3 id=bastion-host-설정>bastion host 설정<a hidden class=anchor aria-hidden=true href=#bastion-host-설정>#</a></h3>
+ssh -i <span class=o>[</span>pem키 파일명<span class=o>]</span> ubuntu@<span class=o>[</span>퍼블릭 IP 주소<span class=o>]</span>
+</code></pre></div><p>입력했던 콘솔 보기</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>history</span>
+</code></pre></div><h3 id=bastion-host-설정>bastion host 설정<a hidden class=anchor aria-hidden=true href=#bastion-host-설정>#</a></h3>
 <p>bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.<br>
 내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.</p>
 <p>bastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.</p>
@@ -131,42 +130,43 @@ bastion $ ssh-keygen -t rsa
 bastion $ cat ~/.ssh/id_rsa.pub
 
 <span class=c1># 접속하려는 서비스용 서버에 키 추가</span>
-$ vi ~/.ssh/authorized_keys</code></pre></div>
-<p>위와 같이 설정한 후 해당 서비스용 ip를 별칭으로 입력합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>vim /etc/hosts</code></pre></div>
-<p>해당 파일에서 아래와 같이 입력하면 됩니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=o>[</span>ip주소<span class=o>]</span> <span class=o>[</span>별칭<span class=o>]</span></code></pre></div>
-<p>사용할 때는 아래와 같이 쓰면 됩니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>ssh <span class=o>[</span>별칭<span class=o>]</span></code></pre></div>
-<h3 id=latency-인증-관련>latency 인증 관련<a hidden class=anchor aria-hidden=true href=#latency-인증-관련>#</a></h3>
-<p><a href=https://xn--220b31d95hq8o.xn--3e0b707e/ target=_blank>도메인 생성 사이트</a>에서 도메인을 발급받은 뒤
+$ vi ~/.ssh/authorized_keys
+</code></pre></div><p>위와 같이 설정한 후 해당 서비스용 ip를 별칭으로 입력합니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>vim /etc/hosts
+</code></pre></div><p>해당 파일에서 아래와 같이 입력하면 됩니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=o>[</span>ip주소<span class=o>]</span> <span class=o>[</span>별칭<span class=o>]</span>
+</code></pre></div><p>사용할 때는 아래와 같이 쓰면 됩니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>ssh <span class=o>[</span>별칭<span class=o>]</span>
+</code></pre></div><h3 id=latency-인증-관련>latency 인증 관련<a hidden class=anchor aria-hidden=true href=#latency-인증-관련>#</a></h3>
+<p><a href=https://xn--220b31d95hq8o.xn--3e0b707e/>도메인 생성 사이트</a>에서 도메인을 발급받은 뒤
 docker의 certbot을 통해 SSL 인증서를 무료로 발급받을 수 있습니다.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>docker run -it --rm --name certbot <span class=se>\
 </span><span class=se></span>  -v <span class=s1>&#39;/etc/letsencrypt:/etc/letsencrypt&#39;</span> <span class=se>\
 </span><span class=se></span>  -v <span class=s1>&#39;/var/lib/letsencrypt:/var/lib/letsencrypt&#39;</span> <span class=se>\
-</span><span class=se></span>  certbot/certbot certonly -d <span class=s1>&#39;[도메인 주소]&#39;</span> --manual --preferred-challenges dns --server https://acme-v02.api.letsencrypt.org/directory</code></pre></div>
-<p>발급받은 뒤 도메인 사이트에 아래와 같이 TXT(SPF)를 추가 해줘야합니다.</p>
-<p><img src=./images/image01.png#center alt=images></p>
+</span><span class=se></span>  certbot/certbot certonly -d <span class=s1>&#39;[도메인 주소]&#39;</span> --manual --preferred-challenges dns --server https://acme-v02.api.letsencrypt.org/directory
+</code></pre></div><p>발급받은 뒤 도메인 사이트에 아래와 같이 TXT(SPF)를 추가 해줘야합니다.</p>
+<p><img loading=lazy src=./images/image01.png#center alt=images>
+</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1># 인증서 경로</span>
 /etc/letsencrypt/live/<span class=o>[</span>도메인주소<span class=o>]</span>/fullchain.pem ./
-/etc/letsencrypt/live/<span class=o>[</span>도메인주소<span class=o>]</span>/privkey.pem ./</code></pre></div>
-<p>이후 nginx나 tomcat에 해당 인증서 키를 추가해야합니다.</p>
+/etc/letsencrypt/live/<span class=o>[</span>도메인주소<span class=o>]</span>/privkey.pem ./
+</code></pre></div><p>이후 nginx나 tomcat에 해당 인증서 키를 추가해야합니다.</p>
 <h3 id=git-submodule-관련>git submodule 관련<a hidden class=anchor aria-hidden=true href=#git-submodule-관련>#</a></h3>
 <p>키, 계정 정보, DB IP주소 패스워드 등 공개하고 싶지 않은 정보는 git private 저장소에 저장하고 해당 레포지토리를 submodule로 이용할 수 있습니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>git submodule add <span class=o>[</span>자신의 private 저장소<span class=o>]</span> ./src/main/resources/config</code></pre></div>
-<p>이후 source code 받을때</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>git submodule add <span class=o>[</span>자신의 private 저장소<span class=o>]</span> ./src/main/resources/config
+</code></pre></div><p>이후 source code 받을때</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>git clone --recurse-submodules <span class=o>[</span>자신의 프로젝트 저장소<span class=o>]</span>
 
 <span class=c1># 설정 파일이 변경된 경우</span>
 git submodule foreach git pull origin main
 <span class=c1># 위의 설정이 안되면 아래로..!</span>
-git submodule update --init --recursive</code></pre></div>
-<h3 id=k6-부하테스트-관련>k6 부하테스트 관련<a hidden class=anchor aria-hidden=true href=#k6-부하테스트-관련>#</a></h3>
+git submodule update --init --recursive
+</code></pre></div><h3 id=k6-부하테스트-관련>k6 부하테스트 관련<a hidden class=anchor aria-hidden=true href=#k6-부하테스트-관련>#</a></h3>
 <p>k6는 부하테스트를 위한 라이브러리입니다.
-apache의 <a href=https://httpd.apache.org/docs/2.4/ko/programs/ab.html target=_blank>ab</a>나 naver의 <a href=https://github.com/naver/ngrinder target=_blank>nGrinder</a>처럼 부하테스트를 할 수 있는 도구입니다.<br>
+apache의 <a href=https://httpd.apache.org/docs/2.4/ko/programs/ab.html>ab</a>나 naver의 <a href=https://github.com/naver/ngrinder>nGrinder</a>처럼 부하테스트를 할 수 있는 도구입니다.<br>
 설치 후 실행은 아래처럼 사용하면 됩니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>k6 run <span class=o>[</span>파일명.js<span class=o>]</span> </code></pre></div>
-<p>k6를 gui로 보기 좋게 해주는 <a href=khttps://k6.io/ target=_blank>grafana</a>도 있습니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>k6 run <span class=o>[</span>파일명.js<span class=o>]</span> 
+</code></pre></div><p>k6를 gui로 보기 좋게 해주는 <a href=khttps://k6.io/>grafana</a>도 있습니다.</p>
 <h3 id=jar-스크립트-배포-관련>jar 스크립트 배포 관련<a hidden class=anchor aria-hidden=true href=#jar-스크립트-배포-관련>#</a></h3>
 <p>스크립트를 이용해서 배포를 할 수 있습니다. 아래의 코드는 Spring 프로젝트를 정지, 빌드, 배포하는
 스크립트 입니다.</p>
@@ -198,14 +198,14 @@ apache의 <a href=https://httpd.apache.org/docs/2.4/ko/programs/ab.html target=_
 
 stop_process
 build
-start_process</code></pre></div>
-<p>위의 파일은 <code>[파일명].sh</code>로 확장자를 구성해야 하며, 처음에 권한을 추가해준뒤 아래 명령어로
+start_process
+</code></pre></div><p>위의 파일은 <code>[파일명].sh</code>로 확장자를 구성해야 하며, 처음에 권한을 추가해준뒤 아래 명령어로
 실행하면 됩니다.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1># 권한 추가</span>
 chmod +x <span class=o>[</span>파일명.sh<span class=o>]</span>
 <span class=c1># 실행</span>
-./<span class=o>[</span>파일명.sh<span class=o>]</span></code></pre></div>
-<p>이외에도 AWS 모니터링, 스케일 아웃, AWS Launch Template 등 인프라 설정을 한다면 조금 더 안정적으로
+./<span class=o>[</span>파일명.sh<span class=o>]</span>
+</code></pre></div><p>이외에도 AWS 모니터링, 스케일 아웃, AWS Launch Template 등 인프라 설정을 한다면 조금 더 안정적으로
 웹 서비스를 운용할 수 있습니다.</p>
 </div>
 <footer class=post-footer>

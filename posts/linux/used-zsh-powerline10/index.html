@@ -43,7 +43,7 @@
 그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.
 해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"윈도우 WSL2 Ubuntu 터미널 꾸미기","item":"https://haservi.github.io/posts/linux/used-zsh-powerline10/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"윈도우 WSL2 Ubuntu 터미널 꾸미기","name":"윈도우 WSL2 Ubuntu 터미널 꾸미기","description":"Windows WSL Ubuntu 커스텀 하기 Window에서는 WSL(Windows Subsystem for Linux)를 제공합니다.\n예전엔 가상환경(VM)에 리눅스를 올렸다면 지금은 손쉽게 리눅스 커널을 WSL로 접근할 수 있게 됐습니다.\n그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.\n해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다.","keywords":["",""],"articleBody":" Windows WSL Ubuntu 커스텀 하기 Window에서는 WSL(Windows Subsystem for Linux)를 제공합니다.\n예전엔 가상환경(VM)에 리눅스를 올렸다면 지금은 손쉽게 리눅스 커널을 WSL로 접근할 수 있게 됐습니다.\n그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.\n해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다.\n먼저 이 글대로 설정을 마칠 경우 아래와 같은 터미널을 얻을 수 있습니다. 😮\n설치 방법 1. Ubuntu 설치 Window Store에서 Ubuntu를 설치합니다. 2. zsh 설치  먼저 ubuntu 업데이트를 진행합니다.\nsudo apt-get install sudo apt-get update zsh를 기본 셸로 설정합니다.\nsudo chsh -s $(which zsh) 실행 시 zsh를 실행되도록 지정합니다.\nsh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"  3. Meslo Nerd Font 설치  해당 폰트를 사용하지 않으면 powerlevel10k 테마의 아이콘이 표시되지 않습니다.\n아래 링크를 통해 MesloLGS NF 폰트를 다운로드 받아주세요.\nromkatv/powerlevel10k  다운받은 폰트를 Ubuntu에서 폰트를 변경합니다. 상단에서 마우스 우클릭 후 속성을 누른 뒤 폰트를 변경 할 수 있습니다.   4. powerlever10k 설치  zsh를 설치하면 oh-my-zsh라는 폴더가 생깁니다. 해당 폴더에 아래의 테마를 설치합니다.\ngit clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k 설치 후 편집기를 이용하여 테마를 변경합니다.\nvim ~/.zshrc 기존 테마인 ZSH_THEME=“robbyrussell”를 ZSH_THEME=“powerlevel10k/powerlevel10k” 로 변경합니다.(i를 누르면 편집이 가능하며, 수정이 완료된 뒤 ESC를 누르고 :wq 입력)\nZSH_THEME=\"powerlevel10k/powerlevel10k\"   적용을 하셨다면 해당 창을 종료 후 다시 시작하면 아래와 같이 나오게 됩니다.\n(만약 나오지 않은 경우 명령어 source ~/.zshrc 입력)  여기서 본인의 스타일에 맞게 ()안의 답을 선택하면 됩니다. 만약 설정을 잘못하셨거나 바꾸고 싶다면 아래의 커맨드를 입력하시면 됩니다.\np10k configure  5. 폴더 아이콘 테마 변경  해당 테마를 변경하기 위해서는 ruby를 설치하여 colorls를 설치해야 합니다.\nsudo apt-get install ruby-full colorls를 설치합니다.(만약 아래의 명령어가 안되거나 우분투 20.04 이상 버전인 경우는 sudo apt install gcc make 커맨드 입력 후 다시 설치하시면 됩니다.)\nsudo gem install colorls 설치가 완료됐으면 ~/.zshrc 가장 하단에 아래 코드를 추가합니다.\nsource $(dirname $(gem which colorls))/tab_complete.sh alias ls=colorls  6. fzf 설치 fzf는 zsh의 확장팩? 같은 느낌입니다. 일단 속도가 매우 빠릅니다.(golang??)\n터미널에서 파일검색, 명령 기록, 프로세스, 호스트 이름, 책갈피 등 다양한 기능이 있습니다.\n몇가지 자주쓰는 명령어로\n ctrl + r 커맨드에서 사용한 명령어 history 리스트 출력 ctrl + t 해당 폴더의 디렉토리 또는 파일 검색 vim $(fzf) 해당 폴더 안의 검색된 파일 열기 cd 스페이스 ctrl + t 검색 후 폴더 이동  이것 외에도 fzf내에서 플러그인을 설치하여 탐색기처럼 이용할 수도 있고, 프로세스 kill 등 다양한 방법이 있는데 저도 아직 제대로 활용은 못하는 것 같습니다…\n이와 관련된 링크로 대체하겠습니다. 😓\n윈도우 터미널 테마 변경 WSL를 설치하면 store에 있는 윈도우 터미널도 WSL을 선택할 수 있습니다. 이와 관련하여 테마를 설정할 수 있습니다.\n1. 터미널 색상 변경 기본적으로 터미널의 색을 바꾸고 싶다면 위와 같이 설정에 들어가서 json 파일 선택 후 defaults 제이슨 값에\n\"defaults\": { // color theme \"colorScheme\": \"Campbell\" }, 해당 테마이름을 지정하고, profiles제이슨 항목 안에\n\"schemes\": [ { \"name\": \"Campbell\", \"cursorColor\": \"#FFFFFF\", \"selectionBackground\": \"#FFFFFF\", \"background\": \"#0C0C0C\", \"foreground\": \"#CCCCCC\", \"black\": \"#0C0C0C\", \"blue\": \"#4b6ed6\", \"cyan\": \"#3A96DD\", \"green\": \"#C50F1F\", \"purple\": \"#881798\", \"red\": \"#C50F1F\", \"white\": \"#CCCCCC\", \"yellow\": \"#C19C00\", \"brightBlack\": \"#767676\", \"brightBlue\": \"#3B78FF\", \"brightCyan\": \"#61D6D6\", \"brightGreen\": \"#16C60C\", \"brightPurple\": \"#B4009E\", \"brightRed\": \"#E74856\", \"brightWhite\": \"#F2F2F2\", \"brightYellow\": \"#F9F1A5\" } ], 이렇게 지정해주면 됩니다. 공식 사이트(링크) 에서도 참조하면 좋을 것 같습니다.\n위와 같은 방법으로 다른 테마를 적용하고 싶다면, https://windowsterminalthemes.dev/ 에서 원하는 테마를 복사하셔도 됩니다.\n2. 터미널 배경 변경 터미널 배경을 변경하고 싶으면 아래와 같이 설정해주시면 됩니다.\n\"defaults\": { \"acrylicOpacity\" : 0.4, \"backgroundImage\": \"D:/ProgramFiles/Images/cool-wallpaper-preview-1.jpg\", \"backgroundImageOpacity\": 0.4 }, 3. 글꼴 변경 해당 글꼴을 넣어줘야 powerlink10k에서 아이콘을 볼 수 있습니다.\n\"defaults\": { \"fontFace\" : \"MesloLGS NF\", \"fontSize\" : 13 }, 탐색기에 WSL 연결하기  탐색기 주소창에 아래의 주소값을 입력합니다.\n\\\\wsl$ Unbutu 폴더에서 우측마우스 클릭 후 네트워크 드라이브 연결을 선택한다.\n 연결 후 원하는 이름으로 변경하면 탐색기에서 WSL에 접근이 가능합니다.   에러 관련  아래와 같은 에러가 발생하면\nbash: ll: command not found 이렇게 명령어를 입력하면 해결됩니다.\necho \"alias ll='ls -lGaf'\"  ~/.bash_profile source ~/.bash_profile  이상으로 윈도우에서 WSL 우분투 터미널 꾸미는 방법에 대해 알아보았습니다.\nReference  Setting up Windows Terminal, WSL and Oh-my-Zsh - Ivo’s Blog! https://snowdeer.github.io/mac-os/2018/11/04/how-to-use-fzf/ fzf Github WSL 동작 원리 FZF 터미널 사용 방법  ","wordCount":"652","inLanguage":"en","datePublished":"2021-11-22T20:49:25+09:00","dateModified":"2021-11-22T20:49:25+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/linux/used-zsh-powerline10/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"윈도우 WSL2 Ubuntu 터미널 꾸미기","name":"윈도우 WSL2 Ubuntu 터미널 꾸미기","description":"Windows WSL Ubuntu 커스텀 하기 Window에서는 WSL(Windows Subsystem for Linux)를 제공합니다.\n예전엔 가상환경(VM)에 리눅스를 올렸다면 지금은 손쉽게 리눅스 커널을 WSL로 접근할 수 있게 됐습니다.\n그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.\n해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다.","keywords":["",""],"articleBody":"Windows WSL Ubuntu 커스텀 하기 Window에서는 WSL(Windows Subsystem for Linux)를 제공합니다.\n예전엔 가상환경(VM)에 리눅스를 올렸다면 지금은 손쉽게 리눅스 커널을 WSL로 접근할 수 있게 됐습니다.\n그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.\n해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다.\n먼저 이 글대로 설정을 마칠 경우 아래와 같은 터미널을 얻을 수 있습니다. 😮\n설치 방법 1. Ubuntu 설치 Window Store에서 Ubuntu를 설치합니다. 2. zsh 설치  먼저 ubuntu 업데이트를 진행합니다.  sudo apt-get install sudo apt-get update zsh를 기본 셸로 설정합니다.  sudo chsh -s $(which zsh) 실행 시 zsh를 실행되도록 지정합니다.  sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\" 3. Meslo Nerd Font 설치   해당 폰트를 사용하지 않으면 powerlevel10k 테마의 아이콘이 표시되지 않습니다.\n아래 링크를 통해 MesloLGS NF 폰트를 다운로드 받아주세요.\nromkatv/powerlevel10k   다운받은 폰트를 Ubuntu에서 폰트를 변경합니다. 상단에서 마우스 우클릭 후 속성을 누른 뒤 폰트를 변경 할 수 있습니다.   4. powerlever10k 설치  zsh를 설치하면 oh-my-zsh라는 폴더가 생깁니다. 해당 폴더에 아래의 테마를 설치합니다.  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k 설치 후 편집기를 이용하여 테마를 변경합니다.  vim ~/.zshrc 기존 테마인 ZSH_THEME=“robbyrussell\"를 ZSH_THEME=“powerlevel10k/powerlevel10k” 로 변경합니다.(i를 누르면 편집이 가능하며, 수정이 완료된 뒤 ESC를 누르고 :wq 입력)  ZSH_THEME=\"powerlevel10k/powerlevel10k\"  적용을 하셨다면 해당 창을 종료 후 다시 시작하면 아래와 같이 나오게 됩니다.\n(만약 나오지 않은 경우 명령어 source ~/.zshrc 입력)   여기서 본인의 스타일에 맞게 ()안의 답을 선택하면 됩니다. 만약 설정을 잘못하셨거나 바꾸고 싶다면 아래의 커맨드를 입력하시면 됩니다.\n  p10k configure 5. 폴더 아이콘 테마 변경  해당 테마를 변경하기 위해서는 ruby를 설치하여 colorls를 설치해야 합니다.  sudo apt-get install ruby-full colorls를 설치합니다.(만약 아래의 명령어가 안되거나 우분투 20.04 이상 버전인 경우는 sudo apt install gcc make 커맨드 입력 후 다시 설치하시면 됩니다.)  sudo gem install colorls 설치가 완료됐으면 ~/.zshrc 가장 하단에 아래 코드를 추가합니다.  source $(dirname $(gem which colorls))/tab_complete.sh alias ls=colorls 6. fzf 설치 fzf는 zsh의 확장팩? 같은 느낌입니다. 일단 속도가 매우 빠릅니다.(golang??)\n터미널에서 파일검색, 명령 기록, 프로세스, 호스트 이름, 책갈피 등 다양한 기능이 있습니다.\n몇가지 자주쓰는 명령어로\n ctrl + r 커맨드에서 사용한 명령어 history 리스트 출력 ctrl + t 해당 폴더의 디렉토리 또는 파일 검색 vim $(fzf) 해당 폴더 안의 검색된 파일 열기 cd 스페이스 ctrl + t 검색 후 폴더 이동  이것 외에도 fzf내에서 플러그인을 설치하여 탐색기처럼 이용할 수도 있고, 프로세스 kill 등 다양한 방법이 있는데 저도 아직 제대로 활용은 못하는 것 같습니다…\n이와 관련된 링크로 대체하겠습니다. 😓\n윈도우 터미널 테마 변경 WSL를 설치하면 store에 있는 윈도우 터미널도 WSL을 선택할 수 있습니다. 이와 관련하여 테마를 설정할 수 있습니다.\n1. 터미널 색상 변경 기본적으로 터미널의 색을 바꾸고 싶다면 위와 같이 설정에 들어가서 json 파일 선택 후 defaults 제이슨 값에\n\"defaults\": { // color theme \"colorScheme\": \"Campbell\" }, 해당 테마이름을 지정하고, profiles제이슨 항목 안에\n\"schemes\": [ { \"name\": \"Campbell\", \"cursorColor\": \"#FFFFFF\", \"selectionBackground\": \"#FFFFFF\", \"background\": \"#0C0C0C\", \"foreground\": \"#CCCCCC\", \"black\": \"#0C0C0C\", \"blue\": \"#4b6ed6\", \"cyan\": \"#3A96DD\", \"green\": \"#C50F1F\", \"purple\": \"#881798\", \"red\": \"#C50F1F\", \"white\": \"#CCCCCC\", \"yellow\": \"#C19C00\", \"brightBlack\": \"#767676\", \"brightBlue\": \"#3B78FF\", \"brightCyan\": \"#61D6D6\", \"brightGreen\": \"#16C60C\", \"brightPurple\": \"#B4009E\", \"brightRed\": \"#E74856\", \"brightWhite\": \"#F2F2F2\", \"brightYellow\": \"#F9F1A5\" } ], 이렇게 지정해주면 됩니다. 공식 사이트(링크) 에서도 참조하면 좋을 것 같습니다.\n위와 같은 방법으로 다른 테마를 적용하고 싶다면, https://windowsterminalthemes.dev/ 에서 원하는 테마를 복사하셔도 됩니다.\n2. 터미널 배경 변경 터미널 배경을 변경하고 싶으면 아래와 같이 설정해주시면 됩니다.\n\"defaults\": { \"acrylicOpacity\" : 0.4, \"backgroundImage\": \"D:/ProgramFiles/Images/cool-wallpaper-preview-1.jpg\", \"backgroundImageOpacity\": 0.4 }, 3. 글꼴 변경 해당 글꼴을 넣어줘야 powerlink10k에서 아이콘을 볼 수 있습니다.\n\"defaults\": { \"fontFace\" : \"MesloLGS NF\", \"fontSize\" : 13 }, 탐색기에 WSL 연결하기  탐색기 주소창에 아래의 주소값을 입력합니다.  \\\\wsl$ Unbutu 폴더에서 우측마우스 클릭 후 네트워크 드라이브 연결을 선택한다. 연결 후 원하는 이름으로 변경하면 탐색기에서 WSL에 접근이 가능합니다.   에러 관련  아래와 같은 에러가 발생하면  bash: ll: command not found 이렇게 명령어를 입력하면 해결됩니다.  echo \"alias ll='ls -lGaf'\"  ~/.bash_profile source ~/.bash_profile 이상으로 윈도우에서 WSL 우분투 터미널 꾸미는 방법에 대해 알아보았습니다.\nReference  Setting up Windows Terminal, WSL and Oh-my-Zsh - Ivo’s Blog! https://snowdeer.github.io/mac-os/2018/11/04/how-to-use-fzf/ fzf Github WSL 동작 원리 FZF 터미널 사용 방법  ","wordCount":"652","inLanguage":"en","datePublished":"2021-11-22T20:49:25+09:00","dateModified":"2021-11-22T20:49:25+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/linux/used-zsh-powerline10/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -129,8 +129,7 @@
 </div>
 </details>
 </div>
-<div class=post-content>
-<h2 id=windows-wsl-ubuntu-커스텀-하기>Windows WSL Ubuntu 커스텀 하기<a hidden class=anchor aria-hidden=true href=#windows-wsl-ubuntu-커스텀-하기>#</a></h2>
+<div class=post-content><h2 id=windows-wsl-ubuntu-커스텀-하기>Windows WSL Ubuntu 커스텀 하기<a hidden class=anchor aria-hidden=true href=#windows-wsl-ubuntu-커스텀-하기>#</a></h2>
 <p>Window에서는 WSL(Windows Subsystem for Linux)를 제공합니다.<br>
 예전엔 가상환경(VM)에 리눅스를 올렸다면 지금은 손쉽게 리눅스 커널을 WSL로 접근할 수 있게 됐습니다.</p>
 <p>그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축
@@ -138,58 +137,85 @@
 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.</p>
 <p>해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다.</p>
 <p>먼저 이 글대로 설정을 마칠 경우 아래와 같은 터미널을 얻을 수 있습니다. 😮</p>
-<p><img src=./images/Animation.gif alt=터미널작업영상></p>
+<p><img loading=lazy src=./images/Animation.gif alt=터미널작업영상>
+</p>
 <h2 id=설치-방법>설치 방법<a hidden class=anchor aria-hidden=true href=#설치-방법>#</a></h2>
 <h3 id=1-ubuntu-설치>1. Ubuntu 설치<a hidden class=anchor aria-hidden=true href=#1-ubuntu-설치>#</a></h3>
 <p>Window Store에서 Ubuntu를 설치합니다.
-<img src=./images/image001.png alt=image></p>
+<img loading=lazy src=./images/image001.png alt=image>
+</p>
 <h3 id=2-zsh-설치>2. zsh 설치<a hidden class=anchor aria-hidden=true href=#2-zsh-설치>#</a></h3>
 <ol>
-<li><p>먼저 ubuntu 업데이트를 진행합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt-get install
-sudo apt-get update</code></pre></div></li>
-<li><p>zsh를 기본 셸로 설정합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo chsh -s <span class=k>$(</span>which zsh<span class=k>)</span></code></pre></div></li>
-<li><p>실행 시 zsh를 실행되도록 지정합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sh -c <span class=s2>&#34;</span><span class=k>$(</span>curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class=k>)</span><span class=s2>&#34;</span></code></pre></div></li>
+<li>먼저 ubuntu 업데이트를 진행합니다.</li>
 </ol>
-<h3 id=3-meslo-nerd-font-설치>3. Meslo Nerd Font 설치<a hidden class=anchor aria-hidden=true href=#3-meslo-nerd-font-설치>#</a></h3>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt-get install
+sudo apt-get update
+</code></pre></div><ol start=2>
+<li>zsh를 기본 셸로 설정합니다.</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo chsh -s <span class=k>$(</span>which zsh<span class=k>)</span>
+</code></pre></div><ol start=3>
+<li>실행 시 zsh를 실행되도록 지정합니다.</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sh -c <span class=s2>&#34;</span><span class=k>$(</span>curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class=k>)</span><span class=s2>&#34;</span>
+</code></pre></div><h3 id=3-meslo-nerd-font-설치>3. Meslo Nerd Font 설치<a hidden class=anchor aria-hidden=true href=#3-meslo-nerd-font-설치>#</a></h3>
 <ol>
-<li><p>해당 폰트를 사용하지 않으면 powerlevel10k 테마의 <strong>아이콘이 표시되지 않습니다</strong>.<br>
+<li>
+<p>해당 폰트를 사용하지 않으면 powerlevel10k 테마의 <strong>아이콘이 표시되지 않습니다</strong>.<br>
 아래 링크를 통해 MesloLGS NF 폰트를 다운로드 받아주세요.<br>
-<strong><a href=https://github.com/romkatv/powerlevel10k/#user-content-fonts target=_blank>romkatv/powerlevel10k</a></strong>
-<img src=./images/image002.png alt=image></p></li>
-<li><p>다운받은 폰트를 Ubuntu에서 폰트를 변경합니다. 상단에서 마우스 우클릭 후 속성을 누른 뒤 폰트를 변경 할 수 있습니다.
-<img src=./images/image003.png alt=image></p></li>
+<strong><a href=https://github.com/romkatv/powerlevel10k/#user-content-fonts>romkatv/powerlevel10k</a></strong>
+<img loading=lazy src=./images/image002.png alt=image>
+</p>
+</li>
+<li>
+<p>다운받은 폰트를 Ubuntu에서 폰트를 변경합니다. 상단에서 마우스 우클릭 후 속성을 누른 뒤 폰트를 변경 할 수 있습니다.
+<img loading=lazy src=./images/image003.png alt=image>
+</p>
+</li>
 </ol>
 <h3 id=4-powerlever10k-설치>4. powerlever10k 설치<a hidden class=anchor aria-hidden=true href=#4-powerlever10k-설치>#</a></h3>
 <ol>
-<li><p>zsh를 설치하면 oh-my-zsh라는 폴더가 생깁니다. 해당 폴더에 아래의 테마를 설치합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>git clone --depth<span class=o>=</span><span class=m>1</span> https://github.com/romkatv/powerlevel10k.git <span class=si>${</span><span class=nv>ZSH_CUSTOM</span><span class=k>:-</span><span class=nv>$HOME</span><span class=p>/.oh-my-zsh/custom</span><span class=si>}</span>/themes/powerlevel10k</code></pre></div></li>
-<li><p>설치 후 편집기를 이용하여 테마를 변경합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>vim ~/.zshrc</code></pre></div></li>
-<li><p>기존 테마인 ZSH_THEME=&ldquo;robbyrussell&rdquo;를 ZSH_THEME=&ldquo;powerlevel10k/powerlevel10k&rdquo; 로 변경합니다.(i를 누르면 편집이 가능하며, 수정이 완료된 뒤 ESC를 누르고 :wq 입력)</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nv>ZSH_THEME</span><span class=o>=</span><span class=s2>&#34;powerlevel10k/powerlevel10k&#34;</span></code></pre></div></li>
+<li>zsh를 설치하면 oh-my-zsh라는 폴더가 생깁니다. 해당 폴더에 아래의 테마를 설치합니다.</li>
 </ol>
-<p><img src=./images/image004.png alt=image></p>
-<ol>
-<li><p>적용을 하셨다면 해당 창을 종료 후 다시 시작하면 아래와 같이 나오게 됩니다.<br>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>git clone --depth<span class=o>=</span><span class=m>1</span> https://github.com/romkatv/powerlevel10k.git <span class=si>${</span><span class=nv>ZSH_CUSTOM</span><span class=k>:-</span><span class=nv>$HOME</span><span class=p>/.oh-my-zsh/custom</span><span class=si>}</span>/themes/powerlevel10k
+</code></pre></div><ol start=2>
+<li>설치 후 편집기를 이용하여 테마를 변경합니다.</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>vim ~/.zshrc
+</code></pre></div><ol start=3>
+<li>기존 테마인 ZSH_THEME=&ldquo;robbyrussell"를 ZSH_THEME=&ldquo;powerlevel10k/powerlevel10k&rdquo; 로 변경합니다.(i를 누르면 편집이 가능하며, 수정이 완료된 뒤 ESC를 누르고 :wq 입력)</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nv>ZSH_THEME</span><span class=o>=</span><span class=s2>&#34;powerlevel10k/powerlevel10k&#34;</span>
+</code></pre></div><p><img loading=lazy src=./images/image004.png alt=image>
+</p>
+<ol start=4>
+<li>
+<p>적용을 하셨다면 해당 창을 종료 후 다시 시작하면 아래와 같이 나오게 됩니다.<br>
 (만약 나오지 않은 경우 명령어 <code>source ~/.zshrc</code> 입력)
-<img src=./images/image005.png alt=image></p></li>
-<li><p>여기서 본인의 스타일에 맞게 ()안의 답을 선택하면 됩니다. 만약 설정을 잘못하셨거나 바꾸고 싶다면 아래의 커맨드를 입력하시면 됩니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>p10k configure</code></pre></div></li>
+<img loading=lazy src=./images/image005.png alt=image>
+</p>
+</li>
+<li>
+<p>여기서 본인의 스타일에 맞게 ()안의 답을 선택하면 됩니다. 만약 설정을 잘못하셨거나 바꾸고 싶다면 아래의 커맨드를 입력하시면 됩니다.</p>
+</li>
 </ol>
-<h3 id=5-폴더-아이콘-테마-변경>5. 폴더 아이콘 테마 변경<a hidden class=anchor aria-hidden=true href=#5-폴더-아이콘-테마-변경>#</a></h3>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>p10k configure
+</code></pre></div><h3 id=5-폴더-아이콘-테마-변경>5. 폴더 아이콘 테마 변경<a hidden class=anchor aria-hidden=true href=#5-폴더-아이콘-테마-변경>#</a></h3>
 <ol>
-<li><p>해당 테마를 변경하기 위해서는 ruby를 설치하여 colorls를 설치해야 합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt-get install ruby-full</code></pre></div></li>
-<li><p>colorls를 설치합니다.(만약 아래의 명령어가 안되거나 우분투 20.04 이상 버전인 경우는 <code>sudo apt install gcc make</code> 커맨드 입력 후 다시 설치하시면 됩니다.)</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo gem install colorls</code></pre></div></li>
-<li><p>설치가 완료됐으면 <code>~/.zshrc</code> 가장 하단에 아래 코드를 추가합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>source</span> <span class=k>$(</span>dirname <span class=k>$(</span>gem which colorls<span class=k>))</span>/tab_complete.sh
-<span class=nb>alias</span> <span class=nv>ls</span><span class=o>=</span>colorls</code></pre></div></li>
+<li>해당 테마를 변경하기 위해서는 ruby를 설치하여 colorls를 설치해야 합니다.</li>
 </ol>
-<p><img src=./images/image006.png alt=image></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt-get install ruby-full
+</code></pre></div><ol start=2>
+<li>colorls를 설치합니다.(만약 아래의 명령어가 안되거나 우분투 20.04 이상 버전인 경우는 <code>sudo apt install gcc make</code> 커맨드 입력 후 다시 설치하시면 됩니다.)</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo gem install colorls
+</code></pre></div><ol start=3>
+<li>설치가 완료됐으면 <code>~/.zshrc</code> 가장 하단에 아래 코드를 추가합니다.</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>source</span> <span class=k>$(</span>dirname <span class=k>$(</span>gem which colorls<span class=k>))</span>/tab_complete.sh
+<span class=nb>alias</span> <span class=nv>ls</span><span class=o>=</span>colorls
+</code></pre></div><p><img loading=lazy src=./images/image006.png alt=image>
+</p>
 <h3 id=6-fzf-설치>6. fzf 설치<a hidden class=anchor aria-hidden=true href=#6-fzf-설치>#</a></h3>
 <p>fzf는 zsh의 확장팩? 같은 느낌입니다. 일단 속도가 매우 빠릅니다.(golang??)<br>
 터미널에서 파일검색, 명령 기록, 프로세스, 호스트 이름, 책갈피 등 다양한 기능이 있습니다.</p>
@@ -202,18 +228,18 @@ sudo apt-get update</code></pre></div></li>
 </ul>
 <p>이것 외에도 fzf내에서 플러그인을 설치하여 탐색기처럼 이용할 수도 있고, 프로세스 kill 등 다양한 방법이 있는데
 저도 아직 제대로 활용은 못하는 것 같습니다&mldr;<br>
-이와 관련된 <a href=https://github.com/junegunn/fzf#examples target=_blank>링크</a>로 대체하겠습니다. 😓</p>
+이와 관련된 <a href=https://github.com/junegunn/fzf#examples>링크</a>로 대체하겠습니다. 😓</p>
 <h2 id=윈도우-터미널-테마-변경>윈도우 터미널 테마 변경<a hidden class=anchor aria-hidden=true href=#윈도우-터미널-테마-변경>#</a></h2>
 <p>WSL를 설치하면 store에 있는 윈도우 터미널도 WSL을 선택할 수 있습니다. 이와 관련하여 테마를 설정할 수 있습니다.</p>
 <h3 id=1-터미널-색상-변경>1. 터미널 색상 변경<a hidden class=anchor aria-hidden=true href=#1-터미널-색상-변경>#</a></h3>
 <p>기본적으로 터미널의 색을 바꾸고 싶다면
-<img src=./images/image007.png alt=image>
+<img loading=lazy src=./images/image007.png alt=image>
 위와 같이 설정에 들어가서 <code>json 파일</code> 선택 후 defaults 제이슨 값에</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=s2>&#34;defaults&#34;</span><span class=err>:</span> <span class=p>{</span>
   <span class=err>//</span> <span class=err>color</span> <span class=err>theme</span>
   <span class=nt>&#34;colorScheme&#34;</span><span class=p>:</span> <span class=s2>&#34;Campbell&#34;</span>
-<span class=p>}</span><span class=err>,</span></code></pre></div>
-<p>해당 테마이름을 지정하고, profiles제이슨 항목 안에</p>
+<span class=p>}</span><span class=err>,</span>
+</code></pre></div><p>해당 테마이름을 지정하고, profiles제이슨 항목 안에</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=s2>&#34;schemes&#34;</span><span class=err>:</span> <span class=p>[</span>
   <span class=p>{</span>
     <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;Campbell&#34;</span><span class=p>,</span>
@@ -238,46 +264,52 @@ sudo apt-get update</code></pre></div></li>
     <span class=nt>&#34;brightWhite&#34;</span><span class=p>:</span> <span class=s2>&#34;#F2F2F2&#34;</span><span class=p>,</span>
     <span class=nt>&#34;brightYellow&#34;</span><span class=p>:</span> <span class=s2>&#34;#F9F1A5&#34;</span>
   <span class=p>}</span>
-<span class=p>]</span><span class=err>,</span></code></pre></div>
-<p>이렇게 지정해주면 됩니다. 공식 사이트(<a href=https://docs.microsoft.com/ko-kr/windows/terminal/customize-settings/color-schemes target=_blank>링크</a>) 에서도 참조하면 좋을 것 같습니다.</p>
-<p>위와 같은 방법으로 다른 테마를 적용하고 싶다면, <a href=https://windowsterminalthemes.dev/ target=_blank>https://windowsterminalthemes.dev/</a> 에서 원하는 테마를 복사하셔도 됩니다.</p>
+<span class=p>]</span><span class=err>,</span>
+</code></pre></div><p>이렇게 지정해주면 됩니다. 공식 사이트(<a href=https://docs.microsoft.com/ko-kr/windows/terminal/customize-settings/color-schemes>링크</a>) 에서도 참조하면 좋을 것 같습니다.</p>
+<p>위와 같은 방법으로 다른 테마를 적용하고 싶다면, <a href=https://windowsterminalthemes.dev/>https://windowsterminalthemes.dev/</a> 에서 원하는 테마를 복사하셔도 됩니다.</p>
 <h3 id=2-터미널-배경-변경>2. 터미널 배경 변경<a hidden class=anchor aria-hidden=true href=#2-터미널-배경-변경>#</a></h3>
 <p>터미널 배경을 변경하고 싶으면 아래와 같이 설정해주시면 됩니다.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=s2>&#34;defaults&#34;</span><span class=err>:</span> <span class=p>{</span>
   <span class=nt>&#34;acrylicOpacity&#34;</span> <span class=p>:</span> <span class=mf>0.4</span><span class=p>,</span>
   <span class=nt>&#34;backgroundImage&#34;</span><span class=p>:</span> <span class=s2>&#34;D:/ProgramFiles/Images/cool-wallpaper-preview-1.jpg&#34;</span><span class=p>,</span>
   <span class=nt>&#34;backgroundImageOpacity&#34;</span><span class=p>:</span> <span class=mf>0.4</span>
-<span class=p>}</span><span class=err>,</span></code></pre></div>
-<h3 id=3-글꼴-변경>3. 글꼴 변경<a hidden class=anchor aria-hidden=true href=#3-글꼴-변경>#</a></h3>
+<span class=p>}</span><span class=err>,</span>
+
+</code></pre></div><h3 id=3-글꼴-변경>3. 글꼴 변경<a hidden class=anchor aria-hidden=true href=#3-글꼴-변경>#</a></h3>
 <p>해당 글꼴을 넣어줘야 powerlink10k에서 아이콘을 볼 수 있습니다.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=s2>&#34;defaults&#34;</span><span class=err>:</span> <span class=p>{</span>
   <span class=nt>&#34;fontFace&#34;</span> <span class=p>:</span> <span class=s2>&#34;MesloLGS NF&#34;</span><span class=p>,</span>
   <span class=nt>&#34;fontSize&#34;</span> <span class=p>:</span> <span class=mi>13</span>
-<span class=p>}</span><span class=err>,</span></code></pre></div>
-<h2 id=탐색기에-wsl-연결하기>탐색기에 WSL 연결하기<a hidden class=anchor aria-hidden=true href=#탐색기에-wsl-연결하기>#</a></h2>
+<span class=p>}</span><span class=err>,</span>
+</code></pre></div><h2 id=탐색기에-wsl-연결하기>탐색기에 WSL 연결하기<a hidden class=anchor aria-hidden=true href=#탐색기에-wsl-연결하기>#</a></h2>
 <ol>
-<li><p>탐색기 주소창에 아래의 주소값을 입력합니다.</p>
-<pre tabindex=0><code>\\wsl$</code></pre></li>
-<li><p>Unbutu 폴더에서 우측마우스 클릭 후 <code>네트워크 드라이브 연결</code>을 선택한다.</p></li>
-<li><p>연결 후 원하는 이름으로 변경하면 탐색기에서 WSL에 접근이 가능합니다.
-<img src=./images/image008.png alt=image></p></li>
+<li>탐색기 주소창에 아래의 주소값을 입력합니다.</li>
+</ol>
+<pre><code>\\wsl$
+</code></pre><ol start=2>
+<li>Unbutu 폴더에서 우측마우스 클릭 후 <code>네트워크 드라이브 연결</code>을 선택한다.</li>
+<li>연결 후 원하는 이름으로 변경하면 탐색기에서 WSL에 접근이 가능합니다.
+<img loading=lazy src=./images/image008.png alt=image>
+</li>
 </ol>
 <h2 id=에러-관련>에러 관련<a hidden class=anchor aria-hidden=true href=#에러-관련>#</a></h2>
 <ol>
-<li><p>아래와 같은 에러가 발생하면</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>bash: ll: <span class=nb>command</span> not found</code></pre></div></li>
-<li><p>이렇게 명령어를 입력하면 해결됩니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>echo</span> <span class=s2>&#34;alias ll=&#39;ls -lGaf&#39;&#34;</span> &gt;&gt; ~/.bash_profile
-<span class=nb>source</span> ~/.bash_profile</code></pre></div></li>
+<li>아래와 같은 에러가 발생하면</li>
 </ol>
-<p>이상으로 윈도우에서 WSL 우분투 터미널 꾸미는 방법에 대해 알아보았습니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>bash: ll: <span class=nb>command</span> not found
+</code></pre></div><ol start=2>
+<li>이렇게 명령어를 입력하면 해결됩니다.</li>
+</ol>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>echo</span> <span class=s2>&#34;alias ll=&#39;ls -lGaf&#39;&#34;</span> &gt;&gt; ~/.bash_profile
+<span class=nb>source</span> ~/.bash_profile
+</code></pre></div><p>이상으로 윈도우에서 WSL 우분투 터미널 꾸미는 방법에 대해 알아보았습니다.</p>
 <h3 id=reference>Reference<a hidden class=anchor aria-hidden=true href=#reference>#</a></h3>
 <ul>
-<li><a href=https://www.ivaylopavlov.com/setting-up-windows-terminal-wsl-and-oh-my-zsh/#.YPeJiOgzYuX target=_blank>Setting up Windows Terminal, WSL and Oh-my-Zsh - Ivo&rsquo;s Blog!</a></li>
-<li><a href=https://snowdeer.github.io/mac-os/2018/11/04/how-to-use-fzf/ target=_blank>https://snowdeer.github.io/mac-os/2018/11/04/how-to-use-fzf/</a></li>
-<li><a href=https://github.com/junegunn/fzf target=_blank>fzf Github</a></li>
-<li><a href=https://mulmandu17.tistory.com/53 target=_blank>WSL 동작 원리</a></li>
-<li><a href=https://medium.com/harrythegreat/fzf%EB%A1%9C-zsh-%ED%84%B0%EB%AF%B8%EB%84%90-%EB%8D%94-%EA%B0%95%EB%A0%A5%ED%95%98%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-730c20eb496b target=_blank>FZF 터미널 사용 방법</a></li>
+<li><a href=https://www.ivaylopavlov.com/setting-up-windows-terminal-wsl-and-oh-my-zsh/#.YPeJiOgzYuX>Setting up Windows Terminal, WSL and Oh-my-Zsh - Ivo&rsquo;s Blog!</a></li>
+<li><a href=https://snowdeer.github.io/mac-os/2018/11/04/how-to-use-fzf/>https://snowdeer.github.io/mac-os/2018/11/04/how-to-use-fzf/</a></li>
+<li><a href=https://github.com/junegunn/fzf>fzf Github</a></li>
+<li><a href=https://mulmandu17.tistory.com/53>WSL 동작 원리</a></li>
+<li><a href=https://medium.com/harrythegreat/fzf%EB%A1%9C-zsh-%ED%84%B0%EB%AF%B8%EB%84%90-%EB%8D%94-%EA%B0%95%EB%A0%A5%ED%95%98%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-730c20eb496b>FZF 터미널 사용 방법</a></li>
 </ul>
 </div>
 <footer class=post-footer>

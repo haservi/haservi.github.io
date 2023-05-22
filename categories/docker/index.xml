@@ -32,8 +32,8 @@ GitLab을 쾌적하게 쓰시려면 최소 램 4기가 이상으로 설정하시
       <guid>https://haservi.github.io/posts/devops/docker/docker-smemory-controll-and-exit/</guid>
       <description>Docker 메모리 프로세서 제어 Docker를 사용하다 보면 아래처럼 치솟는 메모리 사용량을 볼 때가 있습니다.
 아래의 방법은 Docker를 테스트 중 메모리 사용량을 Windows에서 제어 하는 방법입니다.
- 탐색기의 사용자 위치(C:\Users\&amp;lt;사용자&amp;gt;)에 .wslconfig 파일을 생성합니다.
- 아래와 같이 해당 파일의 설정을 지정합니다.
+  탐색기의 사용자 위치(C:\Users\&amp;lt;사용자&amp;gt;)에 .wslconfig 파일을 생성합니다.
+  아래와 같이 해당 파일의 설정을 지정합니다.
 # 설정은 WSL 2에서 실행되는 모든 Linux 배포판에 적용 [wsl2] # VM 메모리를 4GB 이하로 제한. # GB 또는 MB를 사용하여 정수로 설정할 수 있음 memory=4GB # 2개의 가상 프로세서를 사용하도록 VM을 설정 processors=2 # 스왑 저장 공간의 양을 8GB로 설정합니다.</description>
     </item>
     

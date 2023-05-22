@@ -90,10 +90,11 @@ Linux에서 배포 스크립트($'/r') 발생 시 처리 방법
 </div>
 </header>
 <div class=post-content><p>node.js backend 에서 작업 중 테스트 서버에 배포 스크립트를 작성했습니다.</p>
-<p><img src=./images/image01.png#center alt=images></p>
+<p><img loading=lazy src=./images/image01.png#center alt=images>
+</p>
 <p>위와 같이 <code>$'\r': coomand not found</code>가 발생하면 해결 방법은 아래와 같습니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sed -i <span class=s1>&#39;s/\r$//&#39;</span> <span class=o>[</span>스크립트파일.sh<span class=o>]</span></code></pre></div>
-<p>문제의 원인은 <code>유닉스 기반의 운영체제에서는 줄 바꿈 문자로 줄 바꿈(Line Feed, LF)을 사용</code>하지만, <code>윈도우 운영체제에서는 줄 바꿈 문자로 CR과 LF를 함께 사용</code>합니다.<br>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sed -i <span class=s1>&#39;s/\r$//&#39;</span> <span class=o>[</span>스크립트파일.sh<span class=o>]</span>
+</code></pre></div><p>문제의 원인은 <code>유닉스 기반의 운영체제에서는 줄 바꿈 문자로 줄 바꿈(Line Feed, LF)을 사용</code>하지만, <code>윈도우 운영체제에서는 줄 바꿈 문자로 CR과 LF를 함께 사용</code>합니다.<br>
 그렇기 때문에 유닉스 기반의 운영체제에서는 Windows에서 생성된 텍스트 파일을 처리할 때 이러한 CR 문자가 문제가 될 수 있습니다.</p>
 <p>sed 유틸리티를 사용하여 스크립트 파일에서 Windows에서 생성된 줄 바꿈 문자(Carriage Return, CR)를 제거할 수 있습니다.</p>
 <p>위 명령어에서 사용된 sed 명령어는 s/패턴/치환/ 형식으로, 파일 내에서 패턴을 찾아 해당 패턴을 치환하는 명령어입니다.<br>

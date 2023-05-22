@@ -11,7 +11,7 @@ mariadb-server 설치 및 실행 패키지를 최신으로 업데이트 합니�
 sudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.
 sudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.
 우선 db의 경로를 /home/data/mysql으로 가정하겠습니다.
- db 접속 후 현재 db의 경로를 확인합니다.">
+  db 접속 후 현재 db의 경로를 확인합니다.">
 <meta name=author content="Haseop">
 <link rel=canonical href=https://haservi.github.io/posts/devops/wsl/mariadb-setting/>
 <meta name=google-site-verification content="G-MXZP81P04W">
@@ -36,7 +36,7 @@ mariadb-server 설치 및 실행 패키지를 최신으로 업데이트 합니�
 sudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.
 sudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.
 우선 db의 경로를 /home/data/mysql으로 가정하겠습니다.
- db 접속 후 현재 db의 경로를 확인합니다.">
+  db 접속 후 현재 db의 경로를 확인합니다.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://haservi.github.io/posts/devops/wsl/mariadb-setting/"><meta property="og:image" content="https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2023-04-15T16:22:31+09:00">
@@ -50,9 +50,9 @@ mariadb-server 설치 및 실행 패키지를 최신으로 업데이트 합니�
 sudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.
 sudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.
 우선 db의 경로를 /home/data/mysql으로 가정하겠습니다.
- db 접속 후 현재 db의 경로를 확인합니다.">
+  db 접속 후 현재 db의 경로를 확인합니다.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"WSL 환경에서 내부 MariaDB 설치하기","item":"https://haservi.github.io/posts/devops/wsl/mariadb-setting/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"WSL 환경에서 내부 MariaDB 설치하기","name":"WSL 환경에서 내부 MariaDB 설치하기","description":"WSL 환경에서 DB 설정 방법에 대해 정리했습니다.\n우선 기본적으로 윈도우 환경이며, WSL을 이용해 우분투 18.04 버전을 설치합니다.\nmariadb-server 설치 및 실행 패키지를 최신으로 업데이트 합니다.\nsudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.\nsudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.\n우선 db의 경로를 /home/data/mysql으로 가정하겠습니다.\n db 접속 후 현재 db의 경로를 확인합니다.","keywords":["",""],"articleBody":" WSL 환경에서 DB 설정 방법에 대해 정리했습니다.\n우선 기본적으로 윈도우 환경이며, WSL을 이용해 우분투 18.04 버전을 설치합니다.\nmariadb-server 설치 및 실행 패키지를 최신으로 업데이트 합니다.\nsudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.\nsudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.\n우선 db의 경로를 /home/data/mysql으로 가정하겠습니다.\n db 접속 후 현재 db의 경로를 확인합니다.\nSELECT @@ datadir;  db 정지\nsudo service mysql stop 저장소 위치 변경\nsudo mkdir -p /home/data/ # 폴더 생성 sudo rsync -av /var/lib/mysql /home/data/ # 기존 db 정보 복사 동기화 db 권한 부여 설정\nsudo chown -R mysql:mysql /home/data/mysql db 경로 변경\n아래와 같이 명령어로 진입 후 사진처럼 경로를 변경합니다.\nsudo vim /etc/mysql/mariadb.conf.d/50-server.cnf home 보안 해제\n아래의 경로에서 사진과 같이 설정합니다.\nsudo vim /lib/systemd/system/mariadb.service  WSL에 활성화 돼 있는 DB 로컬에서 접속 방법 WSL에 있는 DB를 Heidi SQL 툴 등을 이용해 접속하려면 아래와 같이 설정하면 됩니다.\n 외부 포트 접속 허용\n아래 경로의 mariadb 설정 파일의 포트를 0.0.0.0 으로 변경합니다.\nsudo vi /etc/mysql/mariadb.conf.d/50-server.cnf mysql restart\nsudo service mysql restart 외부 접속 포트 확인 후 접속\nWSL 환경에서 ip addr명령어를 입력하면 172..*.** 로 시작하는 포트가 있습니다. 해당 포트를\n로컬에서 접속하면 됩니다.\n 만약 계정 권한이 없다면 권장되지는 않지만 아래와 같이 특정 계정에 모든 권한을 부여해 접속할 수 있습니다.\n아래와 같은 경우는 user라는 아이디와 0000패스워드로 권한을 부여했습니다.\nCREATE USER 'user'@'%' IDENTIFIED BY '0000'; GRANT ALL PRIVILEGES ON *.* TO 'user'@'%' WITH GRANT OPTION;sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf sudo systemctl restart mysql # 이게 안되면 sudo service mysql restart  WSL Maria DB 삭제 방법 mariadb server가 설치 중 잘못돼서 엉키면 아래와 같이 삭제할 수 있습니다.\n설정파일도 모두 삭제하기 위해 purge 사용 후 Remove all MariaDB databases? 문구 나오면 예를 눌러주시면 됩니다.\nsudo apt-get purge mariadb-* 남아있는 의존성 패키지 제거\nsudo apt autoremove mysql 관련 패키지 설치 확인\ndpkg -l | grep mysql 제 경우 위와 같이 mysql-common이 설치돼 있어 제거했습니다.\n 데이터베이스 파일도 함께 삭제하고 싶다면, 다음 명령어를 입력하세요.\nsudo rm -rf /var/lib/mysql sudo rm -rf /etc/mysql sudo rm -rf /var/log/mysql.* sudo rm -rf /var/log/mysql  위 명령어를 실행하면 /var/lib/mysql 디렉토리와 하위 파일들이 모두 삭제됩니다. 이 디렉토리는 mariadb-server의 데이터베이스 파일이 저장되는 디렉토리입니다.\n위와 같이 명령어를 실행하시면 mariadb-server를 삭제할 수 있습니다. 다만, 데이터베이스 파일까지 모두 삭제하시면 해당 데이터베이스 파일에 저장된 모든 데이터가 삭제되므로, 주의하시기 바랍니다.\n.notice{--root-color: #000; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(217, 83, 79, 0.9); --warning-content: #fae2e2; --info-title: #f0b37e; --info-content: #fff2db; --note-title: #6ab0de; --note-content: #e7f2fa; --tip-title: rgba(92, 184, 92, 0.8); --tip-content: #e6f9e6;}body.dark .notice{--root-color: #fff; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(130, 49, 47, 0.9); --warning-content: #341312; --info-title: #906B4B; --info-content: #392A1E; --note-title: #3f6985; --note-content: #192A35; --tip-title: rgba(46, 92, 46, 0.8); --tip-content: #122412;}.notice{padding: 18px; line-height: 24px; margin-bottom: 24px; border-radius: 4px; color: var(--root-color); background: var(--root-background);}.notice p:last-child{margin-bottom: 0;}.notice-title{margin: -18px -18px 12px; padding: 4px 18px; border-radius: 4px 4px 0 0; font-weight: 700; color: var(--title-color); background: var(--title-background);}.notice.warning .notice-title{background: var(--warning-title);}.notice.warning{background: var(--warning-content);}.notice.info .notice-title{background: var(--info-title);}.notice.info{background: var(--info-content);}.notice.note .notice-title{background: var(--note-title);}.notice.note{background: var(--note-content);}.notice.tip .notice-title{background: var(--tip-title);}.notice.tip{background: var(--tip-content);}.icon-notice{display: inline-flex; align-self: center; margin-right: 8px;}.icon-notice img, .icon-notice svg{height: 1em; width: 1em; fill: currentColor;}.icon-notice img, .icon-notice.baseline svg{top: 0.125em; position: relative;} Warning\nERROR 2002 (HY000): Can’t connect to local MySQL server through socket ‘/var/run/mysqld/mysqld.sock’ (2 “No such file or directory”)\n 만약 위와 같은 에러가 발생하면 아래와 같이 db를 재시작해주시면 됩니다.\nsudo service mysql restart","wordCount":"529","inLanguage":"en","datePublished":"2023-04-15T16:22:31+09:00","dateModified":"2023-04-15T16:22:31+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/devops/wsl/mariadb-setting/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"WSL 환경에서 내부 MariaDB 설치하기","name":"WSL 환경에서 내부 MariaDB 설치하기","description":"WSL 환경에서 DB 설정 방법에 대해 정리했습니다.\n우선 기본적으로 윈도우 환경이며, WSL을 이용해 우분투 18.04 버전을 설치합니다.\nmariadb-server 설치 및 실행 패키지를 최신으로 업데이트 합니다.\nsudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.\nsudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.\n우선 db의 경로를 /home/data/mysql으로 가정하겠습니다.\n  db 접속 후 현재 db의 경로를 확인합니다.","keywords":["",""],"articleBody":"WSL 환경에서 DB 설정 방법에 대해 정리했습니다.\n우선 기본적으로 윈도우 환경이며, WSL을 이용해 우분투 18.04 버전을 설치합니다.\nmariadb-server 설치 및 실행 패키지를 최신으로 업데이트 합니다.\nsudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.\nsudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.\n우선 db의 경로를 /home/data/mysql으로 가정하겠습니다.\n  db 접속 후 현재 db의 경로를 확인합니다.\nSELECT @@ datadir;   db 정지\nsudo service mysql stop   저장소 위치 변경\nsudo mkdir -p /home/data/ # 폴더 생성 sudo rsync -av /var/lib/mysql /home/data/ # 기존 db 정보 복사 동기화   db 권한 부여 설정\nsudo chown -R mysql:mysql /home/data/mysql   db 경로 변경\n아래와 같이 명령어로 진입 후 사진처럼 경로를 변경합니다.\nsudo vim /etc/mysql/mariadb.conf.d/50-server.cnf   home 보안 해제\n아래의 경로에서 사진과 같이 설정합니다.\nsudo vim /lib/systemd/system/mariadb.service   WSL에 활성화 돼 있는 DB 로컬에서 접속 방법 WSL에 있는 DB를 Heidi SQL 툴 등을 이용해 접속하려면 아래와 같이 설정하면 됩니다.\n  외부 포트 접속 허용\n아래 경로의 mariadb 설정 파일의 포트를 0.0.0.0 으로 변경합니다.\nsudo vi /etc/mysql/mariadb.conf.d/50-server.cnf   mysql restart\nsudo service mysql restart   외부 접속 포트 확인 후 접속\nWSL 환경에서 ip addr명령어를 입력하면 172...* 로 시작하는 포트가 있습니다. 해당 포트를\n로컬에서 접속하면 됩니다.\n  만약 계정 권한이 없다면 권장되지는 않지만 아래와 같이 특정 계정에 모든 권한을 부여해 접속할 수 있습니다.\n아래와 같은 경우는 user라는 아이디와 0000패스워드로 권한을 부여했습니다.\nCREATE USER 'user'@'%' IDENTIFIED BY '0000'; GRANT ALL PRIVILEGES ON *.* TO 'user'@'%' WITH GRANT OPTION; sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf sudo systemctl restart mysql # 이게 안되면 sudo service mysql restart   WSL Maria DB 삭제 방법 mariadb server가 설치 중 잘못돼서 엉키면 아래와 같이 삭제할 수 있습니다.\n설정파일도 모두 삭제하기 위해 purge 사용 후 Remove all MariaDB databases? 문구 나오면 예를 눌러주시면 됩니다.\nsudo apt-get purge mariadb-* 남아있는 의존성 패키지 제거\nsudo apt autoremove mysql 관련 패키지 설치 확인\ndpkg -l | grep mysql 제 경우 위와 같이 mysql-common이 설치돼 있어 제거했습니다.\n 데이터베이스 파일도 함께 삭제하고 싶다면, 다음 명령어를 입력하세요.  sudo rm -rf /var/lib/mysql sudo rm -rf /etc/mysql sudo rm -rf /var/log/mysql.* sudo rm -rf /var/log/mysql 위 명령어를 실행하면 /var/lib/mysql 디렉토리와 하위 파일들이 모두 삭제됩니다. 이 디렉토리는 mariadb-server의 데이터베이스 파일이 저장되는 디렉토리입니다.\n위와 같이 명령어를 실행하시면 mariadb-server를 삭제할 수 있습니다. 다만, 데이터베이스 파일까지 모두 삭제하시면 해당 데이터베이스 파일에 저장된 모든 데이터가 삭제되므로, 주의하시기 바랍니다.\n.notice{--root-color: #000; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(217, 83, 79, 0.9); --warning-content: #fae2e2; --info-title: #f0b37e; --info-content: #fff2db; --note-title: #6ab0de; --note-content: #e7f2fa; --tip-title: rgba(92, 184, 92, 0.8); --tip-content: #e6f9e6;}body.dark .notice{--root-color: #fff; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(130, 49, 47, 0.9); --warning-content: #341312; --info-title: #906B4B; --info-content: #392A1E; --note-title: #3f6985; --note-content: #192A35; --tip-title: rgba(46, 92, 46, 0.8); --tip-content: #122412;}.notice{padding: 18px; line-height: 24px; margin-bottom: 24px; border-radius: 4px; color: var(--root-color); background: var(--root-background);}.notice p:last-child{margin-bottom: 0;}.notice-title{margin: -18px -18px 12px; padding: 4px 18px; border-radius: 4px 4px 0 0; font-weight: 700; color: var(--title-color); background: var(--title-background);}.notice.warning .notice-title{background: var(--warning-title);}.notice.warning{background: var(--warning-content);}.notice.info .notice-title{background: var(--info-title);}.notice.info{background: var(--info-content);}.notice.note .notice-title{background: var(--note-title);}.notice.note{background: var(--note-content);}.notice.tip .notice-title{background: var(--tip-title);}.notice.tip{background: var(--tip-content);}.icon-notice{display: inline-flex; align-self: center; margin-right: 8px;}.icon-notice img, .icon-notice svg{height: 1em; width: 1em; fill: currentColor;}.icon-notice img, .icon-notice.baseline svg{top: 0.125em; position: relative;} Warning\nERROR 2002 (HY000): Can’t connect to local MySQL server through socket ‘/var/run/mysqld/mysqld.sock’ (2 “No such file or directory”)\n 만약 위와 같은 에러가 발생하면 아래와 같이 db를 재시작해주시면 됩니다.\nsudo service mysql restart ","wordCount":"530","inLanguage":"en","datePublished":"2023-04-15T16:22:31+09:00","dateModified":"2023-04-15T16:22:31+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/devops/wsl/mariadb-setting/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -114,82 +114,107 @@ WSL 환경에서 내부 MariaDB 설치하기
 </div>
 </details>
 </div>
-<div class=post-content>
-<p>WSL 환경에서 DB 설정 방법에 대해 정리했습니다.</p>
+<div class=post-content><p>WSL 환경에서 DB 설정 방법에 대해 정리했습니다.</p>
 <p>우선 기본적으로 윈도우 환경이며, WSL을 이용해 우분투 18.04 버전을 설치합니다.</p>
 <h2 id=mariadb-server-설치-및-실행>mariadb-server 설치 및 실행<a hidden class=anchor aria-hidden=true href=#mariadb-server-설치-및-실행>#</a></h2>
 <p>패키지를 최신으로 업데이트 합니다.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt-get update
-sudo apt-get upgrade</code></pre></div>
-<p>우선 mariadb-server를 설치합니다.</p>
+sudo apt-get upgrade
+</code></pre></div><p>우선 mariadb-server를 설치합니다.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt install mariadb-server
 
-sudo mysql -u root -p <span class=c1># 실행</span></code></pre></div>
-<h3 id=db-저장소-경로-변경-방법>DB 저장소 경로 변경 방법<a hidden class=anchor aria-hidden=true href=#db-저장소-경로-변경-방법>#</a></h3>
+sudo mysql -u root -p <span class=c1># 실행</span>
+</code></pre></div><h3 id=db-저장소-경로-변경-방법>DB 저장소 경로 변경 방법<a hidden class=anchor aria-hidden=true href=#db-저장소-경로-변경-방법>#</a></h3>
 <p>만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.<br>
 우선 db의 경로를 <code>/home/data/mysql</code>으로 가정하겠습니다.</p>
 <ol>
-<li><p>db 접속 후 현재 db의 경로를 확인합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>SELECT @@ datadir<span class=p>;</span></code></pre></div>
-<p><img src=./images/image06.png#center alt=images></p></li>
-<li><p>db 정지</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo service mysql stop</code></pre></div></li>
-<li><p>저장소 위치 변경</p>
+<li>
+<p>db 접속 후 현재 db의 경로를 확인합니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>SELECT @@ datadir<span class=p>;</span>
+</code></pre></div><p><img loading=lazy src=./images/image06.png#center alt=images>
+</p>
+</li>
+<li>
+<p>db 정지</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo service mysql stop
+</code></pre></div></li>
+<li>
+<p>저장소 위치 변경</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo mkdir -p /home/data/ <span class=c1># 폴더 생성</span>
-sudo rsync -av /var/lib/mysql /home/data/ <span class=c1># 기존 db 정보 복사 동기화</span></code></pre></div></li>
-<li><p>db 권한 부여 설정</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo chown -R mysql:mysql /home/data/mysql</code></pre></div></li>
-<li><p>db 경로 변경</p>
+sudo rsync -av /var/lib/mysql /home/data/ <span class=c1># 기존 db 정보 복사 동기화</span>
+</code></pre></div></li>
+<li>
+<p>db 권한 부여 설정</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo chown -R mysql:mysql /home/data/mysql
+</code></pre></div></li>
+<li>
+<p>db 경로 변경</p>
 <p>아래와 같이 명령어로 진입 후 사진처럼 경로를 변경합니다.</p>
-<p><img src=./images/image03.png#center alt=images></p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf</code></pre></div></li>
-<li><p>home 보안 해제</p>
+<p><img loading=lazy src=./images/image03.png#center alt=images>
+</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf
+</code></pre></div></li>
+<li>
+<p>home 보안 해제</p>
 <p>아래의 경로에서 사진과 같이 설정합니다.</p>
-<p><img src=./images/image04.png#center alt=images></p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo vim /lib/systemd/system/mariadb.service</code></pre></div></li>
+<p><img loading=lazy src=./images/image04.png#center alt=images>
+</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo vim /lib/systemd/system/mariadb.service
+</code></pre></div></li>
 </ol>
 <h3 id=wsl에-활성화-돼-있는-db-로컬에서-접속-방법>WSL에 활성화 돼 있는 DB 로컬에서 접속 방법<a hidden class=anchor aria-hidden=true href=#wsl에-활성화-돼-있는-db-로컬에서-접속-방법>#</a></h3>
 <p>WSL에 있는 DB를 Heidi SQL 툴 등을 이용해 접속하려면 아래와 같이 설정하면 됩니다.</p>
 <ol>
-<li><p>외부 포트 접속 허용</p>
+<li>
+<p>외부 포트 접속 허용</p>
 <p>아래 경로의 mariadb 설정 파일의 포트를 0.0.0.0 으로 변경합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo vi /etc/mysql/mariadb.conf.d/50-server.cnf</code></pre></div></li>
-<li><p>mysql restart</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo service mysql restart</code></pre></div></li>
-<li><p>외부 접속 포트 확인 후 접속</p>
-<p>WSL 환경에서 <code>ip addr</code>명령어를 입력하면 172.<strong>.</strong>*.** 로 시작하는 포트가 있습니다. 해당 포트를<br>
-로컬에서 접속하면 됩니다.</p></li>
-<li><p>만약 계정 권한이 없다면 권장되지는 않지만 아래와 같이 특정 계정에 모든 권한을 부여해 접속할 수 있습니다.<br>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo vi /etc/mysql/mariadb.conf.d/50-server.cnf
+</code></pre></div></li>
+<li>
+<p>mysql restart</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo service mysql restart
+</code></pre></div></li>
+<li>
+<p>외부 접속 포트 확인 후 접속</p>
+<p>WSL 환경에서 <code>ip addr</code>명령어를 입력하면 172.<strong>.</strong><em>.</em>* 로 시작하는 포트가 있습니다. 해당 포트를<br>
+로컬에서 접속하면 됩니다.</p>
+</li>
+<li>
+<p>만약 계정 권한이 없다면 권장되지는 않지만 아래와 같이 특정 계정에 모든 권한을 부여해 접속할 수 있습니다.<br>
 아래와 같은 경우는 <code>user</code>라는 아이디와 <code>0000</code>패스워드로 권한을 부여했습니다.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>CREATE USER <span class=s1>&#39;user&#39;</span>@<span class=s1>&#39;%&#39;</span> IDENTIFIED BY <span class=s1>&#39;0000&#39;</span><span class=p>;</span>
-GRANT ALL PRIVILEGES ON *.* TO <span class=s1>&#39;user&#39;</span>@<span class=s1>&#39;%&#39;</span> WITH GRANT OPTION<span class=p>;</span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf
+GRANT ALL PRIVILEGES ON *.* TO <span class=s1>&#39;user&#39;</span>@<span class=s1>&#39;%&#39;</span> WITH GRANT OPTION<span class=p>;</span>
+</code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf
 sudo systemctl restart mysql <span class=c1># 이게 안되면</span>
-sudo service mysql restart</code></pre></div></li>
+sudo service mysql restart
+</code></pre></div></li>
 </ol>
 <h3 id=wsl-maria-db-삭제-방법>WSL Maria DB 삭제 방법<a hidden class=anchor aria-hidden=true href=#wsl-maria-db-삭제-방법>#</a></h3>
 <p>mariadb server가 설치 중 잘못돼서 엉키면 아래와 같이 삭제할 수 있습니다.</p>
 <p>설정파일도 모두 삭제하기 위해 purge 사용 후 Remove all MariaDB databases? 문구 나오면 예를 눌러주시면 됩니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt-get purge mariadb-*</code></pre></div>
-<p>남아있는 의존성 패키지 제거</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt autoremove</code></pre></div>
-<p>mysql 관련 패키지 설치 확인</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>dpkg -l <span class=p>|</span> grep mysql</code></pre></div>
-<p><img src=./images/image02.png#center alt=images></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt-get purge mariadb-*
+</code></pre></div><p>남아있는 의존성 패키지 제거</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt autoremove
+</code></pre></div><p>mysql 관련 패키지 설치 확인</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>dpkg -l <span class=p>|</span> grep mysql
+</code></pre></div><p><img loading=lazy src=./images/image02.png#center alt=images>
+</p>
 <p>제 경우 위와 같이 mysql-common이 설치돼 있어 제거했습니다.</p>
 <ol>
-<li><p>데이터베이스 파일도 함께 삭제하고 싶다면, 다음 명령어를 입력하세요.</p>
+<li>데이터베이스 파일도 함께 삭제하고 싶다면, 다음 명령어를 입력하세요.</li>
+</ol>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo rm -rf /var/lib/mysql
 sudo rm -rf /etc/mysql
 sudo rm -rf /var/log/mysql.*
-sudo rm -rf /var/log/mysql</code></pre></div></li>
-</ol>
-<p>위 명령어를 실행하면 /var/lib/mysql 디렉토리와 하위 파일들이 모두 삭제됩니다. 이 디렉토리는 mariadb-server의 데이터베이스 파일이 저장되는 디렉토리입니다.</p>
+sudo rm -rf /var/log/mysql
+</code></pre></div><p>위 명령어를 실행하면 /var/lib/mysql 디렉토리와 하위 파일들이 모두 삭제됩니다. 이 디렉토리는 mariadb-server의 데이터베이스 파일이 저장되는 디렉토리입니다.</p>
 <p>위와 같이 명령어를 실행하시면 mariadb-server를 삭제할 수 있습니다. 다만, 데이터베이스 파일까지 모두 삭제하시면 해당 데이터베이스 파일에 저장된 모든 데이터가 삭제되므로, 주의하시기 바랍니다.</p>
 <style type=text/css>.notice{--root-color:#000;--root-background:#e7f2fa;--title-color:#fff;--title-background:#6ab0de;--warning-title:rgba(217, 83, 79, 0.9);--warning-content:#fae2e2;--info-title:#f0b37e;--info-content:#fff2db;--note-title:#6ab0de;--note-content:#e7f2fa;--tip-title:rgba(92, 184, 92, 0.8);--tip-content:#e6f9e6}body.dark .notice{--root-color:#fff;--root-background:#e7f2fa;--title-color:#fff;--title-background:#6ab0de;--warning-title:rgba(130, 49, 47, 0.9);--warning-content:#341312;--info-title:#906B4B;--info-content:#392A1E;--note-title:#3f6985;--note-content:#192A35;--tip-title:rgba(46, 92, 46, 0.8);--tip-content:#122412}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative}</style>
 <div><svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379.0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628.0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628.0l-22.627 22.627c-6.248 6.248-6.248 16.379.0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405.0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346 7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373.0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884.0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937.0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154.0l239.94 416.028zM288 354c-25.405.0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346 7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373.0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884.0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196.0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627.0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627.0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627.0 12 5.373 12 12v1e2h12c6.627.0 12 5.373 12 12v24z"/></symbol></svg></div><div class="notice warning">
 <p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#warning-notice"/></svg></span>Warning</p><p>ERROR 2002 (HY000): Can&rsquo;t connect to local MySQL server through socket &lsquo;/var/run/mysqld/mysqld.sock&rsquo; (2 &ldquo;No such file or directory&rdquo;)</p></div>
 <p>만약 위와 같은 에러가 발생하면 아래와 같이 db를 재시작해주시면 됩니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo service mysql restart</code></pre></div>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo service mysql restart
+</code></pre></div>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>

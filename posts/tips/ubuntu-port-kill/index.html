@@ -86,8 +86,8 @@ sudo apt install net-tools 설치 후 netstat -tulpn 를 입력하면 현재 열
 </div>
 </header>
 <div class=post-content><p>netstat을 사용하기 위해서 우선 net-tools를 설치해야합니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt install net-tools</code></pre></div>
-<p>설치 후 <code>netstat -tulpn</code> 를 입력하면 현재 열린 네트워크 포트와 해당 포트를 열어놓은 프로세스를 보여주는 도구입니다.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>sudo apt install net-tools
+</code></pre></div><p>설치 후 <code>netstat -tulpn</code> 를 입력하면 현재 열린 네트워크 포트와 해당 포트를 열어놓은 프로세스를 보여주는 도구입니다.</p>
 <p>여기서 각 옵션의 의미는 다음과 같습니다.</p>
 <ul>
 <li><code>-t</code>: TCP 프로토콜 사용 포트</li>
@@ -99,7 +99,8 @@ sudo apt install net-tools 설치 후 netstat -tulpn 를 입력하면 현재 열
 <p>따라서 <code>netstat -tulpn</code> 명령어를 실행하면, 현재 열린 TCP/UDP 포트와 해당 포트를 열어놓은 프로세스의 정보를 확인할 수 있습니다.</p>
 <p>다른 방법으로는 <code>ps -ef|grep [프로그램이름]</code>으로도 찾을 수 있습니다.</p>
 <p>이 후 해당 <code>PID</code>를 제거 하고 싶은 경우 아래와 같이 <code>kill [PID]</code>를 입력하면 됩니다.</p>
-<p><img src=./images/image01.png#center alt=image></p>
+<p><img loading=lazy src=./images/image01.png#center alt=image>
+</p>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>

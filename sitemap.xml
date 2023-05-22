@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tips/window-wsl-drive-change/</loc>
+    <lastmod>2023-05-21T19:32:59+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/tips/ubuntu-port-kill/</loc>
     <lastmod>2023-05-11T19:14:09+09:00</lastmod>
   </url><url>
@@ -107,13 +110,13 @@
     <loc>https://haservi.github.io/posts/algorithms/programmers/level1/01-algo-secret-map/</loc>
     <lastmod>2021-08-20T01:31:31+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2023-05-11T19:14:09+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2023-05-11T19:14:09+09:00</lastmod>
+    <lastmod>2023-05-21T19:32:59+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2023-05-21T19:32:59+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/</loc>
     <lastmod>2023-05-11T19:14:09+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/tips/</loc>

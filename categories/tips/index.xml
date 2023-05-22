@@ -34,7 +34,7 @@ mariadb-server 설치 및 실행 패키지를 최신으로 업데이트 합니�
 sudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.
 sudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.
 우선 db의 경로를 /home/data/mysql으로 가정하겠습니다.
- db 접속 후 현재 db의 경로를 확인합니다.</description>
+  db 접속 후 현재 db의 경로를 확인합니다.</description>
     </item>
     
     <item>
@@ -122,7 +122,7 @@ Port 강제 종료 방법  먼저 windows + R 을 눌러 실행 스크립트를 
 위(Show Classes)에서부터 아래(Show Words)까지 전부 체크 해제를 하면 자동완성 기능이 비활성화 됩니다.
 그렇지만 너무 많은 옵션이 있기 때문에 전부 클릭 해제하기가 귀찮은 경우 아래의 JSON으로 추가할 수 있습니다.
 오른쪽 위의 설정으로 들어가서 아래의 값들을 복사 후 붙여 넣어주면 됩니다.
-&amp;#34;explorer.compactFolders&amp;#34;: false, &amp;#34;explorer.</description>
+&amp;#34;explorer.compactFolders&amp;#34;: false, &amp;#34;explorer.confirmDragAndDrop&amp;#34;: false, &amp;#34;editor.</description>
     </item>
     
     <item>
@@ -161,7 +161,8 @@ Windows는 CRLF를 LF로 변경되도록 git config 설정 중 core.</descriptio
       <description>기본적으로 웹상에서는 Git 저장소 안의 폴더를 다운받으려면 해당 저장소 전부를 다운 받은 후에 특정 폴더의 정보를 봐야 합니다.
 간단한 방법은 아래의 링크에서 다운로드 받는게 제일 쉬운방법이지만 터미널에서 다운로드 방법도 한번 다루어보겠습니다. 터미널로 다운 받은 경우 이후 해당 소스가 변경이 있다면 당겨올 수 있는 이점도 있습니다.
 해결방법 웹 다운로드 https://downgit.github.io/#/home 해당 사이트에 github 저장소 특정 폴더의 링크를 복사 한 후 붙여넣고 Download 버튼 클릭
-터미널 다운로드 기본적으로 git이 설치돼 있어야합니다.</description>
+터미널 다운로드 기본적으로 git이 설치돼 있어야합니다.
+예제로 https://github.</description>
     </item>
     
   </channel>

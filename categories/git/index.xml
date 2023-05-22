@@ -21,9 +21,9 @@
 해당 명령어 이외에 더 참고하고 싶다면 https://git-scm.com/book/ko/v2 해당 사이트에서 무료로 책을 다운로드 받아서 볼 수 있습니다.
 또한, 요즘은 소스트리(https://www.sourcetreeapp.com/)에서 GUI로 편하게 작업할 수 도 있습니다.
 기본적인 명령어는 숙지하는 것이 좋지만 history나 간단한 업무용으로는 충분하다고 생각합니다.
-기본 명령어  git 설정 보기
-git config --list 사용자 이름 입력
-git config --global user.name &amp;#34;이름&amp;#34; 사용자 이메일 입력</description>
+기본 명령어   git 설정 보기
+git config --list   사용자 이름 입력
+git config --global user.</description>
     </item>
     
   </channel>
