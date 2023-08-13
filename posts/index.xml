@@ -9,7 +9,56 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 21 May 2023 19:32:59 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Aug 2023 23:38:46 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inflearn 토비의 스프링 부트 강의 후기 및 정리</title>
+      <link>https://haservi.github.io/posts/review/inflearn-toby-spring/</link>
+      <pubDate>Tue, 08 Aug 2023 23:38:46 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/review/inflearn-toby-spring/</guid>
+      <description>토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.
+인프런 강의 중 김영한 님의 강의가 실제 실무에 큰 도움이 된 것 같다면, 토비님의 강의는 스프링 부트에 대해 조금 더 깊이 있게 알아보는게 목적이었던 것 같습니다.
+기존 강의에서는 Spring Boot 2.7과 jdk 11로 했지만 학습 코드는 Spring Boot 3.1.1과 jdk 17로 적용해서 클론 코딩을 진행하며 버전이 달라지면서 발생한 문제와 팁을 정리했습니다.
+강의에서 나온 프로그램 추천   sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다.</description>
+    </item>
+    
+    <item>
+      <title>Vue Prettier로 코드 정렬하기</title>
+      <link>https://haservi.github.io/posts/tips/vue-code-convetion/</link>
+      <pubDate>Tue, 18 Jul 2023 08:59:36 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/vue-code-convetion/</guid>
+      <description>이전에 진행 중인 프로젝트에서는 Code Convention이 지켜지지 않아 코드 정렬이 좋지 않은 경우가 있었습니다.
+이는 여러 담당자를 거치면서 코드의 가독성이 떨어지고 코드 수정 이후 git history를 확인하기 어렵게 만들었습니다.
+이 문제를 해결하기 위해서는 모든 코드를 동일한 Format으로 변경하는 설정을 해야 합니다. 일반적으로 Prettier와 EsLint는 함께 사용됩니다.
+ESLint는 코드의 퀄리티를 보장하도록 도와주는 도구입니다. 일관성 있는 방식으로 코드를 구현할 수 있게 됩니다. 예를 들어 함수를 표현할 때 function을 이용할지 arrow를 이용할지 등을 정할 수 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>Udemy K8s Docker 강의 후기 및 정리</title>
+      <link>https://haservi.github.io/posts/review/udemy-k8s-docker/</link>
+      <pubDate>Sun, 09 Jul 2023 10:58:32 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/review/udemy-k8s-docker/</guid>
+      <description>Udemy 강의중 Docker &amp;amp; Kubernetes 강의를 수강 후 내용 정리 및 리뷰를 작성합니다.
+우선 Udemy는 외국 강의가 많고, 한달에 여러번 할인을 하기에 괜찮은 강의가 있으면 미리 결재해 놓는게 좋습니다.
+강의 후기 Udemy 강의는 할인 가격이 저렴해서 그런지 외국 강의라 그런지 수강률이 높지 않은데 해당 강의는 제가 Udemy에서 수강했었던 강의 중 만족도는 상위권이라 생각합니다.
+주로 Backend 개발자 입장에서 해당 강의로 얻을 수 있는 점은 Docker와 Docker-compose를 이용해 개발 생산성을 높일 수 있다 생각합니다.</description>
+    </item>
+    
+    <item>
+      <title>Nodejs 프로젝트 적응기</title>
+      <link>https://haservi.github.io/posts/nodejs/start-nodejs/</link>
+      <pubDate>Wed, 28 Jun 2023 20:47:06 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/nodejs/start-nodejs/</guid>
+      <description>6개월 프로젝트로 Node.js를 처음 하면서 만났던 여러 문제들을 처리한 내용을 공유합니다.
+약 4개월 정도는 backend 개발을 했던 것 같고, 이후 다른 시스템과 함께 맞춰서 프로젝트를 마무리 했던 것 같습니다.
+backend에서는 기본적인 CRUD 기능과 유효성 처리, jwt 인증, 파일 업로드(이어올리기, siging작업 등), FOTA 캠페인 진행 등이 주요 내용입니다.
+프로젝트 기술 선택  Framework: express DB: MySQL  먼저 Node.js에서 유명한 프레임워크로 express와 nest.js가 있습니다.
+먼저 Spring Backend에 대한 경험으로 nest.js에 대해 고민했지만, npm trends 비교 및 express가 개발 속도 및 현재까지 사용한 사용자도 많기에 express로 선택했습니다.</description>
+    </item>
+    
     <item>
       <title>윈도우 WSL Ubuntu D Drive로 변경</title>
       <link>https://haservi.github.io/posts/tips/window-wsl-drive-change/</link>

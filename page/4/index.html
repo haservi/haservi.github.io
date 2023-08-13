@@ -69,6 +69,66 @@
 <main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법
+</h2>
+</header>
+<div class=entry-content>
+<p>H2를 최신 버전(2.1.210)으로 업데이트하니 아래와 같은 에러가 발생했습니다.
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set ... java.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ... 일단 임시방편으로 H2 url을 연결하는 곳에 추가적으로 옵션(;MODE=LEGACY)을 넣으면 해결됩니다.
+url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용하면 H2 1.X용으로 작성된 응용 프로그램에 대한 일부 호환성 기능이 활성화됩니다. Hibernate ORM에서 H2에 대해서 유효하지 않은 SQL을 생성하기 때문이라고 합니다.
+그렇다면.. hibernate ORM에서 H2 방언에 대한 문제를 해결해야 합니다....</p>
+</div>
+<footer class=entry-footer><span title="2022-01-29 19:16:48 +0900 +0900">January 29, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법" href=https://haservi.github.io/posts/spring/spadework/h2-version-upgrade-error/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Spring Data JPA와 JPQL 함께 사용하기
+</h2>
+</header>
+<div class=entry-content>
+<p>JPQL 이란? 예전에는 JPQL은 Java Persistence Query Language로 불렸지만 현재의 JPQL은(Jakarta Persistence Query Language) 라고 합니다.(나무위키 링크)
+2019년부터 JPA(Java Persistence API)또한 Jakarta Persistence로 변경됐습니다.
+이름은 달라졌지만 역할은 달라지지 않았습니다. JPQL을 이용하여 관계형 데이터베이스의 엔티티를 정의하고 이를 활용한 쿼리 언어를 자바를 이용하여 구현합니다.
+더 나아가 Querydsl을 이용하면 좀 더 직관적이고 오류 없이 자바를 이용하여 작성할 수 있습니다.
+간단한 예시로 회원 조회를 하는 경우 JPQL과 Querydsl의 차이는 아래와 같습니다.
+JPQL
+public List&lt;Member> findAll() { EntityManager entityManager; return entityManager....</p>
+</div>
+<footer class=entry-footer><span title="2022-01-17 23:09:03 +0900 +0900">January 17, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to Spring Data JPA와 JPQL 함께 사용하기" href=https://haservi.github.io/posts/spring/springdatajpa-and-customquery/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>Mybatis와 JPA에 대하여
+</h2>
+</header>
+<div class=entry-content>
+<p>Mybatis란? 자바의 관계형 데이터베이스 프로그래밍을 좀 더 쉽게 할 수 있게 도와 주는 개발 프레임 워크입니다.
+JDBC를 통해 데이터베이스에 엑세스하는 작업을 캡슐화하고 일반 SQL 쿼리, 저장 프로시저 및 고급 매핑을 지원하며 모든 JDBC 코드 및 매개 변수의 중복작업을 제거 합니다.
+또한 Java코드와 SQL코드를 분리하여 서로 다른 역할에 집중할 수 있게 합니다.
+MyBatis는 DAO(Data Access Object)인터페이스를 통해 SQL과 연결 후 VO(Value Object) 또는 DTO(Data Transfer Object)로 바로 데이터를 가져옵니다.
+JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표준으로 JPA가 제공하는 API를 사용하면 직접적으로 SQL을 사용하지 않고도 DB에 접근이 가능합니다....</p>
+</div>
+<footer class=entry-footer><span title="2022-01-15 17:24:58 +0900 +0900">January 15, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to Mybatis와 JPA에 대하여" href=https://haservi.github.io/posts/spring/mybatis-and-jpa/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>@Autowired와 @RequiredArgsConstructor 차이점
+</h2>
+</header>
+<div class=entry-content>
+<p>@Autowired는 필드 주입이고, @RequiredArgsConstructor는 생성자 주입(Constructor Injection) 입니다.
+@RequiredArgsConstructor는 Lombok에서 제공하는 어노테이션 입니다.
+결론적으로 생성자 주입을 권장합니다. 인텔리제이에서 코드를 작성하다보면 @Autowired를 사용하면 아래와 같은 경고를 알려줍니다.
+.notice{--root-color: #000; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(217, 83, 79, 0.9); --warning-content: #fae2e2; --info-title: #f0b37e; --info-content: #fff2db; --note-title: #6ab0de; --note-content: #e7f2fa; --tip-title: rgba(92, 184, 92, 0.8); --tip-content: #e6f9e6;}body.dark .notice{--root-color: #fff; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(130, 49, 47, 0.9); --warning-content: #341312; --info-title: #906B4B; --info-content: #392A1E; --note-title: #3f6985; --note-content: #192A35; --tip-title: rgba(46, 92, 46, 0....</p>
+</div>
+<footer class=entry-footer><span title="2022-01-12 13:39:01 +0900 +0900">January 12, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
+<a class=entry-link aria-label="post link to @Autowired와 @RequiredArgsConstructor 차이점 " href=https://haservi.github.io/posts/spring/diff-requiredargsconstructor-autowired/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Logitech Options를 이용한 마우스 커스텀하기
 </h2>
 </header>
@@ -115,64 +175,6 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
 </div>
 <footer class=entry-footer><span title="2021-12-22 20:11:56 +0900 +0900">December 22, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
 <a class=entry-link aria-label="post link to [Spring] Service와 ServiceImpl에 대해" href=https://haservi.github.io/posts/spring/service-and-serviceimp/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Github 저장소 안의 폴더 다운로드 받는 방법
-</h2>
-</header>
-<div class=entry-content>
-<p>기본적으로 웹상에서는 Git 저장소 안의 폴더를 다운받으려면 해당 저장소 전부를 다운 받은 후에 특정 폴더의 정보를 봐야 합니다.
-간단한 방법은 아래의 링크에서 다운로드 받는게 제일 쉬운방법이지만 터미널에서 다운로드 방법도 한번 다루어보겠습니다. 터미널로 다운 받은 경우 이후 해당 소스가 변경이 있다면 당겨올 수 있는 이점도 있습니다.
-해결방법 웹 다운로드 https://downgit.github.io/#/home 해당 사이트에 github 저장소 특정 폴더의 링크를 복사 한 후 붙여넣고 Download 버튼 클릭
-터미널 다운로드 기본적으로 git이 설치돼 있어야합니다.
-예제로 https://github....</p>
-</div>
-<footer class=entry-footer><span title="2021-11-28 21:30:06 +0900 +0900">November 28, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to Github 저장소 안의 폴더 다운로드 받는 방법" href=https://haservi.github.io/posts/tips/git-inner-folder-download/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>화면 캡쳐 프로그램 추천
-</h2>
-</header>
-<div class=entry-content>
-<p>작업의 효율을 높이기 위해 기존 화면에서 필요한 정보를 잠시 동안 캡쳐하는 방법이 있습니다.
-캡쳐프로그램은 정말 다양하게 존재하는데요. 예를 들어 알캡쳐, picpic, 윈도우 기본 내장 캡쳐, pureRef, snipaste 등 많이 있습니다.
-저 같은 경우 포스팅 할 때 화면캡쳐 용도로는 picpick을 자주 이용하며, 업무 중 필요한 정보를 캡쳐 할 때는 snipaste를 사용합니다.
-picpick의 경우는 워낙 잘 알려져 있기 때문에 snipaste에 대해 알아보겠습니다.
-Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 화면에 띄워놓을 수 있습니다....</p>
-</div>
-<footer class=entry-footer><span title="2021-11-25 21:38:17 +0900 +0900">November 25, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to 화면 캡쳐 프로그램 추천" href=https://haservi.github.io/posts/tools/how-to-capture/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>윈도우 WSL2 Ubuntu 터미널 꾸미기
-</h2>
-</header>
-<div class=entry-content>
-<p>Windows WSL Ubuntu 커스텀 하기 Window에서는 WSL(Windows Subsystem for Linux)를 제공합니다.
-예전엔 가상환경(VM)에 리눅스를 올렸다면 지금은 손쉽게 리눅스 커널을 WSL로 접근할 수 있게 됐습니다.
-그렇기 때문에 웹개발을 한다면 Window에서 개발하여 WSL에 배포 테스트를 손쉽게? 할 수 있는 환경을 구축 할 수 있습니다. 예를 들어 웹의 경우 Backend, Frontend, DB 같은 환경을 Docker로 설정하여 WSL에 올린 뒤 바로 배포가 성공했다면 이러한 설정을 그대로 AWS나 Azure에 적용할 수 있습니다.
-해당 글은 단지 커스텀에 대한 이야기이지만 추후 위와 같은 방법으로 배포테스트도 한 번 다뤄볼 생각입니다....</p>
-</div>
-<footer class=entry-footer><span title="2021-11-22 20:49:25 +0900 +0900">November 22, 2021</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to 윈도우 WSL2 Ubuntu 터미널 꾸미기" href=https://haservi.github.io/posts/linux/used-zsh-powerline10/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>JPA ddl-auto 설정과 더미데이터 생성 방법
-</h2>
-</header>
-<div class=entry-content>
-<p>ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
-설정 옵션으로
-jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
-create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다....</p>
-</div>
-<footer class=entry-footer><span title="2021-11-12 15:47:31 +0900 +0900">November 12, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</footer>
-<a class=entry-link aria-label="post link to JPA ddl-auto 설정과 더미데이터 생성 방법" href=https://haservi.github.io/posts/spring/hibernate-ddl-auto/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
