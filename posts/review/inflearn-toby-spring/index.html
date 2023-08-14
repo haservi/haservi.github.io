@@ -1,203 +1,36 @@
-<!doctype html><html lang=en dir=auto>
-<head><meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=robots content="index, follow">
-<title>Inflearn 토비의 스프링 부트 강의 후기 및 정리 | Halog</title>
-<meta name=keywords content=",">
-<meta name=description content="토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Inflearn 토비의 스프링 부트 강의 후기 및 정리 | Halog</title><meta name=keywords content=","><meta name=description content="토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.
 인프런 강의 중 김영한 님의 강의가 실제 실무에 큰 도움이 된 것 같다면, 토비님의 강의는 스프링 부트에 대해 조금 더 깊이 있게 알아보는게 목적이었던 것 같습니다.
 기존 강의에서는 Spring Boot 2.7과 jdk 11로 했지만 학습 코드는 Spring Boot 3.1.1과 jdk 17로 적용해서 클론 코딩을 진행하며 버전이 달라지면서 발생한 문제와 팁을 정리했습니다.
-강의에서 나온 프로그램 추천   sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다.">
-<meta name=author content="Haseop">
-<link rel=canonical href=https://haservi.github.io/posts/review/inflearn-toby-spring/>
-<meta name=google-site-verification content="G-MXZP81P04W">
-<link rel=stylesheet as=style crossorigin href=https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css>
-<link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style>
-<link rel=icon href=https://haservi.github.io/favicon.ico>
-<link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/favicon-32x32.png>
-<link rel=apple-touch-icon href=https://haservi.github.io/apple-touch-icon.png>
-<link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg>
-<meta name=theme-color content="#2e2e33">
-<meta name=msapplication-TileColor content="#2e2e33">
-<noscript>
-<style>#theme-toggle,.top-link{display:none}</style>
-</noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RP5NDCM8J9"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-RP5NDCM8J9',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="Inflearn 토비의 스프링 부트 강의 후기 및 정리">
-<meta property="og:description" content="토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.
+강의에서 나온 프로그램 추천 sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다."><meta name=author content="Haseop"><link rel=canonical href=https://haservi.github.io/posts/review/inflearn-toby-spring/><meta name=google-site-verification content="G-MXZP81P04W"><link rel=stylesheet as=style crossorigin href=https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css><link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style><link rel=icon href=https://haservi.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://haservi.github.io/apple-touch-icon.png><link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-RP5NDCM8J9"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-RP5NDCM8J9",{anonymize_ip:!1})}</script><meta property="og:title" content="Inflearn 토비의 스프링 부트 강의 후기 및 정리"><meta property="og:description" content="토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.
 인프런 강의 중 김영한 님의 강의가 실제 실무에 큰 도움이 된 것 같다면, 토비님의 강의는 스프링 부트에 대해 조금 더 깊이 있게 알아보는게 목적이었던 것 같습니다.
 기존 강의에서는 Spring Boot 2.7과 jdk 11로 했지만 학습 코드는 Spring Boot 3.1.1과 jdk 17로 적용해서 클론 코딩을 진행하며 버전이 달라지면서 발생한 문제와 팁을 정리했습니다.
-강의에서 나온 프로그램 추천   sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://haservi.github.io/posts/review/inflearn-toby-spring/">
-<meta property="og:image" content="https://haservi.github.io/images/cover.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2023-08-08T23:38:46+09:00">
-<meta property="article:modified_time" content="2023-08-08T23:38:46+09:00"><meta property="og:site_name" content="Halog">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="https://haservi.github.io/images/cover.png">
-<meta name=twitter:title content="Inflearn 토비의 스프링 부트 강의 후기 및 정리">
-<meta name=twitter:description content="토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.
+강의에서 나온 프로그램 추천 sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다."><meta property="og:type" content="article"><meta property="og:url" content="https://haservi.github.io/posts/review/inflearn-toby-spring/"><meta property="og:image" content="https://haservi.github.io/images/cover.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-08-08T23:38:46+09:00"><meta property="article:modified_time" content="2023-08-08T23:38:46+09:00"><meta property="og:site_name" content="Halog"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://haservi.github.io/images/cover.png"><meta name=twitter:title content="Inflearn 토비의 스프링 부트 강의 후기 및 정리"><meta name=twitter:description content="토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.
 인프런 강의 중 김영한 님의 강의가 실제 실무에 큰 도움이 된 것 같다면, 토비님의 강의는 스프링 부트에 대해 조금 더 깊이 있게 알아보는게 목적이었던 것 같습니다.
 기존 강의에서는 Spring Boot 2.7과 jdk 11로 했지만 학습 코드는 Spring Boot 3.1.1과 jdk 17로 적용해서 클론 코딩을 진행하며 버전이 달라지면서 발생한 문제와 팁을 정리했습니다.
-강의에서 나온 프로그램 추천   sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Inflearn 토비의 스프링 부트 강의 후기 및 정리","item":"https://haservi.github.io/posts/review/inflearn-toby-spring/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Inflearn 토비의 스프링 부트 강의 후기 및 정리","name":"Inflearn 토비의 스프링 부트 강의 후기 및 정리","description":"토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.\n인프런 강의 중 김영한 님의 강의가 실제 실무에 큰 도움이 된 것 같다면, 토비님의 강의는 스프링 부트에 대해 조금 더 깊이 있게 알아보는게 목적이었던 것 같습니다.\n기존 강의에서는 Spring Boot 2.7과 jdk 11로 했지만 학습 코드는 Spring Boot 3.1.1과 jdk 17로 적용해서 클론 코딩을 진행하며 버전이 달라지면서 발생한 문제와 팁을 정리했습니다.\n강의에서 나온 프로그램 추천   sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다.","keywords":["",""],"articleBody":"토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.\n인프런 강의 중 김영한 님의 강의가 실제 실무에 큰 도움이 된 것 같다면, 토비님의 강의는 스프링 부트에 대해 조금 더 깊이 있게 알아보는게 목적이었던 것 같습니다.\n기존 강의에서는 Spring Boot 2.7과 jdk 11로 했지만 학습 코드는 Spring Boot 3.1.1과 jdk 17로 적용해서 클론 코딩을 진행하며 버전이 달라지면서 발생한 문제와 팁을 정리했습니다.\n강의에서 나온 프로그램 추천   sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다.\n  Wrap: AI가 내장된 터미널(다양한 기능 있음)\n  httpie: 터미널에서 간단한 api 응답 요청이 가능하다.\nhttp -v \":8080/hello?name=Spring   Code Style은 intellij-java-google-style.xml로 적용했습니다.\n관련 링크 입니다.\n강의 클론 코딩 중 발생한 이슈 버전이 달라서 발생한 문제\n  spring boot 3.1.1을 적용하면서 @RequestMapping이 있어도 스프링 컨트롤러로 인식하지 않는 현상이 있습니다.\n@RestController, @Controller 애노테이션이 있어야 스프링 컨트롤러로 인식합니다.\n 스프링 boot 3.0부터는 클래스 레벨의 핸들러 감지 대상이 @Controller만 포함 됨 Github Issue 변경 사항    API를 통한 테스트 중 port가 안맞는 문제\norg.springframework.web.client.ResourceAccessException: I/O error on GET request for \"http://localhost:8080/hello\": Connection refused ... 와 같은 에러 발생하여 테스트 클래스 상단에 @SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT) 어노테이션 추가 - 관련 링크\n  jetty를 config로 지정할 때 아래와 같은 에러가 발생한 경우\n... at tobyspring.helloboot.HelloBootApplication.main(HelloBootApplication.java:15) ~[classes/:na] Caused by: java.lang.NoClassDefFoundError: jakarta/servlet/http/HttpSessionContext at org.eclipse.jetty.servlet.ServletContextHandler.newSessionHandler(ServletContextHandler.java:339) ~[je ... spring-boot-starter-jetty 의존성 관련된 문제로 판단된다. Spring Boot 3에서는 Jakarta Servlet 6.0.0이고, spring-boot-starter-jetty는 Jakarta Servlet 5.0.0이라 발생하는 문제로 판단 일단 해결하기 위해서 build.gradle에 종속성 하나를 더 추가 했었습니다.\nimplementation group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '11.0.15' 조금 더 찾아보니 스프링부트에 이슈로 있으며, build.gradle에서\next['jakarta-servlet.version'] = '5.0.0' 를 명시적으로 써주면 된다고하여 수정했습니다.\n  버전이 안맞는 문제 링크\n  Hikari-cp 설정이 잘안되는 현상\nimplementation('com.zaxxer:HikariCP:4.0.3') // 이렇게 하니 잘됨..   환경 설정을 통해 env 우선 순위를 정할 수 있다 위와 같이 설정한 경우 기존 application.properties보다 더 높은 우선순위를 지정할 수 있다.\nVM Option  Environment variables  application.properties 순으로 우선순위가 정해진다.\n추가 팁   gradle 라이브러리 디펜더시 확인\n./gradlew dependencies --configuration compileClasspath   스프링 부트 스타터 공식 문서\n  코드에서 Comaparator.java 인터페이스를 보면 좋다고 함\n  ","wordCount":"310","inLanguage":"en","image":"https://haservi.github.io/images/cover.png","datePublished":"2023-08-08T23:38:46+09:00","dateModified":"2023-08-08T23:38:46+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/review/inflearn-toby-spring/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script>
-</head>
-<body class=dark id=top>
-<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
-<header class=header>
-<nav class=nav>
-<div class=logo>
-<a href=https://haservi.github.io/ accesskey=h title="Halog (Alt + H)">Halog</a>
-<div class=logo-switches>
-<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-</button>
-</div>
-</div>
-<ul id=menu>
-<li>
-<a href=https://haservi.github.io/archives/ title=Archive>
-<span>Archive</span>
-</a>
-</li>
-<li>
-<a href=https://haservi.github.io/categories/ title=Categories>
-<span>Categories</span>
-</a>
-</li>
-<li>
-<a href=https://haservi.github.io/search/ title="Search (Alt + /)" accesskey=/>
-<span>Search</span>
-</a>
-</li>
-</ul>
-</nav>
-</header>
-<main class=main>
-<article class=post-single>
-<header class=post-header>
-<div class=breadcrumbs><a href=https://haservi.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/posts/>Posts</a></div>
-<h1 class=post-title>
-Inflearn 토비의 스프링 부트 강의 후기 및 정리
-</h1>
-<div class=post-meta><span title="2023-08-08 23:38:46 +0900 +0900">August 8, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop
-</div>
-</header>
-<figure class=entry-cover>
-<img loading=lazy srcset="https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover_huec368095a38a008884d57ac40c169128_304259_360x0_resize_box_3.png 360w ,https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover_huec368095a38a008884d57ac40c169128_304259_480x0_resize_box_3.png 480w ,https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover_huec368095a38a008884d57ac40c169128_304259_720x0_resize_box_3.png 720w ,https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover_huec368095a38a008884d57ac40c169128_304259_1080x0_resize_box_3.png 1080w ,https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover.png 1200w" sizes="(min-width: 768px) 720px, 100vw" src=https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover.png alt width=1200 height=781>
-<p></p>
-</figure>
-<div class=post-content><p>토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.</p>
-<p>인프런 강의 중 김영한 님의 강의가 실제 실무에 큰 도움이 된 것 같다면, 토비님의 강의는 스프링 부트에 대해 조금 더
-깊이 있게 알아보는게 목적이었던 것 같습니다.</p>
-<p>기존 강의에서는 Spring Boot 2.7과 jdk 11로 했지만 학습 코드는 Spring Boot 3.1.1과 jdk 17로 적용해서 <a href=https://github.com/haservi/inflearn-toby-spring-boot>클론 코딩</a>을 진행하며
-버전이 달라지면서 발생한 문제와 팁을 정리했습니다.</p>
-<h3 id=강의에서-나온-프로그램-추천>강의에서 나온 프로그램 추천<a hidden class=anchor aria-hidden=true href=#강의에서-나온-프로그램-추천>#</a></h3>
-<ul>
-<li>
-<p><a href=https://sdkman.io/>sdkman</a>: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다.</p>
-</li>
-<li>
-<p><a href=https://www.warp.dev/>Wrap</a>: AI가 내장된 터미널(다양한 기능 있음)</p>
-</li>
-<li>
-<p><a href=https://httpie.io/cli>httpie</a>: 터미널에서 간단한 api 응답 요청이 가능하다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>http -v <span class=s2>&#34;:8080/hello?name=Spring
-</span></code></pre></div></li>
-</ul>
-<p>Code Style은 <code>intellij-java-google-style.xml</code>로 적용했습니다.<br>
-관련 <a href=https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml>링크</a> 입니다.</p>
-<h3 id=강의-클론-코딩-중-발생한-이슈>강의 클론 코딩 중 발생한 이슈<a hidden class=anchor aria-hidden=true href=#강의-클론-코딩-중-발생한-이슈>#</a></h3>
-<p>버전이 달라서 발생한 문제</p>
-<ul>
-<li>
-<p>spring boot 3.1.1을 적용하면서 <code>@RequestMapping</code>이 있어도 스프링 컨트롤러로 인식하지 않는 현상이 있습니다.<br>
-<code>@RestController</code>, <code>@Controller</code> 애노테이션이 있어야 스프링 컨트롤러로 인식합니다.</p>
-<ul>
-<li>스프링 boot 3.0부터는 클래스 레벨의 핸들러 감지 대상이 <code>@Controller</code>만 포함 됨</li>
-<li><a href=https://github.com/spring-projects/spring-framework/issues/22154>Github Issue</a></li>
-<li><a href=https://github.com/spring-projects/spring-framework/commit/3600644ed1776dce35c4a42d74799a90b90e359e>변경 사항</a></li>
-</ul>
-</li>
-<li>
-<p>API를 통한 테스트 중 port가 안맞는 문제</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>org.springframework.web.client.ResourceAccessException: I/O error on GET request <span class=k>for</span> <span class=s2>&#34;http://localhost:8080/hello&#34;</span>: Connection refused
-... 
-</code></pre></div><p>와 같은 에러 발생하여 테스트 클래스 상단에 <code>@SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT)</code> 어노테이션
+강의에서 나온 프로그램 추천 sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://haservi.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Inflearn 토비의 스프링 부트 강의 후기 및 정리","item":"https://haservi.github.io/posts/review/inflearn-toby-spring/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Inflearn 토비의 스프링 부트 강의 후기 및 정리","name":"Inflearn 토비의 스프링 부트 강의 후기 및 정리","description":"토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.\n인프런 강의 중 김영한 님의 강의가 실제 실무에 큰 도움이 된 것 같다면, 토비님의 강의는 스프링 부트에 대해 조금 더 깊이 있게 알아보는게 목적이었던 것 같습니다.\n기존 강의에서는 Spring Boot 2.7과 jdk 11로 했지만 학습 코드는 Spring Boot 3.1.1과 jdk 17로 적용해서 클론 코딩을 진행하며 버전이 달라지면서 발생한 문제와 팁을 정리했습니다.\n강의에서 나온 프로그램 추천 sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다.","keywords":["",""],"articleBody":"토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.\n인프런 강의 중 김영한 님의 강의가 실제 실무에 큰 도움이 된 것 같다면, 토비님의 강의는 스프링 부트에 대해 조금 더 깊이 있게 알아보는게 목적이었던 것 같습니다.\n기존 강의에서는 Spring Boot 2.7과 jdk 11로 했지만 학습 코드는 Spring Boot 3.1.1과 jdk 17로 적용해서 클론 코딩을 진행하며 버전이 달라지면서 발생한 문제와 팁을 정리했습니다.\n강의에서 나온 프로그램 추천 sdkman: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다.\nWrap: AI가 내장된 터미널(다양한 기능 있음)\nhttpie: 터미널에서 간단한 api 응답 요청이 가능하다.\nhttp -v \":8080/hello?name=Spring Code Style은 intellij-java-google-style.xml로 적용했습니다.\n관련 링크 입니다.\n강의 클론 코딩 중 발생한 이슈 버전이 달라서 발생한 문제\nspring boot 3.1.1을 적용하면서 @RequestMapping이 있어도 스프링 컨트롤러로 인식하지 않는 현상이 있습니다.\n@RestController, @Controller 애노테이션이 있어야 스프링 컨트롤러로 인식합니다.\n스프링 boot 3.0부터는 클래스 레벨의 핸들러 감지 대상이 @Controller만 포함 됨 Github Issue 변경 사항 API를 통한 테스트 중 port가 안맞는 문제\norg.springframework.web.client.ResourceAccessException: I/O error on GET request for \"http://localhost:8080/hello\": Connection refused ... 와 같은 에러 발생하여 테스트 클래스 상단에 @SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT) 어노테이션 추가 -\u003e 관련 링크\njetty를 config로 지정할 때 아래와 같은 에러가 발생한 경우\n... at tobyspring.helloboot.HelloBootApplication.main(HelloBootApplication.java:15) ~[classes/:na] Caused by: java.lang.NoClassDefFoundError: jakarta/servlet/http/HttpSessionContext at org.eclipse.jetty.servlet.ServletContextHandler.newSessionHandler(ServletContextHandler.java:339) ~[je ... spring-boot-starter-jetty 의존성 관련된 문제로 판단된다. Spring Boot 3에서는 Jakarta Servlet 6.0.0이고, spring-boot-starter-jetty는 Jakarta Servlet 5.0.0이라 발생하는 문제로 판단 일단 해결하기 위해서 build.gradle에 종속성 하나를 더 추가 했었습니다.\nimplementation group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '11.0.15' 조금 더 찾아보니 스프링부트에 이슈로 있으며, build.gradle에서\next['jakarta-servlet.version'] = '5.0.0' 를 명시적으로 써주면 된다고하여 수정했습니다.\n버전이 안맞는 문제 링크\nHikari-cp 설정이 잘안되는 현상\nimplementation('com.zaxxer:HikariCP:4.0.3') // 이렇게 하니 잘됨.. 환경 설정을 통해 env 우선 순위를 정할 수 있다 위와 같이 설정한 경우 기존 application.properties보다 더 높은 우선순위를 지정할 수 있다.\nVM Option \u003e Environment variables \u003e application.properties 순으로 우선순위가 정해진다.\n추가 팁 gradle 라이브러리 디펜더시 확인\n./gradlew dependencies --configuration compileClasspath 스프링 부트 스타터 공식 문서\n코드에서 Comaparator.java 인터페이스를 보면 좋다고 함\n","wordCount":"310","inLanguage":"en","image":"https://haservi.github.io/images/cover.png","datePublished":"2023-08-08T23:38:46+09:00","dateModified":"2023-08-08T23:38:46+09:00","author":{"@type":"Person","name":"Haseop"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://haservi.github.io/posts/review/inflearn-toby-spring/"},"publisher":{"@type":"Organization","name":"Halog","logo":{"@type":"ImageObject","url":"https://haservi.github.io/favicon.ico"}}}</script></head><body class=dark id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://haservi.github.io/ accesskey=h title="Halog (Alt + H)">Halog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://haservi.github.io/archives/ title=Archive><span>Archive</span></a></li><li><a href=https://haservi.github.io/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://haservi.github.io/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://haservi.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/posts/>Posts</a></div><h1 class=post-title>Inflearn 토비의 스프링 부트 강의 후기 및 정리</h1><div class=post-meta><span title='2023-08-08 23:38:46 +0900 +0900'>August 8, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Haseop</div></header><figure class=entry-cover><img loading=lazy srcset="https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover_huec368095a38a008884d57ac40c169128_304259_360x0_resize_box_3.png 360w ,https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover_huec368095a38a008884d57ac40c169128_304259_480x0_resize_box_3.png 480w ,https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover_huec368095a38a008884d57ac40c169128_304259_720x0_resize_box_3.png 720w ,https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover_huec368095a38a008884d57ac40c169128_304259_1080x0_resize_box_3.png 1080w ,https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover.png 1200w" sizes="(min-width: 768px) 720px, 100vw" src=https://haservi.github.io/posts/review/inflearn-toby-spring/images/cover.png alt width=1200 height=781><p></p></figure><div class=post-content><p>토비의 스프링 저자로 유명한 토비님이 인프런에 강의를 만드셔서 수강해봤습니다.</p><p>인프런 강의 중 김영한 님의 강의가 실제 실무에 큰 도움이 된 것 같다면, 토비님의 강의는 스프링 부트에 대해 조금 더
+깊이 있게 알아보는게 목적이었던 것 같습니다.</p><p>기존 강의에서는 Spring Boot 2.7과 jdk 11로 했지만 학습 코드는 Spring Boot 3.1.1과 jdk 17로 적용해서 <a href=https://github.com/haservi/inflearn-toby-spring-boot>클론 코딩</a>을 진행하며
+버전이 달라지면서 발생한 문제와 팁을 정리했습니다.</p><h3 id=강의에서-나온-프로그램-추천>강의에서 나온 프로그램 추천<a hidden class=anchor aria-hidden=true href=#강의에서-나온-프로그램-추천>#</a></h3><ul><li><p><a href=https://sdkman.io/>sdkman</a>: jdk 및 여러 sdk들의 버전을 쉽게 변경할 수 있도록 해준다.</p></li><li><p><a href=https://www.warp.dev/>Wrap</a>: AI가 내장된 터미널(다양한 기능 있음)</p></li><li><p><a href=https://httpie.io/cli>httpie</a>: 터미널에서 간단한 api 응답 요청이 가능하다.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>http -v <span class=s2>&#34;:8080/hello?name=Spring
+</span></span></span></code></pre></div></li></ul><p>Code Style은 <code>intellij-java-google-style.xml</code>로 적용했습니다.<br>관련 <a href=https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml>링크</a> 입니다.</p><h3 id=강의-클론-코딩-중-발생한-이슈>강의 클론 코딩 중 발생한 이슈<a hidden class=anchor aria-hidden=true href=#강의-클론-코딩-중-발생한-이슈>#</a></h3><p>버전이 달라서 발생한 문제</p><ul><li><p>spring boot 3.1.1을 적용하면서 <code>@RequestMapping</code>이 있어도 스프링 컨트롤러로 인식하지 않는 현상이 있습니다.<br><code>@RestController</code>, <code>@Controller</code> 애노테이션이 있어야 스프링 컨트롤러로 인식합니다.</p><ul><li>스프링 boot 3.0부터는 클래스 레벨의 핸들러 감지 대상이 <code>@Controller</code>만 포함 됨</li><li><a href=https://github.com/spring-projects/spring-framework/issues/22154>Github Issue</a></li><li><a href=https://github.com/spring-projects/spring-framework/commit/3600644ed1776dce35c4a42d74799a90b90e359e>변경 사항</a></li></ul></li><li><p>API를 통한 테스트 중 port가 안맞는 문제</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>org.springframework.web.client.ResourceAccessException: I/O error on GET request <span class=k>for</span> <span class=s2>&#34;http://localhost:8080/hello&#34;</span>: Connection refused
+</span></span><span class=line><span class=cl>... 
+</span></span></code></pre></div><p>와 같은 에러 발생하여 테스트 클래스 상단에 <code>@SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT)</code> 어노테이션
 추가
--> <a href=https://stackoverflow.com/questions/73828590/i-o-error-on-get-in-testresttemplate-getforentity-method>관련 링크</a></p>
-</li>
-<li>
-<p>jetty를 config로 지정할 때 아래와 같은 에러가 발생한 경우</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>...
-at tobyspring.helloboot.HelloBootApplication.main<span class=o>(</span>HelloBootApplication.java:15<span class=o>)</span> ~<span class=o>[</span>classes/:na<span class=o>]</span>
-Caused by: java.lang.NoClassDefFoundError: jakarta/servlet/http/HttpSessionContext
-at org.eclipse.jetty.servlet.ServletContextHandler.newSessionHandler<span class=o>(</span>ServletContextHandler.java:339<span class=o>)</span> ~<span class=o>[</span>je
-...
-</code></pre></div><p>spring-boot-starter-jetty 의존성 관련된 문제로 판단된다. Spring Boot 3에서는 Jakarta Servlet 6.0.0이고,
+-> <a href=https://stackoverflow.com/questions/73828590/i-o-error-on-get-in-testresttemplate-getforentity-method>관련 링크</a></p></li><li><p>jetty를 config로 지정할 때 아래와 같은 에러가 발생한 경우</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>...
+</span></span><span class=line><span class=cl>at tobyspring.helloboot.HelloBootApplication.main<span class=o>(</span>HelloBootApplication.java:15<span class=o>)</span> ~<span class=o>[</span>classes/:na<span class=o>]</span>
+</span></span><span class=line><span class=cl>Caused by: java.lang.NoClassDefFoundError: jakarta/servlet/http/HttpSessionContext
+</span></span><span class=line><span class=cl>at org.eclipse.jetty.servlet.ServletContextHandler.newSessionHandler<span class=o>(</span>ServletContextHandler.java:339<span class=o>)</span> ~<span class=o>[</span>je
+</span></span><span class=line><span class=cl>...
+</span></span></code></pre></div><p>spring-boot-starter-jetty 의존성 관련된 문제로 판단된다. Spring Boot 3에서는 Jakarta Servlet 6.0.0이고,
 spring-boot-starter-jetty는 Jakarta Servlet 5.0.0이라 발생하는
 문제로 <a href=https://stackoverflow.com/questions/74946784/java-lang-classnotfoundexception-jakarta-servlet-http-httpsessioncontext-with-s>판단</a>
-일단 해결하기 위해서 <code>build.gradle</code>에 종속성 하나를 더 추가 했었습니다.</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>implementation group: <span class=s1>&#39;org.eclipse.jetty&#39;</span>, name: <span class=s1>&#39;jetty-servlet&#39;</span>, version: <span class=s1>&#39;11.0.15&#39;</span>
-</code></pre></div><p>조금 더 찾아보니 스프링부트에 <a href=https://github.com/spring-projects/spring-boot/issues/33044>이슈</a>로
-있으며, <code>build.gradle</code>에서</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>ext<span class=o>[</span><span class=s1>&#39;jakarta-servlet.version&#39;</span><span class=o>]</span> <span class=o>=</span> <span class=s1>&#39;5.0.0&#39;</span> 
-</code></pre></div><p>를 명시적으로 써주면 된다고하여 수정했습니다.</p>
-</li>
-<li>
-<p>버전이 안맞는
-문제 <a href=https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide#jetty>링크</a></p>
-</li>
-<li>
-<p>Hikari-cp 설정이 잘안되는 현상</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>implementation<span class=o>(</span><span class=s1>&#39;com.zaxxer:HikariCP:4.0.3&#39;</span><span class=o>)</span> // 이렇게 하니 잘됨..
-</code></pre></div></li>
-</ul>
-<h3 id=환경-설정을-통해-env-우선-순위를-정할-수-있다>환경 설정을 통해 env 우선 순위를 정할 수 있다<a hidden class=anchor aria-hidden=true href=#환경-설정을-통해-env-우선-순위를-정할-수-있다>#</a></h3>
-<p><img loading=lazy src=./images/image01.png alt=image>
-</p>
-<p>위와 같이 설정한 경우 기존 <code>application.properties</code>보다 더 높은 우선순위를 지정할 수 있다.<br>
-VM Option > Environment variables > application.properties 순으로 우선순위가 정해진다.</p>
-<h3 id=추가-팁>추가 팁<a hidden class=anchor aria-hidden=true href=#추가-팁>#</a></h3>
-<ul>
-<li>
-<p>gradle 라이브러리 디펜더시 확인</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>./gradlew dependencies --configuration compileClasspath
-</code></pre></div></li>
-<li>
-<p><a href=https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using.build-systems.starters>스프링 부트 스타터 공식 문서</a></p>
-</li>
-<li>
-<p>코드에서 <code>Comaparator.java</code> 인터페이스를 보면 좋다고 함</p>
-</li>
-</ul>
-</div>
-<footer class=post-footer>
-<ul class=post-tags>
-</ul>
-</footer>
-<section class=comments>
-<script>loadComment();function loadComment(){document.body.className.includes("dark")?theme='photon-dark':theme='boxy-light';let a=document.createElement('script');a.src='https://utteranc.es/client.js',a.setAttribute('repo','haservi/haservi.github.io'),a.setAttribute('issue-term','pathname'),a.setAttribute('theme',theme),a.setAttribute('crossorigin','anonymous'),a.setAttribute('async',''),document.querySelector('section.comments').innerHTML='',document.querySelector('section.comments').appendChild(a)}</script>
-</section>
-</article>
-</main>
-<footer class=footer>
-<span>&copy; 2023 <a href=https://haservi.github.io/>Halog</a></span>
-<span>
-Powered by
+일단 해결하기 위해서 <code>build.gradle</code>에 종속성 하나를 더 추가 했었습니다.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>implementation group: <span class=s1>&#39;org.eclipse.jetty&#39;</span>, name: <span class=s1>&#39;jetty-servlet&#39;</span>, version: <span class=s1>&#39;11.0.15&#39;</span>
+</span></span></code></pre></div><p>조금 더 찾아보니 스프링부트에 <a href=https://github.com/spring-projects/spring-boot/issues/33044>이슈</a>로
+있으며, <code>build.gradle</code>에서</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>ext<span class=o>[</span><span class=s1>&#39;jakarta-servlet.version&#39;</span><span class=o>]</span> <span class=o>=</span> <span class=s1>&#39;5.0.0&#39;</span> 
+</span></span></code></pre></div><p>를 명시적으로 써주면 된다고하여 수정했습니다.</p></li><li><p>버전이 안맞는
+문제 <a href=https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide#jetty>링크</a></p></li><li><p>Hikari-cp 설정이 잘안되는 현상</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>implementation<span class=o>(</span><span class=s1>&#39;com.zaxxer:HikariCP:4.0.3&#39;</span><span class=o>)</span> // 이렇게 하니 잘됨..
+</span></span></code></pre></div></li></ul><h3 id=환경-설정을-통해-env-우선-순위를-정할-수-있다>환경 설정을 통해 env 우선 순위를 정할 수 있다<a hidden class=anchor aria-hidden=true href=#환경-설정을-통해-env-우선-순위를-정할-수-있다>#</a></h3><p><img loading=lazy src=./images/image01.png alt=image></p><p>위와 같이 설정한 경우 기존 <code>application.properties</code>보다 더 높은 우선순위를 지정할 수 있다.<br>VM Option > Environment variables > application.properties 순으로 우선순위가 정해진다.</p><h3 id=추가-팁>추가 팁<a hidden class=anchor aria-hidden=true href=#추가-팁>#</a></h3><ul><li><p>gradle 라이브러리 디펜더시 확인</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>./gradlew dependencies --configuration compileClasspath
+</span></span></code></pre></div></li><li><p><a href=https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using.build-systems.starters>스프링 부트 스타터 공식 문서</a></p></li><li><p>코드에서 <code>Comaparator.java</code> 인터페이스를 보면 좋다고 함</p></li></ul></div><footer class=post-footer><ul class=post-tags></ul></footer><section class=comments><script>loadComment();function loadComment(){document.body.className.includes("dark")?theme="photon-dark":theme="boxy-light";let e=document.createElement("script");e.src="https://utteranc.es/client.js",e.setAttribute("repo","haservi/haservi.github.io"),e.setAttribute("issue-term","pathname"),e.setAttribute("theme",theme),e.setAttribute("crossorigin","anonymous"),e.setAttribute("async",""),document.querySelector("section.comments").innerHTML="",document.querySelector("section.comments").appendChild(e)}</script></section></article></main><footer class=footer><span>&copy; 2023 <a href=https://haservi.github.io/>Halog</a></span>
+<span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a>
-</span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a><script src=https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin=anonymous referrerpolicy=no-referrer></script>
-<script>const images=Array.from(document.querySelectorAll(".post-content img"));images.forEach(a=>{mediumZoom(a,{margin:0,background:'#1d1e20',scrollOffset:40,container:null,template:null})})</script>
-<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
-<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark')),loadComment()})</script>
-<script>document.querySelectorAll('pre > code').forEach(b=>{const c=b.parentNode.parentNode,a=document.createElement('button');a.classList.add('copy-code'),a.innerHTML='copy';function d(){a.innerHTML='copied!',setTimeout(()=>{a.innerHTML='copy'},2e3)}a.addEventListener('click',e=>{if('clipboard'in navigator){navigator.clipboard.writeText(b.textContent),d();return}const a=document.createRange();a.selectNodeContents(b);const c=window.getSelection();c.removeAllRanges(),c.addRange(a);try{document.execCommand('copy'),d()}catch(a){}c.removeRange(a)}),c.classList.contains("highlight")?c.appendChild(a):c.parentNode.firstChild==c||(b.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?b.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(a):b.parentNode.appendChild(a))})</script>
-</body>
-</html>
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script src=https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin=anonymous referrerpolicy=no-referrer></script>
+<script>const images=Array.from(document.querySelectorAll(".post-content img"));images.forEach(e=>{mediumZoom(e,{margin:0,background:"#1d1e20",scrollOffset:40,container:null,template:null})})</script><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark")),loadComment()})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

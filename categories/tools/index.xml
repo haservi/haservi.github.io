@@ -5,6 +5,7 @@
     <link>https://haservi.github.io/categories/tools/</link>
     <description>Recent content in Tools on Halog</description>
     <image>
+      <title>Halog</title>
       <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
@@ -20,7 +21,7 @@
 Spring Data JPA와 QueryDSL 조합을 이용한 뒤로 어느 정도 익숙해지고 나서는 쿼리를 짜는 일이 많이 없지만, 조금 복잡한 쿼리의 경우는 쿼리를 작성해보고 성능 체크 후 QueryDSL로 변환하여 작업합니다.
 하지만 Mac환경에서는 HeidiSQL이 Mac을 지원하지 않기 때문에 다른 DB 툴을 사용해야 합니다.
 Mac을 지원하는 다양한 DB툴 중에 평가가 꽤 괜찮은 DBeaver링크에 대해 알아보겠습니다.
-Dbeaver 란?  DBeaver는 Windows와 Mac 모두 지원 거의 모든 Database를 지원(MySQL, PostgreSQL, MariaDB, SQLite, Oracle, DB2, SQL Server&amp;hellip;) 오픈 소스 기반으로 다양한 확장 플러그인 지원 Entity Diagarm 지원 DB 내보내기 불러오기 지원  Community 버전을 이용해도 위와 같은 기능을 모두 사용할 수 있습니다.</description>
+Dbeaver 란? DBeaver는 Windows와 Mac 모두 지원 거의 모든 Database를 지원(MySQL, PostgreSQL, MariaDB, SQLite, Oracle, DB2, SQL Server&amp;hellip;) 오픈 소스 기반으로 다양한 확장 플러그인 지원 Entity Diagarm 지원 DB 내보내기 불러오기 지원 Community 버전을 이용해도 위와 같은 기능을 모두 사용할 수 있습니다.</description>
     </item>
     
     <item>
@@ -58,11 +59,11 @@ Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 
       
       <guid>https://haservi.github.io/posts/tools/how-to-create-gif/</guid>
       <description>간단하게 무거운 프로그램을 이용하지 않고 영상을 gif로 만드는 방법입니다.
- 윈도우 - https://www.screentogif.com/ Mac - https://apps.apple.com/us/app/giphy-capture-the-gif-maker/id668208984?mt=12  위 프로그램을 다운로드 받아서 설치하면 됩니다.
-설치 방법(Window)  https://www.screentogif.com/ 사이트에 접속하셔서 다운로드 합니다. 다운로드 후 설치 합니다. 설치가 완료되면 실행합니다.
- 위와 같은 화면에서 선택 영역을 지정(예시: 메모장)하고 녹화를 누르면 아래와 같이 나타납니다.
- 여기서 그냥 녹화를 누른뒤 진행하면 됩니다. 녹화를 마치고 정지를 누르시면 아래와 같은 화면이 나타납니다.
- 저 같은 경우 초당 30프레임으로 설정하여서 5초짜리 영상에 대략 150프레임의 스크린샷이 찍혔습니다.</description>
+윈도우 - https://www.screentogif.com/ Mac - https://apps.apple.com/us/app/giphy-capture-the-gif-maker/id668208984?mt=12 위 프로그램을 다운로드 받아서 설치하면 됩니다.
+설치 방법(Window) https://www.screentogif.com/ 사이트에 접속하셔서 다운로드 합니다. 다운로드 후 설치 합니다. 설치가 완료되면 실행합니다.
+위와 같은 화면에서 선택 영역을 지정(예시: 메모장)하고 녹화를 누르면 아래와 같이 나타납니다.
+여기서 그냥 녹화를 누른뒤 진행하면 됩니다. 녹화를 마치고 정지를 누르시면 아래와 같은 화면이 나타납니다.
+저 같은 경우 초당 30프레임으로 설정하여서 5초짜리 영상에 대략 150프레임의 스크린샷이 찍혔습니다.</description>
     </item>
     
   </channel>

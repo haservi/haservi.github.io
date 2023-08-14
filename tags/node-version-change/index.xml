@@ -5,6 +5,7 @@
     <link>https://haservi.github.io/tags/node-version-change/</link>
     <description>Recent content in node version change on Halog</description>
     <image>
+      <title>Halog</title>
       <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
@@ -17,7 +18,10 @@
       
       <guid>https://haservi.github.io/posts/tips/window-nodejs-version-change/</guid>
       <description>종종 프로젝트 중에는 특정 Node.js 버전에서만 동작하는 프로젝트가 있습니다. 이럴 경우 Docker를 이용하여 컨테이너를 만들거나 로컬인 경우 해당 버전에 맞는 Node.js를 설치해야 합니다.
-이번 내용은 전에 작성한 jdk 버전을 변경하듯이 Node.js 버전을 변경하는 방법에 대해 알아볼께요. .notice{--root-color: #000; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(217, 83, 79, 0.9); --warning-content: #fae2e2; --info-title: #f0b37e; --info-content: #fff2db; --note-title: #6ab0de; --note-content: #e7f2fa; --tip-title: rgba(92, 184, 92, 0.8); --tip-content: #e6f9e6;}body.dark .notice{--root-color: #fff; --root-background: #e7f2fa; --title-color: #fff; --title-background: #6ab0de; --warning-title: rgba(130, 49, 47, 0.</description>
+이번 내용은 전에 작성한 jdk 버전을 변경하듯이 Node.js 버전을 변경하는 방법에 대해 알아볼께요. Info
+해당 글은 Window를 기준으로 작성했습니다.
+Mac의 경우는 해당 stackoverflow 질문글을 참조해주세요.
+먼저 해당 링크에서 우측의 Release 버튼을 선택합니다. nvm-setup.exe 파일을 다운로드 받습니다. 아래와 같이 파일을 설치하고 버전을 커맨드로 입력해보면 설치된 것을 확인할 수 있습니다.</description>
     </item>
     
   </channel>

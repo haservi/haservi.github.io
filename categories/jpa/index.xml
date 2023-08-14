@@ -5,6 +5,7 @@
     <link>https://haservi.github.io/categories/jpa/</link>
     <description>Recent content in JPA on Halog</description>
     <image>
+      <title>Halog</title>
       <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
@@ -32,7 +33,7 @@ JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표�
       <description>ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
 설정 옵션으로
 jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
- create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함  실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.</description>
+create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.</description>
     </item>
     
   </channel>
