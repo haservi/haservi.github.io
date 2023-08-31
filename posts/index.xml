@@ -10,7 +10,19 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 08 Aug 2023 23:38:46 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Aug 2023 22:50:46 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>P6Spy를 이용하여 로그 출력하기</title>
+      <link>https://haservi.github.io/posts/spring/p6-spy-query-log/</link>
+      <pubDate>Thu, 31 Aug 2023 22:50:46 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/spring/p6-spy-query-log/</guid>
+      <description>프로젝트를 하다보면 성능 개선을 위해 어느 쿼리가 얼마나 걸리고, 어떻게 쿼리를 호출하는지 확인해야 할 경우가 있습니다.
+JPA QueryDSL을 이용할 때 여러 조인과 entity의 관계를 정의하다 보면 생각하지 못한 부분에서 속도가 매우 느린 경우도 있고, 대용량으로 데이터가 들어오면 잘 되던 쿼리가 느려질 때도 있습니다.
+이럴때 p6spy를 이용하여 쿼리를 보기 좋고, 얼마나 걸리는지 확인할 수 있는 방법에 대해 정리했습니다.
+위의 저장소에서 쿼리를 로그에 출력할 수 있는 간단한 h2 CRUD 예제 코드를 작성했습니다.</description>
+    </item>
+    
     <item>
       <title>Inflearn 토비의 스프링 부트 강의 후기 및 정리</title>
       <link>https://haservi.github.io/posts/review/inflearn-toby-spring/</link>
