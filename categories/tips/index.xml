@@ -18,7 +18,7 @@
       
       <guid>https://haservi.github.io/posts/tips/ubuntu-port-kill/</guid>
       <description>netstat을 사용하기 위해서 우선 net-tools를 설치해야합니다.
-sudo apt install net-tools 설치 후 netstat -tulpn 를 입력하면 현재 열린 네트워크 포트와 해당 포트를 열어놓은 프로세스를 보여주는 도구입니다.
+1 sudo apt install net-tools 설치 후 netstat -tulpn 를 입력하면 현재 열린 네트워크 포트와 해당 포트를 열어놓은 프로세스를 보여주는 도구입니다.
 여기서 각 옵션의 의미는 다음과 같습니다.
 -t: TCP 프로토콜 사용 포트 -u: UDP 프로토콜 사용 포트 -l: 포트를 열어놓은 프로세스 출력 -p: 프로세스 ID 출력 -n: 포트와 프로세스를 숫자로 출력 따라서 netstat -tulpn 명령어를 실행하면, 현재 열린 TCP/UDP 포트와 해당 포트를 열어놓은 프로세스의 정보를 확인할 수 있습니다.</description>
     </item>
@@ -32,8 +32,8 @@ sudo apt install net-tools 설치 후 netstat -tulpn 를 입력하면 현재 열
       <description>WSL 환경에서 DB 설정 방법에 대해 정리했습니다.
 우선 기본적으로 윈도우 환경이며, WSL을 이용해 우분투 18.04 버전을 설치합니다.
 mariadb-server 설치 및 실행 패키지를 최신으로 업데이트 합니다.
-sudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.
-sudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.
+1 2 sudo apt-get update sudo apt-get upgrade 우선 mariadb-server를 설치합니다.
+1 2 3 sudo apt install mariadb-server sudo mysql -u root -p # 실행 DB 저장소 경로 변경 방법 만약 db의 저장소를 변경하고 싶다면 아래와 같이 진행하면 됩니다.
 우선 db의 경로를 /home/data/mysql으로 가정하겠습니다.
 db 접속 후 현재 db의 경로를 확인합니다.</description>
     </item>
@@ -59,7 +59,7 @@ Gerrit은 웹 기반 코드 커밋 및 버전 관리 도구로, 코드 리뷰를
       <guid>https://haservi.github.io/posts/tips/error-script-to-linux/</guid>
       <description>node.js backend 에서 작업 중 테스트 서버에 배포 스크립트를 작성했습니다.
 위와 같이 $&#39;\r&#39;: coomand not found가 발생하면 해결 방법은 아래와 같습니다.
-sed -i &amp;#39;s/\r$//&amp;#39; [스크립트파일.sh] 문제의 원인은 유닉스 기반의 운영체제에서는 줄 바꿈 문자로 줄 바꿈(Line Feed, LF)을 사용하지만, 윈도우 운영체제에서는 줄 바꿈 문자로 CR과 LF를 함께 사용합니다.
+1 sed -i &amp;#39;s/\r$//&amp;#39; [스크립트파일.sh] 문제의 원인은 유닉스 기반의 운영체제에서는 줄 바꿈 문자로 줄 바꿈(Line Feed, LF)을 사용하지만, 윈도우 운영체제에서는 줄 바꿈 문자로 CR과 LF를 함께 사용합니다.
 그렇기 때문에 유닉스 기반의 운영체제에서는 Windows에서 생성된 텍스트 파일을 처리할 때 이러한 CR 문자가 문제가 될 수 있습니다.
 sed 유틸리티를 사용하여 스크립트 파일에서 Windows에서 생성된 줄 바꿈 문자(Carriage Return, CR)를 제거할 수 있습니다.</description>
     </item>
@@ -72,10 +72,9 @@ sed 유틸리티를 사용하여 스크립트 파일에서 Windows에서 생성�
       <guid>https://haservi.github.io/posts/devops/aws/infra-tips/</guid>
       <description>인프라 관련 내용 정리가 필요할 것 같아 중요한 키워드 정도로 정리한 내용입니다.
 AWS EC2 접속 명령어 기본적으로 pem키를 발급받고 네트워크 보안이 올바르면 아래와 같은 명령어로 pem키를 이용해 접속 가능합니다.
-chmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기
-history bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.
-내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.
-bastion host에서 공개키를 생성한 후 접속하려는 서비스 서버에 키를 추가하여 접속할 수 있습니다.</description>
+1 2 chmod 400 [pem파일명] ssh -i [pem키 파일명] ubuntu@[퍼블릭 IP 주소] 입력했던 콘솔 보기
+1 history bastion host 설정 bastion host란 내부와 외부 네트워크 사이에서 게이트 역할을 수행하는 호스트입니다.
+내부 서버나 중요 리소스를 보호하기 위해 생성되며, 일반 유저들에게는 공개하지 않습니다.</description>
     </item>
     
     <item>
@@ -85,7 +84,7 @@ bastion host에서 공개키를 생성한 후 접속하려는 서비스 서버�
       
       <guid>https://haservi.github.io/posts/tips/window-nodejs-version-change/</guid>
       <description>종종 프로젝트 중에는 특정 Node.js 버전에서만 동작하는 프로젝트가 있습니다. 이럴 경우 Docker를 이용하여 컨테이너를 만들거나 로컬인 경우 해당 버전에 맞는 Node.js를 설치해야 합니다.
-이번 내용은 전에 작성한 jdk 버전을 변경하듯이 Node.js 버전을 변경하는 방법에 대해 알아볼께요. Info
+이번 내용은 전에 작성한 jdk 버전을 변경하듯이 Node.js 버전을 변경하는 방법에 대해 알아볼께요. 알림
 해당 글은 Window를 기준으로 작성했습니다.
 Mac의 경우는 해당 stackoverflow 질문글을 참조해주세요.
 먼저 해당 링크에서 우측의 Release 버튼을 선택합니다. nvm-setup.exe 파일을 다운로드 받습니다. 아래와 같이 파일을 설치하고 버전을 커맨드로 입력해보면 설치된 것을 확인할 수 있습니다.</description>
@@ -126,7 +125,7 @@ Port 강제 종료 방법 먼저 windows + R 을 눌러 실행 스크립트를 �
 위(Show Classes)에서부터 아래(Show Words)까지 전부 체크 해제를 하면 자동완성 기능이 비활성화 됩니다.
 그렇지만 너무 많은 옵션이 있기 때문에 전부 클릭 해제하기가 귀찮은 경우 아래의 JSON으로 추가할 수 있습니다.
 오른쪽 위의 설정으로 들어가서 아래의 값들을 복사 후 붙여 넣어주면 됩니다.
-&amp;#34;explorer.compactFolders&amp;#34;: false, &amp;#34;explorer.confirmDragAndDrop&amp;#34;: false, &amp;#34;editor.</description>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 &amp;#34;explorer.</description>
     </item>
     
     <item>
@@ -139,7 +138,7 @@ Port 강제 종료 방법 먼저 windows + R 을 눌러 실행 스크립트를 �
 message의 형태는 다를 수 있지만 기본적인 목적은 같습니다.
 잘 만들어진 git 커밋 메시지는 해당 프로젝트에서 작업하는 팀원과 미래의 자신에게 변경 사항에 대한 의미를 전달하기 위한 좋은 방법입니다.
 일반적으로 커밋 메시지는 다음과 같은 구조를 권장합니다.
-type: Subject body footer 보통 위와 같은 형태입니다.
+1 2 3 4 5 type: Subject body footer 보통 위와 같은 형태입니다.
 제목은 새로운 기능 추가인 경우 feat: Subject, Feat: Subject, Feat Subject, Feature Subject 등 조금씩 type의 형태가 다르지만 그건 프로젝트에 따라 일관되게 맞추면 됩니다.</description>
     </item>
     

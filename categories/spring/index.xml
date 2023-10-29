@@ -10,7 +10,23 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 07 Jul 2022 00:19:23 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/spring/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 20:45:31 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/spring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring 프로젝트 구조 및 공통 코드 처리 방법</title>
+      <link>https://haservi.github.io/posts/spring/spring-project-structure-proecess/</link>
+      <pubDate>Sat, 14 Oct 2023 20:45:31 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/spring/spring-project-structure-proecess/</guid>
+      <description>스프링 프로젝트 중 공통적인 처리에 대한 방법 및 코드 개선에 대한 내용에 대한 정리입니다.
+알림
+해당 글은 Spring으로 사내 프로젝트를 하면서 느낀 코드 개선 및 경험에 대한 내용입니다.
+여러 개발 블로그의 경험과 노하우가 담긴 글을 참조하며, 추가한 내용입니다.
+글의 내용이 정답이 아닐 수 있으며, 개인적인 생각으로 가볍게 읽어주세요. :D..
+프로젝트 코드 공통 처리 및 여러 Tips 참조링크 : Spring Guide - Directory
+최근 프로젝트의 구조는 아래와 같습니다.
+위와 같이 패키지를 domain과 global로 나누어 환경을 구축했습니다.</description>
+    </item>
+    
     <item>
       <title>IntelliJ에서 스프링 프로젝트 관련 설정</title>
       <link>https://haservi.github.io/posts/spring/spring-intellij-start-setting/</link>
@@ -27,14 +43,13 @@ Gradle빌드와 IntelliJ IDEA 빌드의 차이는 증분 빌드 여부입니다.
     
     <item>
       <title>H2 2.1.210 Upgrade시 JPA 테스트 에러 해결 방법</title>
-      <link>https://haservi.github.io/posts/spring/spadework/h2-version-upgrade-error/</link>
+      <link>https://haservi.github.io/posts/spring/h2-version-upgrade-error/</link>
       <pubDate>Sat, 29 Jan 2022 19:16:48 +0900</pubDate>
       
-      <guid>https://haservi.github.io/posts/spring/spadework/h2-version-upgrade-error/</guid>
+      <guid>https://haservi.github.io/posts/spring/h2-version-upgrade-error/</guid>
       <description>H2를 최신 버전(2.1.210)으로 업데이트하니 아래와 같은 에러가 발생했습니다.
-Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when &amp;#39;hibernate.dialect&amp;#39; not set ... java.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ... 일단 임시방편으로 H2 url을 연결하는 곳에 추가적으로 옵션(;MODE=LEGACY)을 넣으면 해결됩니다.
-url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용하면 H2 1.X용으로 작성된 응용 프로그램에 대한 일부 호환성 기능이 활성화됩니다. Hibernate ORM에서 H2에 대해서 유효하지 않은 SQL을 생성하기 때문이라고 합니다.
-그렇다면.. hibernate ORM에서 H2 방언에 대한 문제를 해결해야 합니다.</description>
+1 2 3 4 5 6 7 8 Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when &amp;#39;hibernate.dialect&amp;#39; not set ... java.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ... 일단 임시방편으로 H2 url을 연결하는 곳에 추가적으로 옵션(;MODE=LEGACY)을 넣으면 해결됩니다.
+1 url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용하면 H2 1.X용으로 작성된 응용 프로그램에 대한 일부 호환성 기능이 활성화됩니다. Hibernate ORM에서 H2에 대해서 유효하지 않은 SQL을 생성하기 때문이라고 합니다.</description>
     </item>
     
     <item>
@@ -49,7 +64,7 @@ url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY MODE=LEGACY를 모드를 사용�
 더 나아가 Querydsl을 이용하면 좀 더 직관적이고 오류 없이 자바를 이용하여 작성할 수 있습니다.
 간단한 예시로 회원 조회를 하는 경우 JPQL과 Querydsl의 차이는 아래와 같습니다.
 JPQL
-public List&amp;lt;Member&amp;gt; findAll() { EntityManager entityManager; return entityManager.</description>
+1 2 3 4 5 6 public List&amp;lt;Member&amp;gt; findAll() { EntityManager entityManager; return entityManager.</description>
     </item>
     
     <item>
@@ -74,7 +89,7 @@ JPA란? JPA(Java Persistence API)는 ORM(Object-Relational Mapping) 기술 표�
       <description>@Autowired는 필드 주입이고, @RequiredArgsConstructor는 생성자 주입(Constructor Injection) 입니다.
 @RequiredArgsConstructor는 Lombok에서 제공하는 어노테이션 입니다.
 결론적으로 생성자 주입을 권장합니다. 인텔리제이에서 코드를 작성하다보면 @Autowired를 사용하면 아래와 같은 경고를 알려줍니다.
-Warning
+경고
 Field injection is not recommended
 Inspection info: Spring Team recommends: &amp;ldquo;Always use constructor based dependency injection in your beans. Always use assertions for mandatory dependencies&amp;rdquo;.
 뭐.. 추천하지 않고 생성자 주입방식을 쓰라고 하는거 같네요.
@@ -102,7 +117,7 @@ interface는 기능을 추상화하여 클래스간 결합도를 낮추어 주�
       <guid>https://haservi.github.io/posts/spring/hibernate-ddl-auto/</guid>
       <description>ddl-auto 란 JPA에서는 기본적으로 Entity에 테이블을 매핑하면 쿼리를 사용하지 않고 값을 가져올 수 있습니다.
 설정 옵션으로
-jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
+1 2 3 jpa: hibernate: ddl-auto: create #create-drop, update, validate, none 각각의 옵션을 봐보면 아래와 같습니다.
 create : SessionFactory 시작시 스키마를 삭제하고 다시 생성 create-drop : SessionFactory 종료 시 스키마를 삭제 update : SessionFactory 연결된 DB와 비교하여 추가된 항목은 추가 만약 같은 변수명이면 오류발생 validate : SessionFactory 시작시 객체구성과 스키마가 다르다면 예외 발생 none: 아무것도 안함 실제 서비스 배포시에는 create, create-drop, update 와 같은 옵션을 사용하면 안되지만 개발 초기 테스트시에는 유용하게 사용할 수 있습니다.</description>
     </item>
     

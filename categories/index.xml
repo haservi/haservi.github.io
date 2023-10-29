@@ -10,7 +10,25 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 28 Jun 2023 20:47:06 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 20:45:31 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Refactor</title>
+      <link>https://haservi.github.io/categories/refactor/</link>
+      <pubDate>Sat, 14 Oct 2023 20:45:31 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/categories/refactor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://haservi.github.io/categories/spring/</link>
+      <pubDate>Sat, 14 Oct 2023 20:45:31 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/categories/spring/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Node js</title>
       <link>https://haservi.github.io/categories/node-js/</link>
@@ -62,15 +80,6 @@
       <pubDate>Tue, 02 Aug 2022 23:22:38 +0900</pubDate>
       
       <guid>https://haservi.github.io/categories/nas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spring</title>
-      <link>https://haservi.github.io/categories/spring/</link>
-      <pubDate>Thu, 07 Jul 2022 00:19:23 +0900</pubDate>
-      
-      <guid>https://haservi.github.io/categories/spring/</guid>
       <description></description>
     </item>
     
