@@ -10,7 +10,25 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 Oct 2023 20:45:31 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Nov 2023 19:26:03 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LwM2M</title>
+      <link>https://haservi.github.io/categories/lwm2m/</link>
+      <pubDate>Sat, 11 Nov 2023 19:26:03 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/categories/lwm2m/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WireShark</title>
+      <link>https://haservi.github.io/categories/wireshark/</link>
+      <pubDate>Sat, 11 Nov 2023 19:26:03 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/categories/wireshark/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Refactor</title>
       <link>https://haservi.github.io/categories/refactor/</link>
