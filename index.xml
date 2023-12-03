@@ -10,7 +10,20 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 11 Nov 2023 19:26:03 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Dec 2023 22:28:29 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>가상 면접 사례로 배우는 대규모 시스템 설계 기초를 읽고</title>
+      <link>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</link>
+      <pubDate>Sat, 02 Dec 2023 22:28:29 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</guid>
+      <description>대규모 시스템 설계를 해본적이 없으니.. 궁금해서 해당 책을 읽어봤습니다.
+책의 전반적인 내용은 어렵지 않습니다. 왜냐하면 내용이 깊게 들어가지 않고 말그대로 설계를 하기 때문에 생각보다 읽는데는 쉽다고 느껴졌습니다.
+깊게 들어가면 어렵겠지만 책에서는 아주 깊게 들어가지는 않은 것 같아요.
+책의 챕터는 12장 정도로 돼어 있으며, 챕터마다 설계해야 하는 서비스가 다릅니다.
+책의 내용은 가상 면접을 하는 것처럼 면접관이 프로젝트에 대해 설계를 요청하면, 면접자는 해당 프로젝트의 서비스의 목적과 규모 등에 맞게 질문과 답변을 하는 방식입니다.</description>
+    </item>
+    
     <item>
       <title>와이어 샤크를 이용해 DTLS1.2 handshake 확인하기</title>
       <link>https://haservi.github.io/posts/tips/wireshark-dtls-handshake/</link>
