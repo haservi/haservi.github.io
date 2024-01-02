@@ -10,7 +10,20 @@
       <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Aug 2022 23:22:38 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/nas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 22:22:18 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/nas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Synology NAS Docker MariaDB 설치하기</title>
+      <link>https://haservi.github.io/posts/devops/docker/nas-mariadb-setting/</link>
+      <pubDate>Mon, 01 Jan 2024 22:22:18 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/devops/docker/nas-mariadb-setting/</guid>
+      <description>어느 날 NAS를 충분하게 이용하지 못한다는 생각이 문득 들었습니다.
+우선 기존 앱에서 제공하는 Photos, 파일 저장소 정도만 이용하며, Docker Gitlab 서버 배포 중이긴 하지만.. 그냥 배포중 입니다.
+이 정도도 충분하긴 하지만 조금 더 활용하면 좋지 않을까라는 생각을 하게 됐습니다.
+문득 생각해 보니 NAS에서 Docker를 사용할 수 있다는 것은 개인적으로 운용할 수 있는 장난감 서버로 최적이지 않을까라는 생각이 들었습니다.
+물론 아마도 많은 트래픽은 감당하지 못하더라도 개인적인 용도로 테스트 서버 정도는 만들 수 있지 않을까 생각됩니다.</description>
+    </item>
+    
     <item>
       <title>Synology NAS로 Docker GitLab 설치하기</title>
       <link>https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/</link>
