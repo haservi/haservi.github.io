@@ -6,8 +6,8 @@
     <description>Recent content in Docker on Halog</description>
     <image>
       <title>Halog</title>
-      <url>https://haservi.github.io/images/cover.jpeg</url>
-      <link>https://haservi.github.io/images/cover.jpeg</link>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 01 Jan 2024 22:22:18 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
