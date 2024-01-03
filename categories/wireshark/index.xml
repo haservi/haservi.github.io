@@ -17,7 +17,7 @@
       <pubDate>Sat, 11 Nov 2023 19:26:03 +0900</pubDate>
       
       <guid>https://haservi.github.io/posts/tips/wireshark-dtls-handshake/</guid>
-      <description>프로젝트 중 LwM2M과 Anjay의 통신이 간헐적으로 끊기는 현상이 발생하여 이와 관련하여 프로토콜의 개념에 대해 알아보고, 와이어샤크를 이용해 DTLS handshake를 확인한 내용입니다.
+      <description>LwM2M과 Anjay의 통신이 간헐적으로 끊기는 현상이 발생하여 이와 관련하여 프로토콜의 개념에 대해 알아보고, 와이어샤크를 이용해 DTLS handshake를 확인한 내용입니다.
 LwM2M에 대해 LwM2M (Lightweight M2M)은 경량화된 기기 간 통신 프로토콜로서, IoT (Internet of Things) 기기와 서버 간의 효율적인 통신을 위해 설계되었습니다.
 LwM2M은 경량화된 프로토콜로, 리소스 제약이 있는 IoT 기기에서도 효율적으로 동작합니다. 작은 패킷 크기와 최소한의 대역폭을 사용하여 효율적인 통신을 제공합니다.
 LwM2M은 RESTful 아키텍처를 기반으로 하며, HTTP/CoAP 프로토콜을 사용하여 기기와 서버 간 통신을 지원합니다.</description>
