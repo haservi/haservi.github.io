@@ -6,8 +6,8 @@
     <description>Recent content in MariaDB on Halog</description>
     <image>
       <title>Halog</title>
-      <url>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://haservi.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://haservi.github.io/images/cover.jpeg</url>
+      <link>https://haservi.github.io/images/cover.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 01 Jan 2024 22:22:18 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/mariadb/index.xml" rel="self" type="application/rss+xml" />
