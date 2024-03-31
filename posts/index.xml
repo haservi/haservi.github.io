@@ -10,7 +10,20 @@
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 01 Jan 2024 22:22:18 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Mar 2024 15:45:26 +0900</lastBuildDate><atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023년 회고</title>
+      <link>https://haservi.github.io/posts/review/retrospective-2023/</link>
+      <pubDate>Sun, 31 Mar 2024 15:45:26 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/review/retrospective-2023/</guid>
+      <description>매년 초가 되면 항상 회고를 작성해야겠다 생각하지만, 시간이 지나가면서 점점 다음으로 미루게 되는 경향이 있네요.
+1분기는 끝나가지만 남은 3분기를 그래도 이전에 무엇을 했고, 올해는 어떻게 할지 적어보려 합니다.
+💼 사내 업무 작년에는 사내 프로젝트로 Node.js로 Backend 서버 구현과 C/C++이 로봇 프로그램 기능 추가 및 유지 보수를 진행했었습니다.
+Node.js를 이용한 backend는 처음 구현해 봤지만, 생각보다다 구현이 쉬웠고, 성능도 괜찮은 것 같다고 생각합니다.
+중간에 코드가 적응된 뒤에 JavaScript의 코드를 TypeScript로 바꾼 점도 이후 유지보수에 더 좋았던 것 같아요.</description>
+    </item>
+    
     <item>
       <title>Synology NAS Docker MariaDB 설치하기</title>
       <link>https://haservi.github.io/posts/devops/docker/nas-mariadb-setting/</link>

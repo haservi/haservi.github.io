@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/review/retrospective-2023/</loc>
+    <lastmod>2024-03-31T15:45:26+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/devops/docker/nas-mariadb-setting/</loc>
     <lastmod>2024-01-01T22:22:18+09:00</lastmod>
   </url><url>
@@ -137,22 +140,22 @@
     <loc>https://haservi.github.io/posts/algorithms/programmers/level1/01-algo-secret-map/</loc>
     <lastmod>2021-08-20T01:31:31+09:00</lastmod>
   </url><url>
+    <loc>https://haservi.github.io/</loc>
+    <lastmod>2024-03-31T15:45:26+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2024-03-31T15:45:26+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/categories/</loc>
     <lastmod>2024-01-01T22:22:18+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/docker/</loc>
     <lastmod>2024-01-01T22:22:18+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/</loc>
-    <lastmod>2024-01-01T22:22:18+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/categories/mariadb/</loc>
     <lastmod>2024-01-01T22:22:18+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/nas/</loc>
-    <lastmod>2024-01-01T22:22:18+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/posts/</loc>
     <lastmod>2024-01-01T22:22:18+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/lwm2m/</loc>
