@@ -10,7 +10,23 @@
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 02 Jun 2022 20:20:49 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Apr 2024 20:52:14 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rectangle 이용하여 화면 크기 조절하기</title>
+      <link>https://haservi.github.io/posts/tools/how-to-rectangle/</link>
+      <pubDate>Thu, 25 Apr 2024 20:52:14 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tools/how-to-rectangle/</guid>
+      <description>윈도우를 쓰면 PowerToys를 이용하면 더 세밀하게 화면 크기를 조절할 수 있습니다.
+mac에서는 PowerToys가 없는 것 같지만 magnet 또는 rectangle를 이용하면 화면 크기 조절을 할 수 있습니다.
+magnet도 좋은 앱이지만 유료이기 때문에 무료인 rectangle을 추천합니다.
+개인적으로 이것만 이용해도 화면 조절에 큰 무리 없이 이용할 수 있다 생각됩니다.
+설치 및 설정 Rectangle 해당 링크에서 우선 다운로드 후 설치합니다.
+사실 Rectangle은 별로 설정할게 없습니다.
+설치 후 단축키 설정만 하면 됩니다.
+제가 설정한 단축키 설정은 아래와 같습니다.</description>
+    </item>
+    
     <item>
       <title>DBeaver 커스텀 셋팅하기</title>
       <link>https://haservi.github.io/posts/tools/how-to-dbeaver/</link>

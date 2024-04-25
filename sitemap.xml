@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tools/how-to-rectangle/</loc>
+    <lastmod>2024-04-25T20:52:14+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/books/hexagonal-developer/</loc>
     <lastmod>2024-04-18T19:00:02+09:00</lastmod>
   </url><url>
@@ -143,16 +146,19 @@
     <loc>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</loc>
     <lastmod>2023-12-02T22:28:29+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/books/</loc>
-    <lastmod>2024-04-18T19:00:02+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2024-04-18T19:00:02+09:00</lastmod>
+    <lastmod>2024-04-25T20:52:14+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2024-04-18T19:00:02+09:00</lastmod>
+    <lastmod>2024-04-25T20:52:14+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2024-04-25T20:52:14+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/tools/</loc>
+    <lastmod>2024-04-25T20:52:14+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/books/</loc>
     <lastmod>2024-04-18T19:00:02+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/docker/</loc>
@@ -196,9 +202,6 @@
   </url><url>
     <loc>https://haservi.github.io/categories/java/</loc>
     <lastmod>2022-08-09T22:32:07+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/categories/tools/</loc>
-    <lastmod>2022-06-02T20:20:49+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/algorithm/</loc>
     <lastmod>2022-02-14T20:20:41+09:00</lastmod>
