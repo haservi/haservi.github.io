@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ollama on Halog</title>
+    <link>https://haservi.github.io/categories/ollama/</link>
+    <description>Recent content in Ollama on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 10 Jun 2024 22:41:29 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/ollama/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ollama LLM Model 사용하기</title>
+      <link>https://haservi.github.io/posts/review/ollama-custom/</link>
+      <pubDate>Mon, 10 Jun 2024 22:41:29 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/review/ollama-custom/</guid>
+      <description>평소 AI에 관심만 있던 상황에서 최근 우연치 않게 야놀자 회사에서 LLM(Large Language Models) 관련 논문이 LLM 우수 모델로 수상됐다는 기사를 보고 급 관심이 가서 LLM을 어떻게 쓰는지 찾아봤습니다.
+사실 논문을 봐도 무슨 내용인지 모르겠더라구요.
+대략적으로 영어 중심 언어 모델을 다른 언어(한국어)로 확장하고 새로운 언어 토큰을 효과적으로 통합하는 방법이라 합니다. 이런 것들을 보면 정말 대단하신 분들이 많은 것 같고 나는 코딩하는 김아무개가 아닐까..
+LLM 관련하여 계속 찾다 보니 Ollama3가 학습한 LLM 모델을 실행시켜 준다는 것을 알고 해당 방법으로 로컬에서 LLM 모델을 사용하는 방법에 대해 포스팅 해보겠습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
