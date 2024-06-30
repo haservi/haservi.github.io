@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Review on Halog</title>
+    <link>https://haservi.github.io/categories/review/</link>
+    <description>Recent content in Review on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 30 Jun 2024 18:10:54 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>프로그래머스 Java 도서 리뷰</title>
+      <link>https://haservi.github.io/posts/books/programmers-java/</link>
+      <pubDate>Sun, 30 Jun 2024 18:10:54 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/books/programmers-java/</guid>
+      <description>취업과 이직을 위한 프로그래머스 코딩 테스트 문제 풀이 전략 : 자바 편 도서 리뷰입니다.</description>
+    </item>
+    
+  </channel>
+</rss>
