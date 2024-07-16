@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tips/git-recursive-pull/</loc>
+    <lastmod>2024-07-16T19:53:00+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/books/programmers-java/</loc>
     <lastmod>2024-06-30T18:10:54+09:00</lastmod>
   </url><url>
@@ -155,16 +158,22 @@
     <loc>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</loc>
     <lastmod>2023-12-02T22:28:29+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/algorithm/</loc>
-    <lastmod>2024-06-30T18:10:54+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2024-06-30T18:10:54+09:00</lastmod>
+    <lastmod>2024-07-16T19:53:00+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/git/</loc>
+    <lastmod>2024-07-16T19:53:00+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2024-06-30T18:10:54+09:00</lastmod>
+    <lastmod>2024-07-16T19:53:00+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2024-07-16T19:53:00+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/tips/</loc>
+    <lastmod>2024-07-16T19:53:00+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/algorithm/</loc>
     <lastmod>2024-06-30T18:10:54+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/review/</loc>
@@ -203,9 +212,6 @@
     <loc>https://haservi.github.io/categories/node-js/</loc>
     <lastmod>2023-06-28T20:47:06+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/tips/</loc>
-    <lastmod>2023-05-11T19:14:09+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/categories/gerrit/</loc>
     <lastmod>2023-03-20T13:42:30+09:00</lastmod>
   </url><url>
@@ -220,9 +226,6 @@
   </url><url>
     <loc>https://haservi.github.io/categories/jpa/</loc>
     <lastmod>2022-01-15T17:24:58+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/categories/git/</loc>
-    <lastmod>2021-12-29T22:18:20+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/linux/</loc>
     <lastmod>2021-11-22T20:49:25+09:00</lastmod>

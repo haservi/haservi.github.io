@@ -10,7 +10,25 @@
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 30 Jun 2024 18:10:54 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jul 2024 19:53:00 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://haservi.github.io/categories/git/</link>
+      <pubDate>Tue, 16 Jul 2024 19:53:00 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips</title>
+      <link>https://haservi.github.io/categories/tips/</link>
+      <pubDate>Tue, 16 Jul 2024 19:53:00 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/categories/tips/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Algorithm</title>
       <link>https://haservi.github.io/categories/algorithm/</link>
@@ -129,15 +147,6 @@
     </item>
     
     <item>
-      <title>Tips</title>
-      <link>https://haservi.github.io/categories/tips/</link>
-      <pubDate>Thu, 11 May 2023 19:14:09 +0900</pubDate>
-      
-      <guid>https://haservi.github.io/categories/tips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Gerrit</title>
       <link>https://haservi.github.io/categories/gerrit/</link>
       <pubDate>Mon, 20 Mar 2023 13:42:30 +0900</pubDate>
@@ -161,15 +170,6 @@
       <pubDate>Sat, 15 Jan 2022 17:24:58 +0900</pubDate>
       
       <guid>https://haservi.github.io/categories/jpa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://haservi.github.io/categories/git/</link>
-      <pubDate>Wed, 29 Dec 2021 22:18:20 +0900</pubDate>
-      
-      <guid>https://haservi.github.io/categories/git/</guid>
       <description></description>
     </item>
     

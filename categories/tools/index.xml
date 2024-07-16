@@ -17,11 +17,7 @@
       <pubDate>Sun, 05 May 2024 19:08:24 +0900</pubDate>
       
       <guid>https://haservi.github.io/posts/tools/how-to-raycast/</guid>
-      <description>Raycast란 Mac에서 이용할 수 있는 Raycast는 빠르고 확장 가능한 생산성 프로그램입니다. 간단하게 맥의 스팟라이트 또는 Alfred의 대체제로 생각하면 될 것 같아요.
-Alfred도 나름 잘 이용하고 있었지만, Raycast가 조금 더 상위 호환되는 느낌입니다. 그래서 제 기준으로 자주 사용하는 기능에 대해 정리했습니다.
-설치 및 기능 소개 brew를 이용(brew install --cask raycast)하거나 직접 다운로드링크하면 됩니다.
-기본 기능외에 확장 기능까지 이용하면 정말 다양한 기능을 활용 할 수 있을 것이라 생각됩니다.
-기본 설정하기 프로그램 설치 후 아래와 같이 프로그램 실행 단축키(option + space)를 설정합니다.</description>
+      <description>Raycast의 특정 기능 및 유용한 팁을 공유합니다.</description>
     </item>
     
     <item>

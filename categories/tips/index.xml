@@ -10,7 +10,16 @@
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 11 May 2023 19:14:09 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jul 2024 19:53:00 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git 상위 폴더에서 한번에 pull하기</title>
+      <link>https://haservi.github.io/posts/tips/git-recursive-pull/</link>
+      <pubDate>Tue, 16 Jul 2024 19:53:00 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/git-recursive-pull/</guid>
+      <description>상위 폴더에서 여러 Git 저장소를 한번에 pull 하는 방법입니다.(window, mac)</description>
+    </item>
+    
     <item>
       <title>리눅스에서 활성화된 process 종료 방법</title>
       <link>https://haservi.github.io/posts/tips/ubuntu-port-kill/</link>
