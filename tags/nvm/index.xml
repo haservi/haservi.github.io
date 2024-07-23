@@ -21,8 +21,8 @@
 이번 내용은 전에 작성한 jdk 버전을 변경하듯이 Node.js 버전을 변경하는 방법에 대해 알아볼께요.
 알림
 해당 글은 Window를 기준으로 작성했습니다.
-Mac의 경우는 해당 stackoverflow 질문글을 참조해주세요.
-먼저 해당 링크에서 우측의 Release 버튼을 선택합니다. nvm-setup.exe 파일을 다운로드 받습니다. 아래와 같이 파일을 설치하고 버전을 커맨드로 입력해보면 설치된 것을 확인할 수 있습니다.</description>
+Mac의 경우는 해당 stackoverflow 질문글 을 참조해주세요.
+먼저 해당 링크 에서 우측의 Release 버튼을 선택합니다. nvm-setup.exe 파일을 다운로드 받습니다. 아래와 같이 파일을 설치하고 버전을 커맨드로 입력해보면 설치된 것을 확인할 수 있습니다.</description>
     </item>
     
   </channel>

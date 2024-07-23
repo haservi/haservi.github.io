@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Flutter on Halog</title>
+    <link>https://haservi.github.io/categories/flutter/</link>
+    <description>Recent content in Flutter on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://haservi.github.io/categories/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>안드로이드 Wi-Fi 무선 디버깅 방법</title>
+      <link>https://haservi.github.io/posts/tips/android-wireless-debug/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/android-wireless-debug/</guid>
+      <description>Android 무선 디버깅 하는 방법입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -30,7 +30,7 @@
 mac에서는 PowerToys가 없는 것 같지만 magnet 또는 rectangle를 이용하면 화면 크기 조절을 할 수 있습니다.
 magnet도 좋은 앱이지만 유료이기 때문에 무료인 rectangle을 추천합니다.
 개인적으로 이것만 이용해도 화면 조절에 큰 무리 없이 이용할 수 있다 생각됩니다.
-설치 및 설정 Rectangle 해당 링크에서 우선 다운로드 후 설치합니다.
+설치 및 설정 Rectangle 해당 링크 에서 우선 다운로드 후 설치합니다.
 사실 Rectangle은 별로 설정할게 없습니다.
 설치 후 단축키 설정만 하면 됩니다.
 제가 설정한 단축키 설정은 아래와 같습니다.</description>
@@ -45,7 +45,7 @@ magnet도 좋은 앱이지만 유료이기 때문에 무료인 rectangle을 추�
       <description>주로 DB를 관리하는 툴로 HeidiSQL를 많이 사용했습니다.
 Spring Data JPA와 QueryDSL 조합을 이용한 뒤로 어느 정도 익숙해지고 나서는 쿼리를 짜는 일이 많이 없지만, 조금 복잡한 쿼리의 경우는 쿼리를 작성해보고 성능 체크 후 QueryDSL로 변환하여 작업합니다.
 하지만 Mac환경에서는 HeidiSQL이 Mac을 지원하지 않기 때문에 다른 DB 툴을 사용해야 합니다.
-Mac을 지원하는 다양한 DB툴 중에 평가가 꽤 괜찮은 DBeaver링크에 대해 알아보겠습니다.
+Mac을 지원하는 다양한 DB툴 중에 평가가 꽤 괜찮은 DBeaver링크 에 대해 알아보겠습니다.
 Dbeaver 란? DBeaver는 Windows와 Mac 모두 지원 거의 모든 Database를 지원(MySQL, PostgreSQL, MariaDB, SQLite, Oracle, DB2, SQL Server&amp;hellip;) 오픈 소스 기반으로 다양한 확장 플러그인 지원 Entity Diagarm 지원 DB 내보내기 불러오기 지원 Community 버전을 이용해도 위와 같은 기능을 모두 사용할 수 있습니다.</description>
     </item>
     
@@ -58,7 +58,7 @@ Dbeaver 란? DBeaver는 Windows와 Mac 모두 지원 거의 모든 Database를 �
       <description>logitech options 란? 일부 로지텍 마우스 중에는 특정 소프트웨어를 지원하는 기능이 있습니다.
 그 중 logitech options는 Flow기능으로 기기간 파일전송이나 하나의 마우스로 여러대의 기기를 제어할 수 있습니다.
 이번에 소개해드릴 기능은 Flow기능이 아닌 마우스 제스처 모드에 따른 설정입니다.
-설치 해당 사이트에서 OS에 맞는 프로그램을 설치하면 됩니다.
+설치 해당 사이트 에서 OS에 맞는 프로그램을 설치하면 됩니다.
 설치 후 정상적으로 마우스가 연결되면 아래와 비슷한 사진이 보입니다.
 커스텀 설정하기 프로그램 실행 후 흰색 동그라미가 있는 모든 버튼이 커스텀 가능합니다.
 저의 경우 뒤로가기와 앞으로가기 버튼만 커스텀하여 사용하고 있습니다.</description>
@@ -73,8 +73,8 @@ Dbeaver 란? DBeaver는 Windows와 Mac 모두 지원 거의 모든 Database를 �
       <description>작업의 효율을 높이기 위해 기존 화면에서 필요한 정보를 잠시 동안 캡쳐하는 방법이 있습니다.
 캡쳐프로그램은 정말 다양하게 존재하는데요. 예를 들어 알캡쳐, picpic, 윈도우 기본 내장 캡쳐, pureRef, snipaste 등 많이 있습니다.
 저 같은 경우 포스팅 할 때 화면캡쳐 용도로는 picpick을 자주 이용하며, 업무 중 필요한 정보를 캡쳐 할 때는 snipaste를 사용합니다.
-picpick의 경우는 워낙 잘 알려져 있기 때문에 snipaste에 대해 알아보겠습니다.
-Snipaste (download link) Snipaste는 특정 화면을 지정하여 캡쳐하여 화면에 띄워놓을 수 있습니다.</description>
+picpick 의 경우는 워낙 잘 알려져 있기 때문에 snipaste에 대해 알아보겠습니다.
+Snipaste (download link ) Snipaste는 특정 화면을 지정하여 캡쳐하여 화면에 띄워놓을 수 있습니다.</description>
     </item>
     
     <item>
