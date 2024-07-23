@@ -10,7 +10,16 @@
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 16 Jul 2024 19:53:00 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Jul 2024 00:33:33 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>안드로이드 Wi-Fi 무선 디버깅 방법</title>
+      <link>https://haservi.github.io/posts/tips/android-wireless-debug/</link>
+      <pubDate>Tue, 23 Jul 2024 00:33:33 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/tips/android-wireless-debug/</guid>
+      <description>Android 무선 디버깅 하는 방법입니다.</description>
+    </item>
+    
     <item>
       <title>Git 상위 폴더에서 한번에 pull하기</title>
       <link>https://haservi.github.io/posts/tips/git-recursive-pull/</link>
@@ -660,15 +669,6 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
 다행히 지도 암호를 해독할 방법을 적어놓은 메모도 함께 발견했다.
 지도는 한 변의 길이가 n인 정사각형 배열 형태로, 각 칸은 &amp;ldquo;공백&amp;rdquo;(&amp;quot; &amp;ldquo;) 또는 &amp;ldquo;벽&amp;rdquo;(&amp;rdquo;#&amp;quot;) 두 종류로 이루어져 있다. 전체 지도는 두 장의 지도를 겹쳐서 얻을 수 있다. 각각 &amp;ldquo;지도 1&amp;quot;과 &amp;ldquo;지도 2&amp;quot;라고 하자.
 지도 1 또는 지도 2 중 어느 하나라도 벽인 부분은 전체 지도에서도 벽이다.</description>
-    </item>
-    
-    <item>
-      <title>안드로이드 Wi-Fi 무선 디버깅 방법</title>
-      <link>https://haservi.github.io/posts/tips/android-wireless-debug/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://haservi.github.io/posts/tips/android-wireless-debug/</guid>
-      <description>Android 무선 디버깅 하는 방법입니다.</description>
     </item>
     
     <item>

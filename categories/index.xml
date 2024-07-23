@@ -10,22 +10,40 @@
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 16 Jul 2024 19:53:00 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Jul 2024 00:33:33 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Git</title>
-      <link>https://haservi.github.io/categories/git/</link>
-      <pubDate>Tue, 16 Jul 2024 19:53:00 +0900</pubDate>
+      <title>Android</title>
+      <link>https://haservi.github.io/categories/android/</link>
+      <pubDate>Tue, 23 Jul 2024 00:33:33 +0900</pubDate>
       
-      <guid>https://haservi.github.io/categories/git/</guid>
+      <guid>https://haservi.github.io/categories/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flutter</title>
+      <link>https://haservi.github.io/categories/flutter/</link>
+      <pubDate>Tue, 23 Jul 2024 00:33:33 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/categories/flutter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tips</title>
       <link>https://haservi.github.io/categories/tips/</link>
-      <pubDate>Tue, 16 Jul 2024 19:53:00 +0900</pubDate>
+      <pubDate>Tue, 23 Jul 2024 00:33:33 +0900</pubDate>
       
       <guid>https://haservi.github.io/categories/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://haservi.github.io/categories/git/</link>
+      <pubDate>Tue, 16 Jul 2024 19:53:00 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/categories/git/</guid>
       <description></description>
     </item>
     
@@ -188,24 +206,6 @@
       <pubDate>Sun, 24 Oct 2021 22:41:45 +0900</pubDate>
       
       <guid>https://haservi.github.io/categories/programmers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Android</title>
-      <link>https://haservi.github.io/categories/android/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://haservi.github.io/categories/android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Flutter</title>
-      <link>https://haservi.github.io/categories/flutter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://haservi.github.io/categories/flutter/</guid>
       <description></description>
     </item>
     

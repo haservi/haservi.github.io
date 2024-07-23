@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tips/android-wireless-debug/</loc>
+    <lastmod>2024-07-23T00:33:33+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/tips/git-recursive-pull/</loc>
     <lastmod>2024-07-16T19:53:00+09:00</lastmod>
   </url><url>
@@ -155,24 +158,28 @@
     <loc>https://haservi.github.io/posts/algorithms/programmers/level1/01-algo-secret-map/</loc>
     <lastmod>2021-08-20T01:31:31+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/tips/android-wireless-debug/</loc>
-  </url><url>
     <loc>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</loc>
     <lastmod>2023-12-02T22:28:29+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2024-07-16T19:53:00+09:00</lastmod>
+    <loc>https://haservi.github.io/categories/android/</loc>
+    <lastmod>2024-07-23T00:33:33+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/git/</loc>
-    <lastmod>2024-07-16T19:53:00+09:00</lastmod>
+    <loc>https://haservi.github.io/categories/</loc>
+    <lastmod>2024-07-23T00:33:33+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/flutter/</loc>
+    <lastmod>2024-07-23T00:33:33+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2024-07-16T19:53:00+09:00</lastmod>
+    <lastmod>2024-07-23T00:33:33+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2024-07-16T19:53:00+09:00</lastmod>
+    <lastmod>2024-07-23T00:33:33+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/tips/</loc>
+    <lastmod>2024-07-23T00:33:33+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/git/</loc>
     <lastmod>2024-07-16T19:53:00+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/algorithm/</loc>
@@ -235,11 +242,7 @@
     <loc>https://haservi.github.io/categories/programmers/</loc>
     <lastmod>2021-10-24T22:41:45+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/android/</loc>
-  </url><url>
     <loc>https://haservi.github.io/archives/</loc>
-  </url><url>
-    <loc>https://haservi.github.io/categories/flutter/</loc>
   </url><url>
     <loc>https://haservi.github.io/projects/</loc>
   </url><url>
