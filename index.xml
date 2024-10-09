@@ -10,7 +10,25 @@
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Jul 2024 00:33:33 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Oct 2024 20:20:33 +0900</lastBuildDate><atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Udemy] Flutter &amp; Dart 강의 리뷰</title>
+      <link>https://haservi.github.io/posts/review/udemy-flutter/</link>
+      <pubDate>Wed, 09 Oct 2024 20:20:33 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/review/udemy-flutter/</guid>
+      <description>Flutter 강의를 듣고 개인적으로 필요한 내용을 정리했습니다.</description>
+    </item>
+    
+    <item>
+      <title>[도서] 유지보수하기 어렵게 코딩하는 방법을 읽고</title>
+      <link>https://haservi.github.io/posts/books/coding-difficult-to-maintain/</link>
+      <pubDate>Sat, 21 Sep 2024 16:21:41 +0900</pubDate>
+      
+      <guid>https://haservi.github.io/posts/books/coding-difficult-to-maintain/</guid>
+      <description>유지보수하기 어렵게 코딩하는 방법 도서를 읽은 리뷰입니다.</description>
+    </item>
+    
     <item>
       <title>안드로이드 Wi-Fi 무선 디버깅 방법</title>
       <link>https://haservi.github.io/posts/tips/android-wireless-debug/</link>
@@ -30,7 +48,7 @@
     </item>
     
     <item>
-      <title>프로그래머스 Java 도서 리뷰</title>
+      <title>[도서] 취업과 이직을 위한 프로그래머스 코딩 테스트 문제 풀이 전략 리뷰</title>
       <link>https://haservi.github.io/posts/books/programmers-java/</link>
       <pubDate>Sun, 30 Jun 2024 18:10:54 +0900</pubDate>
       
@@ -73,7 +91,7 @@ magnet도 좋은 앱이지만 유료이기 때문에 무료인 rectangle을 추�
     </item>
     
     <item>
-      <title>육각형 개발자 리뷰</title>
+      <title>[도서] 육각형 개발자 리뷰</title>
       <link>https://haservi.github.io/posts/books/hexagonal-developer/</link>
       <pubDate>Thu, 18 Apr 2024 19:00:02 +0900</pubDate>
       
@@ -150,7 +168,7 @@ JPA QueryDSL을 이용할 때 여러 조인과 entity의 관계를 정의하다 
     </item>
     
     <item>
-      <title>Inflearn 토비의 스프링 부트 강의 후기 및 정리</title>
+      <title>Inflearn 토비의 스프링 부트 강의 후기</title>
       <link>https://haservi.github.io/posts/review/inflearn-toby-spring/</link>
       <pubDate>Tue, 08 Aug 2023 23:38:46 +0900</pubDate>
       
@@ -174,7 +192,7 @@ ESLint는 코드의 퀄리티를 보장하도록 도와주는 도구입니다. �
     </item>
     
     <item>
-      <title>Udemy K8s Docker 강의 후기 및 정리</title>
+      <title>[Udemy] Udemy K8s Docker 강의 후기</title>
       <link>https://haservi.github.io/posts/review/udemy-k8s-docker/</link>
       <pubDate>Sun, 09 Jul 2023 10:58:32 +0900</pubDate>
       
@@ -672,7 +690,7 @@ ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA
     </item>
     
     <item>
-      <title>가상 면접 사례로 배우는 대규모 시스템 설계 기초를 읽고</title>
+      <title>[도서] 가상 면접 사례로 배우는 대규모 시스템 설계 기초를 읽고</title>
       <link>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</link>
       <pubDate>Sat, 02 Dec 2023 22:28:29 +0900</pubDate>
       
