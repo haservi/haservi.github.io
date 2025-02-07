@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tools/how-to-mac-key-setting/</loc>
+    <lastmod>2025-02-07T21:30:47+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/wpf/codiing-convention/</loc>
+    <lastmod>2025-01-20T19:19:55+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/devops/docker/docker-multi-stage-build/</loc>
     <lastmod>2024-10-23T08:47:48+09:00</lastmod>
   </url><url>
@@ -170,16 +176,22 @@
     <loc>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</loc>
     <lastmod>2023-12-02T22:28:29+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2024-10-23T08:47:48+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/categories/docker/</loc>
-    <lastmod>2024-10-23T08:47:48+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2024-10-23T08:47:48+09:00</lastmod>
+    <lastmod>2025-02-07T21:30:47+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2025-02-07T21:30:47+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/</loc>
+    <lastmod>2025-01-20T19:19:55+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/coding-convention/</loc>
+    <lastmod>2025-01-20T19:19:55+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/wpf/</loc>
+    <lastmod>2025-01-20T19:19:55+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/docker/</loc>
     <lastmod>2024-10-23T08:47:48+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/flutter/</loc>
