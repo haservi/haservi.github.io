@@ -9,13 +9,14 @@
       <url>https://haservi.github.io/cover.jpeg</url>
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 01 Jan 2024 22:22:18 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/mariadb/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 01 Jan 2024 22:22:18 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/categories/mariadb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Synology NAS Docker MariaDB 설치하기</title>
       <link>https://haservi.github.io/posts/devops/docker/nas-mariadb-setting/</link>
       <pubDate>Mon, 01 Jan 2024 22:22:18 +0900</pubDate>
-      
       <guid>https://haservi.github.io/posts/devops/docker/nas-mariadb-setting/</guid>
       <description>개인용 NAS를 충분히 이용하지 못한다는 생각이 문득 들었습니다.
 기본적으로 제공하는 Photos, 파일 저장소 정도만 이용하며, Docker Gitlab 서버 배포 중이긴 하지만.. 그냥 배포중 입니다.
@@ -23,6 +24,5 @@
 문득 생각해 보니 NAS에서 Docker를 사용할 수 있다는 것은 개인적으로 운용할 수 있는 장난감 서버로 최적이지 않을까라는 생각이 들었습니다.
 물론 아마도 많은 트래픽은 감당하지 못하더라도 개인적인 용도로 테스트 서버 정도는 만들 수 있지 않을까 생각됩니다.</description>
     </item>
-    
   </channel>
 </rss>

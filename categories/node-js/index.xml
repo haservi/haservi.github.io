@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Node js on Halog</title>
+    <title>Node Js on Halog</title>
     <link>https://haservi.github.io/categories/node-js/</link>
-    <description>Recent content in Node js on Halog</description>
+    <description>Recent content in Node Js on Halog</description>
     <image>
       <title>Halog</title>
       <url>https://haservi.github.io/cover.jpeg</url>
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 28 Jun 2023 20:47:06 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/node-js/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 28 Jun 2023 20:47:06 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/categories/node-js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nodejs 프로젝트 적응기</title>
       <link>https://haservi.github.io/posts/nodejs/start-nodejs/</link>
       <pubDate>Wed, 28 Jun 2023 20:47:06 +0900</pubDate>
-      
       <guid>https://haservi.github.io/posts/nodejs/start-nodejs/</guid>
       <description>6개월 프로젝트로 Node.js를 처음 하면서 만났던 여러 문제들을 처리한 내용을 공유합니다.
 약 4개월 정도는 backend 개발을 했던 것 같고, 이후 다른 시스템과 함께 맞춰서 프로젝트를 마무리 했던 것 같습니다.
@@ -23,6 +24,5 @@ backend에서는 기본적인 CRUD 기능과 유효성 처리, jwt 인증, 파�
 프로젝트 기술 선택 Framework: express DB: MySQL 먼저 Node.js에서 유명한 프레임워크로 express와 nest.js가 있습니다.
 먼저 Spring Backend에 대한 경험으로 nest.js에 대해 고민했지만, npm trends 비교 및 express가 개발 속도 및 현재까지 사용한 사용자도 많기에 express로 선택했습니다.</description>
     </item>
-    
   </channel>
 </rss>

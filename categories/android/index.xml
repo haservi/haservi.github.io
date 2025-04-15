@@ -9,16 +9,16 @@
       <url>https://haservi.github.io/cover.jpeg</url>
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Jul 2024 00:33:33 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 23 Jul 2024 00:33:33 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/categories/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>안드로이드 Wi-Fi 무선 디버깅 방법</title>
       <link>https://haservi.github.io/posts/tips/android-wireless-debug/</link>
       <pubDate>Tue, 23 Jul 2024 00:33:33 +0900</pubDate>
-      
       <guid>https://haservi.github.io/posts/tips/android-wireless-debug/</guid>
       <description>Android 무선 디버깅 하는 방법입니다.</description>
     </item>
-    
   </channel>
 </rss>

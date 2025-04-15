@@ -9,16 +9,16 @@
       <url>https://haservi.github.io/cover.jpeg</url>
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 10 Jun 2024 22:41:29 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/ollama/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 10 Jun 2024 22:41:29 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/categories/ollama/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ollama LLM Model 사용하기</title>
       <link>https://haservi.github.io/posts/review/ollama-custom/</link>
       <pubDate>Mon, 10 Jun 2024 22:41:29 +0900</pubDate>
-      
       <guid>https://haservi.github.io/posts/review/ollama-custom/</guid>
       <description>Ollama를 이용해 다양한 LLM Model 구동하기</description>
     </item>
-    
   </channel>
 </rss>

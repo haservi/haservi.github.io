@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>nvm on Halog</title>
+    <title>Nvm on Halog</title>
     <link>https://haservi.github.io/tags/nvm/</link>
-    <description>Recent content in nvm on Halog</description>
+    <description>Recent content in Nvm on Halog</description>
     <image>
       <title>Halog</title>
       <url>https://haservi.github.io/cover.jpeg</url>
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Oct 2022 22:35:53 +0900</lastBuildDate><atom:link href="https://haservi.github.io/tags/nvm/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 26 Oct 2022 22:35:53 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/tags/nvm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows Nodejs 버전 변경하기</title>
       <link>https://haservi.github.io/posts/tips/window-nodejs-version-change/</link>
       <pubDate>Wed, 26 Oct 2022 22:35:53 +0900</pubDate>
-      
       <guid>https://haservi.github.io/posts/tips/window-nodejs-version-change/</guid>
       <description>종종 프로젝트 중에는 특정 Node.js 버전에서만 동작하는 프로젝트가 있습니다. 이럴 경우 Docker를 이용하여 컨테이너를 만들거나 로컬인 경우 해당 버전에 맞는 Node.js를 설치해야 합니다.
 이번 내용은 전에 작성한 jdk 버전을 변경하듯이 Node.js 버전을 변경하는 방법에 대해 알아볼께요.
 알림
 해당 글은 Window를 기준으로 작성했습니다.
-Mac의 경우는 해당 stackoverflow 질문글 을 참조해주세요.
-먼저 해당 링크 에서 우측의 Release 버튼을 선택합니다. nvm-setup.exe 파일을 다운로드 받습니다. 아래와 같이 파일을 설치하고 버전을 커맨드로 입력해보면 설치된 것을 확인할 수 있습니다.</description>
+Mac의 경우는 해당 stackoverflow 질문글을 참조해주세요.
+먼저 해당 링크에서 우측의 Release 버튼을 선택합니다. nvm-setup.exe 파일을 다운로드 받습니다. 아래와 같이 파일을 설치하고 버전을 커맨드로 입력해보면 설치된 것을 확인할 수 있습니다.</description>
     </item>
-    
   </channel>
 </rss>

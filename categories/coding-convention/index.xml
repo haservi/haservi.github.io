@@ -9,13 +9,14 @@
       <url>https://haservi.github.io/cover.jpeg</url>
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Jan 2025 19:19:55 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/coding-convention/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 20 Jan 2025 19:19:55 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/categories/coding-convention/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>비쥬얼 스튜디오에서 C#, XAML 코드 자동정렬 방법</title>
       <link>https://haservi.github.io/posts/wpf/codiing-convention/</link>
       <pubDate>Mon, 20 Jan 2025 19:19:55 +0900</pubDate>
-      
       <guid>https://haservi.github.io/posts/wpf/codiing-convention/</guid>
       <description>C# WPF 프로젝트를 진행하면서 간단하게 코드 컨벤션과 코드 정렬을 하는 방법에 대해 알아보겠습니다.
 협업을 하는 경우 코드스타일이 이왕이면 일관된 것을 선호하는 편입니다.
@@ -24,6 +25,5 @@
 이번에 작성할 내용은 간단하게 포맷을 정렬하여 팀에서 코드 정렬과 관련한 스타일을 통일시키는 방법에 대해 알아보겠습니다.
 Code Formatting 코드 정렬은 2개의 설정만 바꿔주면 됩니다. 생각보다 간단하기에 이렇게 쓰면 좋습니다.</description>
     </item>
-    
   </channel>
 </rss>

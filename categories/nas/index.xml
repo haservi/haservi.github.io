@@ -9,13 +9,14 @@
       <url>https://haservi.github.io/cover.jpeg</url>
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 01 Jan 2024 22:22:18 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/nas/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 01 Jan 2024 22:22:18 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/categories/nas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Synology NAS Docker MariaDB 설치하기</title>
       <link>https://haservi.github.io/posts/devops/docker/nas-mariadb-setting/</link>
       <pubDate>Mon, 01 Jan 2024 22:22:18 +0900</pubDate>
-      
       <guid>https://haservi.github.io/posts/devops/docker/nas-mariadb-setting/</guid>
       <description>개인용 NAS를 충분히 이용하지 못한다는 생각이 문득 들었습니다.
 기본적으로 제공하는 Photos, 파일 저장소 정도만 이용하며, Docker Gitlab 서버 배포 중이긴 하지만.. 그냥 배포중 입니다.
@@ -23,12 +24,10 @@
 문득 생각해 보니 NAS에서 Docker를 사용할 수 있다는 것은 개인적으로 운용할 수 있는 장난감 서버로 최적이지 않을까라는 생각이 들었습니다.
 물론 아마도 많은 트래픽은 감당하지 못하더라도 개인적인 용도로 테스트 서버 정도는 만들 수 있지 않을까 생각됩니다.</description>
     </item>
-    
     <item>
       <title>Synology NAS로 Docker GitLab 설치하기</title>
       <link>https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/</link>
       <pubDate>Tue, 02 Aug 2022 23:22:38 +0900</pubDate>
-      
       <guid>https://haservi.github.io/posts/devops/docker/nas-docker-gitlab-setting/</guid>
       <description>시작하며 DSM 7버전에서는 SVN과 GitLab을 패키지로 지원하지 않습니다.
 그렇기 때문에 Docker를 이용하여 설치해야 합니다.
@@ -36,8 +35,7 @@
 공유기 포트포워딩만 조금 다를 뿐 전체적인 방법은 동일할 것이라 생각됩니다.
 GitLab을 쾌적하게 쓰시려면 최소 램 4기가 이상으로 설정하시는게 좋습니다. 해당 설정은 컨테이너 생성 후에도 편집이 가능하니 필요에 따라 조정하시면 됩니다.
 알림
-완성 후 GitLab Repository 주소 경로가 올바르지 않은 이슈가 있지만 아래 와 같이 설정하면 사용하는데 이상은 없을 것이라 생각됩니다.</description>
+완성 후 GitLab Repository 주소 경로가 올바르지 않은 이슈가 있지만 아래와 같이 설정하면 사용하는데 이상은 없을 것이라 생각됩니다.</description>
     </item>
-    
   </channel>
 </rss>

@@ -9,32 +9,30 @@
       <url>https://haservi.github.io/cover.jpeg</url>
       <link>https://haservi.github.io/cover.jpeg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 16 Jul 2024 19:53:00 +0900</lastBuildDate><atom:link href="https://haservi.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 16 Jul 2024 19:53:00 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git 상위 폴더에서 한번에 pull하기</title>
       <link>https://haservi.github.io/posts/tips/git-recursive-pull/</link>
       <pubDate>Tue, 16 Jul 2024 19:53:00 +0900</pubDate>
-      
       <guid>https://haservi.github.io/posts/tips/git-recursive-pull/</guid>
       <description>상위 폴더에서 여러 Git 저장소를 한번에 pull 하는 방법입니다.(window, mac)</description>
     </item>
-    
     <item>
       <title>자주 사용하는 Git Command 정리</title>
       <link>https://haservi.github.io/posts/tips/git-frequently-used-commands/</link>
       <pubDate>Wed, 29 Dec 2021 22:18:20 +0900</pubDate>
-      
       <guid>https://haservi.github.io/posts/tips/git-frequently-used-commands/</guid>
       <description>Git Command를 사용하면서 자주 사용하는 명령어를 정리했습니다.
 이외에도 수많은 명령어가 존재하지만 작업과 관련된 명령어는 아래의 경우로 충분하다고 생각합니다.
 해당 명령어 이외에 더 참고하고 싶다면 https://git-scm.com/book/ko/v2 해당 사이트에서 무료로 책을 다운로드 받아서 볼 수 있습니다.
-또한, 요즘은 소스트리(https://www.sourcetreeapp.com/ )에서 GUI로 편하게 작업할 수 도 있습니다.
+또한, 요즘은 소스트리(https://www.sourcetreeapp.com/)에서 GUI로 편하게 작업할 수 도 있습니다.
 기본적인 명령어는 숙지하는 것이 좋지만 history나 간단한 업무용으로는 충분하다고 생각합니다.
 기본 명령어 git 설정 보기
 1 git config --list 사용자 이름 입력
-1 git config --global user.</description>
+1 git config --global user.name &amp;#34;이름&amp;#34; 사용자 이메일 입력</description>
     </item>
-    
   </channel>
 </rss>
