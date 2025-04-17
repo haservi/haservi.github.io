@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 20 Jan 2025 19:19:55 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 17 Apr 2025 19:15:39 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tips</title>
+      <link>https://haservi.github.io/categories/tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/categories/tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>맥북 설정</title>
+      <link>https://haservi.github.io/categories/%EB%A7%A5%EB%B6%81-%EC%84%A4%EC%A0%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/categories/%EB%A7%A5%EB%B6%81-%EC%84%A4%EC%A0%95/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Coding Convention</title>
       <link>https://haservi.github.io/categories/coding-convention/</link>
@@ -53,13 +67,6 @@
       <link>https://haservi.github.io/categories/android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://haservi.github.io/categories/android/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tips</title>
-      <link>https://haservi.github.io/categories/tips/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/categories/tips/</guid>
       <description></description>
     </item>
     <item>

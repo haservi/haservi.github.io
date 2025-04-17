@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tips/mac-wake-sleepmode/</loc>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/tools/how-to-mac-key-setting/</loc>
     <lastmod>2025-02-07T21:30:47+09:00</lastmod>
   </url><url>
@@ -176,14 +179,35 @@
     <loc>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</loc>
     <lastmod>2023-12-02T22:28:29+09:00</lastmod>
   </url><url>
+    <loc>https://haservi.github.io/categories/</loc>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2025-02-07T21:30:47+09:00</lastmod>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2025-02-07T21:30:47+09:00</lastmod>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2025-01-20T19:19:55+09:00</lastmod>
+    <loc>https://haservi.github.io/tags/</loc>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/tips/</loc>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/%EB%A7%A5%EB%B6%81/</loc>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/%EB%A7%A5%EB%B6%81-%EC%84%A4%EC%A0%95/</loc>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%84%A4%EC%A0%95/</loc>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/%EC%9E%A0%EC%9E%90%EA%B8%B0%EB%AA%A8%EB%93%9C/</loc>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/%ED%84%B0%EB%AF%B8%EB%84%90/</loc>
+    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/coding-convention/</loc>
     <lastmod>2025-01-20T19:19:55+09:00</lastmod>
@@ -201,9 +225,6 @@
     <lastmod>2024-09-21T16:21:41+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/android/</loc>
-    <lastmod>2024-07-23T00:33:33+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/categories/tips/</loc>
     <lastmod>2024-07-23T00:33:33+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/git/</loc>
@@ -246,9 +267,6 @@
     <lastmod>2023-03-20T13:42:30+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/nvm/</loc>
-    <lastmod>2022-10-26T22:35:53+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/tags/</loc>
     <lastmod>2022-10-26T22:35:53+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/java/</loc>

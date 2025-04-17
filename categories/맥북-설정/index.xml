@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>맥북 설정 on Halog</title>
+    <link>https://haservi.github.io/categories/%EB%A7%A5%EB%B6%81-%EC%84%A4%EC%A0%95/</link>
+    <description>Recent content in 맥북 설정 on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 17 Apr 2025 19:15:39 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/categories/%EB%A7%A5%EB%B6%81-%EC%84%A4%EC%A0%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac에서 터미널로 잠자기 모드 해제하는 방법</title>
+      <link>https://haservi.github.io/posts/tips/mac-wake-sleepmode/</link>
+      <pubDate>Thu, 17 Apr 2025 19:15:39 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/tips/mac-wake-sleepmode/</guid>
+      <description>Mac에서 터미널 명령어를 사용하여 컴퓨터의 잠자기 모드를 제어하는 방법을 알아봅니다.</description>
+    </item>
+  </channel>
+</rss>
