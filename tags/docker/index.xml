@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docker on Halog</title>
+    <link>https://haservi.github.io/tags/docker/</link>
+    <description>Recent content in Docker on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 27 May 2025 19:55:13 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac에서 5000번 포트 사용 해제하기</title>
+      <link>https://haservi.github.io/posts/tips/mac-5000-port-disable/</link>
+      <pubDate>Tue, 27 May 2025 19:55:13 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/tips/mac-5000-port-disable/</guid>
+      <description>Mac에서 5000번 포트 충돌 문제 해결 방법을 소개합니다.</description>
+    </item>
+  </channel>
+</rss>

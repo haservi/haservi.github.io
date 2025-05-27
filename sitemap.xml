@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tips/mac-5000-port-disable/</loc>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/tips/mac-wake-sleepmode/</loc>
     <lastmod>2025-04-17T19:15:39+09:00</lastmod>
   </url><url>
@@ -180,16 +183,43 @@
     <lastmod>2023-12-02T22:28:29+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/development/</loc>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/docker/</loc>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/elk/</loc>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/flask/</loc>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/logstash/</loc>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/mac/</loc>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/mac/</loc>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/port/</loc>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/</loc>
-    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/troubleshooting/</loc>
+    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/tips/</loc>
     <lastmod>2025-04-17T19:15:39+09:00</lastmod>
