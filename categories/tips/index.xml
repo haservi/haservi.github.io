@@ -11,14 +11,21 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Thu, 17 Apr 2025 19:15:39 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jun 2025 10:01:43 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac에서 이미지 파일 이름 일괄 변경하는 방법</title>
+      <link>https://haservi.github.io/posts/tips/mac-imagefile-renames/</link>
+      <pubDate>Wed, 18 Jun 2025 10:01:43 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/tips/mac-imagefile-renames/</guid>
+      <description>Mac에서 이미지 파일 이름을 일괄적으로 변경하는 두 가지 방법</description>
+    </item>
     <item>
       <title>Mac에서 터미널로 잠자기 모드 해제하는 방법</title>
       <link>https://haservi.github.io/posts/tips/mac-wake-sleepmode/</link>
       <pubDate>Thu, 17 Apr 2025 19:15:39 +0900</pubDate>
       <guid>https://haservi.github.io/posts/tips/mac-wake-sleepmode/</guid>
-      <description>Mac에서 터미널 명령어를 사용하여 컴퓨터의 잠자기 모드를 제어하는 방법을 알아봅니다.</description>
+      <description>Mac에서 터미널 명령어를 사용하여 잠자기 모드를 해제하는 방법</description>
     </item>
     <item>
       <title>안드로이드 Wi-Fi 무선 디버깅 방법</title>

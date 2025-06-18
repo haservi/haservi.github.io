@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 27 May 2025 19:55:13 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jun 2025 10:01:43 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automator</title>
+      <link>https://haservi.github.io/tags/automator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/automator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>File Management</title>
+      <link>https://haservi.github.io/tags/file-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/file-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Finder</title>
+      <link>https://haservi.github.io/tags/finder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/finder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mac</title>
+      <link>https://haservi.github.io/tags/mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/mac/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Development</title>
       <link>https://haservi.github.io/tags/development/</link>
@@ -46,13 +74,6 @@
       <link>https://haservi.github.io/tags/logstash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://haservi.github.io/tags/logstash/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mac</title>
-      <link>https://haservi.github.io/tags/mac/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/tags/mac/</guid>
       <description></description>
     </item>
     <item>

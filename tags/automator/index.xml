@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Automator on Halog</title>
+    <link>https://haservi.github.io/tags/automator/</link>
+    <description>Recent content in Automator on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 18 Jun 2025 10:01:43 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/tags/automator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac에서 이미지 파일 이름 일괄 변경하는 방법</title>
+      <link>https://haservi.github.io/posts/tips/mac-imagefile-renames/</link>
+      <pubDate>Wed, 18 Jun 2025 10:01:43 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/tips/mac-imagefile-renames/</guid>
+      <description>Mac에서 이미지 파일 이름을 일괄적으로 변경하는 두 가지 방법</description>
+    </item>
+  </channel>
+</rss>

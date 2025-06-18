@@ -11,14 +11,21 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 27 May 2025 19:55:13 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jun 2025 10:01:43 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac에서 이미지 파일 이름 일괄 변경하는 방법</title>
+      <link>https://haservi.github.io/posts/tips/mac-imagefile-renames/</link>
+      <pubDate>Wed, 18 Jun 2025 10:01:43 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/tips/mac-imagefile-renames/</guid>
+      <description>Mac에서 이미지 파일 이름을 일괄적으로 변경하는 두 가지 방법</description>
+    </item>
     <item>
       <title>Mac에서 5000번 포트 사용 해제하기</title>
       <link>https://haservi.github.io/posts/tips/mac-5000-port-disable/</link>
       <pubDate>Tue, 27 May 2025 19:55:13 +0900</pubDate>
       <guid>https://haservi.github.io/posts/tips/mac-5000-port-disable/</guid>
-      <description>Mac에서 5000번 포트 충돌 문제 해결 방법을 소개합니다.</description>
+      <description>Mac에서 5000번 포트 충돌 문제 해결 방법</description>
     </item>
   </channel>
 </rss>

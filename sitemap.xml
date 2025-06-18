@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/tips/mac-imagefile-renames/</loc>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/tips/mac-5000-port-disable/</loc>
     <lastmod>2025-05-27T19:55:13+09:00</lastmod>
   </url><url>
@@ -19,9 +22,6 @@
   </url><url>
     <loc>https://haservi.github.io/posts/review/udemy-flutter/</loc>
     <lastmod>2024-10-09T20:20:33+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/posts/books/coding-difficult-to-maintain/</loc>
-    <lastmod>2024-09-21T16:21:41+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/tips/android-wireless-debug/</loc>
     <lastmod>2024-07-23T00:33:33+09:00</lastmod>
@@ -182,8 +182,35 @@
     <loc>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</loc>
     <lastmod>2023-12-02T22:28:29+09:00</lastmod>
   </url><url>
+    <loc>https://haservi.github.io/tags/automator/</loc>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/file-management/</loc>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/finder/</loc>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/</loc>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/mac/</loc>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/mac/</loc>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/</loc>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/tips/</loc>
+    <lastmod>2025-06-18T10:01:43+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/development/</loc>
     <lastmod>2025-05-27T19:55:13+09:00</lastmod>
@@ -197,32 +224,14 @@
     <loc>https://haservi.github.io/tags/flask/</loc>
     <lastmod>2025-05-27T19:55:13+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/</loc>
-    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/tags/logstash/</loc>
-    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/tags/mac/</loc>
-    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/categories/mac/</loc>
     <lastmod>2025-05-27T19:55:13+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/port/</loc>
     <lastmod>2025-05-27T19:55:13+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/tags/</loc>
-    <lastmod>2025-05-27T19:55:13+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/categories/troubleshooting/</loc>
     <lastmod>2025-05-27T19:55:13+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/categories/tips/</loc>
-    <lastmod>2025-04-17T19:15:39+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/%EB%A7%A5%EB%B6%81/</loc>
     <lastmod>2025-04-17T19:15:39+09:00</lastmod>
@@ -251,9 +260,6 @@
     <loc>https://haservi.github.io/categories/flutter/</loc>
     <lastmod>2024-10-09T20:20:33+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/books/</loc>
-    <lastmod>2024-09-21T16:21:41+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/categories/android/</loc>
     <lastmod>2024-07-23T00:33:33+09:00</lastmod>
   </url><url>
@@ -261,6 +267,9 @@
     <lastmod>2024-07-16T19:53:00+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/algorithm/</loc>
+    <lastmod>2024-06-30T18:10:54+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/books/</loc>
     <lastmod>2024-06-30T18:10:54+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/ollama/</loc>
