@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/books/hg-mldl/week-2/</loc>
+    <lastmod>2025-07-13T13:49:35+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/books/hg-mldl/week-1/</loc>
     <lastmod>2025-07-05T23:38:28+09:00</lastmod>
   </url><url>
@@ -185,13 +188,13 @@
     <loc>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</loc>
     <lastmod>2023-12-02T22:28:29+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2025-07-05T23:38:28+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2025-07-05T23:38:28+09:00</lastmod>
+    <lastmod>2025-07-13T13:49:35+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2025-07-13T13:49:35+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/categories/</loc>
     <lastmod>2025-07-05T23:38:28+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/%ED%98%BC%EA%B3%B5%EB%A8%B8%EC%8B%A0/</loc>
