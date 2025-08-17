@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Sun, 10 Aug 2025 16:31:15 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 17 Aug 2025 15:00:20 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>혼자 공부하는 머신러닝 &#43; 딥러닝 후기</title>
+      <link>https://haservi.github.io/posts/books/hg-mldl/retrospect/</link>
+      <pubDate>Sun, 17 Aug 2025 15:00:20 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/books/hg-mldl/retrospect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>[혼공머신] 6주차 학습 내용 정리</title>
+      <link>https://haservi.github.io/posts/books/hg-mldl/week-6/</link>
+      <pubDate>Sun, 17 Aug 2025 14:10:35 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/books/hg-mldl/week-6/</guid>
+      <description>혼자 공부하는 머신러닝+딥러닝 6주차 학습 내용</description>
+    </item>
     <item>
       <title>[혼공머신] 5주차 학습 내용 정리</title>
       <link>https://haservi.github.io/posts/books/hg-mldl/week-5/</link>

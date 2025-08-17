@@ -1,0 +1,753 @@
+<!doctype html><html lang=ko dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>[혼공머신] 6주차 학습 내용 정리 | Halog</title>
+<meta name=keywords content=","><meta name=description content="혼자 공부하는 머신러닝+딥러닝 6주차 학습 내용"><meta name=author content><link rel=canonical href=https://haservi.github.io/posts/books/hg-mldl/week-6/><meta name=google-site-verification content="G-MXZP81P04W"><link rel=stylesheet as=style crossorigin href=https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css><link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style><link rel=icon href=https://haservi.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://haservi.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://haservi.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://haservi.github.io/apple-touch-icon.png><link rel=mask-icon href=https://haservi.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=ko href=https://haservi.github.io/posts/books/hg-mldl/week-6/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1400973749140762" crossorigin=anonymous></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-RP5NDCM8J9"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-RP5NDCM8J9")}</script></head><body class=dark id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://haservi.github.io/ accesskey=h title="Halog (Alt + H)">Halog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://haservi.github.io/archives/ title=Archive><span>Archive</span></a></li><li><a href=https://haservi.github.io/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://haservi.github.io/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://haservi.github.io/>홈</a>&nbsp;»&nbsp;<a href=https://haservi.github.io/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">[혼공머신] 6주차 학습 내용 정리</h1><div class=post-meta><span title='2025-08-17 14:10:35 +0900 +0900'>8월 17, 2025</span>&nbsp;·&nbsp;12 분</div></header><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>목차</span></summary><div class=inner><ul><li><a href=#%ea%b8%b0%eb%b3%b8-%ec%88%99%ec%a0%9c aria-label="기본 숙제">기본 숙제</a></li><li><a href=#%eb%82%b4%ec%9a%a9-%ec%a0%95%eb%a6%ac aria-label="내용 정리">내용 정리</a><ul><li><a href=#%ec%9d%b8%ea%b3%b5-%ec%8b%a0%ea%b2%bd%eb%a7%9d aria-label="인공 신경망">인공 신경망</a><ul><li><a href=#%eb%a1%9c%ec%a7%80%ec%8a%a4%ed%8b%b1-%ed%9a%8c%ea%b7%80%eb%a1%9c-%ed%8c%a8%ec%85%98-%ec%95%84%ec%9d%b4%ed%85%9c-%eb%b6%84%eb%a5%98%ed%95%98%ea%b8%b0 aria-label="로지스틱 회귀로 패션 아이템 분류하기">로지스틱 회귀로 패션 아이템 분류하기</a></li><li><a href=#%ec%9d%b8%ea%b3%b5-%ec%8b%a0%ea%b2%bd%eb%a7%9d-1 aria-label="인공 신경망">인공 신경망</a></li><li><a href=#%ec%9d%b8%ea%b3%b5-%ec%8b%a0%ea%b2%bd%eb%a7%9d%ec%9c%bc%eb%a1%9c-%ed%8c%a8%ec%85%98-%ec%95%84%ec%9d%b4%ed%85%9c-%eb%b6%84%eb%a5%98%ed%95%98%ea%b8%b0 aria-label="인공 신경망으로 패션 아이템 분류하기">인공 신경망으로 패션 아이템 분류하기</a></li></ul></li><li><a href=#%ec%8b%ac%ec%b8%b5-%ec%8b%a0%ea%b2%bd%eb%a7%9d aria-label="심층 신경망">심층 신경망</a><ul><li><a href=#%eb%a0%90%eb%a3%a8-%ed%95%a8%ec%88%98 aria-label="렐루 함수">렐루 함수</a></li></ul></li><li><a href=#%ec%8b%a0%ea%b2%bd%eb%a7%9d-%eb%aa%a8%eb%8d%b8-%ed%9b%88%eb%a0%a8 aria-label="신경망 모델 훈련">신경망 모델 훈련</a><ul><li><a href=#%ea%b2%80%ec%a6%9d-%ec%86%90%ec%8b%a4 aria-label="검증 손실">검증 손실</a></li><li><a href=#%eb%93%9c%eb%a1%ad-%ec%95%84%ec%9b%83 aria-label="드롭 아웃">드롭 아웃</a></li></ul></li><li><a href=#%eb%aa%a8%eb%8d%b8-%ec%a0%80%ec%9e%a5%ea%b3%bc-%eb%b3%b5%ec%9b%90 aria-label="모델 저장과 복원">모델 저장과 복원</a><ul><li><a href=#%ec%bd%9c%eb%b0%b1 aria-label=콜백>콜백</a></li></ul></li></ul></li></ul></div></details></div><div class=post-content><p><img alt=image loading=lazy src=/posts/books/hg-mldl/week-6/images/image-01.webp></p><h2 id=기본-숙제>기본 숙제<a hidden class=anchor aria-hidden=true href=#기본-숙제>#</a></h2><ol><li>인공 신경망의 입력 특성 100개, 밀집층 뉴런 개수 10개 일 때, 필요한 모델 파라미터 개수는 몇 개 인가요?</li></ol><p>정답: 1,010개</p><p>파라미터 수 = (입력 특성 수 × 뉴런 수) + 뉴런 수 = (100 × 10) + 10 = 1,010개
+​</p><ol start=2><li>케라스 Dense 클래스 사용해 신경망의 출력층을 만들려고 합니다. 이 신경망이 이진 분류 모델이라면 activation 매개변수에 어떤 활성화 함수를 지정해야 하나요?</li></ol><p>정답 &lsquo;sigmoid&rsquo;</p><p>시그모이드는 출력을 0~1 사이의 확률값으로 변환해주기 때문에 이진 분류에 적합합니다.
+​</p><ol start=3><li>케라스 모델에서 손실함수와 측정 지표 등을 지정하는 메서드는 무엇인가요?</li></ol><p>정답: compile()</p><p>손실함수와 측정 지표를 지정하는 메서드입니다.</p><p>​4. 정수 레이블을 타깃으로 가지는 다중 분류 문제일 때 케라스 모델의 compile() 메서드에 지정할 손실 함수로 적절한 것은 무언인가요?</p><p>정답: &lsquo;sparse_categorical_crossentropy&rsquo;</p><p>정수 형태의 레이블(예: 0, 1, 2, 3&mldr;)을 사용할 때는 sparse_categorical_crossentropy를, 원-핫 인코딩된 레이블을 사용할 때는 categorical_crossentropy를 사용합니다.</p><h2 id=내용-정리>내용 정리<a hidden class=anchor aria-hidden=true href=#내용-정리>#</a></h2><p>결국 딥러닝까지 오고 말았네요. 머신러닝도 잘 모르겠는데 딥러닝도 가볍게 찍먹할 수 있을지 모르겠네요.</p><p>딥러닝은 인공신경망(Neural Network)을 여러 층으로 깊게 쌓아서 복잡한 패턴을 학습하는 머신러닝의 한 분야라고 합니다.</p><p>딥러닝은 대량의 데이터와 연산력이 필요하지만, 기존 머신러닝으로는 해결하기 어려운 복잡한 문제들을 해결할 수 있는 강력한 도구입니다. 프레임워크로는 TensorFlow, PyTorch, Keras 등이 널리 사용됩니다.</p><p>패션 MINST 데이터를 <strong>텐서플로</strong>를 사용하여 데이터를 가져오는 실습을 합니다.</p><h3 id=인공-신경망>인공 신경망<a hidden class=anchor aria-hidden=true href=#인공-신경망>#</a></h3><p>텐서플로의 <strong>케라스</strong> 패키지를 임포트하여 패션 MINST 데이터를 다운로드 합니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># 실행마다 동일한 결과를 얻기 위해 케라스에 랜덤 시드를 사용하고 텐서플로 연산을 결정적으로 만듭니다.</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>tensorflow</span> <span class=k>as</span> <span class=nn>tf</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>tf</span><span class=o>.</span><span class=n>keras</span><span class=o>.</span><span class=n>utils</span><span class=o>.</span><span class=n>set_random_seed</span><span class=p>(</span><span class=mi>42</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>tf</span><span class=o>.</span><span class=n>config</span><span class=o>.</span><span class=n>experimental</span><span class=o>.</span><span class=n>enable_op_determinism</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>tensorflow</span> <span class=kn>import</span> <span class=n>keras</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=n>train_input</span><span class=p>,</span> <span class=n>train_target</span><span class=p>),</span> <span class=p>(</span><span class=n>test_input</span><span class=p>,</span> <span class=n>test_target</span><span class=p>)</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>datasets</span><span class=o>.</span><span class=n>fashion_mnist</span><span class=o>.</span><span class=n>load_data</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>train_input</span><span class=o>.</span><span class=n>shape</span><span class=p>,</span> <span class=n>train_target</span><span class=o>.</span><span class=n>shape</span><span class=p>)</span> <span class=c1># 데이터 확인</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>test_input</span><span class=o>.</span><span class=n>shape</span><span class=p>,</span> <span class=n>test_target</span><span class=o>.</span><span class=n>shape</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>matplotlib.pyplot</span> <span class=k>as</span> <span class=nn>plt</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>fig</span><span class=p>,</span> <span class=n>axs</span> <span class=o>=</span> <span class=n>plt</span><span class=o>.</span><span class=n>subplots</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>10</span><span class=p>,</span> <span class=n>figsize</span><span class=o>=</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span><span class=mi>10</span><span class=p>))</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>10</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>axs</span><span class=p>[</span><span class=n>i</span><span class=p>]</span><span class=o>.</span><span class=n>imshow</span><span class=p>(</span><span class=n>train_input</span><span class=p>[</span><span class=n>i</span><span class=p>],</span> <span class=n>cmap</span><span class=o>=</span><span class=s1>&#39;gray_r&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>axs</span><span class=p>[</span><span class=n>i</span><span class=p>]</span><span class=o>.</span><span class=n>axis</span><span class=p>(</span><span class=s1>&#39;off&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 샘플 타깃값(5는 신발로 유추)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>([</span><span class=n>train_target</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>10</span><span class=p>)])</span> <span class=c1># [np.uint8(9), np.uint8(0), np.uint8(0), np.uint8(3), np.uint8(0), np.uint8(2), np.uint8(7), np.uint8(2), np.uint8(5), np.uint8(5)]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>numpy</span> <span class=k>as</span> <span class=nn>np</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>np</span><span class=o>.</span><span class=n>unique</span><span class=p>(</span><span class=n>train_target</span><span class=p>,</span> <span class=n>return_counts</span><span class=o>=</span><span class=kc>True</span><span class=p>))</span> <span class=c1># (array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dtype=uint8), array([6000, 6000, 6000, 6000, 6000, 6000, 6000, 6000, 6000, 6000]))</span>
+</span></span></code></pre></td></tr></table></div></div><p><img alt=image loading=lazy src=/posts/books/hg-mldl/week-6/images/image-02.webp></p><p>패션 MINST 데이터셋을 저장하고, 각 레이블마다 6,000개의 샘플이 들어 있는것을 확인했습니다.</p><h4 id=로지스틱-회귀로-패션-아이템-분류하기>로지스틱 회귀로 패션 아이템 분류하기<a hidden class=anchor aria-hidden=true href=#로지스틱-회귀로-패션-아이템-분류하기>#</a></h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>train_scaled</span> <span class=o>=</span> <span class=n>train_input</span> <span class=o>/</span> <span class=mf>255.0</span>
+</span></span><span class=line><span class=cl><span class=n>train_scaled</span> <span class=o>=</span> <span class=n>train_scaled</span><span class=o>.</span><span class=n>reshape</span><span class=p>(</span><span class=o>-</span><span class=mi>1</span><span class=p>,</span> <span class=mi>28</span> <span class=o>*</span> <span class=mi>28</span><span class=p>)</span> <span class=c1># reshape 메서드를 이용하여 28 사이즈로 지정하면 첫 번째 차원(샘플 개수)은 변하지 않고 원본 데이터의 두 번째, 세 번째 차원이 1차원으로 합쳐짐</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>train_scaled</span><span class=o>.</span><span class=n>shape</span><span class=p>)</span> <span class=c1># (60000, 784) 784개의 픽셀로 이루어진 60,000개의 샘플</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>sklearn.model_selection</span> <span class=kn>import</span> <span class=n>cross_validate</span>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>sklearn.linear_model</span> <span class=kn>import</span> <span class=n>SGDClassifier</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>sc</span> <span class=o>=</span> <span class=n>SGDClassifier</span><span class=p>(</span><span class=n>loss</span><span class=o>=</span><span class=s1>&#39;log_loss&#39;</span><span class=p>,</span> <span class=n>max_iter</span><span class=o>=</span><span class=mi>5</span><span class=p>,</span> <span class=n>random_state</span><span class=o>=</span><span class=mi>42</span><span class=p>)</span> <span class=c1># SGDClassifier 반복 횟수를 지정하여 점수 확인</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>scores</span> <span class=o>=</span> <span class=n>cross_validate</span><span class=p>(</span><span class=n>sc</span><span class=p>,</span> <span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>n_jobs</span><span class=o>=-</span><span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>np</span><span class=o>.</span><span class=n>mean</span><span class=p>(</span><span class=n>scores</span><span class=p>[</span><span class=s1>&#39;test_score&#39;</span><span class=p>]))</span> <span class=c1># 0.8194166666666666</span>
+</span></span></code></pre></td></tr></table></div></div><p><code>reshape</code> 메서드를 이용하여 2차원 배열인 각 샘플을 1차원 배열로 바꿉니다.</p><p><code>SGDClassifier</code> 클래스를 이용해 점수를 측정해봅니다. 값을 변경해도 점수가 유의미하게 변하지 않습니다.</p><p>아마 반복 횟수보다는 데이터 전처리나 하이퍼파라미터 튜닝이 더 효과적일 수 있습니다. 책에서도 이에 대해 10개의 방정식에 대한 모델 파라미터(가중치와 절편)을 찾는 방식으로 설명하고 있네요.</p><h4 id=인공-신경망-1>인공 신경망<a hidden class=anchor aria-hidden=true href=#인공-신경망-1>#</a></h4><p>인공신경망은 뇌의 뉴런을 모방해서 만든 기계학습 모델이에요. 여러 층의 노드들이 연결되어 있고, 데이터가 들어오면 각 연결에 있는 가중치를 곱해서 다음 층으로 전달하는 방식으로 작동합니다.</p><p>학습할 때는 예측 결과와 정답을 비교해서 오차를 계산하고, 이 오차를 뒤로 전파하면서 가중치들을 조금씩 수정해 나갑니다.</p><p>이 과정을 반복하면서 점점 더 정확한 예측을 할 수 있게됩니다다.</p><p>복잡한 패턴도 잘 찾아내지만 많은 데이터와 계산이 필요하고, 왜 그런 결과가 나왔는지 설명하기는 어려운 특징이 있습니다.</p><p>딥러닝 라이브러리가 다른 머신러닝 라이브러리와 다른 점 중 하나는 그래픽 처리 장치인 GPU를 사용하여 인공 신경망을 훈련하는 것입니다.</p><p>텐서플로에서 케라스를 사용하여 실습을 합니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>tensorflow</span> <span class=k>as</span> <span class=nn>tf</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>tensorflow</span> <span class=kn>import</span> <span class=n>keras</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>sklearn.model_selection</span> <span class=kn>import</span> <span class=n>train_test_split</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>train_scaled</span><span class=p>,</span> <span class=n>val_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>val_target</span> <span class=o>=</span> <span class=n>train_test_split</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>test_size</span><span class=o>=</span><span class=mf>0.2</span><span class=p>,</span> <span class=n>random_state</span><span class=o>=</span><span class=mi>42</span><span class=p>)</span> <span class=c1># 테스트 사이즈 20프로</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 훈련 세트 48,000</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>train_scaled</span><span class=o>.</span><span class=n>shape</span><span class=p>,</span> <span class=n>train_target</span><span class=o>.</span><span class=n>shape</span><span class=p>)</span> <span class=c1># (48000, 784) (48000,)</span>
+</span></span><span class=line><span class=cl><span class=c1># 검증 세트 12,000</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>val_scaled</span><span class=o>.</span><span class=n>shape</span><span class=p>,</span> <span class=n>val_target</span><span class=o>.</span><span class=n>shape</span><span class=p>)</span> <span class=c1># (12000, 784) (12000,)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 케라스의 레이어 패키지안에 10개 뉴런 생성(이러한 연결을 완전 연결층이라고 부름)</span>
+</span></span><span class=line><span class=cl><span class=n>dense</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dense</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span> <span class=n>activation</span><span class=o>=</span><span class=s1>&#39;softmax&#39;</span><span class=p>,</span> <span class=n>input_shape</span><span class=o>=</span><span class=p>(</span><span class=mi>784</span><span class=p>,))</span> <span class=c1># 뉴런 개수, 뉴런의 출력에 적용할 함수, 입력의 크기</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>Sequential</span><span class=p>([</span><span class=n>dense</span><span class=p>])</span> <span class=c1># 계산 결과에 적용되는 함수를 활성화 함수 라고 부름</span>
+</span></span></code></pre></td></tr></table></div></div><h4 id=인공-신경망으로-패션-아이템-분류하기>인공 신경망으로 패션 아이템 분류하기<a hidden class=anchor aria-hidden=true href=#인공-신경망으로-패션-아이템-분류하기>#</a></h4><p>케라스에서 사용하는 함수에 대해 설명해주네요.</p><p>신경망은 티셔츠 샘플에서 손실을 낮추려면 첫 번째 뉴런의 활성화 출력의 값을 가능한 1에 가깝게 만들어야 합니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span> <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>5</span><span class=p>)</span> <span class=c1># 모델 훈련</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>Epoch</span> <span class=mi>1</span><span class=o>/</span><span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=mi>1200</span><span class=o>/</span><span class=mi>1200</span> <span class=err>━━━━━━━━━━━━━━━━━━━━</span> <span class=mi>5</span><span class=n>s</span> <span class=mi>3</span><span class=n>ms</span><span class=o>/</span><span class=n>step</span> <span class=o>-</span> <span class=n>accuracy</span><span class=p>:</span> <span class=mf>0.7194</span> <span class=o>-</span> <span class=n>loss</span><span class=p>:</span> <span class=mf>0.8260</span>
+</span></span><span class=line><span class=cl><span class=n>Epoch</span> <span class=mi>2</span><span class=o>/</span><span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=mi>1200</span><span class=o>/</span><span class=mi>1200</span> <span class=err>━━━━━━━━━━━━━━━━━━━━</span> <span class=mi>4</span><span class=n>s</span> <span class=mi>2</span><span class=n>ms</span><span class=o>/</span><span class=n>step</span> <span class=o>-</span> <span class=n>accuracy</span><span class=p>:</span> <span class=mf>0.8308</span> <span class=o>-</span> <span class=n>loss</span><span class=p>:</span> <span class=mf>0.4937</span>
+</span></span><span class=line><span class=cl><span class=n>Epoch</span> <span class=mi>3</span><span class=o>/</span><span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=mi>1200</span><span class=o>/</span><span class=mi>1200</span> <span class=err>━━━━━━━━━━━━━━━━━━━━</span> <span class=mi>2</span><span class=n>s</span> <span class=mi>2</span><span class=n>ms</span><span class=o>/</span><span class=n>step</span> <span class=o>-</span> <span class=n>accuracy</span><span class=p>:</span> <span class=mf>0.8417</span> <span class=o>-</span> <span class=n>loss</span><span class=p>:</span> <span class=mf>0.4607</span>
+</span></span><span class=line><span class=cl><span class=n>Epoch</span> <span class=mi>4</span><span class=o>/</span><span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=mi>1200</span><span class=o>/</span><span class=mi>1200</span> <span class=err>━━━━━━━━━━━━━━━━━━━━</span> <span class=mi>3</span><span class=n>s</span> <span class=mi>2</span><span class=n>ms</span><span class=o>/</span><span class=n>step</span> <span class=o>-</span> <span class=n>accuracy</span><span class=p>:</span> <span class=mf>0.8467</span> <span class=o>-</span> <span class=n>loss</span><span class=p>:</span> <span class=mf>0.4443</span>
+</span></span><span class=line><span class=cl><span class=n>Epoch</span> <span class=mi>5</span><span class=o>/</span><span class=mi>5</span>
+</span></span><span class=line><span class=cl><span class=mi>1200</span><span class=o>/</span><span class=mi>1200</span> <span class=err>━━━━━━━━━━━━━━━━━━━━</span> <span class=mi>3</span><span class=n>s</span> <span class=mi>3</span><span class=n>ms</span><span class=o>/</span><span class=n>step</span> <span class=o>-</span> <span class=n>accuracy</span><span class=p>:</span> <span class=mf>0.8505</span> <span class=o>-</span> <span class=n>loss</span><span class=p>:</span> <span class=mf>0.4339</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>evaluate</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>)</span> <span class=c1># 모델 평가</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=mi>300</span><span class=o>/</span><span class=mi>300</span> <span class=err>━━━━━━━━━━━━━━━━━━━━</span> <span class=mi>1</span><span class=n>s</span> <span class=mi>2</span><span class=n>ms</span><span class=o>/</span><span class=n>step</span> <span class=o>-</span> <span class=n>accuracy</span><span class=p>:</span> <span class=mf>0.8647</span> <span class=o>-</span> <span class=n>loss</span><span class=p>:</span> <span class=mf>0.4184</span>
+</span></span><span class=line><span class=cl><span class=p>[</span><span class=mf>0.4308134913444519</span><span class=p>,</span> <span class=mf>0.8594791889190674</span><span class=p>]</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=심층-신경망>심층 신경망<a hidden class=anchor aria-hidden=true href=#심층-신경망>#</a></h3><p>심층 신경망은 은닉층이 2개 이상인 깊은 구조의 신경망을 말합니다. 일반적인 신경망보다 훨씬 많은 층을 쌓아서 더 복잡하고 추상적인 패턴을 학습할 수 있습니다.</p><p>층이 깊어질수록 저수준 특성(예: 선, 모서리)부터 고수준 특성(예: 눈, 코, 얼굴)까지 단계적으로 학습하게 되죠. 이미지 인식에서는 첫 번째 층에서 간단한 선을 감지하다가 마지막 층에서는 완전한 객체를 인식할 수 있게 됩니다.</p><p>하지만 층이 깊어지면 그래디언트 소실 문제나 과적합 같은 문제가 생기기 쉬워서, 이를 해결하기 위해 렐루루 함수나 드롭아웃, 배치 정규화 같은 기법들을 사용합니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span><span class=lnt>67
+</span><span class=lnt>68
+</span><span class=lnt>69
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>from</span> <span class=nn>tensorflow</span> <span class=kn>import</span> <span class=n>keras</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=n>train_input</span><span class=p>,</span> <span class=n>train_target</span><span class=p>),</span> <span class=p>(</span><span class=n>test_input</span><span class=p>,</span> <span class=n>test_target</span><span class=p>)</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>datasets</span><span class=o>.</span><span class=n>fashion_mnist</span><span class=o>.</span><span class=n>load_data</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>sklearn.model_selection</span> <span class=kn>import</span> <span class=n>train_test_split</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>train_scaled</span> <span class=o>=</span> <span class=n>train_input</span> <span class=o>/</span> <span class=mf>255.0</span>
+</span></span><span class=line><span class=cl><span class=n>train_scaled</span> <span class=o>=</span> <span class=n>train_scaled</span><span class=o>.</span><span class=n>reshape</span><span class=p>(</span><span class=o>-</span><span class=mi>1</span><span class=p>,</span> <span class=mi>28</span><span class=o>*</span><span class=mi>28</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>train_scaled</span><span class=p>,</span> <span class=n>val_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>val_target</span> <span class=o>=</span> <span class=n>train_test_split</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>test_size</span><span class=o>=</span><span class=mf>0.2</span><span class=p>,</span> <span class=n>random_state</span><span class=o>=</span><span class=mi>42</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>dense1</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dense</span><span class=p>(</span><span class=mi>100</span><span class=p>,</span> <span class=n>activation</span><span class=o>=</span><span class=s1>&#39;sigmoid&#39;</span><span class=p>,</span> <span class=n>input_shape</span><span class=o>=</span><span class=p>(</span><span class=mi>784</span><span class=p>,))</span>
+</span></span><span class=line><span class=cl><span class=n>dense2</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dense</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span> <span class=n>activation</span><span class=o>=</span><span class=s1>&#39;softmax&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1># 심층 신경망 만들기</span>
+</span></span><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>Sequential</span><span class=p>([</span><span class=n>dense1</span><span class=p>,</span> <span class=n>dense2</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=c1># 케라스에서 모델 summary 호출 시 여러 유용한 정보를 볼 수 있음</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>summary</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span><span class=line><span class=cl><span class=c1># Model: &#34;sequential_2&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓</span>
+</span></span><span class=line><span class=cl><span class=c1># ┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃</span>
+</span></span><span class=line><span class=cl><span class=c1># ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩</span>
+</span></span><span class=line><span class=cl><span class=c1># │ dense_2 (Dense)                 │ (None, 100)            │        78,500 │</span>
+</span></span><span class=line><span class=cl><span class=c1># ├─────────────────────────────────┼────────────────────────┼───────────────┤</span>
+</span></span><span class=line><span class=cl><span class=c1># │ dense_3 (Dense)                 │ (None, 10)             │         1,010 │</span>
+</span></span><span class=line><span class=cl><span class=c1># └─────────────────────────────────┴────────────────────────┴───────────────┘</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Total params: 79,510 (310.59 KB)</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Trainable params: 79,510 (310.59 KB)</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Non-trainable params: 0 (0.00 B)</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>Sequential</span><span class=p>([</span>
+</span></span><span class=line><span class=cl>    <span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dense</span><span class=p>(</span><span class=mi>100</span><span class=p>,</span> <span class=n>activation</span><span class=o>=</span><span class=s1>&#39;sigmoid&#39;</span><span class=p>,</span> <span class=n>input_shape</span><span class=o>=</span><span class=p>(</span><span class=mi>784</span><span class=p>,),</span> <span class=n>name</span><span class=o>=</span><span class=s1>&#39;hidden&#39;</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>    <span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dense</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span> <span class=n>activation</span><span class=o>=</span><span class=s1>&#39;softmax&#39;</span><span class=p>,</span> <span class=n>name</span><span class=o>=</span><span class=s1>&#39;output&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>],</span> <span class=n>name</span><span class=o>=</span><span class=s1>&#39;패션 MNIST 모델&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>summary</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span><span class=line><span class=cl><span class=c1># Model: &#34;패션 MNIST 모델&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓</span>
+</span></span><span class=line><span class=cl><span class=c1># ┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃</span>
+</span></span><span class=line><span class=cl><span class=c1># ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩</span>
+</span></span><span class=line><span class=cl><span class=c1># │ hidden (Dense)                  │ (None, 100)            │        78,500 │</span>
+</span></span><span class=line><span class=cl><span class=c1># ├─────────────────────────────────┼────────────────────────┼───────────────┤</span>
+</span></span><span class=line><span class=cl><span class=c1># │ output (Dense)                  │ (None, 10)             │         1,010 │</span>
+</span></span><span class=line><span class=cl><span class=c1># └─────────────────────────────────┴────────────────────────┴───────────────┘</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Total params: 79,510 (310.59 KB)</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Trainable params: 79,510 (310.59 KB)</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Non-trainable params: 0 (0.00 B)</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span> <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>5</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span><span class=line><span class=cl><span class=c1># Epoch 1/5</span>
+</span></span><span class=line><span class=cl><span class=c1># 1500/1500 ━━━━━━━━━━━━━━━━━━━━ 9s 5ms/step - accuracy: 0.7480 - loss: 0.7737</span>
+</span></span><span class=line><span class=cl><span class=c1># Epoch 2/5</span>
+</span></span><span class=line><span class=cl><span class=c1># 1500/1500 ━━━━━━━━━━━━━━━━━━━━ 8s 3ms/step - accuracy: 0.8461 - loss: 0.4244</span>
+</span></span><span class=line><span class=cl><span class=c1># Epoch 3/5</span>
+</span></span><span class=line><span class=cl><span class=c1># 1500/1500 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.8601 - loss: 0.3836</span>
+</span></span><span class=line><span class=cl><span class=c1># Epoch 4/5</span>
+</span></span><span class=line><span class=cl><span class=c1># 1500/1500 ━━━━━━━━━━━━━━━━━━━━ 10s 3ms/step - accuracy: 0.8691 - loss: 0.3583</span>
+</span></span><span class=line><span class=cl><span class=c1># Epoch 5/5</span>
+</span></span><span class=line><span class=cl><span class=c1># 1500/1500 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - accuracy: 0.8764 - loss: 0.3394</span>
+</span></span><span class=line><span class=cl><span class=c1># &lt;keras.src.callbacks.history.History at 0x7944fd5f4dd0&gt;</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span></code></pre></td></tr></table></div></div><p>인공 신경망에 몇 개의 층을 추가하더라도 compile() 메서드와 fit() 메서드의 사용법은 동일합니다.</p><p>1절보다 조금 더 정확도가 올라가긴 했네요.</p><h4 id=렐루-함수>렐루 함수<a hidden class=anchor aria-hidden=true href=#렐루-함수>#</a></h4><p>ReLU는 &ldquo;Rectified Linear Unit"의 줄임말로, 입력값이 양수면 그대로 출력하고 음수면 0으로 만드는 아주 간단한 함수입니다. 수식으로는 max(0, x)죠.</p><p>기존 시그모이드 함수보다 계산이 빠르고, 그래디언트 소실 문제도 덜해서 심층 신경망에서 많이 사용됩니다.</p><p>옵티마이저는 신경망의 가중치를 어떻게 업데이트할지 결정하는 알고리즘이에요. 기본적인 경사하강법부터 시작해서 Adam, RMSprop 같은 고급 버전들이 있습니다.</p><p>Adam은 현재 가장 널리 쓰이는 옵티마이저로, 각 파라미터마다 학습률을 적응적으로 조절해서 빠르고 안정적인 학습이 가능합니다.</p><p>대부분의 경우에서 좋은 성능을 보여줘서 기본 선택지로 많이 사용됩니다.</p><p>아래는 렐루 함수 정도만 실습한 내용입니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>Sequential</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>add</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Flatten</span><span class=p>(</span><span class=n>input_shape</span><span class=o>=</span><span class=p>(</span><span class=mi>28</span><span class=p>,</span> <span class=mi>28</span><span class=p>)))</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>add</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dense</span><span class=p>(</span><span class=mi>100</span><span class=p>,</span> <span class=n>activation</span><span class=o>=</span><span class=s1>&#39;relu&#39;</span><span class=p>))</span> <span class=c1># 렐루 사용</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>add</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dense</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span> <span class=n>activation</span><span class=o>=</span><span class=s1>&#39;softmax&#39;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>summary</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span><span class=line><span class=cl><span class=c1># Model: &#34;sequential_8&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓</span>
+</span></span><span class=line><span class=cl><span class=c1># ┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃</span>
+</span></span><span class=line><span class=cl><span class=c1># ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩</span>
+</span></span><span class=line><span class=cl><span class=c1># │ flatten (Flatten)               │ (None, 784)            │             0 │</span>
+</span></span><span class=line><span class=cl><span class=c1># ├─────────────────────────────────┼────────────────────────┼───────────────┤</span>
+</span></span><span class=line><span class=cl><span class=c1># │ dense_14 (Dense)                │ (None, 100)            │        78,500 │</span>
+</span></span><span class=line><span class=cl><span class=c1># ├─────────────────────────────────┼────────────────────────┼───────────────┤</span>
+</span></span><span class=line><span class=cl><span class=c1># │ dense_15 (Dense)                │ (None, 10)             │         1,010 │</span>
+</span></span><span class=line><span class=cl><span class=c1># └─────────────────────────────────┴────────────────────────┴───────────────┘</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Total params: 79,510 (310.59 KB)</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Trainable params: 79,510 (310.59 KB)</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Non-trainable params: 0 (0.00 B)</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=n>train_input</span><span class=p>,</span> <span class=n>train_target</span><span class=p>),</span> <span class=p>(</span><span class=n>test_input</span><span class=p>,</span> <span class=n>test_target</span><span class=p>)</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>datasets</span><span class=o>.</span><span class=n>fashion_mnist</span><span class=o>.</span><span class=n>load_data</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>train_scaled</span> <span class=o>=</span> <span class=n>train_input</span> <span class=o>/</span> <span class=mf>255.0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>train_scaled</span><span class=p>,</span> <span class=n>val_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>val_target</span> <span class=o>=</span> <span class=n>train_test_split</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>test_size</span><span class=o>=</span><span class=mf>0.2</span><span class=p>,</span> <span class=n>random_state</span><span class=o>=</span><span class=mi>42</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span> <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>5</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>evaluate</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span><span class=line><span class=cl><span class=c1># Epoch 1/5</span>
+</span></span><span class=line><span class=cl><span class=c1># 1500/1500 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - accuracy: 0.7634 - loss: 0.6731</span>
+</span></span><span class=line><span class=cl><span class=c1># Epoch 2/5</span>
+</span></span><span class=line><span class=cl><span class=c1># 1500/1500 ━━━━━━━━━━━━━━━━━━━━ 5s 4ms/step - accuracy: 0.8523 - loss: 0.4072</span>
+</span></span><span class=line><span class=cl><span class=c1># Epoch 3/5</span>
+</span></span><span class=line><span class=cl><span class=c1># 1500/1500 ━━━━━━━━━━━━━━━━━━━━ 4s 3ms/step - accuracy: 0.8688 - loss: 0.3604</span>
+</span></span><span class=line><span class=cl><span class=c1># Epoch 4/5</span>
+</span></span><span class=line><span class=cl><span class=c1># 1500/1500 ━━━━━━━━━━━━━━━━━━━━ 5s 3ms/step - accuracy: 0.8801 - loss: 0.3345</span>
+</span></span><span class=line><span class=cl><span class=c1># Epoch 5/5</span>
+</span></span><span class=line><span class=cl><span class=c1># 1500/1500 ━━━━━━━━━━━━━━━━━━━━ 6s 4ms/step - accuracy: 0.8858 - loss: 0.3163</span>
+</span></span><span class=line><span class=cl><span class=c1># 375/375 ━━━━━━━━━━━━━━━━━━━━ 2s 2ms/step - accuracy: 0.8762 - loss: 0.3714</span>
+</span></span><span class=line><span class=cl><span class=c1># [0.37396520376205444, 0.872083306312561]</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=신경망-모델-훈련>신경망 모델 훈련<a hidden class=anchor aria-hidden=true href=#신경망-모델-훈련>#</a></h3><p>케라스 API를 활용해 예제를 실습합니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>from</span> <span class=nn>tensorflow</span> <span class=kn>import</span> <span class=n>keras</span>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>sklearn.model_selection</span> <span class=kn>import</span> <span class=n>train_test_split</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>(</span><span class=n>train_input</span><span class=p>,</span> <span class=n>train_target</span><span class=p>),</span> <span class=p>(</span><span class=n>test_input</span><span class=p>,</span> <span class=n>test_target</span><span class=p>)</span> <span class=o>=</span> \
+</span></span><span class=line><span class=cl>    <span class=n>keras</span><span class=o>.</span><span class=n>datasets</span><span class=o>.</span><span class=n>fashion_mnist</span><span class=o>.</span><span class=n>load_data</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>train_scaled</span> <span class=o>=</span> <span class=n>train_input</span> <span class=o>/</span> <span class=mf>255.0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>train_scaled</span><span class=p>,</span> <span class=n>val_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>val_target</span> <span class=o>=</span> <span class=n>train_test_split</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>test_size</span><span class=o>=</span><span class=mf>0.2</span><span class=p>,</span> <span class=n>random_state</span><span class=o>=</span><span class=mi>42</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 모델 함수 생성</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>model_fn</span><span class=p>(</span><span class=n>a_layer</span><span class=o>=</span><span class=kc>None</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>model</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>Sequential</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=n>model</span><span class=o>.</span><span class=n>add</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Flatten</span><span class=p>(</span><span class=n>input_shape</span><span class=o>=</span><span class=p>(</span><span class=mi>28</span><span class=p>,</span> <span class=mi>28</span><span class=p>)))</span>
+</span></span><span class=line><span class=cl>    <span class=n>model</span><span class=o>.</span><span class=n>add</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dense</span><span class=p>(</span><span class=mi>100</span><span class=p>,</span> <span class=n>activation</span><span class=o>=</span><span class=s1>&#39;relu&#39;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>a_layer</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=n>model</span><span class=o>.</span><span class=n>add</span><span class=p>(</span><span class=n>a_layer</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>model</span><span class=o>.</span><span class=n>add</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dense</span><span class=p>(</span><span class=mi>10</span><span class=p>,</span> <span class=n>activation</span><span class=o>=</span><span class=s1>&#39;softmax&#39;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>model</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>model_fn</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>summary</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span> <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>history</span> <span class=o>=</span> <span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>5</span><span class=p>,</span> <span class=n>verbose</span><span class=o>=</span><span class=mi>0</span><span class=p>)</span> <span class=c1># verbose 훈련 과정 출력을 조정 0으로 지정하면 훈련 과정 나타내지 않음</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=o>.</span><span class=n>keys</span><span class=p>())</span> <span class=c1># dict_keys([&#39;accuracy&#39;, &#39;loss&#39;])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>matplotlib.pyplot</span> <span class=k>as</span> <span class=nn>plt</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;loss&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>xlabel</span><span class=p>(</span><span class=s1>&#39;epoch&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>ylabel</span><span class=p>(</span><span class=s1>&#39;loss&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 정확도 출력</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>xlabel</span><span class=p>(</span><span class=s1>&#39;epoch&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>ylabel</span><span class=p>(</span><span class=s1>&#39;accuracy&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>model_fn</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span> <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=c1># 에포크를 20으로 변경하여 테스트</span>
+</span></span><span class=line><span class=cl><span class=n>history</span> <span class=o>=</span> <span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>20</span><span class=p>,</span> <span class=n>verbose</span><span class=o>=</span><span class=mi>0</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;loss&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>xlabel</span><span class=p>(</span><span class=s1>&#39;epoch&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>ylabel</span><span class=p>(</span><span class=s1>&#39;loss&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><p><img alt=image loading=lazy src=/posts/books/hg-mldl/week-6/images/image-03.webp></p><h4 id=검증-손실>검증 손실<a hidden class=anchor aria-hidden=true href=#검증-손실>#</a></h4><p>손실을 사용하여 과대/과소 적합을 알 수 있는 방법에 대해 공부합니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>model_fn</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span> <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 케라스 모델의 fit에 검증 데이터를 전달</span>
+</span></span><span class=line><span class=cl><span class=n>history</span> <span class=o>=</span> <span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>20</span><span class=p>,</span> <span class=n>verbose</span><span class=o>=</span><span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                    <span class=n>validation_data</span><span class=o>=</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=o>.</span><span class=n>keys</span><span class=p>())</span> <span class=c1># dict_keys([&#39;accuracy&#39;, &#39;loss&#39;, &#39;val_accuracy&#39;, &#39;val_loss&#39;])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;loss&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;val_loss&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>xlabel</span><span class=p>(</span><span class=s1>&#39;epoch&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>ylabel</span><span class=p>(</span><span class=s1>&#39;loss&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>legend</span><span class=p>([</span><span class=s1>&#39;train&#39;</span><span class=p>,</span> <span class=s1>&#39;val&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><p><img alt=image loading=lazy src=/posts/books/hg-mldl/week-6/images/image-04.webp></p><p>훈련 손실은 꾸준히 감소하기 때문에 전형적인 과대적합 모델이 만들어집니다. 검증 손실이 상승하는 시점을 가능한 뒤로 늦추면 검증 세트에 대한 손실이 줄어들 뿐만 아니라 검증 세트에 대한 정확도도 증가할 것 입니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>model_fn</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=c1># Adam 옵티마이저를 적용</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>optimizer</span><span class=o>=</span><span class=s1>&#39;adam&#39;</span><span class=p>,</span> <span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>              <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>history</span> <span class=o>=</span> <span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>20</span><span class=p>,</span> <span class=n>verbose</span><span class=o>=</span><span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                    <span class=n>validation_data</span><span class=o>=</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;loss&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;val_loss&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>xlabel</span><span class=p>(</span><span class=s1>&#39;epoch&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>ylabel</span><span class=p>(</span><span class=s1>&#39;loss&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>legend</span><span class=p>([</span><span class=s1>&#39;train&#39;</span><span class=p>,</span> <span class=s1>&#39;val&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><p><img alt=image loading=lazy src=/posts/books/hg-mldl/week-6/images/image-05.webp></p><p>Adam 옵티마이저를 활용하니 검증 손실에 대한 수치가 조금 더 안정적으로 나왔습니다.</p><h4 id=드롭-아웃>드롭 아웃<a hidden class=anchor aria-hidden=true href=#드롭-아웃>#</a></h4><p>드롭아웃은 훈련 중에 일정 비율의 뉴런을 랜덤하게 &ldquo;끄는&rdquo; 정규화 기법입니다.</p><p>이렇게 하면 네트워크가 특정 뉴런에만 의존하지 않고 여러 뉴런을 골고루 사용하게 되어서 과적합을 방지할 수 있습니다.</p><p>마치 팀에서 특정 멤버에게만 의존하지 않고 모든 멤버가 역할을 할 수 있게 훈련하는 것과 비슷하죠.</p><p>중요한 점은 훈련할 때만 드롭아웃을 적용하고, 실제 예측할 때는 모든 뉴런을 사용합니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>model_fn</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dropout</span><span class=p>(</span><span class=mf>0.3</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>summary</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span><span class=line><span class=cl><span class=c1># Model: &#34;sequential_13&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓</span>
+</span></span><span class=line><span class=cl><span class=c1># ┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃</span>
+</span></span><span class=line><span class=cl><span class=c1># ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩</span>
+</span></span><span class=line><span class=cl><span class=c1># │ flatten_5 (Flatten)             │ (None, 784)            │             0 │</span>
+</span></span><span class=line><span class=cl><span class=c1># ├─────────────────────────────────┼────────────────────────┼───────────────┤</span>
+</span></span><span class=line><span class=cl><span class=c1># │ dense_24 (Dense)                │ (None, 100)            │        78,500 │</span>
+</span></span><span class=line><span class=cl><span class=c1># ├─────────────────────────────────┼────────────────────────┼───────────────┤</span>
+</span></span><span class=line><span class=cl><span class=c1># │ dropout (Dropout)               │ (None, 100)            │             0 │</span>
+</span></span><span class=line><span class=cl><span class=c1># ├─────────────────────────────────┼────────────────────────┼───────────────┤</span>
+</span></span><span class=line><span class=cl><span class=c1># │ dense_25 (Dense)                │ (None, 10)             │         1,010 │</span>
+</span></span><span class=line><span class=cl><span class=c1># └─────────────────────────────────┴────────────────────────┴───────────────┘</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Total params: 79,510 (310.59 KB)</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Trainable params: 79,510 (310.59 KB)</span>
+</span></span><span class=line><span class=cl><span class=c1>#  Non-trainable params: 0 (0.00 B)</span>
+</span></span><span class=line><span class=cl><span class=c1># ---</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>optimizer</span><span class=o>=</span><span class=s1>&#39;adam&#39;</span><span class=p>,</span> <span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>              <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>history</span> <span class=o>=</span> <span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>20</span><span class=p>,</span> <span class=n>verbose</span><span class=o>=</span><span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                    <span class=n>validation_data</span><span class=o>=</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;loss&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;val_loss&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>xlabel</span><span class=p>(</span><span class=s1>&#39;epoch&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>ylabel</span><span class=p>(</span><span class=s1>&#39;loss&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>legend</span><span class=p>([</span><span class=s1>&#39;train&#39;</span><span class=p>,</span> <span class=s1>&#39;val&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div><p><img alt=image loading=lazy src=/posts/books/hg-mldl/week-6/images/image-06.webp></p><p>과대 적합이 확실히 줄어든 그래프를 확인할 수 있습니다.</p><h3 id=모델-저장과-복원>모델 저장과 복원<a hidden class=anchor aria-hidden=true href=#모델-저장과-복원>#</a></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>model_fn</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dropout</span><span class=p>(</span><span class=mf>0.3</span><span class=p>))</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>optimizer</span><span class=o>=</span><span class=s1>&#39;adam&#39;</span><span class=p>,</span> <span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>              <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>history</span> <span class=o>=</span> <span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>10</span><span class=p>,</span> <span class=n>verbose</span><span class=o>=</span><span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                    <span class=n>validation_data</span><span class=o>=</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>save</span><span class=p>(</span><span class=s1>&#39;model-whole.keras&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1># h5의 경우 HDF5 포맷으로 저장</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>save_weights</span><span class=p>(</span><span class=s1>&#39;model.weights.h5&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=err>!</span><span class=n>ls</span> <span class=o>-</span><span class=n>al</span> <span class=n>model</span><span class=o>*</span>
+</span></span><span class=line><span class=cl><span class=c1># -rw-r--r-- 1 root root 976600 Aug 17 06:32 model.weights.h5 파일 생성 확인</span>
+</span></span><span class=line><span class=cl><span class=c1># -rw-r--r-- 1 root root 979411 Aug 17 06:32 model-whole.keras</span>
+</span></span><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>model_fn</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dropout</span><span class=p>(</span><span class=mf>0.3</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>load_weights</span><span class=p>(</span><span class=s1>&#39;model.weights.h5&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>numpy</span> <span class=k>as</span> <span class=nn>np</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 해당 모델의 검증 정확도 확인(axis=-1이면 배열의 마지막 차원을 따라 최댓값 고름)</span>
+</span></span><span class=line><span class=cl><span class=n>val_labels</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>argmax</span><span class=p>(</span><span class=n>model</span><span class=o>.</span><span class=n>predict</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>),</span> <span class=n>axis</span><span class=o>=-</span><span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>np</span><span class=o>.</span><span class=n>mean</span><span class=p>(</span><span class=n>val_labels</span> <span class=o>==</span> <span class=n>val_target</span><span class=p>))</span> <span class=c1># 0.8809166666666667</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 동일한 모델 로드</span>
+</span></span><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>models</span><span class=o>.</span><span class=n>load_model</span><span class=p>(</span><span class=s1>&#39;model-whole.keras&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>evaluate</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>)</span> <span class=c1># [0.32992294430732727, 0.8809166550636292]</span>
+</span></span></code></pre></td></tr></table></div></div><p>모델을 저장 후 로드 후에도 동일한 정확도를 나오는지 확인합니다.</p><h4 id=콜백>콜백<a hidden class=anchor aria-hidden=true href=#콜백>#</a></h4><p>콜백은 훈련 과정 중간에 어떤 작업을 수행할 수 있게 하는 객체입니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>model_fn</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dropout</span><span class=p>(</span><span class=mf>0.3</span><span class=p>))</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>optimizer</span><span class=o>=</span><span class=s1>&#39;adam&#39;</span><span class=p>,</span> <span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>              <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 체크포인트 콜백: 검증 성능이 가장 좋은 모델만 저장</span>
+</span></span><span class=line><span class=cl><span class=n>checkpoint_cb</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>callbacks</span><span class=o>.</span><span class=n>ModelCheckpoint</span><span class=p>(</span><span class=s1>&#39;best-model.keras&#39;</span><span class=p>,</span> <span class=n>save_best_only</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1># 20에포크를 기준으로 시작작</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>20</span><span class=p>,</span> <span class=n>verbose</span><span class=o>=</span><span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>          <span class=n>validation_data</span><span class=o>=</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>          <span class=n>callbacks</span><span class=o>=</span><span class=p>[</span><span class=n>checkpoint_cb</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>models</span><span class=o>.</span><span class=n>load_model</span><span class=p>(</span><span class=s1>&#39;best-model.keras&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>evaluate</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span> <span class=o>=</span> <span class=n>model_fn</span><span class=p>(</span><span class=n>keras</span><span class=o>.</span><span class=n>layers</span><span class=o>.</span><span class=n>Dropout</span><span class=p>(</span><span class=mf>0.3</span><span class=p>))</span>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>compile</span><span class=p>(</span><span class=n>optimizer</span><span class=o>=</span><span class=s1>&#39;adam&#39;</span><span class=p>,</span> <span class=n>loss</span><span class=o>=</span><span class=s1>&#39;sparse_categorical_crossentropy&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>              <span class=n>metrics</span><span class=o>=</span><span class=p>[</span><span class=s1>&#39;accuracy&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 체크포인트 콜백: 최고 성능 모델 저장</span>
+</span></span><span class=line><span class=cl><span class=n>checkpoint_cb</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>callbacks</span><span class=o>.</span><span class=n>ModelCheckpoint</span><span class=p>(</span><span class=s1>&#39;best-model.keras&#39;</span><span class=p>,</span> <span class=n>save_best_only</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 조기 종료 콜백: 2 에포크 동안 성능 개선이 없으면 훈련 중단하고 최고 가중치 복원</span>
+</span></span><span class=line><span class=cl><span class=n>early_stopping_cb</span> <span class=o>=</span> <span class=n>keras</span><span class=o>.</span><span class=n>callbacks</span><span class=o>.</span><span class=n>EarlyStopping</span><span class=p>(</span><span class=n>patience</span><span class=o>=</span><span class=mi>2</span><span class=p>,</span> <span class=n>restore_best_weights</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 모델 훈련: 두 개의 콜백 함께 사용</span>
+</span></span><span class=line><span class=cl><span class=n>history</span> <span class=o>=</span> <span class=n>model</span><span class=o>.</span><span class=n>fit</span><span class=p>(</span><span class=n>train_scaled</span><span class=p>,</span> <span class=n>train_target</span><span class=p>,</span> <span class=n>epochs</span><span class=o>=</span><span class=mi>20</span><span class=p>,</span> <span class=n>verbose</span><span class=o>=</span><span class=mi>0</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>                    <span class=n>validation_data</span><span class=o>=</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>                    <span class=n>callbacks</span><span class=o>=</span><span class=p>[</span><span class=n>checkpoint_cb</span><span class=p>,</span> <span class=n>early_stopping_cb</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 실제로 훈련이 중단된 에포크 출력 (13에포크에서 중단됨)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>early_stopping_cb</span><span class=o>.</span><span class=n>stopped_epoch</span><span class=p>)</span>  <span class=c1># 13</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;loss&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>plot</span><span class=p>(</span><span class=n>history</span><span class=o>.</span><span class=n>history</span><span class=p>[</span><span class=s1>&#39;val_loss&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>xlabel</span><span class=p>(</span><span class=s1>&#39;epoch&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>ylabel</span><span class=p>(</span><span class=s1>&#39;loss&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>legend</span><span class=p>([</span><span class=s1>&#39;train&#39;</span><span class=p>,</span> <span class=s1>&#39;val&#39;</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>plt</span><span class=o>.</span><span class=n>show</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>model</span><span class=o>.</span><span class=n>evaluate</span><span class=p>(</span><span class=n>val_scaled</span><span class=p>,</span> <span class=n>val_target</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div><p><img alt=image loading=lazy src=/posts/books/hg-mldl/week-6/images/image-07.webp></p><p>훈련 중 30%의 뉴런을 랜덤하게 비활성화해서 과적합 방지합니다.</p><p>ModelCheckpoint: 검증 성능이 개선될 때마다 모델을 자동 저장. save_best_only=True로 최고 성능 모델만 보존</p><p>EarlyStopping: patience=2로 설정해서 2 에포크 연속으로 성능이 개선되지 않으면 훈련 중단</p><p>restore_best_weights=True로 최고 성능 시점의 가중치로 복원</p><p>결과적으로로 원래 20 에포크 계획이었지만 13 에포크에서 조기 종료되어 효율적인 훈련이 이루어 진 것을 확인할 수 있습니다..!</p><p>이런 식으로 콜백을 조합하면 자동으로 최적의 모델을 찾고 불필요한 훈련 시간을 절약할 수 있습니다.</p><p>우아.. 이걸로 일단 혼공학습단 활동은 끝이 났네요. 좀 더 천천히 책 마무리해야겠습니다. 감사합니다.</p></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=https://haservi.github.io/posts/books/hg-mldl/retrospect/><span class=title>« 이전 페이지</span><br><span>혼자 공부하는 머신러닝 + 딥러닝 후기</span>
+</a><a class=next href=https://haservi.github.io/posts/books/hg-mldl/week-5/><span class=title>다음 페이지 »</span><br><span>[혼공머신] 5주차 학습 내용 정리</span></a></nav></footer><section class=comments><script>loadComment();function loadComment(){document.body.className.includes("dark")?theme="photon-dark":theme="boxy-light";let e=document.createElement("script");e.src="https://utteranc.es/client.js",e.setAttribute("repo","haservi/haservi.github.io"),e.setAttribute("issue-term","pathname"),e.setAttribute("theme",theme),e.setAttribute("crossorigin","anonymous"),e.setAttribute("async",""),document.querySelector("section.comments").innerHTML="",document.querySelector("section.comments").appendChild(e)}</script></section></article></main><footer class=footer><span>&copy; 2025 <a href=https://haservi.github.io/>Halog</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script src=https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin=anonymous referrerpolicy=no-referrer></script><script>const images=Array.from(document.querySelectorAll(".post-content img"));images.forEach(e=>{mediumZoom(e,{margin:0,background:"#1d1e20",scrollOffset:40,container:null,template:null})})</script><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark")),loadComment()})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="복사";function s(){t.innerHTML="복사 완료!",setTimeout(()=>{t.innerHTML="복사"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
