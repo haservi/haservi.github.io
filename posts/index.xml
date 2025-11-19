@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 08 Sep 2025 20:12:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 19 Nov 2025 20:13:25 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HashiCorp Vault 알아보기</title>
+      <link>https://haservi.github.io/posts/devops/docker/vault-setting/</link>
+      <pubDate>Wed, 19 Nov 2025 20:13:25 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/devops/docker/vault-setting/</guid>
+      <description>HashiCorp Vault를 Mac 환경에서 Docker를 이용하여 설치하고 초기화하는 방법을 단계별로 알아봅니다.</description>
+    </item>
     <item>
       <title>Mac에서 Better Display 모니터 해상도 개선하는 방법</title>
       <link>https://haservi.github.io/posts/tools/how-to-better-display/</link>

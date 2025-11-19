@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HashiCorp on Halog</title>
+    <link>https://haservi.github.io/tags/hashicorp/</link>
+    <description>Recent content in HashiCorp on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 19 Nov 2025 20:13:25 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/tags/hashicorp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HashiCorp Vault 알아보기</title>
+      <link>https://haservi.github.io/posts/devops/docker/vault-setting/</link>
+      <pubDate>Wed, 19 Nov 2025 20:13:25 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/devops/docker/vault-setting/</guid>
+      <description>HashiCorp Vault를 Mac 환경에서 Docker를 이용하여 설치하고 초기화하는 방법을 단계별로 알아봅니다.</description>
+    </item>
+  </channel>
+</rss>
