@@ -11,8 +11,20 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 19 Nov 2025 20:13:25 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 26 Dec 2025 18:53:59 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 터미널에 Oh My Posh 설치하기</title>
+      <link>https://haservi.github.io/posts/tips/how-to-use-ohmyposh/</link>
+      <pubDate>Fri, 26 Dec 2025 18:53:59 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/tips/how-to-use-ohmyposh/</guid>
+      <description>Mac 사용자들은 터미널 커스터마이징을 위해 Oh My Zsh를 많이 사용합니다.
+윈도우 환경에서도 Oh My Posh를 활용하면 동일하게 깔끔하고 가독성 좋은 터미널 환경을 구성할 수 있습니다.
+아래와 같은 스타일의 터미널을 만들 수 있습니다.
+이번 글에서는 Windows Terminal + PowerShell 7 환경에서 Oh My Posh를 설치하고 설정하는 방법을 정리해 보겠습니다.
+1. 사전 준비 (PowerShell 7) Oh My Posh는 PowerShell 5.1에서도 동작하지만, 최신 기능과 호환성을 고려하면 PowerShell 7 사용을 권장합니다.
+관리자 권한으로 터미널을 실행한 뒤 아래 명령어를 실행합니다.</description>
+    </item>
     <item>
       <title>HashiCorp Vault 알아보기</title>
       <link>https://haservi.github.io/posts/devops/docker/vault-setting/</link>
