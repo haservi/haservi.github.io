@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>디자인 on Halog</title>
+    <link>https://haservi.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8/</link>
+    <description>Recent content in 디자인 on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 31 Mar 2026 10:30:00 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/tags/%EB%94%94%EC%9E%90%EC%9D%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[도서 리뷰] 맛있는 디자인 피그마 with AI</title>
+      <link>https://haservi.github.io/posts/review/hanbit/figma-design/</link>
+      <pubDate>Tue, 31 Mar 2026 10:30:00 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/review/hanbit/figma-design/</guid>
+      <description>나는리뷰어다 2026년 3월 신청 도서 리뷰</description>
+    </item>
+  </channel>
+</rss>

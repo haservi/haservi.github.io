@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Fri, 26 Dec 2025 18:53:59 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 10:30:00 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>나는리뷰어다 2026</title>
+      <link>https://haservi.github.io/categories/%EB%82%98%EB%8A%94%EB%A6%AC%EB%B7%B0%EC%96%B4%EB%8B%A4-2026/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/categories/%EB%82%98%EB%8A%94%EB%A6%AC%EB%B7%B0%EC%96%B4%EB%8B%A4-2026/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>리뷰</title>
+      <link>https://haservi.github.io/categories/%EB%A6%AC%EB%B7%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/categories/%EB%A6%AC%EB%B7%B0/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tips</title>
       <link>https://haservi.github.io/categories/tips/</link>
@@ -63,10 +77,10 @@
       <description></description>
     </item>
     <item>
-      <title>Troubleshooting</title>
-      <link>https://haservi.github.io/categories/troubleshooting/</link>
+      <title>이슈해결</title>
+      <link>https://haservi.github.io/categories/%EC%9D%B4%EC%8A%88%ED%95%B4%EA%B2%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/categories/troubleshooting/</guid>
+      <guid>https://haservi.github.io/categories/%EC%9D%B4%EC%8A%88%ED%95%B4%EA%B2%B0/</guid>
       <description></description>
     </item>
     <item>
@@ -158,13 +172,6 @@
       <link>https://haservi.github.io/categories/lwm2m/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://haservi.github.io/categories/lwm2m/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>WireShark</title>
-      <link>https://haservi.github.io/categories/wireshark/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/categories/wireshark/</guid>
       <description></description>
     </item>
     <item>

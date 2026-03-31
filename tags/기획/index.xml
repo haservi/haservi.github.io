@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>기획 on Halog</title>
+    <link>https://haservi.github.io/tags/%EA%B8%B0%ED%9A%8D/</link>
+    <description>Recent content in 기획 on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Fri, 27 Feb 2026 07:30:00 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/tags/%EA%B8%B0%ED%9A%8D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[도서 리뷰] 유리링의 실전 게임 시스템 기획</title>
+      <link>https://haservi.github.io/posts/review/hanbit/game-system-planning/</link>
+      <pubDate>Fri, 27 Feb 2026 07:30:00 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/review/hanbit/game-system-planning/</guid>
+      <description>나는리뷰어다 2026년 2월 신청 도서 리뷰</description>
+    </item>
+  </channel>
+</rss>
