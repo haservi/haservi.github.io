@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 31 Mar 2026 10:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 23:45:22 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM CLI를 이용해서 개발하기</title>
+      <link>https://haservi.github.io/posts/tips/llm-using/</link>
+      <pubDate>Wed, 15 Apr 2026 23:45:22 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/tips/llm-using/</guid>
+      <description>CLI 기반 LLM 도구를 사용할 때 정리해두면 좋은 설정과 개인적인 사용 팁</description>
+    </item>
     <item>
       <title>[도서 리뷰] 맛있는 디자인 피그마 with AI</title>
       <link>https://haservi.github.io/posts/review/hanbit/figma-design/</link>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Codex on Halog</title>
+    <link>https://haservi.github.io/tags/codex/</link>
+    <description>Recent content in Codex on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 15 Apr 2026 23:45:22 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/tags/codex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM CLI를 이용해서 개발하기</title>
+      <link>https://haservi.github.io/posts/tips/llm-using/</link>
+      <pubDate>Wed, 15 Apr 2026 23:45:22 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/tips/llm-using/</guid>
+      <description>CLI 기반 LLM 도구를 사용할 때 정리해두면 좋은 설정과 개인적인 사용 팁</description>
+    </item>
+  </channel>
+</rss>
