@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 31 Mar 2026 10:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 23:10:17 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/categories/%EB%82%98%EB%8A%94%EB%A6%AC%EB%B7%B0%EC%96%B4%EB%8B%A4-2026/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[도서 리뷰] 클라우드 애플리케이션 아키텍처 패턴</title>
+      <link>https://haservi.github.io/posts/review/hanbit/cloud-application-architecture-patterns/</link>
+      <pubDate>Thu, 23 Apr 2026 23:10:17 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/review/hanbit/cloud-application-architecture-patterns/</guid>
+      <description>나는리뷰어다 2026년 4월 신청 도서 리뷰</description>
+    </item>
     <item>
       <title>[도서 리뷰] 맛있는 디자인 피그마 with AI</title>
       <link>https://haservi.github.io/posts/review/hanbit/figma-design/</link>

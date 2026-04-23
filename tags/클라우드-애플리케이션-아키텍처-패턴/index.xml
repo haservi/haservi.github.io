@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>클라우드 애플리케이션 아키텍처 패턴 on Halog</title>
+    <link>https://haservi.github.io/tags/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4/</link>
+    <description>Recent content in 클라우드 애플리케이션 아키텍처 패턴 on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 23 Apr 2026 23:10:17 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/tags/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[도서 리뷰] 클라우드 애플리케이션 아키텍처 패턴</title>
+      <link>https://haservi.github.io/posts/review/hanbit/cloud-application-architecture-patterns/</link>
+      <pubDate>Thu, 23 Apr 2026 23:10:17 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/review/hanbit/cloud-application-architecture-patterns/</guid>
+      <description>나는리뷰어다 2026년 4월 신청 도서 리뷰</description>
+    </item>
+  </channel>
+</rss>
