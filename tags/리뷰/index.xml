@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Thu, 23 Apr 2026 23:10:17 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 23:23:17 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/tags/%EB%A6%AC%EB%B7%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[도서 리뷰] 만들면서 배우는 AI 에이전트 개발 입문&#43;실전</title>
+      <link>https://haservi.github.io/posts/review/hanbit/developing-and-learning-ai-agents/</link>
+      <pubDate>Wed, 20 May 2026 23:23:17 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/review/hanbit/developing-and-learning-ai-agents/</guid>
+      <description>나는리뷰어다 2026년 5월 신청 도서 리뷰</description>
+    </item>
     <item>
       <title>[도서 리뷰] 클라우드 애플리케이션 아키텍처 패턴</title>
       <link>https://haservi.github.io/posts/review/hanbit/cloud-application-architecture-patterns/</link>

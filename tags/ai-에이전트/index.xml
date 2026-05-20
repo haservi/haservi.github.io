@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>LLM on Halog</title>
-    <link>https://haservi.github.io/tags/llm/</link>
-    <description>Recent content in LLM on Halog</description>
+    <title>AI 에이전트 on Halog</title>
+    <link>https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</link>
+    <description>Recent content in AI 에이전트 on Halog</description>
     <image>
       <title>Halog</title>
       <url>https://haservi.github.io/cover.jpeg</url>
@@ -12,20 +12,13 @@
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
     <lastBuildDate>Wed, 20 May 2026 23:23:17 +0900</lastBuildDate>
-    <atom:link href="https://haservi.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[도서 리뷰] 만들면서 배우는 AI 에이전트 개발 입문&#43;실전</title>
       <link>https://haservi.github.io/posts/review/hanbit/developing-and-learning-ai-agents/</link>
       <pubDate>Wed, 20 May 2026 23:23:17 +0900</pubDate>
       <guid>https://haservi.github.io/posts/review/hanbit/developing-and-learning-ai-agents/</guid>
       <description>나는리뷰어다 2026년 5월 신청 도서 리뷰</description>
-    </item>
-    <item>
-      <title>LLM CLI를 이용해서 개발하기</title>
-      <link>https://haservi.github.io/posts/tips/llm-using/</link>
-      <pubDate>Wed, 15 Apr 2026 23:45:22 +0900</pubDate>
-      <guid>https://haservi.github.io/posts/tips/llm-using/</guid>
-      <description>CLI 기반 LLM 도구를 사용할 때 정리해두면 좋은 설정과 개인적인 사용 팁</description>
     </item>
   </channel>
 </rss>
