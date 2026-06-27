@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://haservi.github.io/posts/review/hanbit/developing-and-learning-ai-agents/</loc>
+    <loc>https://haservi.github.io/posts/review/hanbit/06-jocodings-vibe-coding/</loc>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/review/hanbit/05-developing-and-learning-ai-agents/</loc>
     <lastmod>2026-05-20T23:23:17+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/review/hanbit/cloud-application-architecture-patterns/</loc>
+    <loc>https://haservi.github.io/posts/review/hanbit/04-cloud-application-architecture-patterns/</loc>
     <lastmod>2026-04-23T23:10:17+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/tips/llm-using/</loc>
     <lastmod>2026-04-15T23:45:22+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/review/hanbit/figma-design/</loc>
+    <loc>https://haservi.github.io/posts/review/hanbit/03-figma-design/</loc>
     <lastmod>2026-03-31T10:30:00+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/review/hanbit/game-system-planning/</loc>
+    <loc>https://haservi.github.io/posts/review/hanbit/02-game-system-planning/</loc>
     <lastmod>2026-02-27T07:30:00+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/tips/how-to-use-ohmyposh/</loc>
@@ -227,31 +230,37 @@
     <loc>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</loc>
     <lastmod>2023-12-02T22:28:29+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</loc>
-    <lastmod>2026-05-20T23:23:17+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2026-05-20T23:23:17+09:00</lastmod>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2026-05-20T23:23:17+09:00</lastmod>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/llm/</loc>
-    <lastmod>2026-05-20T23:23:17+09:00</lastmod>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2026-05-20T23:23:17+09:00</lastmod>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/</loc>
-    <lastmod>2026-05-20T23:23:17+09:00</lastmod>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/%EB%82%98%EB%8A%94%EB%A6%AC%EB%B7%B0%EC%96%B4%EB%8B%A4-2026/</loc>
-    <lastmod>2026-05-20T23:23:17+09:00</lastmod>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/%EB%A6%AC%EB%B7%B0/</loc>
-    <lastmod>2026-05-20T23:23:17+09:00</lastmod>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/%EB%A6%AC%EB%B7%B0/</loc>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/%EB%B0%94%EC%9D%B4%EB%B8%8C-%EC%BD%94%EB%94%A9/</loc>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</loc>
+    <lastmod>2026-06-28T07:00:17+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</loc>
     <lastmod>2026-05-20T23:23:17+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4/</loc>
