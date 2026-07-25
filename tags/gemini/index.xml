@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Gemini on Halog</title>
+    <link>https://haservi.github.io/tags/gemini/</link>
+    <description>Recent content in Gemini on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Sat, 25 Jul 2026 07:00:16 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/tags/gemini/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[도서 리뷰] 혼자 해도 프로 선생님처럼 잘 만드는 학교 수업 자료</title>
+      <link>https://haservi.github.io/posts/review/hanbit/07-school-lesson-materials-that-can-be-easily-created-using-ai/</link>
+      <pubDate>Sat, 25 Jul 2026 07:00:16 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/review/hanbit/07-school-lesson-materials-that-can-be-easily-created-using-ai/</guid>
+      <description>나는 리뷰어다 2026년 7월 신청 도서 리뷰</description>
+    </item>
+  </channel>
+</rss>

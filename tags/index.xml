@@ -11,13 +11,27 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Sun, 28 Jun 2026 07:00:17 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 07:00:16 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LLM</title>
-      <link>https://haservi.github.io/tags/llm/</link>
+      <title>AI수업</title>
+      <link>https://haservi.github.io/tags/ai%EC%88%98%EC%97%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/tags/llm/</guid>
+      <guid>https://haservi.github.io/tags/ai%EC%88%98%EC%97%85/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gemini</title>
+      <link>https://haservi.github.io/tags/gemini/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/gemini/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NotebookLM</title>
+      <link>https://haservi.github.io/tags/notebooklm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/notebooklm/</guid>
       <description></description>
     </item>
     <item>
@@ -25,6 +39,20 @@
       <link>https://haservi.github.io/tags/%EB%A6%AC%EB%B7%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://haservi.github.io/tags/%EB%A6%AC%EB%B7%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>한빛미디어</title>
+      <link>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>https://haservi.github.io/tags/llm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/llm/</guid>
       <description></description>
     </item>
     <item>
