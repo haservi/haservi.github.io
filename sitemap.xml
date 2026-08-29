@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://haservi.github.io/posts/review/hanbit/08-think-from-the-user-perspective/</loc>
+    <lastmod>2026-08-04T10:00:02+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/posts/tips/window-performance-optimization/</loc>
     <lastmod>2026-07-29T00:30:00+09:00</lastmod>
   </url><url>
@@ -236,22 +239,37 @@
     <loc>https://haservi.github.io/posts/books/large-scale-system-design-learned-from-virtual-interviews/</loc>
     <lastmod>2023-12-02T22:28:29+09:00</lastmod>
   </url><url>
+    <loc>https://haservi.github.io/categories/book-review/</loc>
+    <lastmod>2026-08-04T10:00:02+09:00</lastmod>
+  </url><url>
     <loc>https://haservi.github.io/categories/</loc>
-    <lastmod>2026-07-29T00:30:00+09:00</lastmod>
+    <lastmod>2026-08-04T10:00:02+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/</loc>
-    <lastmod>2026-07-29T00:30:00+09:00</lastmod>
+    <lastmod>2026-08-04T10:00:02+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/posts/</loc>
+    <lastmod>2026-08-04T10:00:02+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/</loc>
+    <lastmod>2026-08-04T10:00:02+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/ui/</loc>
+    <lastmod>2026-08-04T10:00:02+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/ux/</loc>
+    <lastmod>2026-08-04T10:00:02+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/%EC%82%AC%EC%9A%A9%EC%9E%90%EC%9E%85%EC%9E%A5%EC%97%90%EC%84%9C%EC%83%9D%EA%B0%81%ED%95%98%EC%84%B8%EC%9A%94/</loc>
+    <lastmod>2026-08-04T10:00:02+09:00</lastmod>
+  </url><url>
+    <loc>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</loc>
+    <lastmod>2026-08-04T10:00:02+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/optimization/</loc>
     <lastmod>2026-07-29T00:30:00+09:00</lastmod>
   </url><url>
-    <loc>https://haservi.github.io/posts/</loc>
-    <lastmod>2026-07-29T00:30:00+09:00</lastmod>
-  </url><url>
     <loc>https://haservi.github.io/tags/sysdm.cpl/</loc>
-    <lastmod>2026-07-29T00:30:00+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/tags/</loc>
     <lastmod>2026-07-29T00:30:00+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/tips/</loc>
@@ -279,9 +297,6 @@
     <lastmod>2026-07-25T07:00:16+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/categories/%EB%A6%AC%EB%B7%B0/</loc>
-    <lastmod>2026-07-25T07:00:16+09:00</lastmod>
-  </url><url>
-    <loc>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</loc>
     <lastmod>2026-07-25T07:00:16+09:00</lastmod>
   </url><url>
     <loc>https://haservi.github.io/tags/llm/</loc>

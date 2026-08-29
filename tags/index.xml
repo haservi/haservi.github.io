@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 29 Jul 2026 00:30:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 10:00:02 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UI</title>
+      <link>https://haservi.github.io/tags/ui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/ui/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UX</title>
+      <link>https://haservi.github.io/tags/ux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/ux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>사용자입장에서생각하세요</title>
+      <link>https://haservi.github.io/tags/%EC%82%AC%EC%9A%A9%EC%9E%90%EC%9E%85%EC%9E%A5%EC%97%90%EC%84%9C%EC%83%9D%EA%B0%81%ED%95%98%EC%84%B8%EC%9A%94/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/%EC%82%AC%EC%9A%A9%EC%9E%90%EC%9E%85%EC%9E%A5%EC%97%90%EC%84%9C%EC%83%9D%EA%B0%81%ED%95%98%EC%84%B8%EC%9A%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>한빛미디어</title>
+      <link>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Optimization</title>
       <link>https://haservi.github.io/tags/optimization/</link>
@@ -60,13 +88,6 @@
       <link>https://haservi.github.io/tags/%EB%A6%AC%EB%B7%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://haservi.github.io/tags/%EB%A6%AC%EB%B7%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>한빛미디어</title>
-      <link>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</guid>
       <description></description>
     </item>
     <item>

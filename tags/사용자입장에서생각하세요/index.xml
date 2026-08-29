@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>한빛미디어 on Halog</title>
-    <link>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</link>
-    <description>Recent content in 한빛미디어 on Halog</description>
+    <title>사용자입장에서생각하세요 on Halog</title>
+    <link>https://haservi.github.io/tags/%EC%82%AC%EC%9A%A9%EC%9E%90%EC%9E%85%EC%9E%A5%EC%97%90%EC%84%9C%EC%83%9D%EA%B0%81%ED%95%98%EC%84%B8%EC%9A%94/</link>
+    <description>Recent content in 사용자입장에서생각하세요 on Halog</description>
     <image>
       <title>Halog</title>
       <url>https://haservi.github.io/cover.jpeg</url>
@@ -12,20 +12,13 @@
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
     <lastBuildDate>Tue, 04 Aug 2026 10:00:02 +0900</lastBuildDate>
-    <atom:link href="https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://haservi.github.io/tags/%EC%82%AC%EC%9A%A9%EC%9E%90%EC%9E%85%EC%9E%A5%EC%97%90%EC%84%9C%EC%83%9D%EA%B0%81%ED%95%98%EC%84%B8%EC%9A%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>08 Think From the User Perspective</title>
       <link>https://haservi.github.io/posts/review/hanbit/08-think-from-the-user-perspective/</link>
       <pubDate>Tue, 04 Aug 2026 10:00:02 +0900</pubDate>
       <guid>https://haservi.github.io/posts/review/hanbit/08-think-from-the-user-perspective/</guid>
       <description>나는 리뷰어다 2026년 8월 신청 도서 리뷰</description>
-    </item>
-    <item>
-      <title>[도서 리뷰] 혼자 해도 프로 선생님처럼 잘 만드는 학교 수업 자료</title>
-      <link>https://haservi.github.io/posts/review/hanbit/07-school-lesson-materials-that-can-be-easily-created-using-ai/</link>
-      <pubDate>Sat, 25 Jul 2026 07:00:16 +0900</pubDate>
-      <guid>https://haservi.github.io/posts/review/hanbit/07-school-lesson-materials-that-can-be-easily-created-using-ai/</guid>
-      <description>나는 리뷰어다 2026년 7월 신청 도서 리뷰</description>
     </item>
   </channel>
 </rss>
