@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Sat, 29 Aug 2026 20:00:02 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 19:23:02 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[강의 리뷰] 혼자 공부하는 바이브 코딩 with 클로드 코드</title>
+      <link>https://haservi.github.io/posts/review/hanbit/09-vibe-coding-video/</link>
+      <pubDate>Mon, 14 Sep 2026 19:23:02 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/review/hanbit/09-vibe-coding-video/</guid>
+      <description>나는 리뷰어다 2026년 9월 신청 영상 리뷰</description>
+    </item>
     <item>
       <title>[도서 리뷰] 사용자 입장에서 생각하세요</title>
       <link>https://haservi.github.io/posts/review/hanbit/08-think-from-the-user-perspective/</link>
