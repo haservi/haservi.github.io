@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 23 Sep 2026 05:40:02 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 11:00:11 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 에이전트</title>
+      <link>https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude Code</title>
+      <link>https://haservi.github.io/tags/claude-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/claude-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>https://haservi.github.io/tags/llm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>리뷰</title>
+      <link>https://haservi.github.io/tags/%EB%A6%AC%EB%B7%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/%EB%A6%AC%EB%B7%B0/</guid>
+      <description></description>
+    </item>
     <item>
       <title>한빛미디어</title>
       <link>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</link>
@@ -84,20 +112,6 @@
       <description></description>
     </item>
     <item>
-      <title>리뷰</title>
-      <link>https://haservi.github.io/tags/%EB%A6%AC%EB%B7%B0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/tags/%EB%A6%AC%EB%B7%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LLM</title>
-      <link>https://haservi.github.io/tags/llm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/tags/llm/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>바이브 코딩</title>
       <link>https://haservi.github.io/tags/%EB%B0%94%EC%9D%B4%EB%B8%8C-%EC%BD%94%EB%94%A9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -112,24 +126,10 @@
       <description></description>
     </item>
     <item>
-      <title>AI 에이전트</title>
-      <link>https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>클라우드 애플리케이션 아키텍처 패턴</title>
       <link>https://haservi.github.io/tags/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://haservi.github.io/tags/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%ED%8C%A8%ED%84%B4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Claude Code</title>
-      <link>https://haservi.github.io/tags/claude-code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/tags/claude-code/</guid>
       <description></description>
     </item>
     <item>

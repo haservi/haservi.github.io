@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 20 May 2026 23:23:17 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 11:00:11 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[강의 리뷰] Meta 현직자에게 배우는 Claude Code로 생산성 10배 만들기</title>
+      <link>https://haservi.github.io/posts/review/hanbit/11-meta-claude-with-ai-video/</link>
+      <pubDate>Sat, 21 Nov 2026 11:00:11 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/review/hanbit/11-meta-claude-with-ai-video/</guid>
+      <description>나는리뷰어다 2026년 11월 신청 강의 리뷰</description>
+    </item>
     <item>
       <title>[도서 리뷰] 만들면서 배우는 AI 에이전트 개발 입문&#43;실전</title>
       <link>https://haservi.github.io/posts/review/hanbit/05-developing-and-learning-ai-agents/</link>
