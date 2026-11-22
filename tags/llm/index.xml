@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Sat, 21 Nov 2026 11:00:11 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 08:25:36 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[도서 리뷰] 문제 해결을 위한 AI 에이전트 설계</title>
+      <link>https://haservi.github.io/posts/review/hanbit/11-ai-agents-for-problem-solving/</link>
+      <pubDate>Sun, 22 Nov 2026 08:25:36 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/review/hanbit/11-ai-agents-for-problem-solving/</guid>
+      <description>나는리뷰어다 2026년 11월 신청 도서 리뷰</description>
+    </item>
     <item>
       <title>[강의 리뷰] Meta 현직자에게 배우는 Claude Code로 생산성 10배 만들기</title>
       <link>https://haservi.github.io/posts/review/hanbit/11-meta-claude-with-ai-video/</link>

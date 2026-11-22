@@ -11,20 +11,13 @@
     </image>
     <generator>Hugo -- 0.125.7</generator>
     <language>ko</language>
-    <lastBuildDate>Sat, 21 Nov 2026 11:00:11 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 08:25:36 +0900</lastBuildDate>
     <atom:link href="https://haservi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI 에이전트</title>
       <link>https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://haservi.github.io/tags/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Claude Code</title>
-      <link>https://haservi.github.io/tags/claude-code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://haservi.github.io/tags/claude-code/</guid>
       <description></description>
     </item>
     <item>
@@ -42,10 +35,24 @@
       <description></description>
     </item>
     <item>
+      <title>에이전트 설계</title>
+      <link>https://haservi.github.io/tags/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EA%B3%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EA%B3%84/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>한빛미디어</title>
       <link>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://haservi.github.io/tags/%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude Code</title>
+      <link>https://haservi.github.io/tags/claude-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://haservi.github.io/tags/claude-code/</guid>
       <description></description>
     </item>
     <item>

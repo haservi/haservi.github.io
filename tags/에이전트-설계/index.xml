@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>에이전트 설계 on Halog</title>
+    <link>https://haservi.github.io/tags/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EA%B3%84/</link>
+    <description>Recent content in 에이전트 설계 on Halog</description>
+    <image>
+      <title>Halog</title>
+      <url>https://haservi.github.io/cover.jpeg</url>
+      <link>https://haservi.github.io/cover.jpeg</link>
+    </image>
+    <generator>Hugo -- 0.125.7</generator>
+    <language>ko</language>
+    <lastBuildDate>Sun, 22 Nov 2026 08:25:36 +0900</lastBuildDate>
+    <atom:link href="https://haservi.github.io/tags/%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%84%A4%EA%B3%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[도서 리뷰] 문제 해결을 위한 AI 에이전트 설계</title>
+      <link>https://haservi.github.io/posts/review/hanbit/11-ai-agents-for-problem-solving/</link>
+      <pubDate>Sun, 22 Nov 2026 08:25:36 +0900</pubDate>
+      <guid>https://haservi.github.io/posts/review/hanbit/11-ai-agents-for-problem-solving/</guid>
+      <description>나는리뷰어다 2026년 11월 신청 도서 리뷰</description>
+    </item>
+  </channel>
+</rss>
